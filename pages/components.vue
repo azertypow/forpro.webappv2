@@ -1,7 +1,9 @@
 <template>
     <main class="v-components fp-grid-with-gutter" >
 
-        <h1>ForPro Design System</h1>
+        <page-header
+            page-title="ForPro Design System"
+        />
 
         <h2>Typography</h2>
         <hr>
@@ -19,14 +21,17 @@
         <hr>
 
         <h3>Image</h3>
+        <hr>
         <image-content></image-content>
 
-        <h3>Page header without image</h3>
+        <h3>Page header without&nbsp;image</h3>
+        <hr>
         <page-header
                 page-title="page title"
         ></page-header>
 
-        <h3>Page header with image</h3>
+        <h3>Page header with&nbsp;image</h3>
+        <hr>
         <page-header
                 page-title="page title"
                 background-image="https://images.unsplash.com/photo-1507537509458-b8312d35a233?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
@@ -34,10 +39,15 @@
 
 
         <h3>Text content</h3>
+        <hr>
         <text-content></text-content>
 
+        <h3>Text intro</h3>
+        <hr>
         <text-intro></text-intro>
 
+
+        <space-building></space-building>
 
 
     </main>

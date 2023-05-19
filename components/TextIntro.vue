@@ -19,6 +19,12 @@
 
 
 <style lang="scss" scoped >
+@import "assets/typography";
 .v-text-intro {
+
+    > p {
+        @extend .fp-heading-h4;
+    }
 }
+
 </style>

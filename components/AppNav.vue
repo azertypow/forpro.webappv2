@@ -12,7 +12,7 @@
       </button>
     <nav
             v-if="useAppStateStore().navIsOpen"
-            class="v-app-nav__nav"
+            class="v-app-nav__nav fp-grid-with-gutter"
     >
         <div
             class="v-app-nav__nav__content"
@@ -20,7 +20,7 @@
             <div class="fp-grid-with-gutter">
                 <div class="fp-heading-h3--with-margin">
                     <nuxt-link
-                        class="v-app-nav__link fp-grid-with-gutter"
+                        class="v-app-nav__link"
                         href="/fondation"
                         :class="{
                       'is-active': curentRoutePath === '/fondation'
@@ -30,7 +30,7 @@
                 </div>
                 <div class="fp-heading-h3--with-margin">
                     <nuxt-link
-                        class="v-app-nav__link fp-grid-with-gutter"
+                        class="v-app-nav__link"
                         href="/partenaires"
                         :class="{
                       'is-active': curentRoutePath === '/partenaires'
@@ -40,7 +40,7 @@
                 </div>
                 <div class="fp-heading-h3--with-margin">
                     <nuxt-link
-                        class="v-app-nav__link fp-grid-with-gutter"
+                        class="v-app-nav__link"
                         href="/faq"
                         :class="{
                       'is-active': curentRoutePath === '/faq'
@@ -50,7 +50,7 @@
                 </div>
                 <div class="fp-heading-h3--with-margin">
                     <nuxt-link
-                        class="v-app-nav__link fp-grid-with-gutter"
+                        class="v-app-nav__link"
                         href="/blog"
                         :class="{
                       'is-active': curentRoutePath === '/blog'
@@ -62,7 +62,7 @@
             <div class="fp-grid-with-gutter" >
                 <div class="fp-heading-h3--with-margin" >
                     <nuxt-link
-                        class="v-app-nav__link fp-grid-with-gutter"
+                        class="v-app-nav__link"
                         href="/lieu"
                         :class="{
                             'is-active': curentRoutePath === '/lieu'
@@ -72,7 +72,7 @@
                 </div>
                 <div class="fp-heading-h4--with-margin" >
                     <nuxt-link
-                        class="v-app-nav__link fp-grid-with-gutter"
+                        class="v-app-nav__link"
                         href="/lieu/accueil"
                         :class="{
                     'is-active': curentRoutePath === '/lieu/accueil'
@@ -82,7 +82,7 @@
                 </div>
                 <div class="fp-heading-h4--with-margin" >
                     <nuxt-link
-                        class="v-app-nav__link fp-grid-with-gutter"
+                        class="v-app-nav__link"
                         href="/lieu/artlab"
                         :class="{
                     'is-active': curentRoutePath === '/lieu/artlab'
@@ -92,7 +92,7 @@
                 </div>
                 <div class="fp-heading-h4--with-margin" >
                     <nuxt-link
-                        class="v-app-nav__link fp-grid-with-gutter"
+                        class="v-app-nav__link"
                         href="/lieu/entreprises"
                         :class="{
                     'is-active': curentRoutePath === '/lieu/entreprises'
@@ -102,7 +102,7 @@
                 </div>
                 <div class="fp-heading-h4--with-margin" >
                     <nuxt-link
-                        class="v-app-nav__link fp-grid-with-gutter"
+                        class="v-app-nav__link"
                         href="/lieu/foodlab"
                         :class="{
                     'is-active': curentRoutePath === '/lieu/foodlab'
@@ -112,7 +112,7 @@
                 </div>
                 <div class="fp-heading-h4--with-margin" >
                     <nuxt-link
-                        class="v-app-nav__link fp-grid-with-gutter"
+                        class="v-app-nav__link"
                         href="/lieu/learninglab"
                         :class="{
                     'is-active': curentRoutePath === '/lieu/learninglab'
@@ -122,7 +122,7 @@
                 </div>
                 <div class="fp-heading-h4--with-margin" >
                     <nuxt-link
-                        class="v-app-nav__link fp-grid-with-gutter"
+                        class="v-app-nav__link"
                         href="/lieu/makerlab"
                         :class="{
                     'is-active': curentRoutePath === '/lieu/makerlab'

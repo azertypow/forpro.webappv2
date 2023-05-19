@@ -8,7 +8,9 @@
       backgroundImage: `url(${backgroundImage})` || ''
           }"
   >
-      <h1>{{pageTitle}}</h1>
+      <div class="fp-grid-with-gutter">
+        <h1>{{pageTitle}}</h1>
+      </div>
   </header>
 </template>
 
