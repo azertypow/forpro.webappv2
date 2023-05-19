@@ -4,13 +4,15 @@
   padding-left: var(--fp-gutter);
 }
 
-
 // coll
-
 
 .fp-grid-coll-container {
   display: flex;
   flex-wrap: wrap;
+}
+
+.fp-grid-coll-container--center {
+  justify-content: center;
 }
 
 .fp-grid-coll-1-24 {box-sizing: border-box;width: calc(100% / 24 * 1);}

@@ -3,7 +3,7 @@
       <nuxt-link
           href="/"
           class="v-app-nav__logo"
-      >FOR-PRO LOGO</nuxt-link>
+      ><img src="../assets/images/logo.svg"></nuxt-link>
       <button
               class="v-app-nav__menu-toggle"
               @click="useAppStateStore().toggleNav()"
@@ -17,118 +17,138 @@
         <div
             class="v-app-nav__nav__content"
         >
-            <div class="fp-grid-with-gutter">
-                <div class="fp-heading-h3--with-margin">
-                    <nuxt-link
-                        class="v-app-nav__link"
-                        href="/fondation"
-                        :class="{
-                      'is-active': curentRoutePath === '/fondation'
-                    }"
-                    >Fondation ForPro
-                    </nuxt-link>
+            <div
+                class="fp-grid-coll-container">
+                <div
+                    class="fp-grid-coll-12-24 fp-grid-with-gutter">
+                    <div class="fp-heading-h3--with-margin">
+                        <nuxt-link
+                            class="v-app-nav__link"
+                            href="/fondation"
+                            :class="{
+                              'is-active': curentRoutePath === '/fondation'
+                            }"
+                        >Fondation ForPro
+                        </nuxt-link>
+                    </div>
+                    <div class="fp-heading-h3--with-margin">
+                        <nuxt-link
+                            class="v-app-nav__link"
+                            href="/partenaires"
+                            :class="{
+                              'is-active': curentRoutePath === '/partenaires'
+                            }"
+                        >Partenaires
+                        </nuxt-link>
+                    </div>
+                    <div class="fp-heading-h3--with-margin">
+                        <nuxt-link
+                            class="v-app-nav__link"
+                            href="/faq"
+                            :class="{
+                              'is-active': curentRoutePath === '/faq'
+                            }"
+                        >F.A.Q.
+                        </nuxt-link>
+                    </div>
+                    <div class="fp-heading-h3--with-margin">
+                        <nuxt-link
+                            class="v-app-nav__link"
+                            href="/blog"
+                            :class="{
+                              'is-active': curentRoutePath === '/blog'
+                            }"
+                        >Blog
+                        </nuxt-link>
+                    </div>
+                    <div
+                        style="color: var(--fp-color-grey)"
+                        class="fp-heading-h3--with-margin">
+                        <nuxt-link
+                            class="v-app-nav__link"
+                            href="/intra"
+                            :class="{
+                                'is-active': curentRoutePath === '/intra'
+                            }"
+                        >Intranet
+                        </nuxt-link>
+                    </div>
                 </div>
-                <div class="fp-heading-h3--with-margin">
-                    <nuxt-link
-                        class="v-app-nav__link"
-                        href="/partenaires"
-                        :class="{
-                      'is-active': curentRoutePath === '/partenaires'
-                    }"
-                    >Partenaires
-                    </nuxt-link>
-                </div>
-                <div class="fp-heading-h3--with-margin">
-                    <nuxt-link
-                        class="v-app-nav__link"
-                        href="/faq"
-                        :class="{
-                      'is-active': curentRoutePath === '/faq'
-                    }"
-                    >F.A.Q.
-                    </nuxt-link>
-                </div>
-                <div class="fp-heading-h3--with-margin">
-                    <nuxt-link
-                        class="v-app-nav__link"
-                        href="/blog"
-                        :class="{
-                      'is-active': curentRoutePath === '/blog'
-                    }"
-                    >Blog
-                    </nuxt-link>
-                </div>
-            </div>
-            <div class="fp-grid-with-gutter" >
-                <div class="fp-heading-h3--with-margin" >
-                    <nuxt-link
-                        class="v-app-nav__link"
-                        href="/lieu"
-                        :class="{
-                            'is-active': curentRoutePath === '/lieu'
-                          }"
-                    >Le lieu
-                    </nuxt-link>
-                </div>
-                <div class="fp-heading-h4--with-margin" >
-                    <nuxt-link
-                        class="v-app-nav__link"
-                        href="/lieu/accueil"
-                        :class="{
-                    'is-active': curentRoutePath === '/lieu/accueil'
-                  }"
-                    >Accueil
-                    </nuxt-link>
-                </div>
-                <div class="fp-heading-h4--with-margin" >
-                    <nuxt-link
-                        class="v-app-nav__link"
-                        href="/lieu/artlab"
-                        :class="{
-                    'is-active': curentRoutePath === '/lieu/artlab'
-                  }"
-                    >ArtLab
-                    </nuxt-link>
-                </div>
-                <div class="fp-heading-h4--with-margin" >
-                    <nuxt-link
-                        class="v-app-nav__link"
-                        href="/lieu/entreprises"
-                        :class="{
-                    'is-active': curentRoutePath === '/lieu/entreprises'
-                  }"
-                    >Entreprises
-                    </nuxt-link>
-                </div>
-                <div class="fp-heading-h4--with-margin" >
-                    <nuxt-link
-                        class="v-app-nav__link"
-                        href="/lieu/foodlab"
-                        :class="{
-                    'is-active': curentRoutePath === '/lieu/foodlab'
-                  }"
-                    >FoodLab
-                    </nuxt-link>
-                </div>
-                <div class="fp-heading-h4--with-margin" >
-                    <nuxt-link
-                        class="v-app-nav__link"
-                        href="/lieu/learninglab"
-                        :class="{
-                    'is-active': curentRoutePath === '/lieu/learninglab'
-                  }"
-                    >LearningLab
-                    </nuxt-link>
-                </div>
-                <div class="fp-heading-h4--with-margin" >
-                    <nuxt-link
-                        class="v-app-nav__link"
-                        href="/lieu/makerlab"
-                        :class="{
-                    'is-active': curentRoutePath === '/lieu/makerlab'
-                  }"
-                    >MakerLab
-                    </nuxt-link>
+                <div
+                    class="fp-grid-coll-12-24 fp-grid-with-gutter">
+                    <div class="fp-heading-h3--with-margin">
+                        <nuxt-link
+                            class="v-app-nav__link"
+                            href="/lieu"
+                            :class="{
+                                    'is-active': curentRoutePath === '/lieu'
+                                }"
+                        >Le lieu
+                        </nuxt-link>
+                    </div>
+                    <div class="fp-heading-h4--with-margin">
+                        <nuxt-link
+                            class="v-app-nav__link"
+                            href="/lieu/accueil"
+                            :class="{
+                                'is-active': curentRoutePath === '/lieu/accueil'
+                            }"
+                        >Accueil
+                        </nuxt-link>
+                    </div>
+                    <div class="fp-heading-h4--with-margin">
+                        <nuxt-link
+                            class="v-app-nav__link"
+                            href="/lieu/artlab"
+                            :class="{
+                                'is-active': curentRoutePath === '/lieu/artlab'
+                            }"
+                        >ArtLab
+                        </nuxt-link>
+                    </div>
+                    <div class="fp-heading-h4--with-margin">
+                        <nuxt-link
+                            class="v-app-nav__link"
+                            href="/lieu/entreprises"
+                            :class="{
+                                'is-active': curentRoutePath === '/lieu/entreprises'
+                            }"
+                        >Entreprises
+                        </nuxt-link>
+                    </div>
+                    <div class="fp-heading-h4--with-margin">
+                        <nuxt-link
+                            class="v-app-nav__link"
+                            href="/lieu/foodlab"
+                            :class="{
+                                'is-active': curentRoutePath === '/lieu/foodlab'
+                            }"
+                        >FoodLab
+                        </nuxt-link>
+                    </div>
+                    <div class="fp-heading-h4--with-margin">
+                        <nuxt-link
+                            class="v-app-nav__link"
+                            href="/lieu/learninglab"
+                            :class="{
+                                'is-active': curentRoutePath === '/lieu/learninglab'
+                            }"
+                        >LearningLab
+                        </nuxt-link>
+                    </div>
+                    <div class="fp-heading-h4--with-margin">
+                        <nuxt-link
+                            class="v-app-nav__link"
+                            href="/lieu/makerlab"
+                            :class="{
+                                'is-active': curentRoutePath === '/lieu/makerlab'
+                            }"
+                        >MakerLab
+                        </nuxt-link>
+                    </div>
+                    <div class="v-app-nav__building-space">
+                        <space-building-nav></space-building-nav>
+                    </div>
                 </div>
             </div>
         </div>
@@ -149,6 +169,7 @@ const curentRoutePath = computed(() => useRoute().path)
 
 .v-app-nav {
     position: fixed;
+    z-index: 100;
     top: 0;
     left: 0;
     width: 100%;
@@ -164,10 +185,20 @@ const curentRoutePath = computed(() => useRoute().path)
     }
 }
 
+.v-app-nav__logo {
+    > img {
+        display: block;
+        height: calc(var(--fp-app-nav-height) - 1rem);
+    }
+}
+
 .v-app-nav__menu-toggle {
-    position: fixed;
-    top: 0;
-    right: 0;
+    display: block;
+    position: absolute;
+    right: var(--fp-gutter);
+    top: 50%;
+    transform: translateY(-50%);
+    height: var(--fp-app-nav-height);
 }
 
 .v-app-nav__nav {
@@ -184,8 +215,6 @@ const curentRoutePath = computed(() => useRoute().path)
 }
 
 .v-app-nav__nav__content {
-    display: flex;
-    justify-content: center;
     box-sizing: border-box;
     padding-bottom: 25vh;
 }
@@ -195,8 +224,12 @@ const curentRoutePath = computed(() => useRoute().path)
   text-decoration: inherit;
 
   &.is-active {
-    color: red;
+    color: var(--color-main);
   }
+}
+
+.v-app-nav__building-space {
+    margin-top: 1rem;
 }
 
 </style>

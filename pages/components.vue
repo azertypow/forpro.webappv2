@@ -1,5 +1,5 @@
 <template>
-    <main class="v-components fp-grid-with-gutter" >
+    <main class="v-components fp-page" >
 
         <page-header
             page-title="ForPro Design System"
@@ -22,7 +22,16 @@
 
         <h3>Image</h3>
         <hr>
-        <image-content></image-content>
+        <p>fixed-scroll = false</p>
+        <image-content
+            src="https://api.for-pro.ch/media/pages/introduction/894c00ffdd-1660739330/forpro-22-07-chantier-03-1280x.jpg">
+        </image-content>
+
+        <p>fixed-scroll = true</p>
+        <image-content
+            fixed-scroll="true"
+            src="https://api.for-pro.ch/media/pages/introduction/894c00ffdd-1660739330/forpro-22-07-chantier-03-1280x.jpg">
+        </image-content>
 
         <h3>Page header without&nbsp;image</h3>
         <hr>
@@ -34,21 +43,32 @@
         <hr>
         <page-header
                 page-title="page title"
-                background-image="https://images.unsplash.com/photo-1507537509458-b8312d35a233?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+                background-image="https://api.for-pro.ch/media/pages/fondation-forpro/5a5fcd1775-1658758079/forpro-07-learningcenter-1280x.jpg"
         ></page-header>
 
 
         <h3>Text content</h3>
         <hr>
-        <text-content></text-content>
+        <div
+            class="fp-grid-coll-container fp-grid-coll-container--center">
+            <div
+            class="fp-grid-with-gutter">
+                <text-content></text-content>
+            </div>
+        </div>
 
         <h3>Text intro</h3>
         <hr>
         <text-intro></text-intro>
 
-
+        <h3>Plan</h3>
+        <hr>
         <space-building></space-building>
 
+
+        <h3>Plan navigation</h3>
+        <hr>
+        <space-building-nav></space-building-nav>
 
     </main>
 </template>

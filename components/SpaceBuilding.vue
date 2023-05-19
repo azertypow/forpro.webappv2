@@ -1,7 +1,7 @@
 <template>
     <section class="v-space-building">
 
-        <h2 class="v-space-building__title fp-grid-with-gutter">Titre Section le&nbsp;Lieu</h2>
+        <h2 class="v-space-building__title">Titre Section le&nbsp;Lieu</h2>
 
         <div
                 class="v-space-building__section-name"
@@ -17,7 +17,7 @@
 
 
         <div
-                class="v-space-building__plan fp-grid-with-gutter"
+                class="v-space-building__plan"
         >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1199.99985 478.04765">
                 <g style="isolation: isolate;">
@@ -720,7 +720,7 @@
         </div>
 
         <div
-                class="v-space-building__section-description fp-grid-with-gutter"
+                class="v-space-building__section-description"
         >
             <p>Au service des apprenti∙e∙s, avant, pendant et après l’apprentissage, le LearningLab sera un espace où
                 apprentissages et travail se mélangent à d’autres aspects de la vie en collectif et où l’humain est au

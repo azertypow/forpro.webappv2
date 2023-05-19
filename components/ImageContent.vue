@@ -1,8 +1,22 @@
 <template>
-    <section class="v-image-content" >
+    <section
+        class="v-image-content"
+        :class="{
+            'has-fixed-effect': fixedScroll,
+        }"
+    >
+        <div
+            class="v-image-content__fixed-effect"
+            v-if="fixedScroll"
+            :style="{
+                backgroundImage: `url(${src})`,
+            }"
+        ></div>
         <img
+            v-else
+            class="v-image-content__img"
                 alt="lorem ipsum image"
-                src="https://images.unsplash.com/photo-1682685797366-715d29e33f9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"
+                :src="src"
         >
     </section>
 </template>
@@ -12,8 +26,17 @@
 
 
 <script lang="ts" setup>
-// defineProps<{
-// }>()
+defineProps({
+    src: {
+        type: String,
+        required: true,
+    },
+    fixedScroll: {
+        type: Boolean,
+        required: false,
+        default: false,
+    },
+})
 
 </script>
 
@@ -23,10 +46,20 @@
 
 <style lang="scss" scoped >
 .v-image-content {
+    position: relative;
 }
 
-img {
+.v-image-content__img {
+    position: relative;
     display: block;
     width: 100%;
+}
+
+.v-image-content__fixed-effect {
+    width: 100%;
+    height: calc(100vh - var(--fp-app-nav-height) - var(--fp-app-bottom-height) );
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 </style>

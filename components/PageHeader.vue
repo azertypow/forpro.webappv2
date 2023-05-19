@@ -2,14 +2,14 @@
   <header
           class="v-page-header fp-remove-margin-child"
           :class="{
-      'with-background-image': backgroundImage
+            'with-background-image': backgroundImage
           }"
           :style="{
       backgroundImage: `url(${backgroundImage})` || ''
           }"
   >
       <div class="fp-grid-with-gutter">
-        <h1>{{pageTitle}}</h1>
+        <h1 class="v-page-header__title" >{{pageTitle}}</h1>
       </div>
   </header>
 </template>
@@ -44,6 +44,11 @@ defineProps({
     background-position: center;
     background-size: cover;
   }
+}
+
+.v-page-header__title {
+  text-align: center;
+  color: inherit;
 }
 
 </style>

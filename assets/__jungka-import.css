@@ -13,7 +13,7 @@
 
 @font-face {
 	font-family: 'Jungka-Regular';
-	src: url('fonts/ /Jungka-Regular.woff') format('woff'),
+	src: url('fonts/Jungka-Regular.woff') format('woff'),
 		 url('fonts/Jungka_Webfonts/Jungka-Regular.woff2') format('woff2');
 	font-weight: 400;
 	font-style: normal;

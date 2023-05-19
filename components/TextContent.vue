@@ -32,6 +32,7 @@
 
 
 <script lang="ts" setup>
+// todo: ce composent doit accépter que des élément à partir de h3 depuis l'admin du site
 // defineProps<{
 // }>()
 
@@ -43,5 +44,6 @@
 
 <style lang="scss" scoped >
 .v-text-content {
+    max-width: 35rem;
 }
 </style>

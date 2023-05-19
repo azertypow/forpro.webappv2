@@ -4,9 +4,16 @@
   --fp-gutter: .5rem;
 
   --fp-color-white: #fff;
-  --fp-color-black: #000;
+  --fp-color-black:         hsl(300, 58%, 5%);
   --fp-color-grey: #cbcbcb;
   --fp-color-grey-dark: #6c6c6c;
+
+  --color-main:             hsl(300, 100%, 50%);
+  --color-main--dark:       hsl(300, 100%, 15%);
+  --color-secondary:        hsl(219, 100%, 50%);
+  --color-secondary--dark:  hsl(219, 100%, 25%);
+  --color-ternary:          hsl(58, 100%, 50%);
+  --color-ternary--dark:    hsl(58, 20%, 35%);
 
   --fp-app-nav-height: 2rem;
 

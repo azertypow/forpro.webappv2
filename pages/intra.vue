@@ -1,5 +1,5 @@
 <template>
-    <main class="v-intra" >
+    <main class="v-intra fp-page" >
         <ul>
             <li>
                 resource design

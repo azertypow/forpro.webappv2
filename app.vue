@@ -7,10 +7,15 @@
     >
         <AppNav/>
         <NuxtPage/>
+
+        <div
+            class="v-app__building-nav">
+            <space-building-nav/>
+        </div>
+
         <bottom-bar
-        >
-            newsletter
-        </bottom-bar>
+            text="Newsletter"
+        />
     </div>
 
 </template>
@@ -31,6 +36,12 @@
         color: var(--fp-color-white);
         background-color: var(--fp-color-black);
     }
+}
+.v-app__building-nav {
+    position: fixed;
+    width: 10rem;
+    right: var(--fp-gutter);
+    bottom: var(--fp-gutter);
 }
 </style>
 
