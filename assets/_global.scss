@@ -1,0 +1,21 @@
+html {
+  font-size: var(--fp-type-unit);
+}
+
+body {
+  font-family: 'Jungka-Regular', sans-serif;
+  font-size: .8rem;
+  line-height: 1rem;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+.fp-remove-margin-child {
+  > *:first-child {
+    margin-top: 0;
+  }
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,129 @@
+.fp-heading-h1 {
+  margin: 0;
+  line-height: 5rem;
+  font-size: 5rem;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+}
+h1,
+.fp-heading-h1--with-margin {
+  @extend .fp-heading-h1;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+
+  & + & {
+    margin-top: 3rem;
+  }
+}
+
+
+.fp-heading-h2 {
+  margin: 0;
+  line-height: 4rem;
+  font-size: 3.75rem;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+}
+h2,
+.fp-heading-h2--with-margin {
+  @extend .fp-heading-h2;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+
+  & + & {
+    margin-top: 2rem;
+  }
+}
+
+
+
+.fp-heading-h3 {
+  margin: 0;
+  line-height: 3rem;
+  font-size: 2.75rem;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+}
+h3,
+.fp-heading-h3--with-margin {
+  @extend .fp-heading-h3;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+
+  & + & {
+    margin-top: 1rem;
+  }
+}
+
+
+
+.fp-heading-h4 {
+  margin: 0;
+  line-height: 2rem;
+  font-size: 1.75rem;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+}
+h4,
+.fp-heading-h4--with-margin {
+  @extend .fp-heading-h4;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+
+  & + & {
+    margin-top: 1rem;
+  }
+}
+
+
+
+.fp-heading-h5,
+.fp-text-reg {
+  margin: 0;
+  line-height: 1rem;
+  font-size: 0.75rem;
+}
+.fp-heading-h5 {
+  letter-spacing: -0.01em;
+  font-weight: 700;
+}
+h5,
+.fp-heading-h5--with-margin {
+  @extend .fp-heading-h5;
+  margin-top: 1rem;
+  margin-bottom: 0;
+
+  & + & {
+    margin-top: 1rem;
+  }
+}
+.fp-text-reg {
+  letter-spacing: 0;
+  font-weight: 400;
+}
+p,
+.fp-text-reg--with-margin {
+  @extend .fp-text-reg;
+  margin-top: 0;
+  margin-bottom: 1rem;
+
+  & + & {
+    margin-top: 1rem;
+  }
+}
+
+
+
+.fp-text-small {
+  margin: 0;
+  line-height: 1rem;
+  font-size: 0.6rem;
+  letter-spacing: -0.01em;
+  font-weight: 400;
+}
+h6,
+.fp-text-small--with-margin {
+  @extend .fp-text-small;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
