@@ -4,7 +4,8 @@
   margin: 0;
   letter-spacing: -0.01em;
   font-weight: 700;
-  color: var(--color-main);
+  max-width: 9em;
+
   //
   line-height: 3rem;
   font-size: 3rem;
@@ -39,6 +40,7 @@ h1,
   margin: 0;
   letter-spacing: -0.01em;
   font-weight: 700;
+  max-width: 12em;
 
   //
   line-height:  2.5rem;
@@ -76,6 +78,7 @@ h2,
   margin: 0;
   letter-spacing: -0.01em;
   font-weight: 700;
+  max-width: 12em;
 
   //
   line-height:  2rem;
@@ -113,6 +116,7 @@ h3,
   margin: 0;
   letter-spacing: -0.01em;
   font-weight: 700;
+  max-width: 15em;
 
   //
   line-height:  1.5rem;
@@ -160,7 +164,7 @@ h4,
 .fp-heading-h5 {
   letter-spacing: -0.01em;
   font-weight: 700;
-  color: var(--color-secondary);
+  max-width: 30em;
 }
 h5,
 .fp-heading-h5--with-margin {
@@ -175,6 +179,7 @@ h5,
 .fp-text-reg {
   letter-spacing: 0;
   font-weight: 400;
+  max-width: 45em;
 }
 p,
 .fp-text-reg--with-margin {

@@ -46,4 +46,12 @@
 .v-text-content {
     max-width: 35rem;
 }
+
+h1 {
+    color: var(--color-main);
+}
+
+h5 {
+    color: var(--color-secondary);
+}
 </style>
