@@ -1,18 +1,19 @@
 <template>
-    <section class="v-bottom-bar fp-grid-with-gutter" >
+    <section class="v-newsletter-bar" >
         <input
-            class="v-bottom-bar__content fp-heading-h4"
+            class="v-newsletter-bar__content fp-heading-h4 fp-text--without-margin fp-text--without-max-width"
             :placeholder="text"
             v-model="mail"
         >
         <button
-            class="v-app-bottom-bar__right-button"
+            class="v-newsletter-bar__right-button"
             v-if="mail.length > 0"
-        >send</button>
+        >envoyer</button>
         <button
-            class="v-app-bottom-bar__right-button"
+            class="v-newsletter-bar__right-button"
             v-else
-        >close</button>
+            @click="$emit('onCloseNewsletterBar')"
+        >fermer</button>
     </section>
 </template>
 
@@ -24,6 +25,9 @@
 
 let mail = ref('')
 
+defineEmits({
+    onCloseNewsletterBar(){},
+})
 
 defineProps({
     text: {
@@ -41,32 +45,29 @@ defineProps({
 
 
 <style lang="scss" scoped >
-.v-bottom-bar {
-    position: fixed;
-    z-index: 100;
-    bottom: 0;
+.v-newsletter-bar {
+    position: relative;
     width: 100%;
     height: calc(var(--fp-app-bottom-height));
     background-color: var(--fp-color-black);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     flex-wrap: nowrap;
     color: var(--fp-color-white);
 }
 
-.v-bottom-bar__content {
-    width: calc( 100% - 3rem);
+.v-newsletter-bar__content {
+    width: 100%;
     box-sizing: border-box;
-    padding: 0;
+    padding: 0 var(--fp-gutter) 0 0;
     display: block;
     border: none;
 }
 
-.v-app-bottom-bar__right-button {
+.v-newsletter-bar__right-button {
     display: block;
-    position: absolute;
-    right: var(--fp-gutter);
+    right: 0;
     top: 50%;
     transform: translateY(-50%);
     height: var(--fp-app-bottom-height);

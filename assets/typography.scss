@@ -1,7 +1,7 @@
 @import "_scss-pramas";
 
+h1,
 .fp-heading-h1 {
-  margin: 0;
   letter-spacing: -0.01em;
   font-weight: 700;
   max-width: 9em;
@@ -9,15 +9,6 @@
   //
   line-height: 3rem;
   font-size: 3rem;
-
-  @media (min-width: $fp-breakpoint-sm) {
-    line-height: 5rem;
-    font-size: 5rem;
-  }
-}
-h1,
-.fp-heading-h1--with-margin {
-  @extend .fp-heading-h1;
   margin-top: 3rem;
   margin-bottom: 1.5rem;
 
@@ -26,6 +17,8 @@ h1,
   }
 
   @media (min-width: $fp-breakpoint-sm) {
+    line-height: 5rem;
+    font-size: 5rem;
     margin-top: 5rem;
     margin-bottom: 3rem;
 
@@ -36,8 +29,8 @@ h1,
 }
 
 
+h2,
 .fp-heading-h2 {
-  margin: 0;
   letter-spacing: -0.01em;
   font-weight: 700;
   max-width: 12em;
@@ -45,15 +38,6 @@ h1,
   //
   line-height:  2.5rem;
   font-size:    2.15rem;
-
-  @media (min-width: $fp-breakpoint-sm) {
-    line-height:  4rem;
-    font-size:    3.75rem;
-  }
-}
-h2,
-.fp-heading-h2--with-margin {
-  @extend .fp-heading-h2;
   margin-top: 2.5rem;
   margin-bottom: 1rem;
 
@@ -62,6 +46,8 @@ h2,
   }
 
   @media (min-width: $fp-breakpoint-sm) {
+    line-height:  4rem;
+    font-size:    3.75rem;
     margin-top: 4rem;
     margin-bottom: 2rem;
 
@@ -74,8 +60,8 @@ h2,
 
 
 
+h3,
 .fp-heading-h3 {
-  margin: 0;
   letter-spacing: -0.01em;
   font-weight: 700;
   max-width: 12em;
@@ -83,15 +69,6 @@ h2,
   //
   line-height:  2rem;
   font-size:    1.65rem;
-
-  @media (min-width: $fp-breakpoint-sm) {
-    line-height: 3rem;
-    font-size: 2.75rem;
-  }
-}
-h3,
-.fp-heading-h3--with-margin {
-  @extend .fp-heading-h3;
   margin-top: 3rem;
   margin-bottom: 1rem;
 
@@ -100,6 +77,8 @@ h3,
   }
 
   @media (min-width: $fp-breakpoint-sm) {
+    line-height: 3rem;
+    font-size: 2.75rem;
     margin-top: 3rem;
     margin-bottom: 1rem;
 
@@ -112,8 +91,8 @@ h3,
 
 
 
+h4,
 .fp-heading-h4 {
-  margin: 0;
   letter-spacing: -0.01em;
   font-weight: 700;
   max-width: 15em;
@@ -121,15 +100,6 @@ h3,
   //
   line-height:  1.5rem;
   font-size:    1.25rem;
-
-  @media (min-width: $fp-breakpoint-sm) {
-    line-height: 2rem;
-    font-size: 1.75rem;
-  }
-}
-h4,
-.fp-heading-h4--with-margin {
-  @extend .fp-heading-h4;
   margin-top: 1rem;
   margin-bottom: .5rem;
 
@@ -138,12 +108,13 @@ h4,
   }
 
   h3 + &,
-  .fp-heading-h3 + &,
-  .fp-heading-h3--with-margin + & {
+  .fp-heading-h3 + & {
     margin-top: -.5rem;
   }
 
   @media (min-width: $fp-breakpoint-sm) {
+    line-height: 2rem;
+    font-size: 1.75rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
 
@@ -155,20 +126,13 @@ h4,
 
 
 
-.fp-heading-h5,
-.fp-text-reg {
-  margin: 0;
+h5,
+.fp-heading-h5--with-margin {
   line-height: 1rem;
   font-size: 0.75rem;
-}
-.fp-heading-h5 {
   letter-spacing: -0.01em;
   font-weight: 700;
   max-width: 30em;
-}
-h5,
-.fp-heading-h5--with-margin {
-  @extend .fp-heading-h5;
   margin-top: 1rem;
   margin-bottom: 0;
 
@@ -176,14 +140,16 @@ h5,
     margin-top: 1rem;
   }
 }
-.fp-text-reg {
+
+
+
+p,
+.fp-text-reg--with-margin {
+  line-height: 1rem;
+  font-size: 0.75rem;
   letter-spacing: 0;
   font-weight: 400;
   max-width: 45em;
-}
-p,
-.fp-text-reg--with-margin {
-  @extend .fp-text-reg;
   margin-top: 0;
   margin-bottom: 1rem;
 
@@ -194,16 +160,12 @@ p,
 
 
 
-.fp-text-small {
-  margin: 0;
+h6,
+.fp-text-small--with-margin {
   line-height: 1rem;
   font-size: 0.6rem;
   letter-spacing: -0.01em;
   font-weight: 400;
-}
-h6,
-.fp-text-small--with-margin {
-  @extend .fp-text-small;
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
@@ -215,4 +177,14 @@ hr {
   background: var(--fp-color-grey);
   display: block;
   margin-bottom: 3rem;
+}
+
+.fp-text--without-margin {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+.fp-text--without-max-width {
+  max-width: none;
 }

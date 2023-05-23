@@ -5,7 +5,10 @@
                 'v-app--is-dark': useAppStateStore().appIsDark
             }"
     >
-        <AppNav/>
+        <div
+            class="v-app__nav">
+            <AppNav/>
+        </div>
         <NuxtPage/>
 
         <div
@@ -13,9 +16,14 @@
             <space-building-nav/>
         </div>
 
-        <bottom-bar
-            text="Newsletter"
-        />
+        <div
+            v-if="useAppStateStore().fixedBottomBar"
+            class="v-app__bottom">
+            <bottom-bar
+                text="Newsletter"
+                @on-close-newsletter-bar="() => useAppStateStore().fixedBottomBar = false"
+            />
+        </div>
     </div>
 
 </template>
@@ -37,6 +45,23 @@
         background-color: var(--fp-color-black);
     }
 }
+
+.v-app__nav {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.v-app__bottom {
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
 .v-app__building-nav {
     position: fixed;
     width: 10rem;

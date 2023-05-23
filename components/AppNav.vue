@@ -3,7 +3,7 @@
       <nuxt-link
           href="/"
           class="v-app-nav__logo"
-      ><img src="../assets/images/logo.svg"></nuxt-link>
+      ><img src="../assets/images/logo.svg" alt="logo"></nuxt-link>
       <button
               class="v-app-nav__menu-toggle"
               @click="useAppStateStore().toggleNav()"
@@ -21,7 +21,7 @@
                 class="fp-grid-coll-container">
                 <div
                     class="fp-grid-coll-12-24 fp-grid-with-gutter">
-                    <div class="fp-heading-h3--with-margin">
+                    <div class="fp-heading-h3">
                         <nuxt-link
                             class="v-app-nav__link"
                             href="/fondation"
@@ -31,7 +31,7 @@
                         >Fondation ForPro
                         </nuxt-link>
                     </div>
-                    <div class="fp-heading-h3--with-margin">
+                    <div class="fp-heading-h3">
                         <nuxt-link
                             class="v-app-nav__link"
                             href="/partenaires"
@@ -41,7 +41,7 @@
                         >Partenaires
                         </nuxt-link>
                     </div>
-                    <div class="fp-heading-h3--with-margin">
+                    <div class="fp-heading-h3">
                         <nuxt-link
                             class="v-app-nav__link"
                             href="/faq"
@@ -51,7 +51,7 @@
                         >F.A.Q.
                         </nuxt-link>
                     </div>
-                    <div class="fp-heading-h3--with-margin">
+                    <div class="fp-heading-h3">
                         <nuxt-link
                             class="v-app-nav__link"
                             href="/blog"
@@ -63,7 +63,7 @@
                     </div>
                     <div
                         style="color: var(--fp-color-grey)"
-                        class="fp-heading-h3--with-margin">
+                        class="fp-heading-h3">
                         <nuxt-link
                             class="v-app-nav__link"
                             href="/intra"
@@ -76,7 +76,7 @@
                 </div>
                 <div
                     class="fp-grid-coll-12-24 fp-grid-with-gutter">
-                    <div class="fp-heading-h3--with-margin">
+                    <div class="fp-heading-h3">
                         <nuxt-link
                             class="v-app-nav__link"
                             href="/lieu"
@@ -86,7 +86,7 @@
                         >Le lieu
                         </nuxt-link>
                     </div>
-                    <div class="fp-heading-h4--with-margin">
+                    <div class="fp-heading-h4">
                         <nuxt-link
                             class="v-app-nav__link"
                             href="/lieu/accueil"
@@ -96,7 +96,7 @@
                         >Accueil
                         </nuxt-link>
                     </div>
-                    <div class="fp-heading-h4--with-margin">
+                    <div class="fp-heading-h4">
                         <nuxt-link
                             class="v-app-nav__link"
                             href="/lieu/artlab"
@@ -106,7 +106,7 @@
                         >ArtLab
                         </nuxt-link>
                     </div>
-                    <div class="fp-heading-h4--with-margin">
+                    <div class="fp-heading-h4">
                         <nuxt-link
                             class="v-app-nav__link"
                             href="/lieu/entreprises"
@@ -116,7 +116,7 @@
                         >Entreprises
                         </nuxt-link>
                     </div>
-                    <div class="fp-heading-h4--with-margin">
+                    <div class="fp-heading-h4">
                         <nuxt-link
                             class="v-app-nav__link"
                             href="/lieu/foodlab"
@@ -126,7 +126,7 @@
                         >FoodLab
                         </nuxt-link>
                     </div>
-                    <div class="fp-heading-h4--with-margin">
+                    <div class="fp-heading-h4">
                         <nuxt-link
                             class="v-app-nav__link"
                             href="/lieu/learninglab"
@@ -136,7 +136,7 @@
                         >LearningLab
                         </nuxt-link>
                     </div>
-                    <div class="fp-heading-h4--with-margin">
+                    <div class="fp-heading-h4">
                         <nuxt-link
                             class="v-app-nav__link"
                             href="/lieu/makerlab"
@@ -168,10 +168,7 @@ const curentRoutePath = computed(() => useRoute().path)
 
 
 .v-app-nav {
-    position: fixed;
-    z-index: 100;
-    top: 0;
-    left: 0;
+    position: relative;
     width: 100%;
     box-sizing: border-box;
     height: var(--fp-app-nav-height);

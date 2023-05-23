@@ -20,6 +20,14 @@
         <h2>Components</h2>
         <hr>
 
+        <h3>Navigation</h3>
+        <hr>
+        <AppNav></AppNav>
+
+        <h3>Barre Newsletter</h3>
+        <hr>
+        <bar-newsletter text="Newsletter sample"/>
+
         <h3>Image</h3>
         <hr>
         <p>fixed-scroll = false</p>
@@ -61,6 +69,17 @@
         <hr>
         <text-intro></text-intro>
 
+        <h3>Text citation</h3>
+        <hr>
+        <text-quote></text-quote>
+
+        <h3>Block F.A.Q.</h3>
+        <hr>
+        <block-f-a-q
+            href="/faq#coucou">
+        </block-f-a-q>
+
+
         <h3>Plan</h3>
         <hr>
         <space-building></space-building>
@@ -78,6 +97,8 @@
 
 
 <script lang="ts" setup>
+import BarNewsletter from "~/components/BarNewsletter.vue";
+
 defineProps<{
 }>()
 
