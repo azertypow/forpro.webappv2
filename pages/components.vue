@@ -71,7 +71,9 @@
 
         <h3>Text citation</h3>
         <hr>
-        <text-quote></text-quote>
+        <text-quote
+            text="A amet aut, dicta distinctio dolores eaque eos ex exercitationem in minus officiis placeat quo quos voluptatibus voluptatum! Illo illum minima quas."
+        />
 
         <h3>Block F.A.Q.</h3>
         <hr>

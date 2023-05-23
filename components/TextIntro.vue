@@ -21,9 +21,11 @@
 <style lang="scss" scoped >
 @import "assets/typography";
 .v-text-intro {
-
+    text-align: center;
     > p {
         @extend .fp-heading-h4;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 

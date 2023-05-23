@@ -18,9 +18,9 @@
             class="v-app-nav__nav__content"
         >
             <div
-                class="fp-grid-coll-container">
+                class="v-app-nav__nav__content__container">
                 <div
-                    class="fp-grid-coll-12-24 fp-grid-with-gutter">
+                    class="v-app-nav__nav__content__container__coll">
                     <div class="fp-heading-h3">
                         <nuxt-link
                             class="v-app-nav__link"
@@ -75,7 +75,7 @@
                     </div>
                 </div>
                 <div
-                    class="fp-grid-coll-12-24 fp-grid-with-gutter">
+                    class="v-app-nav__nav__content__container__coll">
                     <div class="fp-heading-h3">
                         <nuxt-link
                             class="v-app-nav__link"
@@ -205,9 +205,26 @@ const curentRoutePath = computed(() => useRoute().path)
     width: 100%;
     background-color: var(--fp-color-white);
     overflow: auto;
+    container-type: inline-size;
 
     .v-app--is-dark & {
         background-color: var(--fp-color-black);
+    }
+
+    .v-app-nav__nav__content__container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        flex-wrap: nowrap;
+
+        > * {
+            width: 100%;
+        }
+
+        @container (min-width: 900px) {
+            flex-direction: row;
+            gap: calc(var(--fp-gutter) * 2);
+        }
     }
 }
 
