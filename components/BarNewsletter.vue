@@ -1,10 +1,13 @@
 <template>
     <section class="v-newsletter-bar" >
-        <input
-            class="v-newsletter-bar__content fp-heading-h4 fp-text--without-margin fp-text--without-max-width"
-            :placeholder="text"
-            v-model="mail"
-        >
+        <div
+            class="v-newsletter-bar__content">
+            <input
+                class="v-newsletter-bar__content__input fp-heading-h4 fp-text--without-margin fp-text--without-max-width"
+                :placeholder="text"
+                v-model="mail"
+            >
+        </div>
         <button
             class="v-newsletter-bar__right-button"
             v-if="mail.length > 0"
@@ -55,21 +58,26 @@ defineProps({
     justify-content: center;
     flex-wrap: nowrap;
     color: var(--fp-color-white);
+    align-items: center;
 }
 
 .v-newsletter-bar__content {
     width: 100%;
     box-sizing: border-box;
-    padding: 0 var(--fp-gutter) 0 0;
+    padding-right: var(--fp-gutter);
+    padding-left: var(--fp-gutter);
+}
+
+.v-newsletter-bar__content__input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
     display: block;
     border: none;
 }
 
 .v-newsletter-bar__right-button {
     display: block;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
     height: var(--fp-app-bottom-height);
 }
 

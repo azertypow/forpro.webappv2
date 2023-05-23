@@ -19,7 +19,7 @@
         <div
             v-if="useAppStateStore().fixedBottomBar"
             class="v-app__bottom">
-            <bottom-bar
+            <bar-newsletter
                 text="Newsletter"
                 @on-close-newsletter-bar="() => useAppStateStore().fixedBottomBar = false"
             />
