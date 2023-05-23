@@ -7,7 +7,7 @@
             }"
     >
         <div
-            class="v-app__nav">
+            class="v-app__nav fp-grid-with-gutter">
             <AppNav/>
         </div>
         <NuxtPage/>
