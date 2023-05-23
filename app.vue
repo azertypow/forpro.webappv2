@@ -2,7 +2,8 @@
     <div
             class="v-app"
             :class="{
-                'v-app--is-dark': useAppStateStore().appIsDark
+                'v-app--is-dark': useAppStateStore().appIsDark,
+                'v-app--has-fixed-bottom-bar': useAppStateStore().fixedBottomBar
             }"
     >
         <div
@@ -67,6 +68,10 @@
     width: 10rem;
     right: var(--fp-gutter);
     bottom: var(--fp-gutter);
+
+    .v-app--has-fixed-bottom-bar & {
+        bottom: calc( var(--fp-app-bottom-height) + var(--fp-gutter) );
+    }
 }
 </style>
 

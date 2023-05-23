@@ -10,6 +10,9 @@ export const useAppStateStore = defineStore('appState', {
     actions: {
         toggleNav() {
             this.navIsOpen = !this.navIsOpen
+
+            if(this.navIsOpen) document.body.classList.add('nav-is-open')
+            else document.body.classList.remove('nav-is-open')
         },
     },
 })

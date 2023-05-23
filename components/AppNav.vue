@@ -1,5 +1,5 @@
 <template>
-  <header class="v-app-nav fp-grid-with-gutter" >
+  <header class="v-app-nav" >
       <nuxt-link
           href="/"
           class="v-app-nav__logo"
@@ -12,7 +12,7 @@
       </button>
     <nav
             v-if="useAppStateStore().navIsOpen"
-            class="v-app-nav__nav fp-grid-with-gutter"
+            class="v-app-nav__nav"
     >
         <div
             class="v-app-nav__nav__content"
@@ -192,7 +192,7 @@ const curentRoutePath = computed(() => useRoute().path)
 .v-app-nav__menu-toggle {
     display: block;
     position: absolute;
-    right: var(--fp-gutter);
+    right: 0;
     top: 50%;
     transform: translateY(-50%);
     height: var(--fp-app-nav-height);
