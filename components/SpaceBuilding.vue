@@ -749,7 +749,9 @@ svg {
 }
 
 .v-space-building__title {
-  text-align: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .v-space-building__section-name {
