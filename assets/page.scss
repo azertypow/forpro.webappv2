@@ -1,3 +1,16 @@
 .fp-page {
 
+  .fp-page__sections {
+    padding-top:    var(--fp-section-margin);
+    padding-bottom: var(--fp-section-margin);
+
+    > *:first-child {
+      margin-top: 0;
+    }
+
+    > *:last-child {
+      margin-bottom: 0;
+    }
+  }
+
 }

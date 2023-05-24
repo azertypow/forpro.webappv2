@@ -32,12 +32,16 @@ defineProps({
 <style lang="scss" scoped>
 
 .v-page-header {
-  background: var(--fp-color-white);
   height: 10rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background: var(--fp-color-white);
+
+  .v-app--is-dark & {
+    background: var(--fp-color-black);
+  }
 
   &.with-background-image {
     height: calc(100vh - var(--fp-app-nav-height) );

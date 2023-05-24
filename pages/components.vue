@@ -59,11 +59,41 @@
         <hr>
         <div
             class="fp-grid-coll-container fp-grid-coll-container--center">
-            <div
-            class="fp-grid-with-gutter">
-                <text-content></text-content>
-            </div>
+            <text-content>
+                <h3>Dolor sit amet h3</h3>
+                <p>Consectetur adipisicing elit. Cumque, eos ipsum itaque nihil nulla tempora! Ad dolor doloremque labore laborum magnam nam, praesentium, quia quibusdam, rem sapiente vero voluptate voluptatibus.</p>
+                <p>Accusamus aliquam autem cupiditate dicta dignissimos eaque excepturi illo inventore itaque natus neque nihil, nulla officia provident quaerat reiciendis similique vitae voluptatem.</p>
+                <p>Aliquam assumenda consequatur, dolorem eaque, expedita, illo impedit maiores nobis nostrum nulla quam saepe voluptates. Asperiores deserunt esse perspiciatis porro repellendus rerum.</p>
+
+                <h4>Dolor sit amet h4</h4>
+                <p>Ab aspernatur beatae explicabo provident, quia tempora vitae voluptatem? Accusamus ad aperiam consequuntur culpa, ipsum maxime, molestiae nisi, possimus provident repellat voluptate?</p>
+                <p>Accusamus accusantium blanditiis debitis dolore iusto laboriosam nihil nostrum nulla numquam, placeat possimus reprehenderit, repudiandae soluta voluptate voluptatem. Amet distinctio facere quia.</p>
+
+                <h3>Consectetur adipisicing elit h3</h3>
+                <h4>A accusamus consectetur cumque dolores, dolorum ducimus eaque h4</h4>
+                <p>Consectetur adipisicing elit. Cumque, eos ipsum itaque nihil nulla tempora! Ad dolor doloremque labore laborum magnam nam, praesentium, quia quibusdam, rem sapiente vero voluptate voluptatibus.</p>
+                <p>Accusamus aliquam autem cupiditate dicta dignissimos eaque excepturi illo inventore itaque natus neque nihil, nulla officia provident quaerat reiciendis similique vitae voluptatem.</p>
+                <p>Aliquam assumenda consequatur, dolorem eaque, expedita, illo impedit maiores nobis nostrum nulla quam saepe voluptates. Asperiores deserunt esse perspiciatis porro repellendus rerum.</p>
+
+                <h5>Dolor sit amet h5</h5>
+                <p>Ab aspernatur beatae explicabo provident, quia tempora vitae voluptatem? Accusamus ad aperiam consequuntur culpa, ipsum maxime, molestiae nisi, possimus provident repellat voluptate?</p>
+                <p>Accusamus accusantium blanditiis debitis dolore iusto laboriosam nihil nostrum nulla numquam, placeat possimus reprehenderit, repudiandae soluta voluptate voluptatem. Amet distinctio facere quia.</p>
+
+                <h4>Consectetur adipisicing elit h4</h4>
+                <h5>A accusamus consectetur cumque dolores, dolorum ducimus eaque h5</h5>
+                <p>Consectetur adipisicing elit. Cumque, eos ipsum itaque nihil nulla tempora! Ad dolor doloremque labore laborum magnam nam, praesentium, quia quibusdam, rem sapiente vero voluptate voluptatibus.</p>
+                <p>Accusamus aliquam autem cupiditate dicta dignissimos eaque excepturi illo inventore itaque natus neque nihil, nulla officia provident quaerat reiciendis similique vitae voluptatem.</p>
+                <p>Aliquam assumenda consequatur, dolorem eaque, expedita, illo impedit maiores nobis nostrum nulla quam saepe voluptates. Asperiores deserunt esse perspiciatis porro repellendus rerum.</p>
+            </text-content>
         </div>
+
+        <h3>Text Bullet point</h3>
+        <hr>
+        <text-bullet-point>
+            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate distinctio, error illum impedit ipsam laboriosam magni minus nulla obcaecati qui quisquam rem vitae voluptas! Atque cupiditate debitis facilis itaque veritatis.</div>
+            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eius explicabo officiis quos. Deleniti quisquam, voluptates. Animi ducimus eaque esse, explicabo ipsam modi molestias nesciunt quam quasi, tempore voluptate voluptates.</div>
+            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque consequatur molestias nostrum recusandae repudiandae. Ab accusantium corporis esse libero minima molestias soluta sunt tempore. Iure possimus quam vero voluptas voluptatum?</div>
+        </text-bullet-point>
 
         <h3>Text intro</h3>
         <hr>
@@ -78,8 +108,16 @@
         <h3>Block F.A.Q.</h3>
         <hr>
         <block-f-a-q
-            href="/faq#coucou">
+            href="/faq#hello">
         </block-f-a-q>
+
+        <h3>Block F.A.Q.</h3>
+        <hr>
+        <faq-item
+            question="Assumenda corporis distinctio ducimus et eum explicabo, impedit in labore magnam magni maxime minima nihil nobis optio sed similique sint totam voluptate!"
+            response="Amet atque consequuntur debitis distinctio ea excepturi fugit illo laudantium magnam maxime natus nulla, numquam officia perspiciatis placeat quaerat quisquam quo sit?"
+            link="https://www.google.com/search?q=Hello+For-Pro"
+        />
 
 
         <h3>Plan</h3>
@@ -91,6 +129,26 @@
         <hr>
         <space-building-nav></space-building-nav>
 
+
+        <h3>Footer</h3>
+        <hr>
+        <app-footer/>
+
+        <h3>Articles</h3>
+        <hr>
+        <div
+            style="
+                display: flex;
+                background-color: var(--color-secondary);
+                padding-top: var(--fp-section-margin);
+                padding-bottom: var(--fp-section-margin);
+            "
+        >
+            <div style="width: calc(100% / 3)" class="fp-grid-with-gutter" ><article-item>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam officiis, quas quis quod rerum sequi similique suscipit voluptatem! Cumque dolores eos facilis fugit impedit minus pariatur possimus praesentium vel vitae.</article-item></div>
+            <div style="width: calc(100% / 3)" class="fp-grid-with-gutter" ><article-item>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus facere illo illum necessitatibus nostrum quibusdam quisquam velit voluptate. Architecto asperiores exercitationem facere ipsum itaque libero magni molestiae possimus rerum vero.</article-item></div>
+            <div style="width: calc(100% / 3)" class="fp-grid-with-gutter" ><article-item>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus animi assumenda at deserunt eaque eveniet fugiat hic iste labore, necessitatibus officia rem sunt voluptatem voluptatibus. Consectetur earum ipsum natus.</article-item></div>
+        </div>
+
     </main>
 </template>
 
@@ -100,6 +158,7 @@
 
 <script lang="ts" setup>
 import BarNewsletter from "~/components/BarNewsletter.vue";
+import TextBulletPoint from "~/components/TextBulletPoint.vue";
 
 defineProps<{
 }>()

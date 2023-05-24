@@ -13,8 +13,15 @@
         <NuxtPage/>
 
         <div
-            class="v-app__building-nav">
+            class="v-app__building-nav"
+        >
             <space-building-nav/>
+        </div>
+
+        <div
+            class="v-app__footer"
+        >
+            <app-footer/>
         </div>
 
         <div
@@ -39,7 +46,6 @@
     padding-top: var(--fp-app-nav-height);
     color: var(--fp-color-black);
     background-color: var(--fp-color-white);
-    padding-bottom: 50vh;
 
     &.v-app--is-dark {
         color: var(--fp-color-white);
@@ -54,6 +60,10 @@
     left: 0;
     width: 100%;
     background: var(--fp-color-white);
+
+    .v-app--is-dark & {
+        background: var(--fp-color-black);
+    }
 }
 
 .v-app__bottom {
@@ -73,6 +83,12 @@
     .v-app--has-fixed-bottom-bar & {
         bottom: calc( var(--fp-app-bottom-height) + var(--fp-gutter) );
     }
+}
+
+.v-app__footer {
+    margin-top: var(--fp-section-margin);
+    background-color: var(--fp-color-grey-dark);
+    padding-bottom: var(--fp-app-bottom-height);
 }
 </style>
 
