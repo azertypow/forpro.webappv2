@@ -76,7 +76,7 @@
 
 .v-app__building-nav {
     position: fixed;
-    width: 10rem;
+    width: calc( (100% / 24 * 4) - (var(--fp-gutter) * 3 ) );
     right: var(--fp-gutter);
     bottom: var(--fp-gutter);
 
@@ -100,7 +100,7 @@
 import {useAppStateStore} from "~/stores/appState"
 
 useRouter().beforeEach((to, from, next) => {
-    useAppStateStore().navIsOpen = false
+    useAppStateStore().closeNav()
     next()
 })
 

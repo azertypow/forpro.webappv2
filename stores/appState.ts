@@ -8,6 +8,10 @@ export const useAppStateStore = defineStore('appState', {
     }),
 
     actions: {
+        closeNav() {
+            this.navIsOpen = false
+            document.body.classList.remove('nav-is-open')
+        },
         toggleNav() {
             this.navIsOpen = !this.navIsOpen
 

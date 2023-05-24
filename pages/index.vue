@@ -4,11 +4,27 @@
                 background-image="https://api.for-pro.ch/media/pages/fondation-forpro/5a5fcd1775-1658758079/forpro-07-learningcenter-1280x.jpg"
                 page-title="ForPro"
         />
-        <text-quote
-            text="quote"
-        />
 
-        <space-building/>
+        <div
+            class="fp-grid-coll-container fp-grid-coll-container--center"
+        >
+            <div class="fp-grid-coll-16-24">
+                <text-intro
+                >
+                    <p>La fondation ForPro a pour but d’encourager, de soutenir, de valoriser et de promouvoir la formation professionnelle auprès des jeunes, de leur entourage et des entreprises du canton de Genève.</p>
+
+                    <p>Une première étape consiste à imaginer, penser et aménager les espaces qui abriteront les projets et prestations développés par ForPro en fonction des besoins et des usages des publics-cibles, soit tous les acteurs et actrices de&nbsp;la formation professionnelle: les apprenti·e·s, les entreprises, les&nbsp;formateurs·trices ou encore les&nbsp;parents!</p>
+                </text-intro>
+            </div>
+        </div>
+
+        <div
+            class="fp-grid-coll-container fp-grid-coll-container--center"
+        >
+            <div class="fp-grid-coll-16-24">
+                <space-building/>
+            </div>
+        </div>
 
         <section
             style="
