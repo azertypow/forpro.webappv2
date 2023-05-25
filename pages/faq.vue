@@ -82,8 +82,8 @@ onMounted(() => {
     useAppStateStore().appIsDark = isDark
 })
 
-defineProps<{
-}>()
+// defineProps<{
+// }>()
 </script>
 
 

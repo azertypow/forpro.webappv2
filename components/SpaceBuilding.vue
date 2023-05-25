@@ -737,7 +737,7 @@
 
 
 <script lang="ts" setup>
-defineProps<{}>()
+// defineProps<{}>()
 
 </script>
 
@@ -769,11 +769,12 @@ svg {
     width: 100%;
     padding-top: 1rem;
     margin-bottom: -1rem;
+    justify-content: center;
 
   > div {
-    //padding-right: var(--fp-gutter);
+    padding-right: var(--fp-gutter);
     padding-bottom: 1rem;
-    //padding-left: var(--fp-gutter);
+    padding-left: var(--fp-gutter);
     white-space: nowrap;
   }
 }

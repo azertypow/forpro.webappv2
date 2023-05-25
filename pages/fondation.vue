@@ -8,62 +8,92 @@
             class="fp-grid-coll-container fp-grid-coll-container--center"
         >
             <div
-                class="fp-grid-coll-24-24 fp-grid-with-gutter fp-page__sections"
+                class="fp-grid-coll-16-24 fp-grid-with-gutter fp-page__sections"
             >
-                <text-content>
-                    <p>Consectetur adipisicing elit. Cumque, eos ipsum itaque nihil nulla tempora! Ad dolor doloremque
-                        labore laborum magnam nam, praesentium, quia quibusdam, rem sapiente vero voluptate
-                        voluptatibus.</p>
-                    <p>Accusamus aliquam autem cupiditate dicta dignissimos eaque excepturi illo inventore itaque natus
-                        neque nihil, nulla officia provident quaerat reiciendis similique vitae voluptatem.</p>
-                    <p>Aliquam assumenda consequatur, dolorem eaque, expedita, illo impedit maiores nobis nostrum nulla
-                        quam saepe voluptates. Asperiores deserunt esse perspiciatis porro repellendus rerum.</p>
-                </text-content>
+                <text-intro>
+                    <p>La fondation ForPro naît de constats simples: le modèle suisse de formation professionnelle est un « passeport pour l’emploi ». Les perspectives d’employabilité et de développement offertes par la formation professionnelle permettent une carrière riche et en adéquation aux besoins des entreprises et du marché du travail. Cependant, la filière de l’apprentissage (CFC et AFP) fait pâle figure à Genève, où un tiers des jeunes choisissent cette voie contre deux tiers en moyenne suisse. De plus, l’enthousiasme pour l’apprentissage n’est pas toujours de mise pour les jeunes et leur entourage.</p>
+                </text-intro>
             </div>
 
             <div
-                class="fp-grid-coll-24-24 fp-grid-with-gutter fp-page__sections"
+                class="fp-grid-coll-16-24 fp-grid-with-gutter fp-page__sections"
             >
                 <h2>Mission</h2>
+                <p>Le but de la fondation ForPro répond à la nécessité de soutenir, promouvoir et renforcer la filière «formation professionnelle». Il s’agit de contribuer à renforcer le capital humain de demain. Les ambitions sont:</p>
                 <text-bullet-point>
-                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate distinctio, error illum impedit ipsam laboriosam magni minus nulla obcaecati qui quisquam rem vitae voluptas! Atque cupiditate debitis facilis itaque veritatis.</div>
-                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eius explicabo officiis quos. Deleniti quisquam, voluptates. Animi ducimus eaque esse, explicabo ipsam modi molestias nesciunt quam quasi, tempore voluptate voluptates.</div>
-                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque consequatur molestias nostrum recusandae repudiandae. Ab accusantium corporis esse libero minima molestias soluta sunt tempore. Iure possimus quam vero voluptas voluptatum?</div>
+                    <div>Contribuer à faire de la formation professionnelle une voie d’excellence</div>
+                    <div>Accompagner la réussite des parcours individuels de formation professionnelle</div>
+                    <div>Promouvoir le monde de l’entreprise auprès des publics jeunes</div>
+                    <div>Offrir aux entreprises un processus optimisé de recrutement d’apprenti·e·s</div>
+                    <div>Favoriser l’entrepreneuriat des jeunes diplômé·e·s</div>
+                    <div>Sensibiliser les parents aux enjeux et aux opportunités de la formation professionnelle</div>
                 </text-bullet-point>
             </div>
 
             <div
-                class="fp-grid-coll-24-24 fp-grid-with-gutter fp-page__sections"
+                class="fp-grid-coll-16-24 fp-grid-with-gutter fp-page__sections"
             >
                 <h2>Principe</h2>
+                <p>La fondation ForPro réunit des partenaires désirant travailler de manière ouverte, collaborative et itérative. Cela implique que chacun∙e partage une compréhension commune de l’approche résolument orientée sur les futurs utilisateurs et utilisatrices. Concrètement, les offres sont imaginées avec les publics cibles, testées auprès de ces derniers et seront adaptées chemin faisant.</p>
                 <text-bullet-point>
-                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate distinctio, error illum impedit ipsam laboriosam magni minus nulla obcaecati qui quisquam rem vitae voluptas! Atque cupiditate debitis facilis itaque veritatis.</div>
-                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eius explicabo officiis quos. Deleniti quisquam, voluptates. Animi ducimus eaque esse, explicabo ipsam modi molestias nesciunt quam quasi, tempore voluptate voluptates.</div>
-                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque consequatur molestias nostrum recusandae repudiandae. Ab accusantium corporis esse libero minima molestias soluta sunt tempore. Iure possimus quam vero voluptas voluptatum?</div>
+                    <div style="width: 100% !important;" >Parier sur la CONFIANCE et offrir des conditions cadre paisibles pour favoriser l’estime de soi et la confiance en l’autre pour croire en ses compétences et son potentiel.</div>
+                    <div style="width: 100% !important;" >ÉCOUTER et accorder de l’importance au récit, tenir compte du contexte et des intentions de la personne pour co-construire une offre «sensible» et sur mesure.</div>
+                    <div style="width: 100% !important;" >CRÉER et FAIRE différemment, oser, tester, explorer et découvrir sa capacité à se remettre en cause pour inventer, rénover.</div>
+                    <div style="width: 100% !important;" >Impliquer les destinataires, parties prenantes, partenaires et bénévoles pour MUTUALISER ressources et savoirs.</div>
+                    <div style="width: 100% !important;" >Viser la MIXITÉ, faire cohabiter des univers habituellement distants afin de mêler les générations, cultures et univers professionnels variés.</div>
+                    <div style="width: 100% !important;" >Reconnaître et valoriser les ÉTAPES des parcours individuels pour avoir conscience des changements progressifs qui conduisent à destination.</div>
+                    <div style="width: 100% !important;" >SYNCHRONISER les efforts et les productions entre les parties prenantes pour construire un objet commun et gagner en efficacité.</div>
+                    <div style="width: 100% !important;" >FLUIDIFIER les relations et engagements entre les parties prenantes pour tendre vers une gouvernance partagée.</div>
                 </text-bullet-point>
             </div>
 
             <div
-                class="fp-grid-coll-24-24 fp-grid-with-gutter fp-page__sections"
+                class="fp-grid-coll-16-24 fp-grid-with-gutter fp-page__sections"
+            >
+                <h2>Principe</h2>
+                <p>La fondation ForPro réunit des partenaires désirant travailler de manière ouverte, collaborative et itérative. Cela implique que chacun∙e partage une compréhension commune de l’approche résolument orientée sur les futurs utilisateurs et utilisatrices. Concrètement, les offres sont imaginées avec les publics cibles, testées auprès de ces derniers et seront adaptées chemin faisant.</p>
+                <text-bullet-point>
+                    <div>Parier sur la CONFIANCE et offrir des conditions cadre paisibles pour favoriser l’estime de soi et la confiance en l’autre pour croire en ses compétences et son potentiel.</div>
+                    <div>ÉCOUTER et accorder de l’importance au récit, tenir compte du contexte et des intentions de la personne pour co-construire une offre «sensible» et sur mesure.</div>
+                    <div>CRÉER et FAIRE différemment, oser, tester, explorer et découvrir sa capacité à se remettre en cause pour inventer, rénover.</div>
+                    <div>Impliquer les destinataires, parties prenantes, partenaires et bénévoles pour MUTUALISER ressources et savoirs.</div>
+                    <div>Viser la MIXITÉ, faire cohabiter des univers habituellement distants afin de mêler les générations, cultures et univers professionnels variés.</div>
+                    <div>Reconnaître et valoriser les ÉTAPES des parcours individuels pour avoir conscience des changements progressifs qui conduisent à destination.</div>
+                    <div>SYNCHRONISER les efforts et les productions entre les parties prenantes pour construire un objet commun et gagner en efficacité.</div>
+                    <div>FLUIDIFIER les relations et engagements entre les parties prenantes pour tendre vers une gouvernance partagée.</div>
+                </text-bullet-point>
+            </div>
+
+            <div
+                class="fp-grid-coll-16-24 fp-grid-with-gutter fp-page__sections"
             >
                 <h2>L'équipe</h2>
                 <div class="fp-grid-coll-container fp-grid-coll-container--center">
-                    <profile-item/>
-                    <profile-item/>
-                    <profile-item/>
+                    <div class="fp-grid-coll-8-24" ><profile-item :with-photo="true" /></div>
+                    <div class="fp-grid-coll-8-24" ><profile-item :with-photo="true" /></div>
+                    <div class="fp-grid-coll-8-24" ><profile-item :with-photo="true" /></div>
                 </div>
             </div>
 
             <div
-                class="fp-grid-coll-24-24 fp-grid-with-gutter fp-page__sections"
+                class="fp-grid-coll-16-24 fp-grid-with-gutter fp-page__sections"
             >
-                <h2>Le Conseil de Fondation</h2>
-                <div class="fp-grid-coll-container fp-grid-coll-container--center">
-                    <profile-item/>
-                    <profile-item/>
-                    <profile-item/>
-                    <profile-item/>
-                    <profile-item/>
+                <h3>Le Conseil de Fondation</h3>
+                <div class="fp-grid-coll-container">
+                    <div class="fp-grid-coll-12-24 fp-grid-with-gutter" ><profile-item/></div>
+                    <div class="fp-grid-coll-12-24 fp-grid-with-gutter" ><profile-item :small="true" /></div>
+                    <div class="fp-grid-coll-12-24 fp-grid-with-gutter" ><profile-item/></div>
+                </div>
+            </div>
+
+            <div
+                class="fp-grid-coll-16-24 fp-grid-with-gutter fp-page__sections"
+            >
+                <h3>Le Conseil de Fondation</h3>
+                <div class="fp-grid-coll-container">
+                    <div class="fp-grid-coll-8-24 fp-grid-with-gutter" ><profile-item :small="false" /></div>
+                    <div class="fp-grid-coll-8-24 fp-grid-with-gutter" ><profile-item :small="true" /></div>
+                    <div class="fp-grid-coll-8-24 fp-grid-with-gutter" ><profile-item :small="true" /></div>
                 </div>
             </div>
 
@@ -86,8 +116,8 @@ onMounted(() => {
     useAppStateStore().appIsDark = isDark
 })
 
-defineProps<{
-}>()
+// defineProps<{
+// }>()
 </script>
 
 

@@ -6,7 +6,7 @@
 
         <text-content/>
 
-        <image-content/>
+        <image-content src=""/>
 
 
     </main>

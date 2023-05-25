@@ -37,7 +37,7 @@
 
         <p>fixed-scroll = true</p>
         <image-content
-            fixed-scroll="true"
+            :fixed-scroll="true"
             src="https://api.for-pro.ch/media/pages/introduction/894c00ffdd-1660739330/forpro-22-07-chantier-03-1280x.jpg">
         </image-content>
 
@@ -77,6 +77,8 @@
                 <p>Ab aspernatur beatae explicabo provident, quia tempora vitae voluptatem? Accusamus ad aperiam consequuntur culpa, ipsum maxime, molestiae nisi, possimus provident repellat voluptate?</p>
 
                 <p class="fp-heading-h5--variante-1">Pragraphe variante 1</p>
+
+                <p class="fp-heading-h5--variante-2">Pragraphe variante 2</p>
 
                 <h5 style="color: inherit">H5 sans couleur dolor sit amet</h5>
                 <p>Ab aspernatur beatae explicabo provident, quia tempora vitae voluptatem? Accusamus ad aperiam consequuntur culpa, ipsum maxime, molestiae nisi, possimus provident repellat voluptate?</p>
@@ -163,8 +165,8 @@
 import BarNewsletter from "~/components/BarNewsletter.vue";
 import TextBulletPoint from "~/components/TextBulletPoint.vue";
 
-defineProps<{
-}>()
+// defineProps<{
+// }>()
 
 </script>
 
