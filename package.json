@@ -6,7 +6,8 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "build.github.page": "rm -rf ./docs && rm -rf ./.output && npm run generate && cp -r ./.output/public ./docs"
   },
   "devDependencies": {
     "@types/node": "^18",
