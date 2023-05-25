@@ -1,0 +1,1 @@
+import{_ as a}from"./PageHeader.dd3fde40.js";import{a as t,b as _,e as o,f as s,h as n,o as p,k as r}from"./entry.3358b264.js";const c={class:"v-makerlab fp-page"},m=!1,l=t({__name:"makerlab",setup(f){return _(()=>{o().appIsDark=m}),(d,k)=>{const e=a;return p(),s("main",c,[n(e,{"page-title":"MakerLab"})])}}});const b=r(l,[["__scopeId","data-v-2f5214b4"]]);export{b as default};

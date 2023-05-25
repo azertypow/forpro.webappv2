@@ -1,0 +1,1 @@
+import{_ as t}from"./PageHeader.dd3fde40.js";import{a as _,b as a,e as o,f as s,h as n,o as c,k as p}from"./entry.3358b264.js";const r={class:"v-lieu fp-page"},i=!1,d=_({__name:"index",setup(f){return a(()=>{o().appIsDark=i}),(m,u)=>{const e=t;return c(),s("main",r,[n(e,{"page-title":"Le Lieu"})])}}});const k=p(d,[["__scopeId","data-v-f2ef2bc0"]]);export{k as default};

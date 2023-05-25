@@ -1,0 +1,1 @@
+import{_ as e}from"./PageHeader.dd3fde40.js";import{a as t,b as _,e as o,f as s,h as n,o as p,k as r}from"./entry.3358b264.js";const c={class:"v-artlab fp-page"},l=!1,f=t({__name:"artlab",setup(m){return _(()=>{o().appIsDark=l}),(d,i)=>{const a=e;return p(),s("main",c,[n(a,{"page-title":"ArtLab"})])}}});const k=r(f,[["__scopeId","data-v-2fa6ba25"]]);export{k as default};
