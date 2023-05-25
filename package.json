@@ -7,10 +7,12 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
+    "deploy": "gh-pages --dotfiles -d .output/public",
     "build.github.page": "rm -rf ./docs && rm -rf ./.output && npm run generate && cp -r ./.output/public ./docs"
   },
   "devDependencies": {
     "@types/node": "^18",
+    "gh-pages": "^5.0.0",
     "nuxt": "^3.4.3",
     "sass": "^1.62.1",
     "typescript": "^5.0.4",
