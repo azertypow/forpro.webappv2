@@ -18,6 +18,9 @@
             </div>
         </div>
 
+
+        <background-effect/>
+
         <div
             class="fp-grid-coll-container fp-grid-coll-container--center"
         >
@@ -25,6 +28,14 @@
                 <space-building/>
             </div>
         </div>
+
+        <image-content
+            src="https://api.for-pro.ch/media/pages/fondation-forpro/5a5fcd1775-1658758079/forpro-07-learningcenter-1280x.jpg"
+        />
+        <image-content
+            :fixed-scroll="true"
+            src="https://api.for-pro.ch/media/pages/introduction/894c00ffdd-1660739330/forpro-22-07-chantier-03-1280x.jpg"
+        />
 
         <section
             style="

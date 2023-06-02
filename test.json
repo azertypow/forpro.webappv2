@@ -1,0 +1,32 @@
+{
+  "levels": [
+    {
+      "titre": "",
+      "description": "",
+      "activeQuestions": [
+        {
+          "choicePessimist": "",
+          "choiceOptimist": "",
+          "index": 0
+        },
+        {
+          "choicePessimist": "",
+          "choiceOptimist": "",
+          "index": 0
+        },
+        {
+          "choicePessimist": "",
+          "choiceOptimist": "",
+          "index": 0
+        }
+      ],
+      "inactiveQuestions": [
+        {
+          "description": "",
+          "pageOfNextLeve": "",
+          "index": 0
+        }
+      ]
+    }
+  ]
+}
