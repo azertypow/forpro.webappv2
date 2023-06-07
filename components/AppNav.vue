@@ -172,10 +172,10 @@ const curentRoutePath = computed(() => useRoute().path)
     width: 100%;
     box-sizing: border-box;
     height: var(--fp-app-nav-height);
+    flex-direction: row;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: var(--fp-color-white);
+    justify-content: flex-start;
 
     .v-app--is-dark & {
         background-color: var(--fp-color-black);
