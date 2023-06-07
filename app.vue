@@ -24,14 +24,6 @@
             <app-footer/>
         </div>
 
-        <div
-            v-if="useAppStateStore().fixedBottomBar"
-            class="v-app__bottom">
-            <bar-newsletter
-                text="Newsletter"
-                @on-close-newsletter-bar="() => useAppStateStore().fixedBottomBar = false"
-            />
-        </div>
     </div>
 
 </template>
@@ -64,14 +56,6 @@
     .v-app--is-dark & {
         background: var(--fp-color-black);
     }
-}
-
-.v-app__bottom {
-    position: fixed;
-    z-index: 100;
-    left: 0;
-    bottom: 0;
-    width: 100%;
 }
 
 .v-app__building-nav {

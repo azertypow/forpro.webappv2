@@ -6,6 +6,20 @@
         />
 
         <div
+            v-if="useAppStateStore().fixedBottomBar"
+            class="fp-grid-coll-container"
+        >
+            <div
+                class="fp-grid-coll-24-24"
+            >
+                <bar-newsletter
+                    text="Newsletter"
+                    @on-close-newsletter-bar="() => useAppStateStore().fixedBottomBar = false"
+                />
+            </div>
+        </div>
+
+        <div
             class="fp-grid-coll-container fp-grid-coll-container--center"
         >
             <div class="fp-grid-coll-16-24">
