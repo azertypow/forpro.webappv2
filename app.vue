@@ -25,7 +25,7 @@
         </div>
 
         <div
-            class="v-app__footer"
+            class="v-app__footer fp-grid-with-gutter"
         >
             <app-footer/>
         </div>
@@ -79,8 +79,7 @@
 }
 
 .v-app__footer {
-    margin-top: var(--fp-section-margin);
-    background-color: var(--fp-color-grey-dark);
+    background-color: var(--fp-theme-color-ternary);
     padding-bottom: var(--fp-app-bottom-height);
 }
 </style>

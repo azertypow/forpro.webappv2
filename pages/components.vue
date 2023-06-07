@@ -154,6 +154,11 @@
             <div style="width: calc(100% / 3)" class="fp-grid-with-gutter" ><article-item>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus animi assumenda at deserunt eaque eveniet fugiat hic iste labore, necessitatibus officia rem sunt voluptatem voluptatibus. Consectetur earum ipsum natus.</article-item></div>
         </div>
 
+
+        <h3>Background effect</h3>
+
+        <background-effect/>
+
     </main>
 </template>
 

@@ -63,7 +63,7 @@
 <style lang="scss" scoped >
 .v-app-footer {
     container-type: inline-size;
-    background: var(--fp-color-grey-dark);
+    background: var(--fp-theme-color-ternary);
     padding-top: 1rem;
     display: flex;
     flex-wrap: wrap;

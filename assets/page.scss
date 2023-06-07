@@ -13,4 +13,10 @@
     }
   }
 
+  padding-bottom: 3rem;
+
+  &.fp-page--no-margin-bottom {
+    padding-bottom: 0;
+  }
+
 }
