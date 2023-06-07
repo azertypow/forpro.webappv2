@@ -4,7 +4,8 @@ export const useAppStateStore = defineStore('appState', {
     state: () => ({
         navIsOpen: false,
         appIsDark: false,
-        fixedBottomBar: true,
+        newsletterBarIsVisible: true,
+        isIntersecting: false,
     }),
 
     actions: {

@@ -144,7 +144,7 @@
         <div
             style="
                 display: flex;
-                background-color: var(--color-secondary);
+                background-color: var(--fp-theme-color-secondary);
                 padding-top: var(--fp-section-margin);
                 padding-bottom: var(--fp-section-margin);
             "

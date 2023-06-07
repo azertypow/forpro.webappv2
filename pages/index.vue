@@ -6,7 +6,7 @@
         />
 
         <div
-            v-if="useAppStateStore().fixedBottomBar"
+            v-if="useAppStateStore().newsletterBarIsVisible"
             class="fp-grid-coll-container"
         >
             <div
@@ -14,7 +14,7 @@
             >
                 <bar-newsletter
                     text="Newsletter"
-                    @on-close-newsletter-bar="() => useAppStateStore().fixedBottomBar = false"
+                    @on-close-newsletter-bar="() => useAppStateStore().newsletterBarIsVisible = false"
                 />
             </div>
         </div>
@@ -53,7 +53,7 @@
 
         <section
             style="
-                background-color: var(--color-secondary);
+                background-color: var(--fp-theme-color-secondary);
                 padding-top: var(--fp-section-margin);
                 padding-bottom: var(--fp-section-margin);
             "

@@ -10,12 +10,10 @@
   --fp-color-grey: #cbcbcb;
   --fp-color-grey-dark: #6c6c6c;
 
-  --color-main:             hsl(300, 100%, 50%);
-  --color-main--dark:       hsl(300, 100%, 15%);
-  --color-secondary:        hsl(219, 100%, 50%);
-  --color-secondary--dark:  hsl(219, 100%, 25%);
-  --color-ternary:          hsl(58, 100%, 50%);
-  --color-ternary--dark:    hsl(58, 20%, 35%);
+  // Accueil them
+  --fp-theme-color-main:             rgb(120, 51, 161);
+  --fp-theme-color-secondary:        rgb(242,3,13);
+  --fp-theme-color-ternary:          rgb(227,212,190);
 
   --fp-app-nav-height: 2rem;
 

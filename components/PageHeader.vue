@@ -3,6 +3,7 @@
           class="v-page-header fp-remove-margin-child"
   >
       <div
+              ref="header"
               class="v-page-header__img"
               v-if="backgroundImage"
               :style="{
@@ -10,14 +11,18 @@
               }"
       ></div>
       <div
-              class="fp-grid-with-gutter fp-remove-margin-child"
+              class="v-page-header__title fp-grid-with-gutter fp-remove-margin-child"
       >
-        <h1 class="v-page-header__title" >{{pageTitle}}</h1>
+        <h1>{{pageTitle}}</h1>
       </div>
   </header>
 </template>
 
 <script lang="ts" setup >
+
+import {onMounted} from "#imports"
+import {Ref} from "vue"
+import {useAppStateStore} from "~/stores/appState"
 
 defineProps({
     pageTitle: {
@@ -30,6 +35,21 @@ defineProps({
     },
 })
 
+const header: Ref<null | HTMLElement> = ref(null)
+
+onMounted(() => {
+
+  nextTick(() => {
+    if( ! (header.value instanceof HTMLElement) ) return
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(value => {
+        useAppStateStore().isIntersecting = value.isIntersecting
+      })
+    })
+    observer.observe(header.value)
+  })
+})
+
 </script>
 
 <style lang="scss" scoped>
@@ -40,7 +60,6 @@ defineProps({
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: var(--fp-color-white);
 
   .v-app--is-dark & {
     background: var(--fp-color-black);
@@ -55,6 +74,8 @@ defineProps({
 }
 
 .v-page-header__title {
+  padding-top:    2.5rem;
+  padding-bottom: 2.5rem;
   text-align: center;
   color: inherit;
 }

@@ -3,11 +3,11 @@
             class="v-app"
             :class="{
                 'v-app--is-dark': useAppStateStore().appIsDark,
-                'v-app--has-fixed-bottom-bar': useAppStateStore().fixedBottomBar
+                'v-app--newsletter-bar-is-visible': useAppStateStore().newsletterBarIsVisible
             }"
     >
         <div
-            class="v-app__nav fp-grid-with-gutter">
+            class="v-app__nav">
             <AppNav/>
         </div>
 
@@ -56,9 +56,14 @@
     top: 0;
     left: 0;
     width: 100%;
+    padding: var(--fp-gutter);
+    box-sizing: border-box;
 
-    .v-app--is-dark & {
-        background: var(--fp-color-black);
+    transition: height ease-in-out .5s;
+    height: var(--fp-app-nav-height);
+
+    .nav-is-open & {
+        height: 100%;
     }
 }
 
@@ -71,10 +76,6 @@
     width: calc( (100% / 24 * 4) - (var(--fp-gutter) * 3 ) );
     right: var(--fp-gutter);
     bottom: var(--fp-gutter);
-
-    .v-app--has-fixed-bottom-bar & {
-        bottom: calc( var(--fp-app-bottom-height) + var(--fp-gutter) );
-    }
 }
 
 .v-app__footer {
@@ -109,13 +110,18 @@ onMounted(() => {
 function updateBakgroundColor() {
     if( ! (backgroundEffect.value instanceof HTMLElement) ) return
     const backgroundOpacity = map(
-        window.scrollY,
+        window.scrollY - window.innerHeight,
         0,
         window.innerHeight * 3,
         1,
         0,
     )
-    backgroundEffect.value.style.backgroundColor = `rgba(120, 51, 161, ${backgroundOpacity})`
+
+    const backgroundRGBAColor = getComputedStyle(document.documentElement)
+        .getPropertyValue('--fp-theme-color-ternary')
+        .replace(')', `, ${backgroundOpacity})`)
+
+    backgroundEffect.value.style.backgroundColor = backgroundRGBAColor
 }
 
 const map = (

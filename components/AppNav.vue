@@ -1,26 +1,38 @@
 <template>
-  <header class="v-app-nav" >
-      <nuxt-link
-          href="/"
-          class="v-app-nav__logo"
-      ><img src="../assets/images/logo.svg" alt="logo"></nuxt-link>
+  <div
+      class="v-app-nav"
+      :class="{
+        'is-intersecting': useAppStateStore().isIntersecting
+      }"
+  >
+      <header
+          class="v-app-nav__header"
+      >
 
-      <div>
-          {{useRouter().currentRoute.value.name}}
-      </div>
+          <nuxt-link
+              href="/"
+              class="v-app-nav__logo"
+          ><img src="../assets/images/logo.svg" alt="logo"></nuxt-link>
 
-      <button
+          <div
+              class="v-app-nav__page-title"
+          >
+              {{ useRouter().currentRoute.value.name }}
+          </div>
+
+          <div
               class="v-app-nav__menu-toggle"
               @click="useAppStateStore().toggleNav()"
-      >
-          burger menu
-      </button>
+          >
+              <div>X</div>
+          </div>
+      </header>
     <nav
             v-if="useAppStateStore().navIsOpen"
-            class="v-app-nav__nav"
+            class="v-app-nav__nav fp-grid-with-gutter"
     >
         <div
-            class="v-app-nav__nav__content"
+            class="v-app-nav__nav__content fp-grid-with-gutter"
         >
             <div
                 class="v-app-nav__nav__content__container">
@@ -66,32 +78,10 @@
                         >Blog
                         </nuxt-link>
                     </div>
-                    <div
-                        style="color: var(--fp-color-grey)"
-                        class="fp-heading-h3">
-                        <nuxt-link
-                            class="v-app-nav__link"
-                            href="/intra"
-                            :class="{
-                                'is-active': curentRoutePath === '/intra'
-                            }"
-                        >Intranet
-                        </nuxt-link>
-                    </div>
                 </div>
                 <div
                     class="v-app-nav__nav__content__container__coll">
                     <div class="fp-heading-h3">
-                        <nuxt-link
-                            class="v-app-nav__link"
-                            href="/lieu"
-                            :class="{
-                                    'is-active': curentRoutePath === '/lieu'
-                                }"
-                        >Le lieu
-                        </nuxt-link>
-                    </div>
-                    <div class="fp-heading-h4">
                         <nuxt-link
                             class="v-app-nav__link"
                             href="/lieu/accueil"
@@ -101,7 +91,7 @@
                         >Accueil
                         </nuxt-link>
                     </div>
-                    <div class="fp-heading-h4">
+                    <div class="fp-heading-h3">
                         <nuxt-link
                             class="v-app-nav__link"
                             href="/lieu/artlab"
@@ -111,7 +101,7 @@
                         >ArtLab
                         </nuxt-link>
                     </div>
-                    <div class="fp-heading-h4">
+                    <div class="fp-heading-h3">
                         <nuxt-link
                             class="v-app-nav__link"
                             href="/lieu/entreprises"
@@ -121,7 +111,7 @@
                         >Entreprises
                         </nuxt-link>
                     </div>
-                    <div class="fp-heading-h4">
+                    <div class="fp-heading-h3">
                         <nuxt-link
                             class="v-app-nav__link"
                             href="/lieu/foodlab"
@@ -131,7 +121,7 @@
                         >FoodLab
                         </nuxt-link>
                     </div>
-                    <div class="fp-heading-h4">
+                    <div class="fp-heading-h3">
                         <nuxt-link
                             class="v-app-nav__link"
                             href="/lieu/learninglab"
@@ -141,7 +131,7 @@
                         >LearningLab
                         </nuxt-link>
                     </div>
-                    <div class="fp-heading-h4">
+                    <div class="fp-heading-h3">
                         <nuxt-link
                             class="v-app-nav__link"
                             href="/lieu/makerlab"
@@ -151,14 +141,11 @@
                         >MakerLab
                         </nuxt-link>
                     </div>
-                    <div class="v-app-nav__building-space">
-                        <space-building-nav></space-building-nav>
-                    </div>
                 </div>
             </div>
         </div>
     </nav>
-  </header>
+  </div>
 </template>
 
 <script lang="ts" setup>
@@ -174,44 +161,89 @@ const curentRoutePath = computed(() => useRoute().path)
 
 
 .v-app-nav {
+
+    --radius: 1rem;
+
     position: relative;
     width: 100%;
     box-sizing: border-box;
+    border-radius: 1rem;
+    color: rgb(242, 3, 13);
+    background-color: rgb(227, 212, 190);
+    overflow: hidden;
+
+    transition: height ease-in-out .5s, background-color ease-in-out .5s;
     height: var(--fp-app-nav-height);
-    flex-direction: row;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+
+    .nav-is-open & {
+        height: 100%;
+    }
 
     .v-app--is-dark & {
         background-color: var(--fp-color-black);
     }
+
+    &.is-intersecting {
+        background: transparent;
+    }
+}
+
+.v-app-nav__header {
+    position: relative;
+    height: var(--fp-app-nav-height);
+    display: block;
 }
 
 .v-app-nav__logo {
+    position: absolute;
+    top: 50%;
+    left: var(--radius);
+    transform: translate(0, -50%);
+
     > img {
         display: block;
         height: calc(var(--fp-app-nav-height) - 1rem);
     }
 }
 
+.v-app-nav__page-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: inherit;
+    transition: font-size ease-in-out .5s;
+
+    .is-intersecting & {
+        font-size: 1.25rem;
+    }
+}
+
 .v-app-nav__menu-toggle {
+    user-select: none;
+    cursor: pointer;
     display: block;
+    position: absolute;
+    top: 0;
+    right: var(--radius);
     height: var(--fp-app-nav-height);
+    width: var(--fp-app-nav-height);
+
+    > * {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 
 .v-app-nav__nav {
-    position: fixed;
+    position: absolute;
     top: var(--fp-app-nav-height);
-    height: calc( 100% - var(--fp-app-nav-height) - var(--fp-app-bottom-height) );
+    left: 0;
+    height: calc( 100% - var(--fp-app-nav-height));
     width: 100%;
-    background-color: var(--fp-color-white);
-    overflow: auto;
     container-type: inline-size;
-
-    .v-app--is-dark & {
-        background-color: var(--fp-color-black);
-    }
 
     .v-app-nav__nav__content__container {
         display: flex;
@@ -233,6 +265,11 @@ const curentRoutePath = computed(() => useRoute().path)
 .v-app-nav__nav__content {
     box-sizing: border-box;
     padding-bottom: 25vh;
+    border-bottom-right-radius: var(--radius);
+    border-bottom-left-radius: var(--radius);
+    width: 100%;
+    height: 100%;
+    overflow: auto;
 }
 
 .v-app-nav__link {
@@ -240,7 +277,7 @@ const curentRoutePath = computed(() => useRoute().path)
   text-decoration: inherit;
 
   &.is-active {
-    color: var(--color-main);
+    color: var(--fp-theme-color-main);
   }
 }
 
