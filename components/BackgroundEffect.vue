@@ -137,9 +137,6 @@ function fixedElementAction() {
         const containerWindowBottom = container.value.getBoundingClientRect().bottom
         const fixedElementWindowTop = fixedElement.value.getBoundingClientRect().top
 
-        console.log(    'container', containerWindowBottom)
-        console.log(    'fixedElement', fixedElementWindowTop  )
-
         if(
             fixedElementWindowTop < fixedElementTopMargin
             && containerWindowBottom > fixedElementBottomMargin
