@@ -6,20 +6,6 @@
         />
 
         <div
-            v-if="useAppStateStore().newsletterBarIsVisible"
-            class="fp-grid-coll-container"
-        >
-            <div
-                class="fp-grid-coll-24-24"
-            >
-                <bar-newsletter
-                    text="Newsletter"
-                    @on-close-newsletter-bar="() => useAppStateStore().newsletterBarIsVisible = false"
-                />
-            </div>
-        </div>
-
-        <div
             class="fp-grid-coll-container fp-grid-coll-container--center"
         >
             <div class="fp-grid-coll-16-24">
@@ -50,6 +36,20 @@
             :fixed-scroll="true"
             src="https://api.for-pro.ch/media/pages/introduction/894c00ffdd-1660739330/forpro-22-07-chantier-03-1280x.jpg"
         />
+
+        <div
+            v-if="useAppStateStore().newsletterBarIsVisible"
+            class="fp-grid-coll-container"
+        >
+            <div
+                class="fp-grid-coll-24-24"
+            >
+                <bar-newsletter
+                    text="Newsletter"
+                    @on-close-newsletter-bar="() => useAppStateStore().newsletterBarIsVisible = false"
+                />
+            </div>
+        </div>
 
         <section
             style="

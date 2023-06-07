@@ -177,6 +177,7 @@ const curentRoutePath = computed(() => useRoute().path)
 
     .nav-is-open & {
         height: 100%;
+        background-color: var(--fp-color-white);
     }
 
     .v-app--is-dark & {
@@ -270,6 +271,7 @@ const curentRoutePath = computed(() => useRoute().path)
     width: 100%;
     height: 100%;
     overflow: auto;
+    color: var(--fp-color-black);
 }
 
 .v-app-nav__link {

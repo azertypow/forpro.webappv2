@@ -1,15 +1,32 @@
 <template>
   <header
+          ref="headerMain"
           class="v-page-header fp-remove-margin-child"
   >
       <div
-              ref="header"
+              ref="headerContainer"
               class="v-page-header__img"
               v-if="backgroundImage"
               :style="{
                 backgroundImage: `url(${backgroundImage})` || ''
               }"
-      ></div>
+      >
+          <svg
+                  class="v-page-header__graphique-image"
+                  viewBox="0 0 4310.6665 1991.5146"
+                  xmlns="http://www.w3.org/2000/svg"
+                  ref="graphicToMove"
+          >
+              <g
+                      transform="matrix(1.3333333,0,0,-1.3333333,0,4000)"
+              >
+                  <path
+                          d="m 0,1623.1341 v 1260.096 c 0,84.069 38.732,116.77 122.24197,116.77 H 1703.679 c 149.938,-47.145 382.746,-214.095 519.991,-372.894 179.769,-207.998 377.718,-278.564 668.365,-278.564 H 3203 c 16.568,0 30,-13.431 30,-30 v -130.72 c 0,-16.569 -13.432,-30 -30,-30 h -310.965 c -199.5435,3.2233 -488.596,-70.566 -668.365,-278.564 -137.245,-158.799 -257.798,-372.894 -519.991,-372.894 H 122.24197 C 38.732,1506.3641 0,1539.0651 0,1623.1341"
+                          style="fill:#f500b4;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                  />
+              </g>
+          </svg>
+      </div>
       <div
               class="v-page-header__title fp-grid-with-gutter fp-remove-margin-child"
       >
@@ -35,26 +52,57 @@ defineProps({
     },
 })
 
-const header: Ref<null | HTMLElement> = ref(null)
+const headerMain: Ref<null | HTMLElement> = ref(null)
+const headerContainer: Ref<null | HTMLElement> = ref(null)
+const graphicToMove: Ref<null | HTMLElement> = ref(null)
 
 onMounted(() => {
 
   nextTick(() => {
-    if( ! (header.value instanceof HTMLElement) ) return
+    if( ! (headerContainer.value instanceof HTMLElement) ) return
     const observer = new IntersectionObserver(entries => {
       entries.forEach(value => {
         useAppStateStore().isIntersecting = value.isIntersecting
       })
     })
-    observer.observe(header.value)
+    observer.observe(headerContainer.value)
+  })
+
+  window.addEventListener('scroll',() => {
+    if( ! (headerMain.value instanceof HTMLElement) ) return
+    if( ! (graphicToMove.value instanceof SVGElement) ) return
+
+    const YTranslation = map(
+      headerMain.value.getBoundingClientRect().height + headerMain.value.getBoundingClientRect().top,
+      0,
+      headerMain.value.getBoundingClientRect().height,
+      -100,
+      50,
+    )
+
+    console.log("-----")
+    console.log(headerMain.value.getBoundingClientRect().height - headerMain.value.getBoundingClientRect().top)
+    console.log(YTranslation)
+
+    graphicToMove.value.style.transform = `translate(0, ${YTranslation}px)`
+
   })
 })
+
+const map = (
+  value: number,
+  x1: number,
+  y1: number,
+  x2: number,
+  y2: number
+) => (value - x1) * (y2 - x2) / (y1 - x1) + x2
 
 </script>
 
 <style lang="scss" scoped>
 
 .v-page-header {
+  position: relative;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -71,13 +119,26 @@ onMounted(() => {
   width: 100%;
   background-position: center;
   background-size: cover;
+  position: relative;
 }
 
 .v-page-header__title {
   padding-top:    2.5rem;
   padding-bottom: 2.5rem;
   text-align: center;
-  color: inherit;
+  color: var(--fp-theme-color-secondary);
+}
+
+.v-page-header__graphique-image {
+  display: block;
+  height: 100vh;
+  position: absolute;
+  bottom: -50%;
+  right: 50%;
+
+  path {
+    fill: var(--fp-theme-color-secondary) !important;
+  }
 }
 
 </style>
