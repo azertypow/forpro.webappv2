@@ -102,20 +102,23 @@ const backgroundEffect =  ref(null)
 
 onMounted(() => {
     window.addEventListener('scroll', () => {
-        updateBakgroundColor()
+        updateBackgroundColor()
     })
 
 })
 
-function updateBakgroundColor() {
+function updateBackgroundColor() {
     if( ! (backgroundEffect.value instanceof HTMLElement) ) return
-    const backgroundOpacity = map(
+    let backgroundOpacity = map(
         window.scrollY - window.innerHeight,
         0,
         window.innerHeight * 3,
         1,
         0,
     )
+
+    if(backgroundOpacity < 0) backgroundOpacity = 0
+    if(backgroundOpacity > 1) backgroundOpacity = 1
 
     const backgroundRGBAColor = getComputedStyle(document.documentElement)
         .getPropertyValue('--fp-theme-color-ternary')
