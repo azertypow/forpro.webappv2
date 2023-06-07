@@ -17,37 +17,37 @@
         </div>
 
 
-<!--        <div-->
-<!--            class="v-background-effect__container"-->
-<!--            ref="leftElementToMove"-->
-<!--        >-->
-<!--            <svg-->
-<!--                class="v-background-effect__svg-1"-->
-<!--                version="1.1"-->
-<!--                viewBox="0 0 654.17009 266.66801"-->
-<!--                xmlns="http://www.w3.org/2000/svg"-->
-<!--                xmlns:svg="http://www.w3.org/2000/svg">-->
-<!--                <g-->
-<!--                    id="g2926"-->
-<!--                    transform="matrix(1.3333333,0,0,-1.3333333,-581.15999,819.14531)">-->
-<!--                    <g-->
-<!--                        id="g2928">-->
-<!--                        <g-->
-<!--                            id="g2930"-->
-<!--                            clip-path="url(#clipPath2934)">-->
-<!--                            <g-->
-<!--                                id="g2936"-->
-<!--                                transform="translate(926.4976,429.9935)">-->
-<!--                                <path-->
-<!--                                    d="m 0,0 v 168.728 c 0,11.258 -5.187,15.638 -16.369,15.638 h -67.143 c -35.107,0 -51.25,-28.669 -69.627,-49.932 -24.072,-27.852 -50.577,-37.3 -89.496,-37.3 H -490.628 V 71.596 h 247.993 c 38.919,0 65.424,-9.45 89.496,-37.3 18.377,-21.265 34.52,-49.932 69.627,-49.932 h 67.143 C -5.187,-15.636 0,-11.257 0,0"-->
-<!--                                    style="fill:#1754ff;fill-opacity:1;fill-rule:nonzero;stroke:none"-->
-<!--                                    id="path2938" />-->
-<!--                            </g>-->
-<!--                        </g>-->
-<!--                    </g>-->
-<!--                </g>-->
-<!--            </svg>-->
-<!--        </div>-->
+        <div
+            class="v-background-effect__container"
+            ref="leftElementToMove"
+        >
+            <svg
+                class="v-background-effect__svg-1"
+                version="1.1"
+                viewBox="0 0 654.17009 266.66801"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:svg="http://www.w3.org/2000/svg">
+                <g
+                    id="g2926"
+                    transform="matrix(1.3333333,0,0,-1.3333333,-581.15999,819.14531)">
+                    <g
+                        id="g2928">
+                        <g
+                            id="g2930"
+                            clip-path="url(#clipPath2934)">
+                            <g
+                                id="g2936"
+                                transform="translate(926.4976,429.9935)">
+                                <path
+                                    d="m 0,0 v 168.728 c 0,11.258 -5.187,15.638 -16.369,15.638 h -67.143 c -35.107,0 -51.25,-28.669 -69.627,-49.932 -24.072,-27.852 -50.577,-37.3 -89.496,-37.3 H -490.628 V 71.596 h 247.993 c 38.919,0 65.424,-9.45 89.496,-37.3 18.377,-21.265 34.52,-49.932 69.627,-49.932 h 67.143 C -5.187,-15.636 0,-11.257 0,0"
+                                    style="fill:#1754ff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                                    id="path2938" />
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </div>
 
 
 
