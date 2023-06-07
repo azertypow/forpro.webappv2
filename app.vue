@@ -66,7 +66,6 @@
 
 .v-app__page-container {
     position: relative;
-    background: red;
 }
 
 .v-app__building-nav {
@@ -104,18 +103,22 @@ const backgroundEffect =  ref(null)
 
 onMounted(() => {
     window.addEventListener('scroll', () => {
-        if( ! (backgroundEffect.value instanceof HTMLElement) ) return
-        const backgroundOpacity = map(
-            window.scrollY,
-            0,
-            window.innerHeight * 3,
-            1,
-            0,
-        )
-        console.log(backgroundOpacity)
-        backgroundEffect.value.style.backgroundColor = `rgba(120, 51, 161, ${backgroundOpacity})`
+        updateBakgroundColor()
     })
+
 })
+
+function updateBakgroundColor() {
+    if( ! (backgroundEffect.value instanceof HTMLElement) ) return
+    const backgroundOpacity = map(
+        window.scrollY,
+        0,
+        window.innerHeight * 3,
+        1,
+        0,
+    )
+    backgroundEffect.value.style.backgroundColor = `rgba(120, 51, 161, ${backgroundOpacity})`
+}
 
 const map = (
     value: number,

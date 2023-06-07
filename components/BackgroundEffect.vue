@@ -97,17 +97,17 @@ const svgGuide2Container                     = ref(null)
 const container = ref(null)
 const fixedElement = ref(null)
 const fixedElementToTranslate = ref(null)
-const fixedElementTopMargin = 150
-const fixedElementBottomMargin = 500
+const fixedElementTopMargin = window.innerHeight / 3
+const fixedElementBottomMargin = window.innerHeight / 3 * 2
 
 onMounted(() => {
     nextTick(() => {
         fixedElementAction()
     })
 
-    if(svgGuide2Container instanceof HTMLElement) return
-
     window.addEventListener('mousemove', (evt) => {
+
+
         if(!(svgGuide.value instanceof SVGGeometryElement))     return
         if(!(svgGuide2.value instanceof SVGGeometryElement))     return
         if(!(rightElementToMove.value instanceof SVGGeometryElement))     return
@@ -147,7 +147,7 @@ function fixedElementAction() {
     })
 }
 
-function setPositionWidthPath (guide: SVGGeometryElement, element: SVGGeometryElement, percent) {
+function setPositionWidthPath (guide: SVGGeometryElement, element: SVGGeometryElement | HTMLElement, percent: number) {
 
     const percentToLengthValue = map(percent, 0, 100, 0, guide.getTotalLength())
 
