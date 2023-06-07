@@ -4,6 +4,11 @@
           href="/"
           class="v-app-nav__logo"
       ><img src="../assets/images/logo.svg" alt="logo"></nuxt-link>
+
+      <div>
+          {{useRouter().currentRoute.value.name}}
+      </div>
+
       <button
               class="v-app-nav__menu-toggle"
               @click="useAppStateStore().toggleNav()"
@@ -158,6 +163,7 @@
 
 <script lang="ts" setup>
 import {useAppStateStore} from "~/stores/appState";
+import {useRouter} from "nuxt/app"
 
 const routes = useRouter().getRoutes()
 const curentRoutePath = computed(() => useRoute().path)
@@ -175,7 +181,7 @@ const curentRoutePath = computed(() => useRoute().path)
     flex-direction: row;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
 
     .v-app--is-dark & {
         background-color: var(--fp-color-black);
@@ -191,10 +197,6 @@ const curentRoutePath = computed(() => useRoute().path)
 
 .v-app-nav__menu-toggle {
     display: block;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
     height: var(--fp-app-nav-height);
 }
 

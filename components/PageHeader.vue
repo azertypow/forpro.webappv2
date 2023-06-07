@@ -1,14 +1,17 @@
 <template>
   <header
           class="v-page-header fp-remove-margin-child"
-          :class="{
-            'with-background-image': backgroundImage
-          }"
-          :style="{
-      backgroundImage: `url(${backgroundImage})` || ''
-          }"
   >
-      <div class="fp-grid-with-gutter">
+      <div
+              class="v-page-header__img"
+              v-if="backgroundImage"
+              :style="{
+                backgroundImage: `url(${backgroundImage})` || ''
+              }"
+      ></div>
+      <div
+              class="fp-grid-with-gutter fp-remove-margin-child"
+      >
         <h1 class="v-page-header__title" >{{pageTitle}}</h1>
       </div>
   </header>
@@ -32,7 +35,7 @@ defineProps({
 <style lang="scss" scoped>
 
 .v-page-header {
-  height: 10rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,12 +45,13 @@ defineProps({
   .v-app--is-dark & {
     background: var(--fp-color-black);
   }
+}
 
-  &.with-background-image {
-    height: calc(100vh - var(--fp-app-nav-height) );
-    background-position: center;
-    background-size: cover;
-  }
+.v-page-header__img {
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
 }
 
 .v-page-header__title {

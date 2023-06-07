@@ -41,7 +41,6 @@
 <style lang="scss" scoped>
 .v-app {
     min-height: 100vh;
-    padding-top: var(--fp-app-nav-height);
     color: var(--fp-color-black);
     background-color: var(--fp-color-white);
 
@@ -57,7 +56,6 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: var(--fp-color-white);
 
     .v-app--is-dark & {
         background: var(--fp-color-black);
