@@ -97,12 +97,14 @@ const svgGuide2Container                     = ref(null)
 const container = ref(null)
 const fixedElement = ref(null)
 const fixedElementToTranslate = ref(null)
-const fixedElementTopMargin = window.innerHeight / 3
-const fixedElementBottomMargin = window.innerHeight / 3 * 2
+let fixedElementTopMargin = 0
+let fixedElementBottomMargin = 0
 
 onMounted(() => {
     nextTick(() => {
         fixedElementAction()
+        fixedElementTopMargin = window.innerHeight / 3
+        fixedElementBottomMargin = window.innerHeight / 3 * 2
     })
 
     window.addEventListener('mousemove', (evt) => {
@@ -140,7 +142,7 @@ function fixedElementAction() {
 
         if(
             fixedElementWindowTop < fixedElementTopMargin
-            && containerWindowBottom > window.innerHeight - fixedElementBottomMargin
+            && containerWindowBottom > fixedElementBottomMargin
         ) {
             fixedElementToTranslate.value.style.transform = `translateY(${ -1 * fixedElementWindowTop + fixedElementTopMargin}px)`
         }
