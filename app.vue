@@ -91,13 +91,14 @@
 <script lang="ts" setup >
 import {useAppStateStore} from "~/stores/appState"
 import {onMounted} from "#imports"
+import {Ref} from "vue"
 
 useRouter().beforeEach((to, from, next) => {
     useAppStateStore().closeNav()
     next()
 })
 
-const backgroundEffect =  ref(null)
+const backgroundEffect: Ref<null | HTMLElement> =  ref(null)
 
 onMounted(() => {
     window.addEventListener('scroll', () => {

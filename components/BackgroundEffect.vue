@@ -121,13 +121,15 @@
 // }>()
 
 import {nextTick} from "@vue/runtime-core";
+import {Ref} from "vue"
 
-const leftElementToMove    = ref(null)
-const leftElementToMove2    = ref(null)
+const leftElementToMove: Ref<null | HTMLElement>    = ref(null)
+const leftElementToMove2: Ref<null | HTMLElement>    = ref(null)
 
-const container = ref(null)
-const fixedElement = ref(null)
-const fixedElementToTranslate = ref(null)
+const container: Ref<null | HTMLElement> = ref(null)
+const fixedElement: Ref<null | HTMLElement> = ref(null)
+const fixedElementToTranslate: Ref<null | HTMLElement> = ref(null)
+
 let fixedElementTopMargin = 0
 let fixedElementBottomMargin = 0
 
@@ -173,19 +175,22 @@ function updateParallax(value: number, min: number, max: number) {
 
 function fixedElementAction() {
 
+    const containerValue  = container.value
+    const fixedElementValue      = fixedElement.value
+    const fixedElementToTranslateValue  = fixedElementToTranslate.value
 
-    if (!(container.value instanceof HTMLElement)) return
-    if (!(fixedElement.value instanceof HTMLElement)) return
-    if (!(fixedElementToTranslate.value instanceof HTMLElement)) return
+    if (!(containerValue instanceof HTMLElement)) return
+    if (!(fixedElementValue instanceof HTMLElement)) return
+    if (!(fixedElementToTranslateValue instanceof HTMLElement)) return
 
-    const containerWindowBottom = container.value.getBoundingClientRect().bottom
-    const fixedElementWindowTop = fixedElement.value.getBoundingClientRect().top
+    const containerWindowBottom = containerValue.getBoundingClientRect().bottom
+    const fixedElementWindowTop = fixedElementToTranslateValue.getBoundingClientRect().top
 
     if (
         fixedElementWindowTop < fixedElementTopMargin
         && containerWindowBottom > fixedElementBottomMargin
     ) {
-        fixedElementToTranslate.value.style.transform = `translateY(${-1 * fixedElementWindowTop + fixedElementTopMargin}px)`
+        fixedElementToTranslateValue.style.transform = `translateY(${-1 * fixedElementWindowTop + fixedElementTopMargin}px)`
     }
 }
 
