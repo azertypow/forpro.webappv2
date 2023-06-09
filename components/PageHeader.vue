@@ -80,10 +80,6 @@ onMounted(() => {
       50,
     )
 
-    console.log("-----")
-    console.log(headerMain.value.getBoundingClientRect().height - headerMain.value.getBoundingClientRect().top)
-    console.log(YTranslation)
-
     graphicToMove.value.style.transform = `translate(0, ${YTranslation}px)`
 
   })
@@ -126,7 +122,7 @@ const map = (
   padding-top:    2.5rem;
   padding-bottom: 2.5rem;
   text-align: center;
-  color: var(--fp-theme-color-secondary);
+  color: var(--fp-theme-color-main);
 }
 
 .v-page-header__graphique-image {

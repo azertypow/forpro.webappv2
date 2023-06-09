@@ -6,19 +6,21 @@
             <h3>ForPro</h3>
 
             <h6>
-                Fondation ForPro
+                <b>Fondation ForPro</b>
                 <br>Rte de la Galaise 17
                 <br>1228 Plan-les-Ouates
                 <br>+41 76 358 42 23
                 <br>info@for-pro.ch
             </h6>
 
+            <h6><a href="mailto:info@for-pro.ch" >info@for-pro.ch</a></h6>
+
             <div
                 class="v-app-footer__socials"
             >
-                <div></div>
-                <div></div>
-                <div></div>
+                <div>F</div>
+                <div>I</div>
+                <div>T</div>
             </div>
         </div>
         <div
@@ -31,15 +33,11 @@
                 newsletter en cliquant ici.
             </p>
 
-            <button>rappel newsletter</button>
+            <button>S'inscrire</button>
 
             <h6>
-                Images du bâtiment et portraits d'apprenti·e·s: Alicia Dubuis
-            </h6>
-            <h6>
-                Développement: Nicolas Baldran
-            </h6>
-            <h6>
+                Images du bâtiment et portraits d'apprenti·e·s: Alicia Dubuis<br>
+                Développement: Nicolas Baldran<br>
                 Webdesign: Sonia Dominguez & Rob van Leijsen
             </h6>
         </div>
@@ -70,14 +68,19 @@
 }
 
 .v-app-footer__socials {
+     margin-top: 2rem;
     display: flex;
     gap: var(--fp-gutter);
 
     > * {
-        width: 3rem;
-        height: 3rem;
-        background: var(--fp-color-white);
+        width: 2rem;
+        height: 2rem;
+        background: var(--fp-theme-color-secondary);
         border-radius: 50%;
+        color: var(--fp-theme-color-ternary);
+        text-align: center;
+        line-height: 1.9rem;
+        cursor: pointer;
     }
 }
 
@@ -89,5 +92,9 @@
     @container (min-width: 750px) {
         width: 50%;
     }
+}
+
+h6 {
+    margin-top: 1rem;
 }
 </style>

@@ -2,6 +2,9 @@
     <section class="v-article-item" >
         <div
                 class="v-article-item__img"
+                :style="{
+                    backgroundImage: `url(${src})`,
+                }"
         >
         </div>
         <div
@@ -17,8 +20,12 @@
 
 
 <script lang="ts" setup>
-// defineProps<{
-// }>()
+defineProps({
+    src: {
+        type: String,
+        required: true,
+    }
+})
 
 </script>
 
@@ -28,8 +35,8 @@
 
 <style lang="scss" scoped >
 .v-article-item {
-    background: var(--fp-color-black);
-    color: var(--fp-color-white);
+    background: white;
+    color: var(--fp-theme-color-secondary);
     width: 100%;
 
     .v-app--is-dark & {
@@ -39,8 +46,9 @@
 }
 
 .v-article-item__img {
-    height: 5rem;
+    height: 10rem;
     background-color: var(--fp-color-grey);
+    background-size: cover;
 }
 
 .v-article-item__content {

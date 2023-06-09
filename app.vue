@@ -52,7 +52,7 @@
 
 .v-app__nav {
     position: fixed;
-    z-index: 100;
+    z-index: 100000;
     top: 0;
     left: 0;
     width: 100%;
@@ -104,6 +104,11 @@ onMounted(() => {
         updateBackgroundColor()
     })
 
+    useAppStateStore().updateTheme()
+
+    useRouter().afterEach(() => {
+        useAppStateStore().updateTheme()
+    })
 })
 
 function updateBackgroundColor() {

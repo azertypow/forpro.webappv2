@@ -7,9 +7,10 @@
         }"
     >
         <div class="v-profile-item__img"></div>
-        <h5 style="color: var(--fp-theme-color-secondary)" class="v-profile-item__name">Joelle Mathey</h5>
-        <h5  class="v-profile-item__type">Directrice</h5>
-        <p   class="v-profile-item__desc">Comment accompagner concrètement le parcours d'orientation, de formation et l’entrée sur le marché du travail? Le mentorat propose aux pré-apprenti∙e∙s et apprenti∙e∙s un espace d'échange régulier pour faciliter leur parcours et renforcer leur motivation. Les mentor∙e∙s mettent à disposition temps, ressources et réseau professionnel.</p>
+        <h5 style="color: var(--fp-theme-color-secondary)" class="v-profile-item__name">{{profileName}}</h5>
+        <h5  class="v-profile-item__type">{{profileType}}</h5>
+        <p  v-if="profileDesc" class="v-profile-item__desc">{{profileDesc}}</p>
+        <a v-if="mail" :href="`mailto:${mail}`" >{{mail}}</a>
     </section>
 </template>
 
@@ -21,6 +22,12 @@
 defineProps<{
     withPhoto?: boolean
     small?: boolean
+    mail?: string
+    profileDesc?: string
+
+    profileName: string
+    profileType: string
+
 }>()
 
 </script>
@@ -39,6 +46,7 @@ defineProps<{
 
     &.with-photo {
         align-items: center;
+        text-align: center;
     }
 }
 
@@ -48,8 +56,8 @@ defineProps<{
     .with-photo & {
         display: block;
         background: var(--fp-color-grey);
-        width: 5rem;
-        height: 5rem;
+        width: 8rem;
+        height: 8rem;
         border-radius: 50%;
     }
 }
@@ -70,6 +78,20 @@ defineProps<{
     .with-photo & {
         display: none;
     }
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+    margin-top: 1rem;
+
+    p + & {
+        margin-top: 0;
+    }
+}
+
+p {
+    margin-top: 1rem;
 }
 
 .small p {

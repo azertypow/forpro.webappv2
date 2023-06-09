@@ -28,6 +28,36 @@ h1,
   }
 }
 
+.fp-heading-h2--xl {
+  //letter-spacing: -0.01em;
+  font-weight: 700;
+  max-width: 12em;
+
+  //
+  line-height:  2.5rem;
+  font-size:    2.15rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+
+
+  & + & {
+    margin-top: 2rem;
+  }
+
+  @media (min-width: $fp-breakpoint-sm) {
+    line-height:  4rem;
+    font-size:    4rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+
+    & + & {
+      margin-top: 2rem;
+    }
+  }
+
+}
+
+
 
 h2,
 .fp-heading-h2 {

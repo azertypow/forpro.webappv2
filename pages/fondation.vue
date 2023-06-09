@@ -1,7 +1,7 @@
 <template>
     <main class="v-fondation fp-page" >
         <page-header
-                page-title="Fondation"
+                page-title="ForPro"
                 background-image="https://api.for-pro.ch/media/pages/fondation-forpro/5a5fcd1775-1658758079/forpro-07-learningcenter-1280x.jpg"
         />
         <div
@@ -33,7 +33,7 @@
             <div
                 class="fp-grid-coll-16-24 fp-grid-with-gutter fp-page__sections"
             >
-                <h2>Principe</h2>
+                <h2>Principes</h2>
                 <p>La fondation ForPro réunit des partenaires désirant travailler de manière ouverte, collaborative et itérative. Cela implique que chacun∙e partage une compréhension commune de l’approche résolument orientée sur les futurs utilisateurs et utilisatrices. Concrètement, les offres sont imaginées avec les publics cibles, testées auprès de ces derniers et seront adaptées chemin faisant.</p>
                 <text-bullet-point>
                     <div style="width: 100% !important;" >Parier sur la CONFIANCE et offrir des conditions cadre paisibles pour favoriser l’estime de soi et la confiance en l’autre pour croire en ses compétences et son potentiel.</div>
@@ -50,7 +50,7 @@
             <div
                 class="fp-grid-coll-16-24 fp-grid-with-gutter fp-page__sections"
             >
-                <h2>Principe</h2>
+                <h2>Principes</h2>
                 <p>La fondation ForPro réunit des partenaires désirant travailler de manière ouverte, collaborative et itérative. Cela implique que chacun∙e partage une compréhension commune de l’approche résolument orientée sur les futurs utilisateurs et utilisatrices. Concrètement, les offres sont imaginées avec les publics cibles, testées auprès de ces derniers et seront adaptées chemin faisant.</p>
                 <text-bullet-point>
                     <div>Parier sur la CONFIANCE et offrir des conditions cadre paisibles pour favoriser l’estime de soi et la confiance en l’autre pour croire en ses compétences et son potentiel.</div>
@@ -68,10 +68,61 @@
                 class="fp-grid-coll-16-24 fp-grid-with-gutter fp-page__sections"
             >
                 <h2>L'équipe</h2>
-                <div class="fp-grid-coll-container fp-grid-coll-container--center">
-                    <div class="fp-grid-coll-8-24" ><profile-item :with-photo="true" /></div>
-                    <div class="fp-grid-coll-8-24" ><profile-item :with-photo="true" /></div>
-                    <div class="fp-grid-coll-8-24" ><profile-item :with-photo="true" /></div>
+                <div class="fp-grid-coll-container fp-grid-coll-container--center v-fondation__profiles">
+                    <div class="fp-grid-coll-8-24" >
+                        <profile-item
+                            profile-desc=""
+                            profile-name="Joëlle Mathey"
+                            profile-type="Directrice"
+                            :with-photo="true"
+                            mail="voir le mail"
+                        />
+                    </div>
+                    <div class="fp-grid-coll-8-24" >
+                        <profile-item
+                            profile-desc=""
+                            profile-name="Fabrice Voan"
+                            profile-type="Adjoint de direction"
+                            :with-photo="true"
+                            mail="voir le mail"
+                        />
+                    </div>
+                    <div class="fp-grid-coll-8-24" >
+                        <profile-item
+                            profile-desc=""
+                            profile-name="Thierry Schlatter"
+                            profile-type="Chef de projet «FoodLab»"
+                            :with-photo="true"
+                            mail="voir le mail"
+                        />
+                    </div>
+                    <div class="fp-grid-coll-8-24" >
+                        <profile-item
+                            profile-desc=""
+                            profile-name="Francois Antille"
+                            profile-type="Chef de projet «LearningLab»"
+                            :with-photo="true"
+                            mail="voir le mail"
+                        />
+                    </div>
+                    <div class="fp-grid-coll-8-24" >
+                        <profile-item
+                            profile-desc=""
+                            profile-name="Mélissa Catoquessa"
+                            profile-type="Cheffe de projet «Documentation»"
+                            :with-photo="true"
+                            mail="voir le mail"
+                        />
+                    </div>
+                    <div class="fp-grid-coll-8-24" >
+                        <profile-item
+                            profile-desc=""
+                            profile-name="Lina Borén"
+                            profile-type="Cheffe de projet «Communication»"
+                            :with-photo="true"
+                            mail="voir le mail"
+                        />
+                    </div>
                 </div>
             </div>
 
@@ -80,23 +131,43 @@
             >
                 <h3>Le Conseil de Fondation</h3>
                 <div class="fp-grid-coll-container">
-                    <div class="fp-grid-coll-12-24 fp-grid-with-gutter" ><profile-item/></div>
-                    <div class="fp-grid-coll-12-24 fp-grid-with-gutter" ><profile-item :small="true" /></div>
-                    <div class="fp-grid-coll-12-24 fp-grid-with-gutter" ><profile-item/></div>
+                    <div class="fp-grid-coll-12-24 fp-grid-with-gutter" >
+                        <profile-item
+                            :small="true"
+                            profile-name="François Abbé-Decarroux"
+                            profile-type="Président"
+                        />
+                    </div>
+                    <div class="fp-grid-coll-12-24 fp-grid-with-gutter" >
+                        <profile-item
+                            :small="true"
+                            profile-name="Marie Barbier-Mueller"
+                            profile-type="Membre"
+                        />
+                    </div>
+                    <div class="fp-grid-coll-12-24 fp-grid-with-gutter" >
+                        <profile-item
+                            :small="true"
+                            profile-name="Marc Maugué"
+                            profile-type="Membre"
+                        />
+                    </div>
+                    <div class="fp-grid-coll-12-24 fp-grid-with-gutter" >
+                        <profile-item
+                            :small="true"
+                            profile-name="Abir Oreibi"
+                            profile-type="Membre"
+                        />
+                    </div>
+                    <div class="fp-grid-coll-12-24 fp-grid-with-gutter" >
+                        <profile-item
+                            :small="true"
+                            profile-name="Olivier Sandoz"
+                            profile-type="Membre"
+                        />
+                    </div>
                 </div>
             </div>
-
-            <div
-                class="fp-grid-coll-16-24 fp-grid-with-gutter fp-page__sections"
-            >
-                <h3>Le Conseil de Fondation</h3>
-                <div class="fp-grid-coll-container">
-                    <div class="fp-grid-coll-8-24 fp-grid-with-gutter" ><profile-item :small="false" /></div>
-                    <div class="fp-grid-coll-8-24 fp-grid-with-gutter" ><profile-item :small="true" /></div>
-                    <div class="fp-grid-coll-8-24 fp-grid-with-gutter" ><profile-item :small="true" /></div>
-                </div>
-            </div>
-
         </div>
     </main>
 </template>
@@ -126,5 +197,11 @@ onMounted(() => {
 
 <style lang="scss" scoped >
 .v-fondation {
+}
+
+.v-fondation__profiles {
+    > * {
+        margin-top: 3rem;
+    }
 }
 </style>

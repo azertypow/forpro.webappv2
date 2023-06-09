@@ -103,13 +103,12 @@ const responseIsOpen = ref(false)
 }
 
 .v-faq-item__icon__vertical {
-    transition: height ease-in-out .25s, transform ease-in-out .5s .25s;
-    transform: rotate(0deg) scale(1, 1);
+    transition: transform ease-in-out .5s .25s;
+    transform: scale(1, 1);
 
     .response-is-open & {
-        transition: height ease-in-out .5s .25s, transform ease-in-out .25s;
-        transform: rotate(0deg) scale(.5, 1) translate(1.5rem, 0);
-        height: 100%;
+        transition: transform ease-in-out .25s;
+        transform: scale(1, 0);
     }
 }
 

@@ -1,5 +1,5 @@
 <template>
-    <main class="v-entreprises fp-page" >
+    <main class="v-grandlab fp-page" >
         <page-header
             :page-title="useRoute().meta.name"
             background-image="/images/ACDB_002-v2.jpeg"
@@ -78,6 +78,7 @@
                 </block-f-a-q>
             </div>
         </div>
+
     </main>
 </template>
 
@@ -86,11 +87,11 @@
 
 
 <script lang="ts" setup>
-import {useAppStateStore} from "~/stores/appState";
-
 definePageMeta({
-    name: 'Hôtel Entreprises'
+    name: 'GrandLab'
 })
+
+import {useAppStateStore} from "~/stores/appState";
 
 const isDark = false
 
@@ -108,6 +109,6 @@ onMounted(() => {
 
 
 <style lang="scss" scoped >
-.v-entreprises {
+.v-grandlab {
 }
 </style>

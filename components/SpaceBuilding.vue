@@ -6,6 +6,19 @@
         <p>La fondation ForPro est installée au sein de l’Espace Tourbillon, situé au cœur de la zone industrielle de Plan-les-Ouates (ZIPLO) à Genève. Le bâtiment de ForPro a été pensé pour répondre aux attentes des apprenti∙e∙s et des entreprises, tout en mettant à disposition des espaces ouverts au public. Dès la rentrée 2023, ForPro accueillera l’École d’horlogerie, des entreprises du secteur industriel et artisanal, un LearningLab et un MakerLab, des espaces de restauration ainsi qu’une crèche et un espace polyvalent. ForPro est un lieu de rencontre, d’orientation, d’expérimentation, d’apprentissage et de faire ensemble.</p>
 
         <div
+            class="v-space-building__section-name"
+        >
+            <div data-id="Accueil" data-color="f3030e"              class="fp-heading-h5 fp-text--without-margin">Accueil</div>
+            <div data-id="MakerLab" data-color="1754ff"             class="fp-heading-h5 fp-text--without-margin">MakerLab</div>
+            <div data-id="LearningLab" data-color="ffd200"          class="fp-heading-h5 fp-text--without-margin">LearningLab</div>
+            <div data-id="FoodLab" data-color="ff6917"              class="fp-heading-h5 fp-text--without-margin">FoodLab</div>
+            <div data-id="FoodLab" data-color="ff6917"              class="fp-heading-h5 fp-text--without-margin">ArtLab</div>
+            <div data-id="Hôtel_Entreprises" data-color="7832a0"    class="fp-heading-h5 fp-text--without-margin">Hôtel Entreprises</div>
+            <div data-id="École_Horlogerie" data-color="46a014"     class="fp-heading-h5 fp-text--without-margin">École Horlogerie</div>
+            <div data-id="Crèche" data-color="b47c00"               class="fp-heading-h5 fp-text--without-margin">Crèche</div>
+        </div>
+
+        <div
                 class="v-space-building__plan"
         >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1199.99985 478.04765">
@@ -709,19 +722,6 @@
         </div>
 
         <div
-            class="v-space-building__section-name"
-        >
-            <div data-id="Accueil" data-color="f3030e"              class="fp-heading-h5 fp-text--without-margin">Accueil</div>
-            <div data-id="MakerLab" data-color="1754ff"             class="fp-heading-h5 fp-text--without-margin">MakerLab</div>
-            <div data-id="LearningLab" data-color="ffd200"          class="fp-heading-h5 fp-text--without-margin">LearningLab</div>
-            <div data-id="FoodLab" data-color="ff6917"              class="fp-heading-h5 fp-text--without-margin">FoodLab</div>
-            <div data-id="FoodLab" data-color="ff6917"              class="fp-heading-h5 fp-text--without-margin">ArtLab</div>
-            <div data-id="Hôtel_Entreprises" data-color="7832a0"    class="fp-heading-h5 fp-text--without-margin">Hôtel Entreprises</div>
-            <div data-id="École_Horlogerie" data-color="46a014"     class="fp-heading-h5 fp-text--without-margin">École Horlogerie</div>
-            <div data-id="Crèche" data-color="b47c00"               class="fp-heading-h5 fp-text--without-margin">Crèche</div>
-        </div>
-
-        <div
                 class="v-space-building__section-description"
         >
             <p>Au service des apprenti∙e∙s, avant, pendant et après l’apprentissage, le LearningLab sera un espace où
@@ -763,20 +763,19 @@ svg {
 }
 
 .v-space-building__section-name {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
     padding-top: 1rem;
-    margin-bottom: -1rem;
+    margin-bottom: 1rem;
     justify-content: center;
 
-  > div {
-    padding-right: var(--fp-gutter);
-    padding-bottom: 1rem;
-    padding-left: var(--fp-gutter);
-    white-space: nowrap;
-  }
+    > div {
+        padding-right: var(--fp-gutter);
+        padding-bottom: 1rem;
+        padding-left: var(--fp-gutter);
+        white-space: nowrap;
+    }
 }
 
 .v-space-building__section-description {

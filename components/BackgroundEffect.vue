@@ -5,43 +5,52 @@
     >
 
         <div
-            class="v-background-effect__container"
+            class="v-background-effect__text-container"
             ref="fixedElement"
         >
             <div
                 class="v-background-effect__container__to-translate"
                 ref="fixedElementToTranslate"
             >
-                <h3>Une voie d’excellence, une voie désirée et désirable</h3>
+                <p class="fp-heading-h2--xl">Faire de la formation professionnelle une voie désirée et désirable</p>
             </div>
         </div>
 
 
         <div
-            class="v-background-effect__container"
+            class="v-background-effect__left-container"
             ref="leftElementToMove"
         >
             <svg
-                class="v-background-effect__svg-1"
-                version="1.1"
-                viewBox="0 0 654.17009 266.66801"
+                class="v-background-effect__right-container__svg-3"
+                viewBox="0 0 238.78518 333.33308"
                 xmlns="http://www.w3.org/2000/svg"
                 xmlns:svg="http://www.w3.org/2000/svg">
+                <defs
+                    id="defs2922">
+                    <clipPath
+                        clipPathUnits="userSpaceOnUse"
+                        id="clipPath2954">
+                        <path
+                            d="m 623.753,95.674 h 179.089 v 250 H 623.753 Z"
+                            id="path2952" />
+                    </clipPath>
+                </defs>
                 <g
                     id="g2926"
-                    transform="matrix(1.3333333,0,0,-1.3333333,-581.15999,819.14531)">
+                    transform="matrix(1.3333333,0,0,-1.3333333,-831.67078,460.89839)">
                     <g
-                        id="g2928">
+                        id="g2948">
                         <g
-                            id="g2930"
-                            clip-path="url(#clipPath2934)">
+                            id="g2950"
+                            clip-path="url(#clipPath2954)">
                             <g
-                                id="g2936"
-                                transform="translate(926.4976,429.9935)">
+                                id="g2956"
+                                transform="translate(730.3931,345.6738)">
                                 <path
-                                    d="m 0,0 v 168.728 c 0,11.258 -5.187,15.638 -16.369,15.638 h -67.143 c -35.107,0 -51.25,-28.669 -69.627,-49.932 -24.072,-27.852 -50.577,-37.3 -89.496,-37.3 H -490.628 V 71.596 h 247.993 c 38.919,0 65.424,-9.45 89.496,-37.3 18.377,-21.265 34.52,-49.932 69.627,-49.932 h 67.143 C -5.187,-15.636 0,-11.257 0,0"
-                                    style="fill:#1754ff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-                                    id="path2938" />
+                                    d="m 0,0 h -34.19 c -40.014,0 -72.45,-31.619 -72.45,-70.621 v -108.757 c 0,-39.003 32.436,-70.622 72.45,-70.622 H 0 c 40.013,0 72.451,31.619 72.451,70.622 V -70.621 C 72.451,-31.619 40.013,0 0,0"
+                                    style="fill-opacity:1;fill-rule:nonzero;stroke:none"
+                                    id="path2958" />
                             </g>
                         </g>
                     </g>
@@ -49,31 +58,57 @@
             </svg>
         </div>
 
+<!--        <div-->
+<!--            class="v-background-effect__left-container-2"-->
+<!--            ref="leftElementToMove2"-->
+<!--        >-->
+<!--            <svg-->
+<!--                class="v-background-effect__left-container__svg-1"-->
+<!--                viewBox="0 0 333.56264 333.33332"-->
+<!--                xmlns="http://www.w3.org/2000/svg"-->
+<!--                xmlns:svg="http://www.w3.org/2000/svg">-->
+<!--                <defs-->
+<!--                    id="defs2922" />-->
+<!--                <g-->
+<!--                    id="g2926"-->
+<!--                    transform="matrix(1.3333333,0,0,-1.3333333,-1065.4946,1284.3024)">-->
+<!--                    <g-->
+<!--                        id="g2968"-->
+<!--                        transform="translate(924.207,903.9428)">-->
+<!--                        <path-->
+<!--                            d="m 0,0 -38.653,59.284 1.891,-71.834 -64.434,24.089 41.713,-56.946 -65.603,-20.309 65.603,-20.309 -41.713,-56.947 64.434,24.089 -1.891,-71.833 38.653,59.283 38.653,-59.283 -1.891,71.833 64.436,-24.089 -41.715,56.947 65.603,20.309 -65.603,20.309 41.715,56.946 -64.436,-24.089 1.891,71.834 z"-->
+<!--                            style="fill-opacity:1;fill-rule:nonzero;stroke:none"-->
+<!--                            id="path2970" />-->
+<!--                    </g>-->
+<!--                </g>-->
+<!--            </svg>-->
+<!--        </div>-->
 
-
-<!--        <svg-->
-<!--            ref="svgGuide2Container"-->
-<!--            width="437"-->
-<!--            height="798" viewBox="0 0 437 798" fill="none" xmlns="http://www.w3.org/2000/svg">-->
-<!--            <path-->
-<!--                ref="svgGuide2"-->
-<!--                d="M0 0C0 135 32.5 218.8 32.5 310C32.5 424 1 476.5 1 576.5C1 676.5 123 797 436.5 797" stroke="black"-->
-<!--            />-->
-<!--        </svg>-->
-
-<!--        <svg-->
-<!--            ref="svgContainer"-->
-<!--            width="1280" height="1020" viewBox="0 0 1280 1020" fill="none" xmlns="http://www.w3.org/2000/svg">-->
-<!--            <g>-->
-<!--                <path-->
-<!--                    ref="rightElementToMove"-->
-<!--                    d="M0 0H471.235V471.235H0V0Z" fill="#D9D9D9"-->
-<!--                />-->
-<!--            </g>-->
-<!--            <circle class="v-background-effect__svg-guides" ref="svgGuide"  cx="758" cy="390" r="240.5" stroke="black"/>-->
-<!--            <circle class="v-background-effect__svg-guides"                 cx="517" cy="631" r="240.5" stroke="black"/>-->
-<!--        </svg>-->
-
+        <div
+            class="v-background-effect__right-container"
+            ref="rightElementToMove"
+        >
+            <svg
+                class="v-background-effect__svg-2"
+                viewBox="0 0 217.10665 333.33332"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:svg="http://www.w3.org/2000/svg">
+                <defs
+                    id="defs2922" />
+                <g
+                    id="g2926"
+                    transform="matrix(1.3333333,0,0,-1.3333333,-174.40706,461.33319)">
+                    <g
+                        id="g2964"
+                        transform="translate(293.6353,345.9999)">
+                        <path
+                            d="M 0,0 H -27.207 V -42.901 H -135.622 V 0 h -27.208 v -250 h 27.208 v 41.216 H -27.207 V -250 H 0 Z"
+                            style="fill-opacity:1;fill-rule:nonzero;stroke:none"
+                            id="path2966" />
+                    </g>
+                </g>
+            </svg>
+        </div>
     </section>
 </template>
 
@@ -87,12 +122,8 @@
 
 import {nextTick} from "@vue/runtime-core";
 
-const rightElementToMove    = ref(null)
 const leftElementToMove    = ref(null)
-const svgGuide                      = ref(null)
-const svgGuide2                     = ref(null)
-const svgGuide2Container                     = ref(null)
-
+const leftElementToMove2    = ref(null)
 
 const container = ref(null)
 const fixedElement = ref(null)
@@ -102,58 +133,62 @@ let fixedElementBottomMargin = 0
 
 onMounted(() => {
     nextTick(() => {
-        fixedElementAction()
-        fixedElementTopMargin = window.innerHeight / 3
+        // todo: clean with intersection observer
+        window.addEventListener("scroll", () => {
+            fixedElementAction()
+
+            if( ! (container.value instanceof HTMLElement) ) return
+
+            const scrollPositionRelativeToContainer =
+                container.value.getBoundingClientRect().height + container.value.getBoundingClientRect().top
+
+            updateParallax(
+                scrollPositionRelativeToContainer,
+                0,
+                container.value.getBoundingClientRect().height
+            )
+        })
+        fixedElementTopMargin = window.innerHeight / 5
         fixedElementBottomMargin = window.innerHeight / 3 * 2
     })
 
-    window.addEventListener('mousemove', (evt) => {
+    window.addEventListener('mousemove', (evt: MouseEvent) => {
 
-
-        if(!(svgGuide.value instanceof SVGGeometryElement))     return
-        if(!(svgGuide2.value instanceof SVGGeometryElement))     return
-        if(!(rightElementToMove.value instanceof SVGGeometryElement))     return
-        if(!(leftElementToMove.value instanceof HTMLElement))     return
-
-        const percentWidth  =  map(evt.x, 0, window.innerWidth, 0, 100)
-        const percentHeight =  map(evt.y, 0, window.innerHeight, 0, 100)
-
-        // console.log(percentWidth)
-        // console.log(percentHeight)
-
-        // setPositionWidthPath(svgGuide.value, elementToMoveWithXPosition.value, percentWidth)
-        setPositionWidthPath(svgGuide2.value, leftElementToMove.value, percentHeight)
     })
 })
 
+function updateParallax(value: number, min: number, max: number) {
+    if(!(leftElementToMove.value instanceof HTMLElement))     return
+
+    const percent =  map(value, min, max, 100 / 2, 0)
+    leftElementToMove.value.style.setProperty('--percent', percent.toString())
+
+
+    if(!(leftElementToMove2.value instanceof HTMLElement))     return
+
+    const percent_2 =  map(value, min, max, 0, 100 / 2)
+    leftElementToMove2.value.style.setProperty('--percent', percent_2.toString())
+
+}
+
 function fixedElementAction() {
 
-    // todo: clean with intersection observer
-    window.addEventListener("scroll", () => {
-        if( !(container.value instanceof HTMLElement) ) return
-        if( !(fixedElement.value instanceof HTMLElement) ) return
-        if( !(fixedElementToTranslate.value instanceof HTMLElement) ) return
 
-        const containerWindowBottom = container.value.getBoundingClientRect().bottom
-        const fixedElementWindowTop = fixedElement.value.getBoundingClientRect().top
+    if (!(container.value instanceof HTMLElement)) return
+    if (!(fixedElement.value instanceof HTMLElement)) return
+    if (!(fixedElementToTranslate.value instanceof HTMLElement)) return
 
-        if(
-            fixedElementWindowTop < fixedElementTopMargin
-            && containerWindowBottom > fixedElementBottomMargin
-        ) {
-            fixedElementToTranslate.value.style.transform = `translateY(${ -1 * fixedElementWindowTop + fixedElementTopMargin}px)`
-        }
-    })
+    const containerWindowBottom = container.value.getBoundingClientRect().bottom
+    const fixedElementWindowTop = fixedElement.value.getBoundingClientRect().top
+
+    if (
+        fixedElementWindowTop < fixedElementTopMargin
+        && containerWindowBottom > fixedElementBottomMargin
+    ) {
+        fixedElementToTranslate.value.style.transform = `translateY(${-1 * fixedElementWindowTop + fixedElementTopMargin}px)`
+    }
 }
 
-function setPositionWidthPath (guide: SVGGeometryElement, element: SVGGeometryElement | HTMLElement, percent: number) {
-
-    const percentToLengthValue = map(percent, 0, 100, 0, guide.getTotalLength())
-
-    const point = guide.getPointAtLength( percentToLengthValue )
-
-    element.style.transform = `translate(${point.x}px, ${point.y}px)`
-}
 
 const map = (
     value: number,
@@ -173,16 +208,22 @@ const map = (
 .v-background-effect {
     position: relative;
     width: 100%;
-    height: 200vh;
+    height: 40rem;
+    overflow: hidden;
 }
 
-.v-background-effect__container {
+svg {
+    fill: var(--fp-theme-color-main);
+}
+
+.v-background-effect__text-container {
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     text-align: center;
     margin-top: 5rem;
+    z-index: 1000;
 }
 
 .v-background-effect__container__to-translate {
@@ -193,13 +234,48 @@ const map = (
     }
 }
 
-.v-background-effect__svg-guides {
-    //opacity: 0;
+.v-background-effect__left-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    offset-path: path("M0 0C0 135 32.5 218.8 32.5 310C32.5 424 1 476.5 1 576.5C1 676.5 123 797 436.5 797");
+    offset-distance: calc(var(--percent, 0) * 1%);
+    transform: rotate(-90deg) translate(50%, 50%);
+
+    .v-background-effect__right-container__svg-3 {
+        position: relative;
+        width: 75%;
+        height: auto;
+        transform: rotateZ(45deg) translate(-50%, 50%);
+    }
+    .v-background-effect__left-container__svg-2 {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
 }
 
-.v-background-effect__svg-1 {
-    position: relative;
-    width: 100%;
-    height: auto;
+.v-background-effect__left-container-2 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 50%;
+    offset-path: path("M0 0C0 135 32.5 218.8 32.5 310C32.5 424 1 476.5 1 576.5C1 676.5 123 797 436.5 797");
+    offset-distance: calc(var(--percent, 0) * 1%);
+    transform: rotate(-90deg) translate(50%, 50%);
+
+    .v-background-effect__left-container__svg-1 {
+        position: relative;
+        width: 100%;
+        height: auto;
+        top: 0;
+        left: -50%;
+    }
 }
+
+.v-background-effect__right-container {
+    display: none;
+}
+
 </style>
