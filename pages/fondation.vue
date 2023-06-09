@@ -2,7 +2,7 @@
     <main class="v-fondation fp-page" >
         <page-header
                 page-title="ForPro"
-                background-image="https://api.for-pro.ch/media/pages/fondation-forpro/5a5fcd1775-1658758079/forpro-07-learningcenter-1280x.jpg"
+                background-image="/images/forpro-07-learningcenter-1280x.jpg"
         />
         <div
             class="fp-grid-coll-container fp-grid-coll-container--center"

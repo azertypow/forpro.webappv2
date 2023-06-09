@@ -1,7 +1,7 @@
 <template>
     <main class="v-index fp-page fp-page--no-margin-bottom" >
         <page-header
-                background-image="https://api.for-pro.ch/media/pages/fondation-forpro/5a5fcd1775-1658758079/forpro-07-learningcenter-1280x.jpg"
+                background-image="/images/forpro-07-learningcenter-1280x.jpg"
                 page-title="ForPro"
         />
 
