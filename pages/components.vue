@@ -51,7 +51,7 @@
         <hr>
         <page-header
                 page-title="page title"
-                background-image="/images/forpro-07-learningcenter-1280x.jpg"
+                background-image="/images/forpro-07-learningcenter-1280x.jpeg"
         ></page-header>
 
 
