@@ -184,7 +184,7 @@ function fixedElementAction() {
     if (!(fixedElementToTranslateValue instanceof HTMLElement)) return
 
     const containerWindowBottom = containerValue.getBoundingClientRect().bottom
-    const fixedElementWindowTop = fixedElementToTranslateValue.getBoundingClientRect().top
+    const fixedElementWindowTop = fixedElementValue.getBoundingClientRect().top
 
     if (
         fixedElementWindowTop < fixedElementTopMargin
