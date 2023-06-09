@@ -8,7 +8,7 @@
               class="v-page-header__img"
               v-if="backgroundImage"
               :style="{
-                backgroundImage: `url(${backgroundImage})` || ''
+                backgroundImage: `url(${baseURL}${backgroundImage})` || ''
               }"
       >
           <svg
@@ -40,6 +40,7 @@
 import {onMounted} from "#imports"
 import {Ref} from "vue"
 import {useAppStateStore} from "~/stores/appState"
+import nuxtConfig from "~/nuxt.config"
 
 defineProps({
     pageTitle: {
@@ -55,6 +56,8 @@ defineProps({
 const headerMain: Ref<null | HTMLElement> = ref(null)
 const headerContainer: Ref<null | HTMLElement> = ref(null)
 const graphicToMove: Ref<null | HTMLElement> = ref(null)
+
+const baseURL = useRuntimeConfig().app.baseURL
 
 onMounted(() => {
 
