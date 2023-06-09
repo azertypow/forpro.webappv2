@@ -1,7 +1,7 @@
 <template>
     <main class="v-lieu fp-page" >
         <page-header
-            :page-title="useRoute().meta.name"
+            :page-title="name"
             background-image="/images/ACDB_002-v2.jpeg"
         />
 
@@ -90,6 +90,8 @@
 import {useAppStateStore} from "~/stores/appState";
 
 const isDark = false
+
+const name = useRoute().meta.name as string
 
 onMounted(() => {
     useAppStateStore().appIsDark = isDark

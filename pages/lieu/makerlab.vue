@@ -1,7 +1,7 @@
 <template>
     <main class="v-makerlab fp-page" >
         <page-header
-            :page-title="useRoute().meta.name"
+            :page-title="name"
             background-image="/images/ACDB_002-v2.jpeg"
         />
 
@@ -94,6 +94,8 @@ definePageMeta({
 
 
 import {useAppStateStore} from "~/stores/appState";
+
+const name = useRoute().meta.name as string
 
 const isDark = false
 

@@ -1,7 +1,7 @@
 <template>
     <main class="v-entreprises fp-page" >
         <page-header
-            :page-title="useRoute().meta.name"
+            :page-title="name"
             background-image="/images/ACDB_002-v2.jpeg"
         />
 
@@ -93,6 +93,8 @@ definePageMeta({
 })
 
 const isDark = false
+
+const name = useRoute().meta.name as string
 
 onMounted(() => {
     useAppStateStore().appIsDark = isDark
