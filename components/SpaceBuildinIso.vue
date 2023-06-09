@@ -3,14 +3,14 @@
 
         <img
                 alt=""
-                :src="src"
+                :src="baseURL+src"
         />
 
         <img
             class="v-space-buildin-iso__img-2"
             v-if="src2"
             alt=""
-            :src="src2"
+            :src="baseURL+src2"
         />
 
 
@@ -35,6 +35,8 @@ defineProps({
   },
 
 })
+
+const baseURL = useRuntimeConfig().app.baseURL
 
 </script>
 
