@@ -9,7 +9,7 @@
             class="v-image-content__fixed-effect"
             v-if="fixedScroll"
             :style="{
-                backgroundImage: `url(${src})`,
+                backgroundImage: `url(${baseURL}${src})`,
             }"
         ></div>
         <img
@@ -37,6 +37,8 @@ defineProps({
         default: false,
     },
 })
+
+const baseURL = useRuntimeConfig().app.baseURL
 
 </script>
 
