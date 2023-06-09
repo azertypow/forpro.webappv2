@@ -194,7 +194,8 @@ const curentRoutePath = computed(() => useRoute().path)
     background-color: var(--fp-theme-color-ternary);
     overflow: hidden;
 
-    transition: height ease-in-out .5s, background-color ease-in-out .5s;
+    transition: height ease-in-out .5s, background-color ease-in-out .5s, box-shadow ease-in-out .5s;
+    box-shadow: 0 0 0 0 var(--fp-theme-color-secondary);
     height: var(--fp-app-nav-height);
 
     .v-app--is-dark & {
@@ -203,11 +204,17 @@ const curentRoutePath = computed(() => useRoute().path)
 
     &.is-intersecting {
         background: transparent;
+        box-shadow: 0 0 0 0 var(--fp-theme-color-secondary) !important;
     }
 
     .nav-is-open & {
         height: 100%;
         background-color: var(--fp-color-white);
+        box-shadow: 0 0 0 3px var(--fp-theme-color-secondary);
+    }
+
+    [data-theme="4"] & {
+        box-shadow: 0 0 0 3px var(--fp-theme-color-secondary);
     }
 }
 

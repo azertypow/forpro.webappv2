@@ -75,7 +75,6 @@ img {
     position: absolute;
     top: 10rem;
     left: 0;
-    mix-blend-mode: multiply;
     transform: translate(0, -25%);
 }
 

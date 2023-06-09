@@ -60,8 +60,8 @@
                 class="fp-grid-coll-18-24"
             >
                 <space-buildin-iso
-                    src="/images/MakerLab_iso_Etage-1.jpeg"
-                    src2="/images/MakerLab_iso_Etage-1.jpeg"
+                    src="/images/MakerLab_iso_Etage-1.png"
+                    src2="/images/MakerLab_iso_Etage-1.png"
                 />
             </div>
         </div>

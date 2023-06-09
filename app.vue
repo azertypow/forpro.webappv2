@@ -1,6 +1,7 @@
 <template>
     <div
             class="v-app"
+            :data-theme="useAppStateStore().theme"
             :class="{
                 'v-app--is-dark': useAppStateStore().appIsDark,
                 'v-app--newsletter-bar-is-visible': useAppStateStore().newsletterBarIsVisible
@@ -81,6 +82,10 @@
 .v-app__footer {
     background-color: var(--fp-theme-color-ternary);
     padding-bottom: var(--fp-app-bottom-height);
+
+    [data-theme="4"] & {
+        border-top: solid 3px var(--fp-theme-color-secondary);
+    }
 }
 </style>
 

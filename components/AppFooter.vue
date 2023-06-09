@@ -59,14 +59,6 @@
 
 
 <style lang="scss" scoped >
-.v-app-footer {
-    container-type: inline-size;
-    background: var(--fp-theme-color-ternary);
-    padding-top: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .v-app-footer__socials {
      margin-top: 2rem;
     display: flex;
@@ -82,6 +74,14 @@
         line-height: 1.9rem;
         cursor: pointer;
     }
+}
+
+.v-app-footer {
+    container-type: inline-size;
+    background: var(--fp-theme-color-ternary);
+    padding-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .v-app-footer__coll {
