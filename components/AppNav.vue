@@ -110,9 +110,9 @@
                     <div class="fp-heading-h3">
                         <nuxt-link
                             class="v-app-nav__link"
-                            href="/blog"
+                            href="/blog?theme=4"
                             :class="{
-                              'is-active': curentRoutePath === '/blog?theme=5'
+                              'is-active': curentRoutePath === '/blog'
                             }"
                         >Blog
                         </nuxt-link>
