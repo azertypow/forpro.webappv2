@@ -49,6 +49,7 @@ defineProps({
     height: 10rem;
     background-color: var(--fp-color-grey);
     background-size: cover;
+    background-position: center center;
 }
 
 .v-article-item__content {

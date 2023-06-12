@@ -66,12 +66,10 @@
                         style="background: white; height: 100%"
                     >
                         <article-item
-                            src="https://api.for-pro.ch/media/pages/evolution-du-batiment/9301c90421-1658748619/img-1588-1280x.jpg"
+                            src="images/article-646380fd3aa09.jpg"
                         >
-                            <h4>Test des principes clefs du&nbsp;MakerLab</h4>
-                            <div>
-                                Le MakerLab est un outil à destination des apprenti.e.s et des habitants du bâtiment ForPro. 7 ateliers avec plus de 80 participants ont permis de tester et questionner les premières hypothèses et principes clefs du MakerLab grâce à un kit de tests conçu avec les résultats de l’atelier d’avril 2022…
-                            </div>
+                            <h4>Le LearningLab entre dans une nouvelle ère !</h4>
+                            <div>Depuis l’automne dernier, les choses ont bien bougé du côté du LearningLab ! Toutefois, avant de vous dévoiler les avancées du projet dans une interview du responsable du projet, voici deux nouvelles; un déménagement et une nouvelle arrivée dans l’équipe…</div>
                         </article-item>
                     </div>
                 </div>
@@ -81,15 +79,10 @@
                         style="background: white; height: 100%"
                     >
                         <article-item
-                            src="https://api.for-pro.ch/media/pages/evolution-du-batiment/4a3501a434-1668695053/forpro-unandejaraphaellemueller-66-1280x.jpg"
+                            src="/images/article-63e00b8e9989f.jpg"
                         >
-                            <h4>Un an déjà!</h4>
-                            <div>
-                                La Fondation ForPro ouvre ses portes sur l’avancement des projets lancés après notre premier événement en octobre 2021!
-                            </div>
-                            <div>
-                                Les publics-cibles du bâtiment, les apprenti·e·s et nos partenaires ont pris le temps d’échanger, de contribuer et d’enrichir les projets en co-construction…
-                            </div>
+                            <h4>À chaque gazette, son portrait!</h4>
+                            <div>Pour ce nouveau numéro, Morgane Robert, architecte chez brodbeck roulet, a répondu à quelque-unes de nos questions.</div>
                         </article-item>
                     </div>
                 </div>
@@ -100,16 +93,24 @@
                         style="background: white; height: 100%"
                     >
                         <article-item
-                            src="https://api.for-pro.ch/media/pages/evolution-du-batiment/4a3501a434-1668695053/forpro-unandejaraphaellemueller-66-1280x.jpg"
+                            src="/images/article-63dfea075f324.jpg"
                         >
-                            <h4>Démarrage de la&nbsp;co&#x2011;construction du&nbsp;MakerLab</h4>
-                            <div>
-                                Pierre angulaire du LearningLab, le MakerLab est un outil à disposition de tous les publics. Un premier atelier regroupant 40 participant∙e∙s est organisé pour définir les besoins et usages possibles de ce lieu d’expérimentation.
-                            </div>
+                            <h4>Les apprenti.e.s à l'honneur sur le chantier</h4>
+                            <div>Sur le site de ForPro, les travaux vont bon train! L’École d’horlogerie de Genève, le FoodCourt et les sous-sols sont en construction, et pour assurer le bon déroulé des travaux, divers corps de métier se suivent et se succèdent…</div>
                         </article-item>
                     </div>
                 </div>
             </div>
+
+
+
+
+
+
+
+
+
+
 
             <button
                 class="v-index__articles__button"
