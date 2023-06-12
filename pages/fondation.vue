@@ -36,23 +36,6 @@
                 <h2>Principes</h2>
                 <p>La fondation ForPro réunit des partenaires désirant travailler de manière ouverte, collaborative et itérative. Cela implique que chacun∙e partage une compréhension commune de l’approche résolument orientée sur les futurs utilisateurs et utilisatrices. Concrètement, les offres sont imaginées avec les publics cibles, testées auprès de ces derniers et seront adaptées chemin faisant.</p>
                 <text-bullet-point>
-                    <div style="width: 100% !important;" >Parier sur la CONFIANCE et offrir des conditions cadre paisibles pour favoriser l’estime de soi et la confiance en l’autre pour croire en ses compétences et son potentiel.</div>
-                    <div style="width: 100% !important;" >ÉCOUTER et accorder de l’importance au récit, tenir compte du contexte et des intentions de la personne pour co-construire une offre «sensible» et sur mesure.</div>
-                    <div style="width: 100% !important;" >CRÉER et FAIRE différemment, oser, tester, explorer et découvrir sa capacité à se remettre en cause pour inventer, rénover.</div>
-                    <div style="width: 100% !important;" >Impliquer les destinataires, parties prenantes, partenaires et bénévoles pour MUTUALISER ressources et savoirs.</div>
-                    <div style="width: 100% !important;" >Viser la MIXITÉ, faire cohabiter des univers habituellement distants afin de mêler les générations, cultures et univers professionnels variés.</div>
-                    <div style="width: 100% !important;" >Reconnaître et valoriser les ÉTAPES des parcours individuels pour avoir conscience des changements progressifs qui conduisent à destination.</div>
-                    <div style="width: 100% !important;" >SYNCHRONISER les efforts et les productions entre les parties prenantes pour construire un objet commun et gagner en efficacité.</div>
-                    <div style="width: 100% !important;" >FLUIDIFIER les relations et engagements entre les parties prenantes pour tendre vers une gouvernance partagée.</div>
-                </text-bullet-point>
-            </div>
-
-            <div
-                class="fp-grid-coll-16-24 fp-grid-with-gutter fp-page__sections"
-            >
-                <h2>Principes</h2>
-                <p>La fondation ForPro réunit des partenaires désirant travailler de manière ouverte, collaborative et itérative. Cela implique que chacun∙e partage une compréhension commune de l’approche résolument orientée sur les futurs utilisateurs et utilisatrices. Concrètement, les offres sont imaginées avec les publics cibles, testées auprès de ces derniers et seront adaptées chemin faisant.</p>
-                <text-bullet-point>
                     <div>Parier sur la CONFIANCE et offrir des conditions cadre paisibles pour favoriser l’estime de soi et la confiance en l’autre pour croire en ses compétences et son potentiel.</div>
                     <div>ÉCOUTER et accorder de l’importance au récit, tenir compte du contexte et des intentions de la personne pour co-construire une offre «sensible» et sur mesure.</div>
                     <div>CRÉER et FAIRE différemment, oser, tester, explorer et découvrir sa capacité à se remettre en cause pour inventer, rénover.</div>
