@@ -16,7 +16,7 @@
                 </text-intro>
             </div>
         </div>
-        <div class="fp-grid-coll-container fp-grid-coll-container--center v-fondation__profiles">
+        <div class="fp-grid-coll-container fp-grid-coll-container--center v-fondation__profiles fp-page__sections">
 
             <div>
                 <div>
@@ -138,14 +138,14 @@
             </div>
         </div>
 
-        <div class="fp-page__sections" >
+        <div class="" >
             <image-content
                 :fixed-scroll="true"
                 src="/images/partenaires.jpeg"
             />
         </div>
 
-        <div class="fp-grid-coll-container fp-grid-coll-container--center v-fondation__profiles ">
+        <div class="fp-grid-coll-container fp-grid-coll-container--center v-fondation__profiles fp-page__sections">
             <div class="fp-grid-coll-18-24" >
                 <h3>Les conseillers et conseillères</h3>
 

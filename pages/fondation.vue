@@ -2,7 +2,6 @@
     <main class="v-fondation fp-page" >
         <page-header
                 page-title="ForPro"
-                background-image="/images/forpro-07-learningcenter-1280x.jpeg"
         />
         <div
             class="fp-grid-coll-container fp-grid-coll-container--center"

@@ -172,7 +172,7 @@
     .state-loading & {
         animation-name: logo-animation;
         animation-timing-function: step-end;
-        animation-duration: 2s;
+        animation-duration: 1s;
         animation-iteration-count: initial;
         animation-fill-mode: forwards;
     }
@@ -243,12 +243,12 @@ onMounted(() => {
 
 
 
-    window.addEventListener('click', () => {
+    nextTick(() => {
          stateLoading.value = true
         setTimeout(() => {
             stateLoading.value = false
             stateIsLoaded.value = true
-        }, 2_000)
+        }, 1_000)
     })
 })
 
