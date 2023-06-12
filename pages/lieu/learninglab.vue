@@ -46,13 +46,6 @@
             </div>
         </div>
 
-        <div class="fp-page__sections" >
-            <image-content
-                :fixed-scroll="true"
-                src="/images/14_2.jpg"
-            />
-        </div>
-
         <div
             class="fp-grid-coll-container fp-grid-coll-container--center fp-page__sections"
         >
