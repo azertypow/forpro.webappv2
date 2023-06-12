@@ -91,10 +91,10 @@
     width: 100%;
     padding: var(--fp-gutter);
     box-sizing: border-box;
+
+    transition: height ease-in-out .5s, opacity 1s ease-in-out, transform .5s ease-in-out;
     opacity: 0;
-
-
-    transition: height ease-in-out .5s, opacity 1s ease-in-out;
+    transform: scale(1.05, 1.05);
     height: var(--fp-app-nav-height);
 
     .nav-is-open & {
@@ -103,6 +103,7 @@
 
     .state-is-loaded & {
         opacity: 1;
+        transform: scale(1, 1);
     }
 }
 
@@ -120,6 +121,15 @@
     right: 1.25rem;
     bottom: 1rem;
     z-index: 9999999999;
+
+    transition: opacity 1s ease-in-out, transform .5s ease-in-out;
+    opacity: 0;
+    transform: scale(1.05, 1.05);
+
+    .state-is-loaded & {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
 }
 
 .v-app__footer {
