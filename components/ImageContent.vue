@@ -59,7 +59,7 @@ const baseURL = useRuntimeConfig().app.baseURL
 
 .v-image-content__fixed-effect {
     width: 100%;
-    height: calc(100vh - var(--fp-app-nav-height) - var(--fp-app-bottom-height) );
+    height: calc(100vh );
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
