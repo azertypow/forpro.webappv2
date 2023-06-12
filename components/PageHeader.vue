@@ -190,7 +190,12 @@ const map = (
     transform: translate(-50%, -50%);
     width: 75vw;
 
-
+    .cls-1 {
+        fill: #3df069;
+    }
+    .cls-2 {
+        fill: #1754ff;
+    }
 }
 
 </style>
