@@ -122,7 +122,7 @@ function updateBackgroundColor() {
     let backgroundOpacity = map(
         window.scrollY - window.innerHeight,
         0,
-        window.innerHeight * 3,
+        window.innerHeight * 1.5,
         1,
         0,
     )
