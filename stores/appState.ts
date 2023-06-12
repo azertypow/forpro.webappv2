@@ -59,7 +59,7 @@ export const useAppStateStore = defineStore('appState', {
             else if(this.theme === 6) { // hotel entreprise
                 document.documentElement.style.setProperty('--fp-theme-color-ternary',    'rgb(137, 141, 209)')
                 document.documentElement.style.setProperty('--fp-theme-color-secondary',  'rgb(170, 200, 208)')
-                document.documentElement.style.setProperty('--fp-theme-color-main',       'rgb(157, 199, 0)')
+                document.documentElement.style.setProperty('--fp-theme-color-main',       'rgb(255, 255, 255)')
             }
         },
     },
