@@ -33,7 +33,7 @@
 
         <image-content
             :fixed-scroll="true"
-            src="https://api.for-pro.ch/media/pages/introduction/894c00ffdd-1660739330/forpro-22-07-chantier-03-1280x.jpg"
+            src="/images/73.jpg"
         />
 
 <!--        <div-->

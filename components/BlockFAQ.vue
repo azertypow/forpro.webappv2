@@ -37,5 +37,9 @@ defineProps<{
         margin-right: auto;
     }
 
+    h3 {
+        color: var(--fp-theme-color-secondary);
+    }
+
 }
 </style>
