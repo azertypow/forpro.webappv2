@@ -117,6 +117,12 @@
                         >Blog
                         </nuxt-link>
                     </div>
+                    <div class="v-app-nav__impressum fp-remove-margin-child">
+                        <p>Contact
+                            <br>Newsletter
+                            <br>Location
+                        </p>
+                    </div>
                 </div>
                 <div
                     class="v-app-nav__nav__content__container__coll">
@@ -181,6 +187,18 @@
                         </nuxt-link>
                     </div>
                 </div>
+            </div>
+            <div
+                class="v-app-nav__nav__bottom__container"
+            >
+                <div
+                    class="v-app-nav__nav__bottom__container__social"
+                >
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <p>impressum</p>
             </div>
         </div>
     </nav>
@@ -308,20 +326,37 @@ const curentRoutePath = computed(() => useRoute().path)
         width: 100%;
         flex-wrap: nowrap;
 
-        > * {
-            width: 100%;
-        }
 
         @container (min-width: 900px) {
             flex-direction: row;
             gap: calc(var(--fp-gutter) * 2);
         }
     }
+    .v-app-nav__nav__content__container__coll {
+        width: 100%;
+        height: auto;
+    }
+    .v-app-nav__nav__bottom__container {
+        padding-top: 2rem;
+    }
+    .v-app-nav__nav__bottom__container__social {
+        display: flex;
+        gap: .5rem;
+
+        > * {
+            display: block;
+            width:  1.5rem;
+            height: 1.5rem;
+            box-sizing: border-box;
+            border: solid 3px black;
+            border-radius: 50%;
+            background: black;
+        }
+    }
 }
 
 .v-app-nav__nav__content {
     box-sizing: border-box;
-    padding-bottom: 25vh;
     border-bottom-right-radius: var(--radius);
     border-bottom-left-radius: var(--radius);
     width: 100%;
@@ -341,6 +376,10 @@ const curentRoutePath = computed(() => useRoute().path)
 
 .v-app-nav__building-space {
     margin-top: 1rem;
+}
+
+.v-app-nav__impressum {
+    padding-top: 5rem;
 }
 
 </style>

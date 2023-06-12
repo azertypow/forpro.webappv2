@@ -119,6 +119,7 @@
     width: calc( (100% / 24 * 4) - (var(--fp-gutter) * 3 ) );
     right: var(--fp-gutter);
     bottom: var(--fp-gutter);
+    z-index: 9999999999;
 }
 
 .v-app__footer {
