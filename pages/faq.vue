@@ -14,15 +14,15 @@
                     ref="navSticky"
                     class="v-faq__nav__sticky"
                 >
-                    <h4 class="fp-text--without-margin"><a href="#LearningLab"  >LearningLab</a></h4>
-                    <h4 class="fp-text--without-margin"><a href="#MakerLab"  >MakerLab</a></h4>
-                    <h4 class="fp-text--without-margin"><a href="#FoodLab"  >FoodLab</a></h4>
-                    <h4 class="fp-text--without-margin"><a href="#GrandLab"  >GrandLab</a></h4>
-                    <h4 class="fp-text--without-margin"><a href="#Accueil"  >Accueil</a></h4>
-                    <h4 class="fp-text--without-margin"><a href="#Hotel"  >Hôtel Entreprises</a></h4>
-                    <h4 class="fp-text--without-margin"><a href="#Fondation"  >ForPro</a></h4>
+                    <h4 class="fp-text--without-margin"><a href="#Fondation"    >ForPro</a></h4>
                     <h4 class="fp-text--without-margin"><a href="#Partenaires"  >Partenaires</a></h4>
-                    <h4 class="fp-text--without-margin"><a href="#Lieu"  >Le Lieu</a></h4>
+                    <h4 class="fp-text--without-margin"><a href="#Lieu"         >Le Lieu</a></h4>
+                    <h4 class="fp-text--without-margin"><a href="#LearningLab"  >LearningLab</a></h4>
+                    <h4 class="fp-text--without-margin"><a href="#MakerLab"     >MakerLab</a></h4>
+                    <h4 class="fp-text--without-margin"><a href="#GrandLab"     >GrandLab</a></h4>
+                    <h4 class="fp-text--without-margin"><a href="#FoodLab"      >FoodLab</a></h4>
+                    <h4 class="fp-text--without-margin"><a href="#Hotel"        >Hôtel Entreprises</a></h4>
+                    <h4 class="fp-text--without-margin"><a href="#Accueil"      >Accueil</a></h4>
                 </div>
             </div>
 
@@ -315,6 +315,7 @@ onMounted(() => {
 
 .v-faq__nav {
     position: relative;
+    top: 2rem;
 
     .v-faq__nav__sticky {
         position: absolute;

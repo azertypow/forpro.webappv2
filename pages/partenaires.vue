@@ -138,10 +138,102 @@
             </div>
         </div>
 
+        <div class="fp-page__sections" >
+            <image-content
+                :fixed-scroll="true"
+                src="/images/partenaires.jpeg"
+            />
+        </div>
+
         <div class="fp-grid-coll-container fp-grid-coll-container--center v-fondation__profiles ">
             <div class="fp-grid-coll-18-24" >
                 <h3>Les conseillers et conseillères</h3>
 
+
+                    <div class="fp-grid-coll-container">
+                        <div class="fp-grid-coll-8-24 fp-grid-with-gutter" >
+                            <profile-item
+                                :small="true"
+                                profile-name="Morgane, Ghita et Sacha de Brodbeck Roulet"
+                                profile-type="architecture"
+                                profile-desc="Comment concevoir des espaces cohérents pour accueillir et soutenir les différents projets? Le bureau Brodbeck Roulet traduit la programmation de la fondation ForPro et de ses partenaires en différents espaces flexibles, agréables, innovants et cohérents."
+                                mail="lien"
+                            />
+                        </div>
+
+
+                        <div class="fp-grid-coll-8-24 fp-grid-with-gutter" >
+                            <profile-item
+                                :small="true"
+                                profile-name="Sabine, Marc et Vladimir de Techdata"
+                                profile-type="assistant de maitrise d'ouvrage"
+                                profile-desc="Comment assister la fondation ForPro dans son rôle de maître d’ouvrage? Techdata accompagne et conseille ForPro pour le management du projet: de la définition des besoins à la mise en service, Techdata veille à sécuriser le projet afin d’atteindre les objectifs de qualité, de coûts et de délais."
+                                mail="lien"
+                            />
+                        </div>
+
+                        <div class="fp-grid-coll-8-24 fp-grid-with-gutter" >
+                            <profile-item
+                                :small="true"
+                                profile-name="Mathilde, Laura et Clément de face nord"
+                                profile-type="design et méthodes"
+                                profile-desc="Comment construire une dynamique soutenante et collective autour des projets de la fondation ForPro? Face Nord développe et met en place des méthodes sur mesure de construction et d’accompagnement collectif sur différents axes du projet."
+                                mail="lien"
+                            />
+                        </div>
+
+                        <div class="fp-grid-coll-8-24 fp-grid-with-gutter" >
+                            <profile-item
+                                :small="true"
+                                profile-name=" Romina, Mathilde et Jehan de Unplugged"
+                                profile-type=" facilitation"
+                                profile-desc=" Comment engager les apprenti∙e∙s dans la réflexion autour de leurs besoins? Romina, Mathilde et Jehan conçoivent et facilitent des ateliers de créativité et de réflexion."
+                                mail="lien"
+                            />
+                        </div>
+
+                        <div class="fp-grid-coll-8-24 fp-grid-with-gutter" >
+                            <profile-item
+                                :small="true"
+                                profile-name="Sonia, Rob et Nicolas"
+                                profile-type="identité graphique"
+                                profile-desc="Comment créer et faire vivre une identité visuelle servant la diversité des différents projets?  Sonia, Rob et Nicolas conçoivent un univers graphique modulable et adaptatif pour répondre aux différents besoins de communication et de valorisation des projets."
+                                mail="lien"
+                            />
+                        </div>
+
+                        <div class="fp-grid-coll-8-24 fp-grid-with-gutter" >
+                            <profile-item
+                                :small="true"
+                                profile-name="Alicia Dubuis"
+                                profile-type="photographie"
+                                profile-desc="Comment raconter par l’image l’histoire de celles et ceux qui construisent le projet ForPro? Par l’observation du chantier et des personnes qui y travaillent, Alicia raconte l’évolution des futurs espaces. Au plus proche du réel, ce travail vise à valoriser les différentes compétences et outils à l'œuvre sur ce projet."
+                                mail="lien"
+                            />
+                        </div>
+
+                        <div class="fp-grid-coll-8-24 fp-grid-with-gutter" >
+                            <profile-item
+                                :small="true"
+                                profile-name="Silvia, Céline et Laurent de maneco"
+                                profile-type="durabilité et climat"
+                                profile-desc="Comment intégrer la question du climat, de la gestion des ressources et l'appliquer concrètement dans la réalisation d'un produit, d'un service ou d'une construction ? A l'écoute des enjeux de durabilité, le bureau maneco accompagne la fondation ForPro à la mise en oeuvre d'une économie circulaire respectueuse de l'humain et de l'environnement."
+                                mail="lien"
+                            />
+                        </div>
+
+                        <div class="fp-grid-coll-8-24 fp-grid-with-gutter" >
+                            <profile-item
+                                :small="true"
+                                profile-name="Etienne et Tommy de studio TEC"
+                                profile-type="design circulaire et mobilier sur-mesure"
+                                profile-desc="Comment penser des espaces de travail à la fois écologiquement responsables et centrés sur les besoins de leurs futur·e·s utilisateur·rice·s ? studio TEC conçoit l'aménagement multi-fonctionnel et le mobilier modulable des espaces communs du MakerLab. Issus de ressourceries et de chantiers genevois, les matériaux de réemploi et leur histoire vont être réinventés en une proposition visuelle à la fois dynamique, pop et contemporaine."
+                                mail="lien"
+                            />
+                        </div>
+
+
+                    </div>
 
             </div>
         </div>

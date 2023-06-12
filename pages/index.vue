@@ -3,6 +3,7 @@
         <page-header
                 background-image="/images/forpro-07-learningcenter-1280x.jpeg"
                 page-title="ForPro"
+                :is-home="true"
         />
 
         <div

@@ -7,7 +7,7 @@
 
             <h6>
                 <b>Fondation ForPro</b>
-                <br>Rte de la Galaise 17
+                <br>Rte de la Galaise 15
                 <br>1228 Plan-les-Ouates
                 <br>+41 76 358 42 23
                 <br>info@for-pro.ch
@@ -38,7 +38,8 @@
             <h6>
                 Images du bâtiment et portraits d'apprenti·e·s: Alicia Dubuis<br>
                 Développement: Nicolas Baldran<br>
-                Webdesign: Sonia Dominguez & Rob van Leijsen
+                Webdesign: Sonia Dominguez & Rob van Leijsen<br>
+                Photographie: Raphaëlle Mueller
             </h6>
         </div>
     </section>
