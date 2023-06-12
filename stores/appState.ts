@@ -33,8 +33,8 @@ export const useAppStateStore = defineStore('appState', {
             }
             else if(this.theme === 1) { // learning lab
                 document.documentElement.style.setProperty('--fp-theme-color-ternary',    'rgb(170, 200, 255)')
-                document.documentElement.style.setProperty('--fp-theme-color-secondary',  'rgb(0, 0, 255)')
-                document.documentElement.style.setProperty('--fp-theme-color-main',       'rgb(255, 105, 23)')
+                document.documentElement.style.setProperty('--fp-theme-color-secondary',  'rgb(255, 105, 23)')
+                document.documentElement.style.setProperty('--fp-theme-color-main',       'rgb(0, 0, 255)')
             }
             else if(this.theme === 2) { // makerlab
                 document.documentElement.style.setProperty('--fp-theme-color-ternary', 'rgb(61, 240, 105)')

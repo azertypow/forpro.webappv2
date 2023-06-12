@@ -2,7 +2,7 @@
     <main class="v-learninglab fp-page" >
         <page-header
             :page-title="name"
-            background-image="/images/ACDB_002-v2.jpeg"
+            background-image="/images/4.jpg"
         />
 
 
@@ -49,7 +49,7 @@
         <div class="fp-page__sections" >
             <image-content
                 :fixed-scroll="true"
-                src="/images/ACDB_HelpDesk-v2-1-2048x1366.jpeg"
+                src="/images/14_2.jpg"
             />
         </div>
 
