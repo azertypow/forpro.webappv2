@@ -111,9 +111,11 @@ onMounted(() => {
     })
 
     useAppStateStore().updateTheme()
+    updateBackgroundColor()
 
     useRouter().afterEach(() => {
         useAppStateStore().updateTheme()
+        updateBackgroundColor()
     })
 })
 

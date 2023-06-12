@@ -290,7 +290,7 @@ const curentRoutePath = computed(() => useRoute().path)
         transform: translate(-50%, -50%);
         display: block;
         height: 35px;
-        fill: var(--fp-theme-color-main);
+        fill: var(--fp-theme-color-secondary);
     }
 }
 
