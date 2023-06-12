@@ -74,7 +74,7 @@
                 class="fp-grid-coll-16-24"
             >
                 <block-f-a-q
-                    href="/faq#hello">
+                    href="/faq#GrandLab??theme=4">
                 </block-f-a-q>
             </div>
         </div>
