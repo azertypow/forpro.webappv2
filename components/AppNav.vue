@@ -46,7 +46,24 @@
               class="v-app-nav__menu-toggle"
               @click="useAppStateStore().toggleNav()"
           >
-              <div>X</div>
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                       width="40.994px" height="24.833px" viewBox="0 0 40.994 24.833" enable-background="new 0 0 40.994 24.833" xml:space="preserve"
+                       v-if=" ! useAppStateStore().navIsOpen"
+                  >
+                    <g>
+                      <rect width="40.993" height="4.833"/>
+                        <rect y="10" width="40.993" height="4.833"/>
+                        <rect x="0.001" y="20" width="40.993" height="4.833"/>
+                    </g>
+                </svg>
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                       v-else
+                       width="32.404px" height="32.404px" viewBox="0 0 32.404 32.404" enable-background="new 0 0 32.404 32.404" xml:space="preserve">
+                    <g>
+                      <rect x="-4.295" y="13.786" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -6.7113 16.2018)" width="40.994" height="4.833"/>
+                        <rect x="-4.295" y="13.786" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 16.2024 39.1159)" width="40.994" height="4.833"/>
+                    </g>
+                </svg>
           </div>
       </header>
     <nav
@@ -272,6 +289,9 @@ const curentRoutePath = computed(() => useRoute().path)
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        display: block;
+        height: 35px;
+        fill: var(--fp-theme-color-main);
     }
 }
 
