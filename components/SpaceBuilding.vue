@@ -49,7 +49,10 @@
                                     </g>
                                 </g>
                                 <path d="m215.3792,327.94287h20.66777l.04993,66.38538h624.77292l.03335-138.94034H215.3792v72.55496Zm478.72157-63.23857h91.94874l.0062,30.26382h-91.82561l-.12934-30.26382Zm.13552,65.33559h91.81322v9.11998s-91.81322,0-91.81322,0v-9.11998Zm-178.56574-65.31846h169.18378v45.00385h-169.18378v-45.00385Zm0,65.42385h169.18319v27.94505h-169.18319v-27.94505Zm-99.78448-65.44098l91.82562.01713v30.24669h-91.82561v-30.26382Zm.00001,65.35534h91.82561v9.10023h-91.82562v-9.10023Z"
-                                      style="fill: #ff6917;"/>
+                                      style="fill: #ff6917;"
+                                      @mouseover="mouseOverLearningLab = true"
+                                      @mouseout="mouseOverLearningLab = false"
+                                />
                                 <polygon
                                         points="72.07538 2.11677 72.07538 9.33795 69.38424 9.33795 69.38424 14.43779 71.57631 14.43779 71.57631 60.66067 863.08431 60.66067 863.08431 2.11677 72.07538 2.11677"
                                         style="fill: #fffe00;"/>
@@ -60,6 +63,8 @@
                                         points="0 60.71073 0 69.51311 189.80075 122.18276 234.06574 122.18276 234.06574 127.21615 415.88609 127.21615 415.88609 122.18276 507.71171 122.18276 507.7117 127.21615 515.67056 127.19843 515.67056 93.39032 686.97111 93.39032 686.97111 127.19843 694.23629 127.21615 694.23629 122.18276 786.04951 122.18276 786.04951 127.21615 967.86986 127.19771 967.86986 122.18276 1008.80877 122.18276 1199.99984 69.51311 1199.99985 60.71073 0 60.71073"
                                         style="fill: #aac8ff;"/>
                                 <polygon
+                                        @mouseover="mouseOverMakerLab = true"
+                                        @mouseout="mouseOverMakerLab = false"
                                         points="1008.79135 339.15987 967.80134 339.20236 967.80134 330.05964 987.3245 330.05964 987.32419 264.7043 1197.88307 264.72143 1197.88307 255.38791 860.90316 255.38791 860.86981 394.32825 1197.88308 394.32825 1197.88308 384.63948 1008.79135 339.15987"
                                         style="fill: #3a4bcc;"/>
                                 <polygon
@@ -719,25 +724,39 @@
                     </g>
                 </g>
             </svg>
-        </div>
 
-        <div
-                class="v-space-building__section-description"
-        >
-            <p>Au service des apprenti∙e∙s, avant, pendant et après l’apprentissage, le LearningLab sera un espace où
-                apprentissages et travail se mélangent à d’autres aspects de la vie en collectif et où l’humain est au
-                centre. Le LearningLab se veut un lieu de vie centré sur le développement des individus, l’échange et la
-                transmission des savoirs, le développement de compétences professionnelles et d’employabilité. C’est un
-                lieu carrefour qui permettra de positionner l’apprentissage dans une vision globale et intégrée de
-                l’acquisition et de la diffusion des connaissances et compétences.</p>
-        </div>
+            <div
+                class="v-space-building__section-description fp-remove-margin-child v-space-building__section-description--learning-lab"
+                v-if="mouseOverLearningLab"
+            >
+                <h3>LearningLab</h3>
+                <p>Au service des apprenti∙e∙s, avant, pendant et après l’apprentissage, le LearningLab sera un espace où
+                    apprentissages et travail se mélangent à d’autres aspects de la vie en collectif et où l’humain est au
+                    centre. Le LearningLab se veut un lieu de vie centré sur le développement des individus, l’échange et la
+                    transmission des savoirs, le développement de compétences professionnelles et d’employabilité. C’est un
+                    lieu carrefour qui permettra de positionner l’apprentissage dans une vision globale et intégrée de
+                    l’acquisition et de la diffusion des connaissances et compétences.</p>
+            </div>
 
+            <div
+                class="v-space-building__section-description fp-remove-margin-child v-space-building__section-description--maker-lab"
+                v-if="mouseOverMakerLab"
+            >
+                <h3>MakerLab</h3>
+                <p>
+                    MakerLab sera l’espace de fabrication où la créativité et le faire seront au cœur des activités et où il sera possible d’expérimenter, de rater et de recommencer autour du terme Do-It-Yourself. L’ambition est de favoriser et encourager le faire pour apprendre et pour comprendre, l’esprit d’expérimentation et de test, la curiosité.
+                </p>
+            </div>
+        </div>
     </section>
 </template>
 
 
 <script lang="ts" setup>
 // defineProps<{}>()
+
+const mouseOverLearningLab  = ref(false)
+const mouseOverMakerLab     = ref(false)
 
 </script>
 
@@ -749,17 +768,13 @@ svg {
 
 .v-space-building {
     width: 100%;
+    position: relative;
 }
 
 .v-space-building__title {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-}
-
-.v-space-building__plan {
-    margin-left:    -2.8rem;
-    margin-right:   -2.8rem;
 }
 
 .v-space-building__section-name {
@@ -778,12 +793,32 @@ svg {
     }
 }
 
-.v-space-building__section-description {
-  padding-top: 1rem;
+.v-space-building__plan {
+    position: relative;
+    margin-left:    -2.8rem;
+    margin-right:   -2.8rem;
+}
 
-    > p {
-        max-width: none !important;
-    }
+.v-space-building__section-description {
+    position: absolute;
+    background: white;
+    box-sizing: border-box;
+    padding: 1rem;
+    border-radius: 1rem;
+    pointer-events: none;
+}
+
+.v-space-building__section-description--learning-lab {
+    top: -2rem;
+    right: calc( -100% / 18 * 2 );
+    width: 22rem;
+    border: solid 3px #ff6917;
+}
+.v-space-building__section-description--maker-lab {
+    top: 5rem;
+    left: calc( -100% / 18 * 2 );
+    width: 27rem;
+    border: solid 3px rgb(58, 75, 204);
 }
 
 </style>
