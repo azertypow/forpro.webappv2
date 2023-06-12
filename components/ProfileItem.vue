@@ -2,11 +2,16 @@
     <section
         class="v-profile-item"
         :class="{
-            'with-photo': withPhoto,
+            'with-photo': src,
             'small': small,
         }"
     >
-        <div class="v-profile-item__img"></div>
+        <div
+            class="v-profile-item__img"
+            :style="{
+        backgroundImage: `url(${src})` || '',
+        }"
+        ></div>
         <h5 style="color: var(--fp-theme-color-secondary)" class="v-profile-item__name">{{profileName}}</h5>
         <h5  class="v-profile-item__type">{{profileType}}</h5>
         <p  v-if="profileDesc" class="v-profile-item__desc">{{profileDesc}}</p>
@@ -20,7 +25,7 @@
 
 <script lang="ts" setup>
 defineProps<{
-    withPhoto?: boolean
+    src?: string
     small?: boolean
     mail?: string
     profileDesc?: string
@@ -55,10 +60,11 @@ defineProps<{
 
     .with-photo & {
         display: block;
-        background: var(--fp-color-grey);
+        //background: var(--fp-color-grey);
         width: 8rem;
         height: 8rem;
         border-radius: 50%;
+        background-size: cover;
     }
 }
 

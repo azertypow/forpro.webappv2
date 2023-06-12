@@ -57,7 +57,7 @@
                             profile-desc=""
                             profile-name="Joëlle Mathey"
                             profile-type="Directrice"
-                            :with-photo="true"
+                            src="https://api.for-pro.ch/media/pages/fondation-forpro/5f4154f182-1658748305/img-2423-2-500x.jpg"
                             mail="voir le mail"
                         />
                     </div>
@@ -66,7 +66,7 @@
                             profile-desc=""
                             profile-name="Fabrice Voan"
                             profile-type="Adjoint de direction"
-                            :with-photo="true"
+                            src="https://api.for-pro.ch/media/pages/fondation-forpro/62583a7409-1658748307/img-2419-500x.jpg"
                             mail="voir le mail"
                         />
                     </div>
@@ -75,16 +75,16 @@
                             profile-desc=""
                             profile-name="Thierry Schlatter"
                             profile-type="Chef de projet «FoodLab»"
-                            :with-photo="true"
+                            src="https://api.for-pro.ch/media/pages/fondation-forpro/351dd4aa39-1658748273/portrait-thierry-500x.jpg"
                             mail="voir le mail"
                         />
                     </div>
                     <div class="fp-grid-coll-8-24" >
                         <profile-item
                             profile-desc=""
-                            profile-name="Francois Antille"
+                            profile-name="François Antille"
                             profile-type="Chef de projet «LearningLab»"
-                            :with-photo="true"
+                            src="https://api.for-pro.ch/media/pages/fondation-forpro/11eb995d45-1658748314/1517005721061-500x.jpg"
                             mail="voir le mail"
                         />
                     </div>
@@ -93,7 +93,7 @@
                             profile-desc=""
                             profile-name="Mélissa Catoquessa"
                             profile-type="Cheffe de projet «Documentation»"
-                            :with-photo="true"
+                            src="https://api.for-pro.ch/media/pages/fondation-forpro/a7e2dfc9c9-1663765038/whatsapp-image-2022-08-09-at-16-12-11-500x.jpg"
                             mail="voir le mail"
                         />
                     </div>
@@ -102,7 +102,7 @@
                             profile-desc=""
                             profile-name="Lina Borén"
                             profile-type="Cheffe de projet «Communication»"
-                            :with-photo="true"
+                            src="https://api.for-pro.ch/media/pages/fondation-forpro/1ed858132d-1683017261/lina-boren-portrait-2022-nb-500x.jpg"
                             mail="voir le mail"
                         />
                     </div>
