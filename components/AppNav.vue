@@ -266,11 +266,10 @@ const curentRoutePath = computed(() => useRoute().path)
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: inherit;
-    transition: font-size ease-in-out .5s;
+    font-size: 1.25rem;
 
     .is-intersecting & {
-        font-size: 1.25rem;
+
     }
 }
 
