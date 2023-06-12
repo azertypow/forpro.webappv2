@@ -2,7 +2,7 @@
     <main class="v-accueil fp-page" >
         <page-header
             :page-title="name"
-            background-image=""
+            background-image="empty"
         />
 
 
