@@ -240,7 +240,10 @@ onMounted(() => {
         useAppStateStore().updateTheme()
         updateBackgroundColor()
     })
-    nextTick(() => {
+
+
+
+    window.addEventListener('click', () => {
          stateLoading.value = true
         setTimeout(() => {
             stateLoading.value = false
