@@ -1,1 +1,0 @@
-import{a as t,f as o,C as n,o as s}from"./entry.f3671f20.js";const _={class:"v-text-bullet-point"},r=t({__name:"TextBulletPoint",setup(l){return(e,a)=>(s(),o("section",_,[n(e.$slots,"default")]))}});export{r as _};
