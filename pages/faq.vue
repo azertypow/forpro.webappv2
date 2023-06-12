@@ -266,16 +266,12 @@
 <script lang="ts" setup>
 import {useAppStateStore} from "~/stores/appState";
 
-const isDark = false
-
 const navStickyContainer = ref()
 const navSticky = ref()
 
 const stickyMarginTop = 100
 
 onMounted(() => {
-    useAppStateStore().appIsDark = isDark
-
     // todo: remove event listener in all app!
     window.addEventListener("scroll", () => {
         if( ! (navStickyContainer.value instanceof HTMLElement) ) return

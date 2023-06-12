@@ -87,15 +87,8 @@
 
 
 <script lang="ts" setup>
-import {useAppStateStore} from "~/stores/appState";
-
-const isDark = false
 
 const name = useRoute().meta.name as string
-
-onMounted(() => {
-    useAppStateStore().appIsDark = isDark
-})
 
 // defineProps<{
 // }>()

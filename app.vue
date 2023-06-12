@@ -3,7 +3,6 @@
             class="v-app"
             :data-theme="useAppStateStore().theme"
             :class="{
-                'v-app--is-dark': useAppStateStore().appIsDark,
                 'v-app--newsletter-bar-is-visible': useAppStateStore().newsletterBarIsVisible,
                 'state-loading': stateLoading,
                 'state-is-loaded': stateIsLoaded,

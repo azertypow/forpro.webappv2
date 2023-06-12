@@ -248,14 +248,7 @@
 
 
 <script lang="ts" setup>
-import {useAppStateStore} from "~/stores/appState";
 import ProfileItem from "~/components/ProfileItem.vue"
-
-const isDark = false
-
-onMounted(() => {
-    useAppStateStore().appIsDark = isDark
-})
 
 // defineProps<{
 // }>()

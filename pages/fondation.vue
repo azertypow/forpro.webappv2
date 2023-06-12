@@ -159,15 +159,8 @@
 
 
 <script lang="ts" setup>
-import {useAppStateStore} from "~/stores/appState";
 import TextBulletPoint from "~/components/TextBulletPoint.vue";
 import ProfileItem from "~/components/ProfileItem.vue";
-
-const isDark = false
-
-onMounted(() => {
-    useAppStateStore().appIsDark = isDark
-})
 
 // defineProps<{
 // }>()

@@ -39,13 +39,6 @@
 
 
 <script lang="ts" setup>
-import {useAppStateStore} from "~/stores/appState";
-
-const isDark = true
-
-onMounted(() => {
-    useAppStateStore().appIsDark = isDark
-})
 
 // defineProps<{
 // }>()
@@ -58,5 +51,11 @@ onMounted(() => {
 
 <style lang="scss" scoped >
 .v-blog {
+}
+</style>
+
+<style lang="scss" >
+.v-article-item {
+    padding-bottom: 3rem;
 }
 </style>

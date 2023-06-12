@@ -127,13 +127,6 @@
 
 
 <script lang="ts" setup>
-import {useAppStateStore} from "~/stores/appState";
-
-const isDark = false
-
-onMounted(() => {
-    useAppStateStore().appIsDark = isDark
-})
 
 // defineProps<{
 // }>()

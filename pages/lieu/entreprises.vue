@@ -86,19 +86,12 @@
 
 
 <script lang="ts" setup>
-import {useAppStateStore} from "~/stores/appState";
 
 definePageMeta({
     name: 'Hôtel Entreprises'
 })
 
-const isDark = false
-
 const name = useRoute().meta.name as string
-
-onMounted(() => {
-    useAppStateStore().appIsDark = isDark
-})
 
 // defineProps<{
 // }>()

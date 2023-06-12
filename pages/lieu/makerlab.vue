@@ -93,15 +93,7 @@ definePageMeta({
 })
 
 
-import {useAppStateStore} from "~/stores/appState";
-
 const name = useRoute().meta.name as string
-
-const isDark = false
-
-onMounted(() => {
-    useAppStateStore().appIsDark = isDark
-})
 
 // defineProps<{
 // }>()
