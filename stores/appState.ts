@@ -42,9 +42,9 @@ export const useAppStateStore = defineStore('appState', {
                 document.documentElement.style.setProperty('--fp-theme-color-main', 'rgb(255, 0, 252)')
             }
             else if(this.theme === 3) { // foodlab
-                    document.documentElement.style.setProperty('--fp-theme-color-ternary',    'rgb(255, 248, 0)')
-                    document.documentElement.style.setProperty('--fp-theme-color-secondary',  'rgb(210, 200, 180)')
-                    document.documentElement.style.setProperty('--fp-theme-color-main',       'rgb(41, 0, 125)')
+                    document.documentElement.style.setProperty('--fp-theme-color-ternary',    'rgb(210, 200, 180)')
+                    document.documentElement.style.setProperty('--fp-theme-color-secondary',  'rgb(41, 0, 125)')
+                    document.documentElement.style.setProperty('--fp-theme-color-main',       'rgb(255, 248, 0)')
             }
             else if(this.theme === 4) { // neutre
                 document.documentElement.style.setProperty('--fp-theme-color-ternary',    'rgb(255, 255, 255)')
