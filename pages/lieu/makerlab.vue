@@ -49,20 +49,6 @@
         </div>
 
         <div
-            class="fp-grid-coll-container fp-grid-coll-container--center fp-page__sections"
-        >
-            <div
-                class="fp-grid-coll-18-24"
-            >
-                <space-buildin-iso
-                    src="/images/MakerLab_iso_Etage-1.png"
-                    src2="/images/MakerLab_iso_Etage-1.png"
-                />
-            </div>
-        </div>
-
-
-        <div
             class="fp-grid-coll-container fp-grid-coll-container--center fp-page__sections fp-page__sections--background-color"
         >
             <div
