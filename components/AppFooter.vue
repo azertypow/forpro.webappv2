@@ -7,7 +7,7 @@
 
             <h6>
                 <b>Fondation ForPro</b>
-                <br>Rte de la Galaise 15
+                <br>Rte de la Galaise 15B
                 <br>1228 Plan-les-Ouates
                 <br>+41 76 358 42 23
                 <br>info@for-pro.ch
@@ -18,28 +18,24 @@
             <div
                 class="v-app-footer__socials"
             >
-                <div>F</div>
-                <div>I</div>
-                <div>T</div>
+                <a href="https://www.linkedin.com/company/86763245/admin/" >L</a>
             </div>
         </div>
         <div
                 class="v-app-footer__coll fp-remove-margin-child"
         >
             <p>
-                Vous avez une question ou un commentaire? Vous souhaitez participer à l’aventure en proposant une idée?
-                Écrivez-nous pour un premier échange.
-                Si vous souhaitez simplement être informé∙e de l’avancement du projet, vous pouvez vous inscrire à notre
-                newsletter en cliquant ici.
+                Vous avez une question ou un commentaire? Vous souhaitez participer à l’aventure en proposant une idée? Écrivez-nous pour un premier échange. Si vous souhaitez simplement être informé∙e de l’avancement du projet, vous pouvez vous inscrire à notre newsletter en cliquant ici.
             </p>
 
             <button>S'inscrire</button>
 
             <h6>
-                Images du bâtiment et portraits d'apprenti·e·s: Alicia Dubuis<br>
-                Développement: Nicolas Baldran<br>
-                Webdesign: Sonia Dominguez & Rob van Leijsen<br>
-                Photographie: Raphaëlle Mueller
+                Images du bâtiment et portraits d'apprenti·e·s: Estelle Bouchet et Alicia Dubuis
+                <br>Développement: Nicolas Baldran
+                <br>Webdesign: Sonia Dominguez & Rob van Leijsen
+                <br>Photographie: Raphaëlle Mueller
+
             </h6>
         </div>
     </section>
