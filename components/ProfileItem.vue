@@ -91,7 +91,8 @@ a {
     text-decoration: underline;
     margin-top: 1rem;
 
-    p + & {
+    p + &,
+    h5+ & {
         margin-top: 0;
     }
 }
