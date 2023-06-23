@@ -3,7 +3,8 @@
 
         <h2 class="v-space-building__title">Le lieu</h2>
 
-        <p>La fondation ForPro est installée au sein de l’Espace Tourbillon, situé au cœur de la zone industrielle de Plan-les-Ouates (ZIPLO) à Genève. Le bâtiment de ForPro a été pensé pour répondre aux attentes des apprenti∙e∙s et des entreprises, tout en mettant à disposition des espaces ouverts au public. Dès la rentrée 2023, ForPro accueillera l’École d’horlogerie, des entreprises du secteur industriel et artisanal, un LearningLab et un MakerLab, des espaces de restauration ainsi qu’une crèche et un espace polyvalent. ForPro est un lieu de rencontre, d’orientation, d’expérimentation, d’apprentissage et de faire ensemble.</p>
+        <p>ForPro se veut un lieu de rencontre, d’orientation, d’expérimentation, d’apprentissage et de faire ensemble. La fondation est située au sein de l’Espace Tourbillon, au cœur de la zone industrielle de Plan-les-Ouates (ZIPLO) à Genève.</p>
+        <p>Le  bâtiment de ForPro a été pensé pour répondre aux attentes des apprenti∙e∙s et des entreprises, tout en mettant à disposition des espaces ouverts au public. Dès la rentrée 2023, ForPro accueillera l’École d’horlogerie. Ensuite, progressivement durant 2024, des entreprises du secteur industriel et artisanal, un LearningLab et un MakerLab, des espaces de restauration ainsi qu’une crèche et un espace polyvalent.</p>
 
         <div
             class="v-space-building__section-name"
