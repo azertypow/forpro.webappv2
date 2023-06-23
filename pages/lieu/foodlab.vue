@@ -12,8 +12,8 @@
             <div class="fp-grid-coll-16-24">
                 <text-intro
                 >
-                    <p>Un espace polyvalent où se mêleront les vies professionnelles et privées, les visites ponctuelles et routines quotidiennes. L’accueil orientera et informera le public, et sera aussi un lieu de pause entre deux rendez-vous. Il sera le centre des informations et la «vitrine» de toutes les activités du bâtiment.</p>
-                    <p>Consectetur adipisicing elit. Earum ex nemo odio provident recusandae voluptatibus! In ipsa molestiae perspiciatis quae voluptatem. Dolor fuga iste maiores, quaerat quam quasi quidem quis.</p>
+                    <p>L’alimentation est au coeur de changements tant individuels que collectifs. Les misssions du FoodLab sont d’imaginer et de mettre en place la cuisine de demain: séduisante, respectueuse de l’environnement , saine et accessible à chacun.e.</p>
+                    <p>Le FoodLab se déclinera en trois espaces de restauration ainsi qu’un service traiteur. Pour être actif au coeur même des métiers, les locaux seront à disposition des apprenti.e.s pour des échanges de compétences, des cours de perfectionnement, des événements, la préparation aux examens ou encore des concours.</p>
                 </text-intro>
             </div>
         </div>
@@ -24,7 +24,7 @@
         >
             <div class="fp-grid-coll-24-24">
                 <text-quote
-                    text="A amet aut, dicta distinctio dolores eaque eos ex exercitationem."
+                    text="On est ce que l’on mange"
                 />
             </div>
         </div>
@@ -35,13 +35,9 @@
         >
             <div class="fp-grid-coll-18-24">
                 <text-content>
-                    <p>Ab, ad architecto consequatur corporis eaque ex minus molestias praesentium, provident quaerat
-                        quisquam quo quos rerum sunt temporibus velit veniam vero voluptatibus!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, dolorum ducimus ex ratione
-                        reiciendis sapiente tempora. Blanditiis dignissimos expedita, harum molestiae nam nobis numquam
-                        officia provident ratione, soluta temporibus vitae.</p>
-                    <p>Ab, ad architecto consequatur corporis eaque ex minus molestias praesentium, provident quaerat
-                        quisquam quo quos rerum sunt temporibus velit veniam vero voluptatibus!</p>
+                    <p>Le FoodLab ne se limitera pas à privilégier les produits locaux et de saison, mais assumera une réelle responsabilité écologique dans le choix des équipements professionnels, dans les achats de produits alimentaires et de nettoyage, ainsi que dans la limitation et le tri des déchets.</p>
+                    <p>Entreprise formatrice dans plusieurs métiers de l’accueil et de la restauration, le FoodLab développera des ateliers avec des professionnel.le.s de la diététique pour proposer une cuisine intégrant plaisir gustatif, équilibre nutritionnel et respect de l’environnement. L’ambition est que la production du FoodLab soit assurée par une junior team, soit une équipe d’apprenti.e.s supervisée par des professionnel.le.s des différents métiers, pour un volume de 300 repas quotidien.</p>
+                    <p>Lieu d’expérimentation, de découverte et de perfectionnement, le FoodLab se veut une véritable vitrine vivante des métiers de la restauration et de l’accueil.</p>
                 </text-content>
             </div>
         </div>
