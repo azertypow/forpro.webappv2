@@ -152,7 +152,7 @@ defineProps({
     left: 0;
     fill: var(--fp-theme-color-main);
     width: 10rem;
-    transform: rotate(-35deg);
+    transform: rotate(-35deg) translate(-40%, 0);
     z-index: 10;
 }
 
