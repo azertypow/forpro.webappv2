@@ -12,8 +12,9 @@
             <div class="fp-grid-coll-16-24">
                 <text-intro
                 >
-                    <p>Un espace polyvalent où se mêleront les vies professionnelles et privées, les visites ponctuelles et routines quotidiennes. L’accueil orientera et informera le public, et sera aussi un lieu de pause entre deux rendez-vous. Il sera le centre des informations et la «vitrine» de toutes les activités du bâtiment.</p>
-                    <p>Consectetur adipisicing elit. Earum ex nemo odio provident recusandae voluptatibus! In ipsa molestiae perspiciatis quae voluptatem. Dolor fuga iste maiores, quaerat quam quasi quidem quis.</p>
+                    <p>Centré sur ses usagers, le LearningLab est conçu comme un lieu de vie, pensé pour favoriser l’exploration et le développement, aménagé pour permettre l’entraînement, le soutien et la collaboration.</p>
+                    <p>Destiné aux jeunes en recherche d’orientation, aux apprenti.e.s et aux diplômé.e.s, le LearningLab sera le lieu du développement de leur pouvoir d’agir et du renforcement de leurs compétences. Le mélange de ces publics permettra aux un.e.s et aux autres de s’enrichir mutuellement et d’assurer une connexion aux besoins et réalités des jeunes dans l’univers de la formation professionnelle. Le dynamisme de ce brassage profitera à tous.tes.</p>
+                    <p>Au LearningLab, chacun.e pourra construire son propre parcours, trouver des réponses à ses besoins ou simplement bénéficier d’un lieu pour travailler.</p>
                 </text-intro>
             </div>
         </div>
@@ -24,7 +25,7 @@
         >
             <div class="fp-grid-coll-24-24">
                 <text-quote
-                    text="A amet aut, dicta distinctio dolores eaque eos ex exercitationem."
+                    text="Un lieu pour construire son propre chemin, individuellement."
                 />
             </div>
         </div>
@@ -35,13 +36,9 @@
         >
             <div class="fp-grid-coll-18-24">
                 <text-content>
-                    <p>Ab, ad architecto consequatur corporis eaque ex minus molestias praesentium, provident quaerat
-                        quisquam quo quos rerum sunt temporibus velit veniam vero voluptatibus!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, dolorum ducimus ex ratione
-                        reiciendis sapiente tempora. Blanditiis dignissimos expedita, harum molestiae nam nobis numquam
-                        officia provident ratione, soluta temporibus vitae.</p>
-                    <p>Ab, ad architecto consequatur corporis eaque ex minus molestias praesentium, provident quaerat
-                        quisquam quo quos rerum sunt temporibus velit veniam vero voluptatibus!</p>
+                    <p>Concrètement, le LearningLab sera le point d’entrée du soutien et de l’accompagnement vers la formation professionnelle. C’est ici que se co-construiront les parcours des jeunes, de l’élaboration de leur projet de formation à sa formalisation. Au travers d’activités concrètes, valorisantes et utiles, le.la participant.e pourra développer sa posture professionnelle, définir ses appétences et identifier ses forces. Sur cette base, il.elle pourra se donner les moyens de rendre possible son projet de formation.</p>
+                    <p>Les apprenti.e.s pourront trouver au LearningLab du soutien durant leur apprentissage, soit pour des besoins ponctuels, soit pour un accompagnement à plus long terme. Ils et elles pourront également profiter d’ateliers leur permettant d’acquérir des compétences dans des domaines qui ne sont pas nécessairement en lien avec leur métier, dans un esprit de curiosité et d’auto-détermination de leur identité professionnelle.</p>
+                    <p>Le renforcement de l’employabilité des diplômé.e.s est également un objectif du LearningLab. Ils et elles pourront, à l’instar des apprenti.e.s, développer des compétences complémentaires, designer une idée ou se faire accompagner en vue de passer les examens de la maturité professionnelle en candidat.e libre.</p>
                 </text-content>
             </div>
         </div>
