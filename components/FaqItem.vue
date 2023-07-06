@@ -71,7 +71,7 @@ const responseIsOpen = ref(false)
     --line-width: 2px;
 
     position: relative;
-    padding-left: calc( var(--button-width) + var(--fp-gutter) );
+    padding-left: 3rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
     border-bottom: solid 1px;
@@ -96,7 +96,7 @@ const responseIsOpen = ref(false)
 .v-faq-item__icon {
     position: absolute;
     top: 50%;
-    right: calc( 100% + var(--fp-gutter) );
+    right: calc( 100% + 2rem );
     transform: translate(0, -50%);
     width: var(--button-width);
     height: var(--button-width);

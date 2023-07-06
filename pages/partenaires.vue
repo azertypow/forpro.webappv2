@@ -30,9 +30,27 @@
                             :small="true"
                             :profile-name="partner.name"
                             :profile-type="partner.entreprise"
-                            mail="lien"
                         />
                     </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="fp-grid-coll-container fp-grid-coll-container--center v-fondation__profiles fp-page__sections">
+
+            <div class="fp-grid-coll-18-24" >
+                <div class="fp-grid-with-gutter">
+
+
+                        <profile-item
+                            v-for="partner of partners"
+                            :small="true"
+                            :profile-name="partner.name"
+                            :profile-type="partner.entreprise"
+                            :list-mode="true"
+                            mail="mail?/lien"
+                        />
 
                 </div>
             </div>
