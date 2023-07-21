@@ -9,12 +9,12 @@
         <div
             class="v-space-building__section-name"
         >
-            <div data-id="Accueil" data-color="f3030e"              class="fp-heading-h5 fp-text--without-margin">Accueil</div>
+            <div data-id="Accueil" data-color="f3030e"              class="fp-heading-h5 fp-text--without-margin">WelcomeLab</div>
             <div data-id="MakerLab" data-color="1754ff"             class="fp-heading-h5 fp-text--without-margin">MakerLab</div>
             <div data-id="LearningLab" data-color="ffd200"          class="fp-heading-h5 fp-text--without-margin">LearningLab</div>
             <div data-id="FoodLab" data-color="ff6917"              class="fp-heading-h5 fp-text--without-margin">FoodLab</div>
-            <div data-id="FoodLab" data-color="ff6917"              class="fp-heading-h5 fp-text--without-margin">ArtLab</div>
-            <div data-id="Hôtel_Entreprises" data-color="7832a0"    class="fp-heading-h5 fp-text--without-margin">Hôtel Entreprises</div>
+            <div data-id="FoodLab" data-color="ff6917"              class="fp-heading-h5 fp-text--without-margin">GrandLab</div>
+            <div data-id="Hôtel_Entreprises" data-color="7832a0"    class="fp-heading-h5 fp-text--without-margin">WorkLab</div>
             <div data-id="École_Horlogerie" data-color="46a014"     class="fp-heading-h5 fp-text--without-margin">École Horlogerie</div>
             <div data-id="Crèche" data-color="b47c00"               class="fp-heading-h5 fp-text--without-margin">Crèche</div>
         </div>
