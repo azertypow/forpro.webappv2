@@ -1,6 +1,8 @@
 <template>
-    <section class="v-text-intro" >
-        <slot/>
+    <section
+        class="v-text-intro"
+        v-html="content"
+    >
     </section>
 </template>
 
@@ -9,8 +11,13 @@
 
 
 <script lang="ts" setup>
-// defineProps<{
-// }>()
+defineProps({
+    content: {
+        type: String,
+        required: true,
+    }
+})
+
 
 </script>
 

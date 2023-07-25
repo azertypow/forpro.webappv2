@@ -204,7 +204,7 @@ h5,
 
 
 p,
-.fp-text-reg--with-margin {
+.fp-text-reg {
   line-height: 1.1rem;
   font-size: 0.9rem;
   //letter-spacing: 0;
@@ -221,9 +221,9 @@ p,
 
 
 h6,
-.fp-text-small--with-margin {
-  line-height: 1rem;
-  font-size: 0.6rem;
+.fp-text-small {
+  font-size: var(--fp-font-size-small);
+  line-height: var(--fp-line-height-small);
   //letter-spacing: -0.01em;
   font-weight: 400;
   margin-top: .5rem;

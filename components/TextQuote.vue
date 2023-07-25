@@ -99,7 +99,8 @@
 
             <p
                 class="v-text-quote__text fp-heading-h2--xl"
-            >{{text}}</p>
+                v-html="text"
+            ></p>
         </div>
     </section>
 </template>

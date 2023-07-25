@@ -72,13 +72,13 @@ const responseIsOpen = ref(false)
 
     position: relative;
     padding-left: 3rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
     border-bottom: solid 1px;
 
-    &:first-child {
-        border-top: solid 1px;
-    }
+    //&:first-child {
+    //    border-top: solid 1px;
+    //}
 
     > * {
         width: 100%;

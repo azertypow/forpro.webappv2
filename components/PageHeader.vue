@@ -6,9 +6,9 @@
       <div
               ref="headerContainer"
               class="v-page-header__img"
-              v-if="backgroundImage"
+              v-if="imageDataForProAPI"
               :style="{
-                backgroundImage: `url(${baseURL}${backgroundImage})` || ''
+                backgroundImage: `url(${imageDataForProAPI.resize.xxl})` || ''
               }"
               :class="{
                 'is-home': isHome,
@@ -68,17 +68,18 @@
 <script lang="ts" setup >
 
 import {onMounted} from "#imports"
-import {Ref} from "vue"
+import {PropType, Ref} from "vue"
 import {useAppStateStore} from "~/stores/appState"
 import nuxtConfig from "~/nuxt.config"
+import {IForPro_image} from "~/global/forProApi"
 
 defineProps({
     pageTitle: {
         type: String,
         required: true,
     },
-    backgroundImage: {
-        type: String,
+    imageDataForProAPI: {
+        type: Object as PropType<IForPro_image>,
         required: false,
     },
   isHome: {

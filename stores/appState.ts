@@ -1,4 +1,5 @@
 import { defineStore } from 'pinia'
+import type {IForProApi_site} from "~/global/forProApi";
 
 export const useAppStateStore = defineStore('appState', {
     state: () => ({
@@ -6,6 +7,7 @@ export const useAppStateStore = defineStore('appState', {
         newsletterBarIsVisible: true,
         isIntersecting: false,
         theme: 0,
+        siteData: null as IForProApi_site | null,
     }),
 
     actions: {

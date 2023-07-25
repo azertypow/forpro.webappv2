@@ -2,21 +2,21 @@
     <section
         class="v-image-content"
         :class="{
-            'has-fixed-effect': fixedScroll,
+            'has-fixed-effect': imageBlockContent.data.isfixed,
         }"
     >
         <div
             class="v-image-content__fixed-effect"
-            v-if="fixedScroll"
+            v-if="imageBlockContent.data.isfixed"
             :style="{
-                backgroundImage: `url(${baseURL}${src})`,
+                backgroundImage: `url(${imageBlockContent.data.image.resize.xxl})`,
             }"
         ></div>
         <img
             v-else
             class="v-image-content__img"
                 alt="lorem ipsum image"
-                :src="src"
+                :src="imageBlockContent.data.image.resize.xxl"
         >
     </section>
 </template>
@@ -26,15 +26,13 @@
 
 
 <script lang="ts" setup>
+import {PropType} from "vue"
+import {IForPro_blocksContent_isImage} from "~/global/forProApi"
+
 defineProps({
-    src: {
-        type: String,
+    imageBlockContent: {
+        type: Object as PropType<IForPro_blocksContent_isImage>,
         required: true,
-    },
-    fixedScroll: {
-        type: Boolean,
-        required: false,
-        default: false,
     },
 })
 

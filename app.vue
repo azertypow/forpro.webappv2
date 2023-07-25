@@ -216,6 +216,7 @@
 import {useAppStateStore} from "~/stores/appState"
 import {onMounted} from "#imports"
 import {Ref} from "vue"
+import {setForProSiteData} from "~/global/appDataSeters";
 
 const stateLoading = ref(false)
 const stateIsLoaded = ref(false)
@@ -228,6 +229,9 @@ useRouter().beforeEach((to, from, next) => {
 const backgroundEffect: Ref<null | HTMLElement> =  ref(null)
 
 onMounted(() => {
+
+    setForProSiteData()
+
     window.addEventListener('scroll', () => {
         updateBackgroundColor()
     })

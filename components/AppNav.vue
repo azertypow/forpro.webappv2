@@ -37,6 +37,7 @@
           </nuxt-link>
 
           <div
+              v-if="siteData"
               class="v-app-nav__page-title"
           >
               {{ route.meta.name }}
@@ -107,14 +108,17 @@
                         >F.A.Q.
                         </nuxt-link>
                     </div>
-                    <div class="fp-heading-h3">
+                    <div
+                        v-if="siteData"
+                        class="fp-heading-h3"
+                    >
                         <nuxt-link
                             class="v-app-nav__link"
-                            href="/blog?theme=4"
+                            href="/news"
                             :class="{
-                              'is-active': curentRoutePath === '/blog'
+                              'is-active': curentRoutePath === '/news'
                             }"
-                        >Blog
+                        >{{siteData.blogDetails.title.value}}
                         </nuxt-link>
                     </div>
                     <div class="v-app-nav__impressum fp-remove-margin-child">
@@ -126,64 +130,18 @@
                 </div>
                 <div
                     class="v-app-nav__nav__content__container__coll">
-                    <div class="fp-heading-h3">
+
+                    <div
+                        v-for="pageRef of pagesReferencies"
+                        class="fp-heading-h3"
+                    >
                         <nuxt-link
                             class="v-app-nav__link"
-                            href="/lieu/learninglab?theme=1"
+                            :href="`/lieu/${pageRef.slug}`"
                             :class="{
-                                'is-active': curentRoutePath === '/lieu/learninglab'
+                                'is-active': curentRoutePath === `/lieu/${pageRef.slug}`
                             }"
-                        >LearningLab
-                        </nuxt-link>
-                    </div>
-                    <div class="fp-heading-h3">
-                        <nuxt-link
-                            class="v-app-nav__link"
-                            href="/lieu/makerlab?theme=2"
-                            :class="{
-                                'is-active': curentRoutePath === '/lieu/makerlab'
-                            }"
-                        >MakerLab
-                        </nuxt-link>
-                    </div>
-                    <div class="fp-heading-h3">
-                        <nuxt-link
-                            class="v-app-nav__link"
-                            href="/lieu/grandlab?theme=5"
-                            :class="{
-                                'is-active': curentRoutePath === '/lieu/grandlab'
-                            }"
-                        >GrandLab
-                        </nuxt-link>
-                    </div>
-                    <div class="fp-heading-h3">
-                        <nuxt-link
-                            class="v-app-nav__link"
-                            href="/lieu/accueil?theme=0"
-                            :class="{
-                                'is-active': curentRoutePath === '/lieu/accueil'
-                            }"
-                        >Accueil
-                        </nuxt-link>
-                    </div>
-                    <div class="fp-heading-h3">
-                        <nuxt-link
-                            class="v-app-nav__link"
-                            href="/lieu/foodlab?theme=3"
-                            :class="{
-                                'is-active': curentRoutePath === '/lieu/foodlab'
-                            }"
-                        >FoodLab
-                        </nuxt-link>
-                    </div>
-                    <div class="fp-heading-h3">
-                        <nuxt-link
-                            class="v-app-nav__link"
-                            href="/lieu/entreprises?theme=6"
-                            :class="{
-                                'is-active': curentRoutePath === '/lieu/entreprises'
-                            }"
-                        >Hôtel Entreprises
+                        >{{pageRef.title.value}}
                         </nuxt-link>
                     </div>
                 </div>
@@ -208,12 +166,23 @@
 <script lang="ts" setup>
 import {useAppStateStore} from "~/stores/appState";
 import {useRouter} from "nuxt/app"
+import {IForProApi_section, IForProApi_site, IWebsiteApiSectionUrl} from "~/global/forProApi";
+import {ComputedRef, Ref, UnwrapRef} from "vue";
+import {UnwrapRefSimple} from "@vue/reactivity";
 
-const routes = useRouter().getRoutes()
+const siteData: ComputedRef<UnwrapRefSimple<IForProApi_site> | null> = computed(() => useAppStateStore().siteData)
+
 const route = useRoute()
 const curentRoutePath = computed(() => useRoute().path)
 
+const pagesReferencies: ComputedRef<{[key: string]: IWebsiteApiSectionUrl}> = computed(() => {
+    return useAppStateStore().siteData?.sectionsDetails || {}
+})
+
 </script>
+
+
+
 <style lang="scss" scoped >
 
 

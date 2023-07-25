@@ -1,5 +1,8 @@
 <template>
-    <section class="v-article-item" >
+    <nuxt-link
+        class="v-article-item"
+        :href="`/articles/${slug}`"
+    >
         <div
                 class="v-article-item__img"
                 :style="{
@@ -7,12 +10,23 @@
                 }"
         >
         </div>
-        <div
-                class="v-article-item__content"
-        >
-            <slot/>
+        <div class="fp-grid-with-gutter">
+            <h4>{{title}}</h4>
         </div>
-    </section>
+        <div
+                class="v-article-item__content fp-grid-with-gutter"
+                v-html="textIntro"
+        >
+        </div>
+        <div
+            class="v-article-item__info fp-grid-with-gutter"
+        >
+            <div class="fp-ui-button fp-ui-button--small fp-ui-button--light">{{enumBlogArticleTypeOfContent[typeOfContent]}}</div>
+            <div class="v-article-item__date fp-grid-with-gutter">
+                {{date}}
+            </div>
+        </div>
+    </nuxt-link>
 </template>
 
 
@@ -20,11 +34,34 @@
 
 
 <script lang="ts" setup>
+
+import {enumBlogArticleTypeOfContent} from "~/global/forProApi"
+
 defineProps({
-    src: {
+    imageBlockContent: {
         type: String,
         required: true,
-    }
+    },
+    title: {
+        type: String,
+        required: true,
+    },
+    textIntro: {
+        type: String,
+        required: true,
+    },
+    typeOfContent: {
+        type: String,
+        required: true,
+    },
+    date: {
+        type: String,
+        required: true,
+    },
+    slug: {
+        type: String,
+        required: true,
+    },
 })
 
 </script>
@@ -35,9 +72,8 @@ defineProps({
 
 <style lang="scss" scoped >
 .v-article-item {
-    background: white;
-    color: var(--fp-theme-color-secondary);
     width: 100%;
+    color: inherit;
 
     .v-app--is-dark & {
         background: var(--fp-color-white);
@@ -46,13 +82,30 @@ defineProps({
 }
 
 .v-article-item__img {
-    height: 10rem;
+    padding-bottom: calc( 100% / 12 * 7 );
     background-color: var(--fp-color-grey);
     background-size: cover;
     background-position: center center;
 }
 
+.v-article-item__info {
+    display: flex;
+    align-items: center;
+}
+
+.v-article-item__date {
+    color: var(--fp-color-grey-dark);
+    font-size: var(--fp-font-size-small);
+    line-height: var(--fp-line-height-small);
+}
+</style>
+
+
+<style lang="scss">
 .v-article-item__content {
-    padding: var(--fp-gutter);
+    p {
+        font-size: var(--fp-font-size-small);
+        line-height: var(--fp-line-height-small);
+    }
 }
 </style>

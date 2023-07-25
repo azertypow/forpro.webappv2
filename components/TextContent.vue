@@ -1,6 +1,8 @@
 <template>
-    <section class="v-text-content fp-remove-margin-child" >
-        <slot/>
+    <section
+        class="v-text-content fp-remove-margin-child"
+        v-html="content"
+    >
     </section>
 </template>
 
@@ -10,8 +12,13 @@
 
 <script lang="ts" setup>
 // todo: ce composent doit accépter que des élément à partir de h3 depuis l'admin du site
-// defineProps<{
-// }>()
+
+defineProps({
+    content: {
+        required: true,
+        type: String,
+    }
+})
 
 </script>
 

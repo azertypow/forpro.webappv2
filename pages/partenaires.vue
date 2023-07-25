@@ -45,11 +45,12 @@
 
                         <profile-item
                             v-for="partner of partners"
-                            :small="true"
                             :profile-name="partner.name"
                             :profile-type="partner.entreprise"
                             :list-mode="true"
                             mail="mail?/lien"
+                            external-link="external link"
+                            profile-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, adipisci blanditiis consequatur debitis ea ex, excepturi facilis illum incidunt inventore iste laborum nobis non optio pariatur tempora, unde vero voluptatem."
                         />
 
                 </div>
@@ -59,7 +60,7 @@
         <div class="" >
             <image-content
                 :fixed-scroll="true"
-                src="/images/partenaires.jpeg"
+                imageBlockContent="/images/partenaires.jpeg"
             />
         </div>
 

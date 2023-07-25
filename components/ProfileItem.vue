@@ -10,35 +10,49 @@
         @click="descriptionIsOpen = !descriptionIsOpen"
     >
         <div
-            v-if="src"
-            class="v-profile-item__img"
-            :style="{
-        backgroundImage: `url(${src})` || '',
-        }"
-        ></div>
-        <h5
-            class="v-profile-item__name"
-        >{{profileName}}
-            <span
-                v-if="listMode"
-                class="v-profile-item__icon">
-                <span class="v-profile-item__icon__horizontal" ></span>
-                <span class="v-profile-item__icon__vertical" ></span>
-            </span>
-            <a
-            class="v-profile-item__link"
-            v-if="mail && listMode"
-            :href="`mailto:${mail}`"
-            >{{mail}} icon</a>
-        </h5>
-        <h5     class="v-profile-item__type">{{profileType}}</h5>
+            class="v-profile-item__header"
+        >
+            <div
+                v-if="src"
+                class="v-profile-item__img"
+                :style="{
+                    backgroundImage: `url(${src})` || '',
+                }"
+            ></div>
+            <h5
+                class="v-profile-item__name"
+            >{{profileName}}
+                <span
+                    v-if="listMode && profileDesc"
+                    class="v-profile-item__icon">
+                    <span class="v-profile-item__icon__horizontal" ></span>
+                    <span class="v-profile-item__icon__vertical" ></span>
+                </span>
+            </h5>
+            <h5     class="v-profile-item__type">{{profileType}}</h5>
+        </div>
 
-        <p  v-if="profileDesc" class="v-profile-item__desc">{{profileDesc}}</p>
-        <a
-            class="v-profile-item__link"
-            v-if="mail && !listMode"
-            :href="`mailto:${mail}`"
-        >{{mail}}</a>
+        <transition>
+            <div
+                v-if="showDetails"
+                class="v-profile-item__details"
+            >
+                <p class="v-profile-item__desc">{{profileDesc}}</p>
+                <a
+                    class="v-profile-item__link"
+                    v-if="mail"
+                    :href="`mailto:${mail}`"
+                    target="_blank"
+                ><img src="../assets/icons/mail_FILL0_wght400_GRAD0_opsz48.svg" alt="get mail contact"></a>
+                <a
+                    class="v-profile-item__link"
+                    v-if="externalLink"
+                    :href="`${externalLink}`"
+                    target="_blank"
+                ><img src="../assets/icons/link_FILL0_wght400_GRAD0_opsz48.svg" alt="get external link"></a>
+            </div>
+        </transition>
+
     </section>
 </template>
 
@@ -47,10 +61,13 @@
 
 
 <script lang="ts" setup>
-defineProps<{
+import {ComputedRef} from "vue";
+
+const props = defineProps<{
     src?: string
     small?: boolean
     mail?: string
+    externalLink?: string
     profileDesc?: string
     listMode?: boolean
 
@@ -60,6 +77,11 @@ defineProps<{
 }>()
 
 const descriptionIsOpen = ref(false)
+
+const showDetails: ComputedRef<boolean> = computed(() => {
+    if(! props.listMode) return props.profileDesc !== undefined
+    return descriptionIsOpen.value
+})
 
 </script>
 
@@ -85,8 +107,6 @@ const descriptionIsOpen = ref(false)
     }
 
     &.list-mode {
-        flex-direction: row;
-        align-items: center;
         border-bottom: solid 1px;
         padding-top: 1rem;
         padding-bottom: 1rem;
@@ -94,6 +114,19 @@ const descriptionIsOpen = ref(false)
         &:first-child {
             border-top: solid 1px;
         }
+    }
+}
+
+.v-profile-item__header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+
+    .list-mode & {
+        cursor: pointer;
+        flex-direction: row;
+        align-items: center;
     }
 }
 
@@ -117,7 +150,7 @@ const descriptionIsOpen = ref(false)
         padding-left: 3rem;
         padding-right: var(--fp-gutter);
         margin-top: 0;
-        width: calc(100% / 3 * 2);
+        width: calc(100% / 2 * 1);
         box-sizing: border-box;
         position: relative;
     }
@@ -144,10 +177,22 @@ const descriptionIsOpen = ref(false)
     }
 }
 
+.v-profile-item__details {
+    .list-mode & {
+        padding-left: 3rem;
+    }
+}
+
 .v-profile-item__link {
     color: inherit;
     text-decoration: underline;
     margin-top: 1rem;
+
+    > img {
+        display: block;
+        height: 1.5rem;
+        margin-right: var(--fp-gutter);
+    }
 
     p + &,
     h5+ & {
@@ -155,7 +200,6 @@ const descriptionIsOpen = ref(false)
     }
 
     .list-mode & {
-        margin-top: 0;
         position: relative;
         display: inline-block;
         transform: translate(0, -50%);
@@ -167,8 +211,8 @@ p {
 }
 
 .small p {
-    font-size: .7rem;
-    line-height: 1.2em;
+    font-size: var(--fp-font-size-small);
+    line-height: var(--fp-line-height-small);
 }
 
 
@@ -183,6 +227,7 @@ p {
     //background: red;
     flex-shrink: 0;
     transition: transform ease-in-out .25s;
+    transform-origin: center;
 
     > * {
         width: var(--line-width);
@@ -190,6 +235,10 @@ p {
         height: var(--button-width);
         position: absolute;
         left: calc( var(--button-width-half) - var(--line-width) / 2 );
+    }
+
+    .v-profile-item--is-open & {
+        transform: rotate(45deg) translate(-35%, -35%);
     }
 }
 
@@ -206,8 +255,18 @@ p {
     transform: rotate(0);
 
     .v-profile-item--is-open & {
-        transition: transform ease-in-out .25s;
-        transform: rotate(90deg);
     }
+}
+
+/* we will explain what these classes do next! */
+.v-enter-active,
+.v-leave-active {
+    transition: opacity 1s ease, transform .5s ease-in-out;
+}
+
+.v-enter-from,
+.v-leave-to {
+    opacity: 0;
+    transform: translateY(-.5rem);
 }
 </style>

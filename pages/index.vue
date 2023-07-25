@@ -34,7 +34,7 @@
 
         <image-content
             :fixed-scroll="true"
-            src="/images/73.jpg"
+            imageBlockContent="/images/73.jpg"
         />
 
 <!--        <div-->
