@@ -42,8 +42,7 @@
         </div>
 
         <div
-            class="v-app__page-container"
-            ref="backgroundEffect"
+            class="v-app__page-container fp-backgroundEffect"
         >
             <NuxtPage/>
         </div>
@@ -226,25 +225,15 @@ useRouter().beforeEach((to, from, next) => {
     next()
 })
 
-const backgroundEffect: Ref<null | HTMLElement> =  ref(null)
-
 onMounted(() => {
 
     setForProSiteData()
 
     window.addEventListener('scroll', () => {
-        updateBackgroundColor()
+        useAppStateStore().updateBackgroundColor()
     })
 
-    useAppStateStore().updateTheme()
-    updateBackgroundColor()
-
-    useRouter().afterEach(() => {
-        useAppStateStore().updateTheme()
-        updateBackgroundColor()
-    })
-
-
+    useAppStateStore().updateBackgroundColor()
 
     nextTick(() => {
          stateLoading.value = true
@@ -255,32 +244,5 @@ onMounted(() => {
     })
 })
 
-function updateBackgroundColor() {
-    if( ! (backgroundEffect.value instanceof HTMLElement) ) return
-    let backgroundOpacity = map(
-        window.scrollY - window.innerHeight,
-        0,
-        window.innerHeight * 1.5,
-        1,
-        0,
-    )
-
-    if(backgroundOpacity < 0) backgroundOpacity = 0
-    if(backgroundOpacity > 1) backgroundOpacity = 1
-
-    const backgroundRGBAColor = getComputedStyle(document.documentElement)
-        .getPropertyValue('--fp-theme-color-ternary')
-        .replace(')', `, ${backgroundOpacity})`)
-
-    backgroundEffect.value.style.backgroundColor = backgroundRGBAColor
-}
-
-const map = (
-    value: number,
-    x1: number,
-    y1: number,
-    x2: number,
-    y2: number
-) => (value - x1) * (y2 - x2) / (y1 - x1) + x2
 
 </script>

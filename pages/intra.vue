@@ -23,6 +23,10 @@
 // defineProps<{
 // }>()
 
+import {useAppStateStore} from "~/stores/appState"
+
+useAppStateStore().updateTheme('white_pink_blue')
+
 </script>
 
 

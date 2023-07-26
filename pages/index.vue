@@ -138,6 +138,16 @@
 
 // defineProps<{
 // }>()
+
+import {useAppStateStore} from "~/stores/appState"
+import {onMounted} from "#imports"
+
+
+onMounted(() => {
+    useAppStateStore().updateTheme('white_pink_blue')
+})
+
+
 </script>
 
 

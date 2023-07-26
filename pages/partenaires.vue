@@ -171,9 +171,17 @@
 
 <script lang="ts" setup>
 import ProfileItem from "~/components/ProfileItem.vue"
+import {useAppStateStore} from "~/stores/appState"
+import {onMounted} from "#imports"
 
 // defineProps<{
 // }>()
+
+// todo: theme color after fetch
+onMounted(() => {
+    useAppStateStore().updateTheme('white_pink_blue')
+})
+
 
 const partners: {name: string, entreprise: string}[] = [
     {name: 'Anaïs et Arnaud', entreprise: 'FuturPlus',},

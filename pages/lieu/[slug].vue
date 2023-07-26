@@ -74,7 +74,7 @@
                 class="fp-grid-coll-16-24"
             >
                 <block-f-a-q
-                    href="/faq#Accueil?theme=4">
+                    href="/faq#Accueil">
                 </block-f-a-q>
             </div>
         </div>
@@ -95,6 +95,7 @@ import {
     IForProApi_section
 } from "~/global/forProApi";
 import {ComputedRef, Ref, UnwrapRef} from "vue";
+import {useAppStateStore} from "~/stores/appState"
 
 const pageData: Ref<UnwrapRef<null | IForProApi_section>> = ref(null)
 
@@ -102,6 +103,9 @@ const slug = useRoute().params.slug
 
 if( typeof slug  === 'string') fetchForProApi_section(slug).then((value: IForProApi_section) => {
     pageData.value = value
+    console.log(useRuntimeConfig().public.apiBaseUrl)
+    console.log(value.themeColor)
+    useAppStateStore().updateTheme(value.themeColor)
 })
 
 const headerImageObject: ComputedRef<undefined | IForPro_image > = computed(() => {

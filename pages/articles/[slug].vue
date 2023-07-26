@@ -79,7 +79,7 @@
                 class="fp-grid-coll-16-24"
             >
                 <block-f-a-q
-                    href="/faq#Accueil?theme=4">
+                    href="/faq#Accueil">
                 </block-f-a-q>
             </div>
         </div>
@@ -100,6 +100,7 @@ import {
     IForPro_image
 } from "~/global/forProApi";
 import {ComputedRef, Ref, UnwrapRef} from "vue";
+import {useAppStateStore} from "~/stores/appState"
 
 const articleData: Ref<UnwrapRef<null | IForPro_blogArticle>> = ref(null)
 
@@ -107,6 +108,7 @@ const slug = useRoute().params.slug
 
 if( typeof slug  === 'string') fetchForProApi_blogArticle(slug).then((value: IForPro_blogArticle) => {
     articleData.value = value
+    useAppStateStore().updateTheme('white_pink_blue')
 })
 
 

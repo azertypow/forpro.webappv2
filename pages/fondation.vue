@@ -161,9 +161,17 @@
 <script lang="ts" setup>
 import TextBulletPoint from "~/components/TextBulletPoint.vue";
 import ProfileItem from "~/components/ProfileItem.vue";
+import {useAppStateStore} from "~/stores/appState"
+import {onMounted} from "#imports"
 
 // defineProps<{
 // }>()
+
+// todo: theme color after fetch
+onMounted(() => {
+    useAppStateStore().updateTheme('white_pink_blue')
+})
+
 </script>
 
 

@@ -344,6 +344,12 @@
 
 <script lang="ts" setup>
 import {useAppStateStore} from "~/stores/appState";
+import {onMounted} from "#imports"
+
+// todo: theme color after fetch
+onMounted(() => {
+    useAppStateStore().updateTheme('white_pink_blue')
+})
 
 const navStickyContainer = ref()
 const navSticky = ref()

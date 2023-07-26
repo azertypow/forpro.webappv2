@@ -62,11 +62,13 @@ import {
     IForPro_blog,
     IForPro_blog_articleInformations
 } from "~/global/forProApi";
+import {useAppStateStore} from "~/stores/appState"
 
 const blogData: Ref<UnwrapRef<null | IForPro_blog>> = ref(null)
 
 fetchForProApi_blog().then((value: IForPro_blog) => {
     blogData.value = value
+    useAppStateStore().updateTheme('white_pink_blue')
 })
 
 function getPageDate(blogPageDetails: IForPro_blog_articleInformations): string {

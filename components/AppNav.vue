@@ -10,7 +10,7 @@
       >
 
           <nuxt-link
-              href="/?theme=4"
+              href="/"
               class="v-app-nav__logo"
           >
               <svg
@@ -81,7 +81,7 @@
                     <div class="fp-heading-h3">
                         <nuxt-link
                             class="v-app-nav__link"
-                            href="/fondation?theme=4"
+                            href="/fondation"
                             :class="{
                               'is-active': curentRoutePath === '/fondation'
                             }"
@@ -91,7 +91,7 @@
                     <div class="fp-heading-h3">
                         <nuxt-link
                             class="v-app-nav__link"
-                            href="/partenaires?theme=4"
+                            href="/partenaires"
                             :class="{
                               'is-active': curentRoutePath === '/partenaires'
                             }"
@@ -101,7 +101,7 @@
                     <div class="fp-heading-h3">
                         <nuxt-link
                             class="v-app-nav__link"
-                            href="/faq?theme=4"
+                            href="/faq"
                             :class="{
                               'is-active': curentRoutePath === '/faq'
                             }"

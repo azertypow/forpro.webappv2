@@ -23,9 +23,19 @@ export interface IWebsiteApiSectionUrl {
     "blueprint": string
 }
 
+export type forProThemeColor =
+    'brown_purple_red'
+  | 'sky_blue_orange'
+  | 'green_pink_blue'
+  | 'brown_yellow_purple'
+  | 'white_pink_blue'
+  | 'orange_green_pink'
+  | 'purple_white_blue'
+
 export interface IForProApi_section {
     "title": string,
     "coverImage": {[key: string]: IForPro_image} | null,
+    "themeColor": forProThemeColor,
     "textIntro": string,
     "content": {[key: string]: IForPro_blocksContent},
     "faqTitle": null,
