@@ -2,14 +2,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
-    baseURL: process.env.NODE_ENV === 'dev'
-      ? '/'
-      : '/forpro.webappv2/',
+    baseURL: '/forpro.webappv2/',
   },
 
   runtimeConfig: {
     public: {
-      apiBaseUrl: process.env.NODE_ENV === 'dev'
+      apiBaseUrl: process.env.NODE_ENV === 'development'
         ? 'http://localhost:8000'
         : 'https://forpro.sdrvl.ch',
     }
