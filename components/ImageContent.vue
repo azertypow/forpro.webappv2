@@ -2,18 +2,18 @@
     <section
         class="v-image-content"
         :class="{
-            'has-fixed-effect': imageBlockContent.data.isfixed,
+            'has-fixed-effect': (imageBlockContent.data?.isfixed || false),
         }"
     >
         <div
             class="v-image-content__fixed-effect"
-            v-if="imageBlockContent.data.isfixed"
+            v-if="imageBlockContent.data?.isfixed && imageBlockContent.data.image"
             :style="{
                 backgroundImage: `url(${imageBlockContent.data.image.resize.xxl})`,
             }"
         ></div>
         <img
-            v-else
+            v-else-if="imageBlockContent.data?.image"
             class="v-image-content__img"
                 alt="lorem ipsum image"
                 :src="imageBlockContent.data.image.resize.xxl"

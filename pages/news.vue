@@ -6,12 +6,10 @@
         />
 
         <div class="v-blog__tags" >
-            <button>{{enumBlogArticleTypeOfContent.article}}</button>
-            <div>
-                <button>{{enumBlogArticleTypeOfContent.event}}</button>
-            </div>
-            <button>{{enumBlogArticleTypeOfContent.project}}</button>
-            <button>{{enumBlogArticleTypeOfContent.construction}}</button>
+            <button>{{converteBlogArticleTypeOfContent('article')}}</button>
+            <button>{{converteBlogArticleTypeOfContent('event')}}</button>
+            <button>{{converteBlogArticleTypeOfContent('project')}}</button>
+            <button>{{converteBlogArticleTypeOfContent('construction')}}</button>
         </div>
 
         <div
@@ -23,7 +21,7 @@
             >
                 <article-item
                     :title="event.title.value"
-                    src="https://api.for-pro.ch/media/pages/evolution-du-batiment/4a3501a434-1668695053/forpro-unandejaraphaellemueller-66-1280x.jpg"
+                    :imageInstance="event.coverImage"
                     :textIntro="event.textIntro.value"
                     :typeOfContent="event.typeOfContent.value"
                     :date="getPageDate(event)"
@@ -41,7 +39,7 @@
             >
                 <article-item
                     :title="article.title.value"
-                    src="https://api.for-pro.ch/media/pages/evolution-du-batiment/4a3501a434-1668695053/forpro-unandejaraphaellemueller-66-1280x.jpg"
+                    :imageInstance="article.coverImage"
                     :textIntro="article.textIntro.value"
                     :typeOfContent="article.typeOfContent.value"
                     :date="getPageDate(article)"
@@ -58,7 +56,12 @@
 
 <script lang="ts" setup>
 import {ComputedRef, Ref, UnwrapRef} from "vue";
-import {enumBlogArticleTypeOfContent, fetchForProApi_blog, IForPro_blog, IForPro_blog_articleInformations} from "~/global/forProApi";
+import {
+    converteBlogArticleTypeOfContent,
+    fetchForProApi_blog,
+    IForPro_blog,
+    IForPro_blog_articleInformations
+} from "~/global/forProApi";
 
 const blogData: Ref<UnwrapRef<null | IForPro_blog>> = ref(null)
 
@@ -73,6 +76,7 @@ function getPageDate(blogPageDetails: IForPro_blog_articleInformations): string 
 }
 
 const articlesWithoutFuturEvent: ComputedRef<UnwrapRef<IForPro_blog_articleInformations>[]> = computed(() => {
+
     const valueOfBlogData = blogData.value
 
     if( valueOfBlogData === null ) return []

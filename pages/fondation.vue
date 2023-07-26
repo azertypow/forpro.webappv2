@@ -9,9 +9,9 @@
             <div
                 class="fp-grid-coll-16-24 fp-grid-with-gutter fp-page__sections"
             >
-                <text-intro>
-                    <p>La fondation ForPro naît de constats simples: le modèle suisse de formation professionnelle est un « passeport pour l’emploi ». Les perspectives d’employabilité et de développement offertes par la formation professionnelle permettent une carrière riche et en adéquation aux besoins des entreprises et du marché du travail. Cependant, la filière de l’apprentissage (CFC et AFP) fait pâle figure à Genève, où un tiers des jeunes choisissent cette voie contre deux tiers en moyenne suisse. De plus, l’enthousiasme pour l’apprentissage n’est pas toujours de mise pour les jeunes et leur entourage.</p>
-                </text-intro>
+                <text-intro
+                    content="<p>La fondation ForPro naît de constats simples: le modèle suisse de formation professionnelle est un « passeport pour l’emploi ». Les perspectives d’employabilité et de développement offertes par la formation professionnelle permettent une carrière riche et en adéquation aux besoins des entreprises et du marché du travail. Cependant, la filière de l’apprentissage (CFC et AFP) fait pâle figure à Genève, où un tiers des jeunes choisissent cette voie contre deux tiers en moyenne suisse. De plus, l’enthousiasme pour l’apprentissage n’est pas toujours de mise pour les jeunes et leur entourage.</p>"
+                />
             </div>
 
             <div

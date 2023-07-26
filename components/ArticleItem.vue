@@ -6,7 +6,7 @@
         <div
                 class="v-article-item__img"
                 :style="{
-                    backgroundImage: `url(${src})`,
+                    backgroundImage: `url(${imageInstance.resize.xxl})`,
                 }"
         >
         </div>
@@ -21,7 +21,7 @@
         <div
             class="v-article-item__info fp-grid-with-gutter"
         >
-            <div class="fp-ui-button fp-ui-button--small fp-ui-button--light">{{enumBlogArticleTypeOfContent[typeOfContent]}}</div>
+            <div class="fp-ui-button fp-ui-button--small fp-ui-button--light">{{converteBlogArticleTypeOfContent(typeOfContent)}}</div>
             <div class="v-article-item__date fp-grid-with-gutter">
                 {{date}}
             </div>
@@ -35,11 +35,16 @@
 
 <script lang="ts" setup>
 
-import {enumBlogArticleTypeOfContent} from "~/global/forProApi"
+import {
+    blogArticleTypeOfContent,
+    converteBlogArticleTypeOfContent,
+    IForPro_image
+} from "~/global/forProApi"
+import {PropType} from "vue"
 
 defineProps({
-    imageBlockContent: {
-        type: String,
+    imageInstance: {
+        type: Object as PropType<IForPro_image>,
         required: true,
     },
     title: {
@@ -51,7 +56,7 @@ defineProps({
         required: true,
     },
     typeOfContent: {
-        type: String,
+        type: Object as PropType<blogArticleTypeOfContent>,
         required: true,
     },
     date: {

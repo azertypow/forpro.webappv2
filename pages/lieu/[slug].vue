@@ -14,8 +14,7 @@
             <div class="fp-grid-coll-16-24">
                 <text-intro
                     :content="pageData.textIntro"
-                >
-                </text-intro>
+                />
             </div>
         </div>
 

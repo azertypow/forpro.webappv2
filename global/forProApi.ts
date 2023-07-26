@@ -42,12 +42,12 @@ export interface IForPro_blocksContent {
 }
 // todo: clean create generic type for diff blocks types
 export interface IForPro_blocksContent_isImage extends IForPro_blocksContent {
-    data: {
+    data?: {
         "title": string,
         "isfixed": boolean,
         "photographer": string,
         "license": string,
-        "image": IForPro_image
+        "image": IForPro_image | null
     },
     "type":
       | "image"
@@ -75,9 +75,9 @@ export interface IForPro_blog_articleInformations {
     "url": string,
     "slug": string,
     "blueprint": string
-    "coverImage" : {[key: string]: IForPro_image} | null,
+    "coverImage" : IForPro_image,
     "typeOfContent" : {
-        "value": typeof enumBlogArticleTypeOfContent
+        "value": blogArticleTypeOfContent
     }
     "textIntro" : {
         value: string
@@ -105,11 +105,19 @@ export interface IForPro_image {
     }
 }
 
-export enum enumBlogArticleTypeOfContent {
-    "event"         = "Événement",
-    "article"       = "Article",
-    "project"       = "Projet",
-    "construction"  = "Le chantier",
+export type blogArticleTypeOfContent = "event" | "article" | "project" | "construction"
+
+export function converteBlogArticleTypeOfContent(typeContent: blogArticleTypeOfContent): string {
+    switch (typeContent) {
+        case 'article':
+            return "Article"
+        case 'project':
+            return "Projet"
+        case 'event':
+            return "Événement"
+        case 'construction':
+            return "Le chantier"
+    }
 }
 
 export interface IForPro_blogArticle {
@@ -122,7 +130,7 @@ export interface IForPro_blogArticle {
     "title": string,
     "coverImage" : {[key: string]: IForPro_image} | null,
     "typeOfContent": {
-        "value": typeof enumBlogArticleTypeOfContent
+        "value": blogArticleTypeOfContent
     },
     "blockContent": {
         [key: string]: IForPro_blocksContent

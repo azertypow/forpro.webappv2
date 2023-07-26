@@ -10,10 +10,12 @@
             <div
                 class="fp-grid-coll-16-24 fp-grid-with-gutter fp-page__sections"
             >
-                <text-intro>
+                <text-intro
+                    content="
                     <p>Afin de servir son but et ses missions, ForPro offre un lieu où les projets et actions des Labs sont imaginés, proposés et discutés par des partenaires. Ces derniers apportent ainsi leur perspective et leur expertise au domaine de la formation professionnelle. Basé sur la co-construction, la valorisation des compétences et la gouvernance partagée, la diversité des expériences est essentielle à la mise en oeuvre des prestations.</p>
                     <p>Depuis octobre 2021, de nombreux partenaires apportent leur pierre à l’édifice et façonnent pas à pas la future identité de ForPro:</p>
-                </text-intro>
+                    "
+                />
             </div>
         </div>
         <div class="fp-grid-coll-container fp-grid-coll-container--center v-fondation__profiles fp-page__sections">
@@ -57,12 +59,13 @@
             </div>
         </div>
 
-        <div class="" >
-            <image-content
-                :fixed-scroll="true"
-                imageBlockContent="/images/partenaires.jpeg"
-            />
-        </div>
+        <!--        todo: image implementation-->
+<!--        <div class="" >-->
+<!--            <image-content-->
+<!--                :fixed-scroll="true"-->
+<!--                imageBlockContent="/images/partenaires.jpeg"-->
+<!--            />-->
+<!--        </div>-->
 
         <div class="fp-grid-coll-container fp-grid-coll-container--center v-fondation__profiles fp-page__sections">
             <div class="fp-grid-coll-18-24" >

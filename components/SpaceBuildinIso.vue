@@ -24,7 +24,7 @@
 <script lang="ts" setup>
 defineProps({
 
-  imageBlockContent: {
+  src: {
     required: false,
     type: String,
   },
