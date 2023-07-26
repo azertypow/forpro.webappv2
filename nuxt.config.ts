@@ -6,6 +6,15 @@ export default defineNuxtConfig({
       ? '/'
       : '/forpro.webappv2/',
   },
+
+  runtimeConfig: {
+    public: {
+      apiBaseUrl: process.env.NODE_ENV === 'dev'
+        ? 'http://localhost:8000'
+        : 'https://forpro.sdrvl.ch',
+    }
+  },
+
   typescript: {
     shim: true,
     strict: true,

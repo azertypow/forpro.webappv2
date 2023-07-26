@@ -146,22 +146,22 @@ export interface IForPro_blogArticle {
 
 
 export async function fetchForProApi_site(): Promise<IForProApi_site> {
-    const response = await fetch("http://localhost:8000/api-v2/site")
+    const response = await fetch(`${useRuntimeConfig().public.apiBaseUrl}/api-v2/site`)
     return await response.json()
 }
 
 export async function fetchForProApi_section(slug: string): Promise<IForProApi_section> {
-    const response = await fetch(`http://localhost:8000/api-v2/sections/${slug}`)
+    const response = await fetch(`${useRuntimeConfig().public.apiBaseUrl}/api-v2/sections/${slug}`)
     return await response.json()
 }
 
 export async function fetchForProApi_blog(): Promise<IForPro_blog> {
-    const response = await fetch(`http://localhost:8000/api-v2/blog`)
+    const response = await fetch(`${useRuntimeConfig().public.apiBaseUrl}/api-v2/blog`)
     return await response.json()
 }
 
 export async function fetchForProApi_blogArticle(slug: string): Promise<IForPro_blogArticle> {
-    const response = await fetch(`http://localhost:8000/api-v2/blog/${slug}`)
+    const response = await fetch(`${useRuntimeConfig().public.apiBaseUrl}/api-v2/blog/${slug}`)
     return await response.json()
 }
 
