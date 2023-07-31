@@ -154,7 +154,7 @@ export async function fetchForProApi_blog(): Promise<IForPro_blog> {
 }
 
 export async function fetchForProApi_blogArticle(slug: string): Promise<IForPro_blogArticle> {
-    const response = await fetch(`${useRuntimeConfig().public.apiBaseUrl}/api-v2/blog/${slug}`)
+    const response = await fetch(`${useRuntimeConfig().public.apiBaseUrl}/api-v2/blog/article/${slug}`)
     return await response.json()
 }
 
