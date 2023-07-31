@@ -4,26 +4,37 @@
         :href="`/articles/${slug}`"
     >
         <div
+            class="v-article-item__title fp-remove-margin-child"
+        >
+            <h4>{{title}}</h4>
+            <h5
+                v-if="typeOfContent === 'event'"
+                class="v-article-item__date"
+            >
+                {{getDateBy_FR_stringFormat(date)}}
+            </h5>
+        </div>
+        <div
                 class="v-article-item__img"
                 :style="{
                     backgroundImage: `url(${imageInstance.resize.xxl})`,
                 }"
         >
         </div>
-        <div class="fp-grid-with-gutter">
-            <h4>{{title}}</h4>
-        </div>
         <div
-                class="v-article-item__content fp-grid-with-gutter"
+                class="v-article-item__content"
                 v-html="textIntro"
         >
         </div>
         <div
-            class="v-article-item__info fp-grid-with-gutter"
+            class="v-article-item__info"
         >
             <div class="fp-ui-button fp-ui-button--small fp-ui-button--light">{{converteBlogArticleTypeOfContent(typeOfContent)}}</div>
-            <div class="v-article-item__date fp-grid-with-gutter">
-                {{date}}
+            <div
+                v-if="typeOfContent !== 'event'"
+                class="v-article-item__date fp-grid-with-gutter"
+            >
+                {{getDateBy_FR_stringFormat(date)}}
             </div>
         </div>
     </nuxt-link>
@@ -41,6 +52,7 @@ import {
     IForPro_image
 } from "~/global/forProApi"
 import {PropType} from "vue"
+import {getDateBy_FR_stringFormat} from "../global/tools"
 
 defineProps({
     imageInstance: {
@@ -86,11 +98,30 @@ defineProps({
     }
 }
 
+.v-article-item__title {
+    //height: 3rem;
+    overflow: hidden;
+    margin-bottom: .5rem;
+
+    h4 {
+        margin-bottom: 0;
+    }
+
+    h4 + h5 {
+        margin-top: .5rem;
+    }
+
+    h5 {
+        color: var(--fp-theme-color-secondary);
+    }
+}
+
 .v-article-item__img {
     padding-bottom: calc( 100% / 12 * 7 );
     background-color: var(--fp-color-grey);
     background-size: cover;
     background-position: center center;
+    margin-bottom: .5rem;
 }
 
 .v-article-item__info {

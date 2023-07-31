@@ -26,7 +26,7 @@ defineProps({
 
 
 <style lang="scss" >
-@import "assets/typography";
+@use "assets/typography";
 .v-text-intro {
     > p {
         @extend .fp-heading-h4;

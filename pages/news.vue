@@ -6,18 +6,18 @@
         />
 
         <div class="v-blog__tags" >
-            <button>{{converteBlogArticleTypeOfContent('article')}}</button>
-            <button>{{converteBlogArticleTypeOfContent('event')}}</button>
-            <button>{{converteBlogArticleTypeOfContent('project')}}</button>
-            <button>{{converteBlogArticleTypeOfContent('construction')}}</button>
+            <button class="fp-ui-button--light">{{converteBlogArticleTypeOfContent('article')}}</button>
+            <button class="fp-ui-button--light">{{converteBlogArticleTypeOfContent('event')}}</button>
+            <button class="fp-ui-button--light">{{converteBlogArticleTypeOfContent('project')}}</button>
+            <button class="fp-ui-button--light">{{converteBlogArticleTypeOfContent('construction')}}</button>
         </div>
 
         <div
-            class="v-blog__articles fp-grid-coll-container fp-grid-coll-container--center"
+            class="v-blog__articles fp-grid-coll-reg-container fp-grid-coll-reg-container--center"
         >
             <div
                 v-for="event of futurEvents"
-                class="v-blog__articles__item fp-grid-with-gutter fp-grid-coll-12-24"
+                class="v-blog__articles__item fp-grid-with-gutter fp-grid-coll-reg-12-24"
             >
                 <article-item
                     :title="event.title.value"
@@ -31,11 +31,11 @@
         </div>
 
         <div
-            class="v-blog__articles fp-grid-coll-container"
+            class="v-blog__articles fp-grid-coll-reg-container"
         >
             <div
                 v-for="article of articlesWithoutFuturEvent"
-                class="v-blog__articles__item fp-grid-with-gutter fp-grid-coll-6-24"
+                class="v-blog__articles__item fp-grid-with-gutter fp-grid-coll-reg-6-24"
             >
                 <article-item
                     :title="article.title.value"
@@ -126,7 +126,8 @@ const futurEvents: ComputedRef<UnwrapRef<IForPro_blog_articleInformations>[]> = 
 .v-blog__tags {
     display: flex;
     justify-content: center;
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
+
     gap: var(--fp-gutter);
 
     > * {

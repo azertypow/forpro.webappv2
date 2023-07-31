@@ -7,9 +7,9 @@
         />
 
         <div
-            class="fp-grid-coll-container fp-grid-coll-container--center"
+            class="fp-grid-coll-reg-container fp-grid-coll-reg-container--center"
         >
-            <div class="fp-grid-coll-16-24">
+            <div class="fp-grid-coll-24-24 fp-grid-coll-reg-16-24 fp-grid-with-gutter">
                 <text-intro
                     content="
                     <p>La fondation ForPro a pour but d’encourager, de soutenir, de valoriser et de promouvoir la formation professionnelle auprès des jeunes, de leur entourage et des entreprises du canton de Genève.</p>
@@ -24,10 +24,10 @@
         <background-effect/>
 
         <div
-            class="fp-grid-coll-container fp-grid-coll-container--center"
+            class="fp-grid-coll-reg-container fp-grid-coll-reg-container--center"
         >
-            <div class="fp-grid-coll-16-24">
-                <div class="fp-page__sections">
+            <div class="fp-grid-coll-24-24 fp-grid-coll-reg-16-24 fp-grid-with-gutter">
+                <div class="fp-page__sections-box__section">
                     <space-building/>
                 </div>
             </div>
@@ -42,10 +42,10 @@
 
 <!--        <div-->
 <!--            v-if="useAppStateStore().newsletterBarIsVisible"-->
-<!--            class="fp-grid-coll-container"-->
+<!--            class="fp-grid-coll-reg-container"-->
 <!--        >-->
 <!--            <div-->
-<!--                class="fp-grid-coll-24-24"-->
+<!--                class="fp-grid-coll-reg-24-24"-->
 <!--            >-->
 <!--                <bar-newsletter-->
 <!--                    text="Newsletter"-->

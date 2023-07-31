@@ -4,10 +4,10 @@
                 page-title="ForPro"
         />
         <div
-            class="fp-grid-coll-container fp-grid-coll-container--center"
+            class="fp-grid-coll-reg-container fp-grid-coll-reg-container--center"
         >
             <div
-                class="fp-grid-coll-16-24 fp-grid-with-gutter fp-page__sections"
+                class="fp-grid-coll-reg-16-24 fp-grid-with-gutter fp-page__sections-box__section"
             >
                 <text-intro
                     content="<p>La fondation ForPro naît de constats simples: le modèle suisse de formation professionnelle est un « passeport pour l’emploi ». Les perspectives d’employabilité et de développement offertes par la formation professionnelle permettent une carrière riche et en adéquation aux besoins des entreprises et du marché du travail. Cependant, la filière de l’apprentissage (CFC et AFP) fait pâle figure à Genève, où un tiers des jeunes choisissent cette voie contre deux tiers en moyenne suisse. De plus, l’enthousiasme pour l’apprentissage n’est pas toujours de mise pour les jeunes et leur entourage.</p>"
@@ -15,7 +15,7 @@
             </div>
 
             <div
-                class="fp-grid-coll-16-24 fp-grid-with-gutter fp-page__sections"
+                class="fp-grid-coll-reg-16-24 fp-grid-with-gutter fp-page__sections-box__section"
             >
                 <h2>Mission</h2>
                 <p>Le but de la fondation ForPro répond à la nécessité de soutenir, promouvoir et renforcer la filière «formation professionnelle». Il s’agit de contribuer à renforcer le capital humain de demain. Les ambitions sont:</p>
@@ -30,7 +30,7 @@
             </div>
 
             <div
-                class="fp-grid-coll-16-24 fp-grid-with-gutter fp-page__sections"
+                class="fp-grid-coll-reg-16-24 fp-grid-with-gutter fp-page__sections-box__section"
             >
                 <h2>Principes</h2>
                 <p>La fondation ForPro réunit des partenaires désirant travailler de manière ouverte, collaborative et itérative. Cela implique que chacun∙e partage une compréhension commune de l’approche résolument orientée sur les futurs utilisateurs et utilisatrices. Concrètement, les offres sont imaginées avec les publics cibles, testées auprès de ces derniers et seront adaptées chemin faisant.</p>
@@ -47,11 +47,11 @@
             </div>
 
             <div
-                class="fp-grid-coll-16-24 fp-grid-with-gutter fp-page__sections"
+                class="fp-grid-coll-reg-16-24 fp-grid-with-gutter fp-page__sections-box__section"
             >
                 <h2>L'équipe</h2>
-                <div class="fp-grid-coll-container fp-grid-coll-container--center v-fondation__profiles">
-                    <div class="fp-grid-coll-8-24" >
+                <div class="fp-grid-coll-reg-container fp-grid-coll-reg-container--center v-fondation__profiles">
+                    <div class="fp-grid-coll-reg-8-24" >
                         <profile-item
                             profile-desc=""
                             profile-name="Joëlle Mathey"
@@ -60,7 +60,7 @@
                             mail="voir le mail"
                         />
                     </div>
-                    <div class="fp-grid-coll-8-24" >
+                    <div class="fp-grid-coll-reg-8-24" >
                         <profile-item
                             profile-desc=""
                             profile-name="Fabrice Voan"
@@ -69,7 +69,7 @@
                             mail="voir le mail"
                         />
                     </div>
-                    <div class="fp-grid-coll-8-24" >
+                    <div class="fp-grid-coll-reg-8-24" >
                         <profile-item
                             profile-desc=""
                             profile-name="Thierry Schlatter"
@@ -78,7 +78,7 @@
                             mail="voir le mail"
                         />
                     </div>
-                    <div class="fp-grid-coll-8-24" >
+                    <div class="fp-grid-coll-reg-8-24" >
                         <profile-item
                             profile-desc=""
                             profile-name="François Antille"
@@ -87,7 +87,7 @@
                             mail="voir le mail"
                         />
                     </div>
-                    <div class="fp-grid-coll-8-24" >
+                    <div class="fp-grid-coll-reg-8-24" >
                         <profile-item
                             profile-desc=""
                             profile-name="Mélissa Catoquessa"
@@ -96,7 +96,7 @@
                             mail="voir le mail"
                         />
                     </div>
-                    <div class="fp-grid-coll-8-24" >
+                    <div class="fp-grid-coll-reg-8-24" >
                         <profile-item
                             profile-desc=""
                             profile-name="Lina Borén"
@@ -109,39 +109,39 @@
             </div>
 
             <div
-                class="fp-grid-coll-16-24 fp-grid-with-gutter fp-page__sections"
+                class="fp-grid-coll-reg-16-24 fp-grid-with-gutter fp-page__sections-box__section"
             >
                 <h3>Le Conseil de Fondation</h3>
-                <div class="fp-grid-coll-container">
-                    <div class="fp-grid-coll-12-24 fp-grid-with-gutter" >
+                <div class="fp-grid-coll-reg-container">
+                    <div class="fp-grid-coll-reg-12-24 fp-grid-with-gutter" >
                         <profile-item
                             :small="true"
                             profile-name="François Abbé-Decarroux"
                             profile-type="Président"
                         />
                     </div>
-                    <div class="fp-grid-coll-12-24 fp-grid-with-gutter" >
+                    <div class="fp-grid-coll-reg-12-24 fp-grid-with-gutter" >
                         <profile-item
                             :small="true"
                             profile-name="Marie Barbier-Mueller"
                             profile-type="Membre"
                         />
                     </div>
-                    <div class="fp-grid-coll-12-24 fp-grid-with-gutter" >
+                    <div class="fp-grid-coll-reg-12-24 fp-grid-with-gutter" >
                         <profile-item
                             :small="true"
                             profile-name="Marc Maugué"
                             profile-type="Membre"
                         />
                     </div>
-                    <div class="fp-grid-coll-12-24 fp-grid-with-gutter" >
+                    <div class="fp-grid-coll-reg-12-24 fp-grid-with-gutter" >
                         <profile-item
                             :small="true"
                             profile-name="Abir Oreibi"
                             profile-type="Membre"
                         />
                     </div>
-                    <div class="fp-grid-coll-12-24 fp-grid-with-gutter" >
+                    <div class="fp-grid-coll-reg-12-24 fp-grid-with-gutter" >
                         <profile-item
                             :small="true"
                             profile-name="Olivier Sandoz"

@@ -124,7 +124,7 @@ defineProps({
 
 
 <style lang="scss" >
-@import "assets/_scss-pramas";
+@use "assets/_scss-params";
 
 .v-text-quote {
     position: relative;
@@ -136,15 +136,7 @@ defineProps({
 
 
 .v-text-quote__container {
-    --quote-size: 5rem;
-
     box-sizing: border-box;
-    padding-left:   calc(var(--quote-size) / 2 );
-    padding-right:  calc(var(--quote-size) / 2 );
-
-    @container (min-width: 800px) {
-        --quote-size: 10rem;;
-    }
 }
 
 .v-text-quote__img-1 {
@@ -181,5 +173,9 @@ defineProps({
     text-align: center;
     position: relative;
     z-index: 5;
+}
+
+blockquote {
+    margin: 0;
 }
 </style>

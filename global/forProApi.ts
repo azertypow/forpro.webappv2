@@ -98,7 +98,7 @@ export interface IForPro_blog_articleInformations {
     } | null,
     "publicationDate": {
         "value": string
-    } | null
+    }
 }
 
 export interface IForPro_image {
@@ -130,26 +130,9 @@ export function converteBlogArticleTypeOfContent(typeContent: blogArticleTypeOfC
     }
 }
 
-export interface IForPro_blogArticle {
-    "url": string,
-    "slug": string,
-    "blueprint": string,
-    "textIntro": {
-        "value": string
-    },
-    "title": string,
-    "coverImage" : {[key: string]: IForPro_image} | null,
-    "typeOfContent": {
-        "value": blogArticleTypeOfContent
-    },
+export interface IForPro_blogArticle extends IForPro_blog_articleInformations {
     "blockContent": {
         [key: string]: IForPro_blocksContent
-    },
-    "eventDate": {
-        "value": string
-    },
-    "publicationDate": {
-        "value": string
     },
     "author": string,
 }

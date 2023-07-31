@@ -1,10 +1,10 @@
 // first import
-@import "__jungka-import.css";
-@import 'normalize.css';
-@import "./_var";
-@import './global';
+@use "__jungka-import.css";
+@use 'normalize.css';
+@use "./_var";
+@use './global';
 
 //
-@import './grid';
-@import './page';
-@import './typography';
+@use './grid';
+@use './page';
+@use './typography';

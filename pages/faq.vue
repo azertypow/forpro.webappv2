@@ -4,10 +4,10 @@
             page-title="F.A.Q."
         />
         <div
-            class="fp-grid-coll-container"
+            class="fp-grid-coll-reg-container"
         >
             <div
-                class="v-faq__nav fp-grid-coll-6-24 fp-grid-with-gutter"
+                class="v-faq__nav fp-grid-coll-reg-6-24 fp-grid-with-gutter"
                 ref="navStickyContainer"
             >
                 <div
@@ -27,7 +27,7 @@
             </div>
 
             <div
-                class="fp-grid-coll-14-24 fp-grid-with-gutter fp-page__sections v-faq__content"
+                class="fp-grid-coll-reg-14-24 fp-grid-with-gutter fp-page__sections-box__section v-faq__content"
             >
                 <h3 id="LearningLab" >LearningLab</h3>
                 <div

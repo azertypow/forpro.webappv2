@@ -5,10 +5,10 @@
         />
 
         <div
-            class="fp-grid-coll-container fp-grid-coll-container--center"
+            class="fp-grid-coll-reg-container fp-grid-coll-reg-container--center"
         >
             <div
-                class="fp-grid-coll-16-24 fp-grid-with-gutter fp-page__sections"
+                class="fp-grid-coll-reg-16-24 fp-grid-with-gutter fp-page__sections-box__section"
             >
                 <text-intro
                     content="
@@ -18,15 +18,15 @@
                 />
             </div>
         </div>
-        <div class="fp-grid-coll-container fp-grid-coll-container--center v-fondation__profiles fp-page__sections">
+        <div class="fp-grid-coll-reg-container fp-grid-coll-reg-container--center v-fondation__profiles fp-page__sections-box__section">
 
-            <div class="fp-grid-coll-18-24" >
-                <div class="fp-grid-coll-container">
+            <div class="fp-grid-coll-reg-18-24" >
+                <div class="fp-grid-coll-reg-container">
 
 
                     <div
                         v-for="partner of partners"
-                        class="fp-grid-coll-8-24 fp-grid-with-gutter"
+                        class="fp-grid-coll-reg-8-24 fp-grid-with-gutter"
                     >
                         <profile-item
                             :small="true"
@@ -39,9 +39,9 @@
             </div>
         </div>
 
-        <div class="fp-grid-coll-container fp-grid-coll-container--center v-fondation__profiles fp-page__sections">
+        <div class="fp-grid-coll-reg-container fp-grid-coll-reg-container--center v-fondation__profiles fp-page__sections-box__section">
 
-            <div class="fp-grid-coll-18-24" >
+            <div class="fp-grid-coll-reg-18-24" >
                 <div class="fp-grid-with-gutter">
 
 
@@ -67,13 +67,13 @@
 <!--            />-->
 <!--        </div>-->
 
-        <div class="fp-grid-coll-container fp-grid-coll-container--center v-fondation__profiles fp-page__sections">
-            <div class="fp-grid-coll-18-24" >
+        <div class="fp-grid-coll-reg-container fp-grid-coll-reg-container--center v-fondation__profiles fp-page__sections-box__section">
+            <div class="fp-grid-coll-reg-18-24" >
                 <h3>Les conseillers et conseillères</h3>
 
 
-                    <div class="fp-grid-coll-container">
-                        <div class="fp-grid-coll-8-24 fp-grid-with-gutter" >
+                    <div class="fp-grid-coll-reg-container">
+                        <div class="fp-grid-coll-reg-8-24 fp-grid-with-gutter" >
                             <profile-item
                                 :small="true"
                                 profile-name="Morgane, Ghita et Sacha de Brodbeck Roulet"
@@ -84,7 +84,7 @@
                         </div>
 
 
-                        <div class="fp-grid-coll-8-24 fp-grid-with-gutter" >
+                        <div class="fp-grid-coll-reg-8-24 fp-grid-with-gutter" >
                             <profile-item
                                 :small="true"
                                 profile-name="Sabine, Marc et Vladimir de Techdata"
@@ -94,7 +94,7 @@
                             />
                         </div>
 
-                        <div class="fp-grid-coll-8-24 fp-grid-with-gutter" >
+                        <div class="fp-grid-coll-reg-8-24 fp-grid-with-gutter" >
                             <profile-item
                                 :small="true"
                                 profile-name="Mathilde, Laura et Clément de face nord"
@@ -104,7 +104,7 @@
                             />
                         </div>
 
-                        <div class="fp-grid-coll-8-24 fp-grid-with-gutter" >
+                        <div class="fp-grid-coll-reg-8-24 fp-grid-with-gutter" >
                             <profile-item
                                 :small="true"
                                 profile-name=" Romina, Mathilde et Jehan de Unplugged"
@@ -114,7 +114,7 @@
                             />
                         </div>
 
-                        <div class="fp-grid-coll-8-24 fp-grid-with-gutter" >
+                        <div class="fp-grid-coll-reg-8-24 fp-grid-with-gutter" >
                             <profile-item
                                 :small="true"
                                 profile-name="Sonia, Rob et Nicolas"
@@ -124,7 +124,7 @@
                             />
                         </div>
 
-                        <div class="fp-grid-coll-8-24 fp-grid-with-gutter" >
+                        <div class="fp-grid-coll-reg-8-24 fp-grid-with-gutter" >
                             <profile-item
                                 :small="true"
                                 profile-name="Alicia Dubuis"
@@ -134,7 +134,7 @@
                             />
                         </div>
 
-                        <div class="fp-grid-coll-8-24 fp-grid-with-gutter" >
+                        <div class="fp-grid-coll-reg-8-24 fp-grid-with-gutter" >
                             <profile-item
                                 :small="true"
                                 profile-name="Silvia, Céline et Laurent de maneco"
@@ -144,7 +144,7 @@
                             />
                         </div>
 
-                        <div class="fp-grid-coll-8-24 fp-grid-with-gutter" >
+                        <div class="fp-grid-coll-reg-8-24 fp-grid-with-gutter" >
                             <profile-item
                                 :small="true"
                                 profile-name="Etienne et Tommy de studio TEC"

@@ -68,6 +68,9 @@
 
 
 <style lang="scss" scoped>
+@use "assets/_scss-params";
+
+
 .v-app {
     min-height: 100vh;
     color: var(--fp-color-black);
@@ -119,6 +122,7 @@
     right: 1.25rem;
     bottom: 1rem;
     z-index: 9999999999;
+    display: none;
 
     transition: opacity 1s ease-in-out, transform .5s ease-in-out;
     opacity: 0;
@@ -127,6 +131,10 @@
     .state-is-loaded & {
         opacity: 1;
         transform: scale(1, 1);
+    }
+
+    @media (min-width: scss-params.$fp-breakpoint-sm) {
+        display: block;
     }
 }
 

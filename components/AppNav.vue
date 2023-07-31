@@ -37,7 +37,6 @@
           </nuxt-link>
 
           <div
-              v-if="siteData"
               class="v-app-nav__page-title"
           >
               {{ route.meta.name }}
@@ -77,11 +76,11 @@
             <div
                 class="v-app-nav__nav__content__container">
                 <div
-                    class="v-app-nav__nav__content__container__coll">
+                    class="v-app-nav__nav__content__container__coll fp-remove-margin-child">
                     <div class="fp-heading-h3">
                         <nuxt-link
                             class="v-app-nav__link"
-                            href="/fondation"
+                            to="/fondation"
                             :class="{
                               'is-active': curentRoutePath === '/fondation'
                             }"
@@ -91,7 +90,7 @@
                     <div class="fp-heading-h3">
                         <nuxt-link
                             class="v-app-nav__link"
-                            href="/partenaires"
+                            to="/partenaires"
                             :class="{
                               'is-active': curentRoutePath === '/partenaires'
                             }"
@@ -101,7 +100,7 @@
                     <div class="fp-heading-h3">
                         <nuxt-link
                             class="v-app-nav__link"
-                            href="/faq"
+                            to="/faq"
                             :class="{
                               'is-active': curentRoutePath === '/faq'
                             }"
@@ -114,7 +113,7 @@
                     >
                         <nuxt-link
                             class="v-app-nav__link"
-                            href="/news"
+                            to="/news"
                             :class="{
                               'is-active': curentRoutePath === '/news'
                             }"
@@ -129,7 +128,7 @@
                     </div>
                 </div>
                 <div
-                    class="v-app-nav__nav__content__container__coll">
+                    class="v-app-nav__nav__content__container__coll fp-remove-margin-child">
 
                     <div
                         v-for="pageRef of pagesReferencies"
@@ -137,7 +136,7 @@
                     >
                         <nuxt-link
                             class="v-app-nav__link"
-                            :href="`/lieu/${pageRef.slug}`"
+                            :to="`/lieu/${pageRef.slug}`"
                             :class="{
                                 'is-active': curentRoutePath === `/lieu/${pageRef.slug}`
                             }"
@@ -184,6 +183,7 @@ const pagesReferencies: ComputedRef<{[key: string]: IWebsiteApiSectionUrl}> = co
 
 
 <style lang="scss" scoped >
+@use 'assets/_scss-params';
 
 
 .v-app-nav {
@@ -291,12 +291,12 @@ const pagesReferencies: ComputedRef<{[key: string]: IWebsiteApiSectionUrl}> = co
 
     .v-app-nav__nav__content__container {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         width: 100%;
         flex-wrap: nowrap;
 
 
-        @container (min-width: 900px) {
+        @media (min-width: scss-params.$fp-breakpoint-sm) {
             flex-direction: row;
             gap: calc(var(--fp-gutter) * 2);
         }
@@ -304,6 +304,20 @@ const pagesReferencies: ComputedRef<{[key: string]: IWebsiteApiSectionUrl}> = co
     .v-app-nav__nav__content__container__coll {
         width: 100%;
         height: auto;
+        padding-top: 3rem;
+
+        &:first-child {
+            //padding-top: 1rem;
+
+            @media (min-width: scss-params.$fp-breakpoint-sm) {
+                padding-top: 3rem;
+            }
+        }
+
+        > * {
+            margin-top: .5rem;
+            margin-bottom: .5rem;
+        }
     }
     .v-app-nav__nav__bottom__container {
         padding-top: 2rem;
@@ -348,7 +362,11 @@ const pagesReferencies: ComputedRef<{[key: string]: IWebsiteApiSectionUrl}> = co
 }
 
 .v-app-nav__impressum {
-    padding-top: 5rem;
+    padding-top: 1rem;
+
+    @media (min-width: scss-params.$fp-breakpoint-sm) {
+        padding-top: 5rem;
+    }
 }
 
 </style>

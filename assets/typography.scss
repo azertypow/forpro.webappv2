@@ -1,4 +1,4 @@
-@import "_scss-pramas";
+@use "_scss-params";
 
 h1,
 .fp-heading-h1 {
@@ -7,8 +7,8 @@ h1,
   max-width: 9em;
 
   //
-  line-height:  5rem;
-  font-size:    5rem;
+  line-height:  3rem;
+  font-size:    3rem;
   margin-top: 3rem;
   margin-bottom: 1.5rem;
 
@@ -16,7 +16,14 @@ h1,
     margin-top: 1.3rem;
   }
 
-  @media (min-width: $fp-breakpoint-sm) {
+  @media (min-width: scss-params.$fp-breakpoint-xs) {
+    line-height:  5rem;
+    font-size:    5rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  @media (min-width: scss-params.$fp-breakpoint-sm) {
     line-height: 12vw;
     font-size: 12vw;
     margin-top: 5rem;
@@ -44,7 +51,7 @@ h1,
     margin-top: 2rem;
   }
 
-  @media (min-width: $fp-breakpoint-sm) {
+  @media (min-width: scss-params.$fp-breakpoint-sm) {
     line-height:  4rem;
     font-size:    4rem;
     margin-top: 4rem;
@@ -76,9 +83,9 @@ h2,
     margin-top: 2rem;
   }
 
-  @media (min-width: $fp-breakpoint-sm) {
-    line-height:  78px;
-    font-size:    75.4px;
+  @media (min-width: scss-params.$fp-breakpoint-sm) {
+    line-height:  3.12rem;
+    font-size:    3.016rem;
     margin-top: 4rem;
     margin-bottom: 2rem;
 
@@ -98,7 +105,7 @@ h3,
   max-width: 16em;
 
   //
-  line-height:  2rem;
+  line-height:  1.65rem;
   font-size:    1.65rem;
   margin-top: 3rem;
   margin-bottom: 1rem;
@@ -107,7 +114,7 @@ h3,
     margin-top: 1rem;
   }
 
-  @media (min-width: $fp-breakpoint-sm) {
+  @media (min-width: scss-params.$fp-breakpoint-sm) {
     line-height: 1.75rem;
     font-size: 1.75rem;
     margin-top: 3rem;
@@ -143,7 +150,7 @@ h4,
     margin-top: -.5rem;
   }
 
-  @media (min-width: $fp-breakpoint-md) {
+  @media (min-width: scss-params.$fp-breakpoint-md) {
     line-height: 2rem;
     font-size: 1.75rem;
     margin-top: 2rem;

@@ -763,6 +763,9 @@ const mouseOverMakerLab     = ref(false)
 
 
 <style lang="scss" scoped>
+@use "assets/_scss-params";
+
+
 svg {
   display: block;
 }
@@ -796,8 +799,11 @@ svg {
 
 .v-space-building__plan {
     position: relative;
-    margin-left:    -2.8rem;
-    margin-right:   -2.8rem;
+
+    @media(min-width: scss-params.$fp-breakpoint-sm) {
+        margin-left:    -2.8rem;
+        margin-right:   -2.8rem;
+    }
 }
 
 .v-space-building__section-description {
