@@ -123,7 +123,7 @@
             <button
                 class="v-index__articles__button"
             >
-                <nuxt-link href="/blog" >Tous les articles</nuxt-link>
+                <nuxt-link href="/news" >Tous les articles</nuxt-link>
             </button>
         </section>
 
