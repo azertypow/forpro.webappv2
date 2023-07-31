@@ -13,7 +13,7 @@
         </div>
 
         <div
-            class="v-blog__articles fp-grid-coll-reg-container fp-grid-coll-reg-container--center"
+            class="v-blog__articles fp-grid-coll-reg-container"
         >
             <div
                 v-for="event of futurEvents"
@@ -28,11 +28,6 @@
                     :slug="event.slug"
                 />
             </div>
-        </div>
-
-        <div
-            class="v-blog__articles fp-grid-coll-reg-container"
-        >
             <div
                 v-for="article of articlesWithoutFuturEvent"
                 class="v-blog__articles__item fp-grid-with-gutter fp-grid-coll-reg-6-24"
