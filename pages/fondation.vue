@@ -4,7 +4,7 @@
                 page-title="ForPro"
         />
         <div
-            class="fp-grid-coll-reg-container fp-grid-coll-reg-container--center"
+            class="fp-grid-coll-container fp-grid-coll-container--center"
         >
             <div
                 class="fp-grid-coll-reg-16-24 fp-grid-with-gutter fp-page__sections-box__section"
@@ -50,7 +50,7 @@
                 class="fp-grid-coll-reg-16-24 fp-grid-with-gutter fp-page__sections-box__section"
             >
                 <h2>L'équipe</h2>
-                <div class="fp-grid-coll-reg-container fp-grid-coll-reg-container--center v-fondation__profiles">
+                <div class="fp-grid-coll-container fp-grid-coll-container--center v-fondation__profiles">
                     <div class="fp-grid-coll-reg-8-24" >
                         <profile-item
                             profile-desc=""
@@ -112,7 +112,7 @@
                 class="fp-grid-coll-reg-16-24 fp-grid-with-gutter fp-page__sections-box__section"
             >
                 <h3>Le Conseil de Fondation</h3>
-                <div class="fp-grid-coll-reg-container">
+                <div class="fp-grid-coll-container">
                     <div class="fp-grid-coll-reg-12-24 fp-grid-with-gutter" >
                         <profile-item
                             :small="true"

@@ -8,12 +8,12 @@
 
 // coll
 
-.fp-grid-coll-reg-container {
+.fp-grid-coll-container {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 
-  &.fp-grid-coll-reg-container--center {
+  &.fp-grid-coll-container--center {
     justify-content: center;
   }
 }

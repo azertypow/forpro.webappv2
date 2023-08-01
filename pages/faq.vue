@@ -4,7 +4,7 @@
             page-title="F.A.Q."
         />
         <div
-            class="fp-grid-coll-reg-container"
+            class="fp-grid-coll-container"
         >
             <div
                 class="v-faq__nav fp-grid-coll-reg-6-24 fp-grid-with-gutter"

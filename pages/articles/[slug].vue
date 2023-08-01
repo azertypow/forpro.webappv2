@@ -23,7 +23,7 @@
 
         <div
             v-if="articleData"
-            class="fp-grid-coll-reg-container fp-grid-coll-reg-container--center"
+            class="fp-grid-coll-container fp-grid-coll-container--center"
         >
             <div class="fp-grid-coll-24-24 fp-grid-coll-reg-16-24 fp-grid-with-gutter">
                 <text-intro
@@ -35,11 +35,11 @@
 
         <div
             v-if="articleData"
-            class="fp-grid-coll-reg-container fp-grid-coll-reg-container--center"
+            class="fp-grid-coll-container fp-grid-coll-container--center"
         >
             <div class="fp-grid-coll-24-24 fp-grid-with-gutter">
                 <div
-                    class="fp-grid-coll-reg-container fp-grid-coll-reg-container--center"
+                    class="fp-grid-coll-container fp-grid-coll-container--center"
                 >
                     <div>
                         <p class="fp-text-small">{{articleData.author}}</p>
@@ -54,7 +54,7 @@
         >
             <div
                 v-if="block.type === 'quote'"
-                class="fp-grid-coll-reg-container fp-grid-coll-reg-container--center fp-page__sections-box__section"
+                class="fp-grid-coll-container fp-grid-coll-container--center fp-page__sections-box__section"
             >
                 <div class="fp-grid-coll-24-24 fp-grid-with-gutter">
                     <text-quote
@@ -65,7 +65,7 @@
 
             <div
                 v-else-if="block.type === 'text'"
-                class="fp-page__sections-box__section fp-grid-coll-reg-container fp-grid-coll-reg-container--center"
+                class="fp-page__sections-box__section fp-grid-coll-container fp-grid-coll-container--center"
             >
                 <div class="fp-grid-coll-24-24 fp-grid-coll-reg-18-24 fp-grid-with-gutter">
                     <text-content
@@ -80,14 +80,14 @@
                 class="fp-page__sections-box__section"
             >
                 <image-content
-                    :imageBlockContent="(block as IForPro_blocksContent_isImage)"
+                    :imageBlockContent="(block as IForPro_blocksContent_isImage).data"
                 />
             </div>
 
         </template>
 
         <div
-            class="fp-grid-coll-reg-container fp-grid-coll-reg-container--center fp-page__sections-box__section fp-page__sections--background-color"
+            class="fp-grid-coll-container fp-grid-coll-container--center fp-page__sections-box__section fp-page__sections--background-color"
         >
             <div
                 class="fp-grid-coll-reg-16-24"

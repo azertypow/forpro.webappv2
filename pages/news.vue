@@ -13,7 +13,7 @@
         </div>
 
         <div
-            class="v-blog__articles fp-grid-coll-reg-container"
+            class="v-blog__articles fp-grid-coll-container"
         >
             <div
                 v-for="event of futurEvents"

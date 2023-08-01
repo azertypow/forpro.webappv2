@@ -5,7 +5,7 @@
         />
 
         <div
-            class="fp-grid-coll-reg-container fp-grid-coll-reg-container--center"
+            class="fp-grid-coll-container fp-grid-coll-container--center"
         >
             <div
                 class="fp-grid-coll-reg-16-24 fp-grid-with-gutter fp-page__sections-box__section"
@@ -18,10 +18,10 @@
                 />
             </div>
         </div>
-        <div class="fp-grid-coll-reg-container fp-grid-coll-reg-container--center v-fondation__profiles fp-page__sections-box__section">
+        <div class="fp-grid-coll-container fp-grid-coll-container--center v-fondation__profiles fp-page__sections-box__section">
 
             <div class="fp-grid-coll-reg-18-24" >
-                <div class="fp-grid-coll-reg-container">
+                <div class="fp-grid-coll-container">
 
 
                     <div
@@ -39,7 +39,7 @@
             </div>
         </div>
 
-        <div class="fp-grid-coll-reg-container fp-grid-coll-reg-container--center v-fondation__profiles fp-page__sections-box__section">
+        <div class="fp-grid-coll-container fp-grid-coll-container--center v-fondation__profiles fp-page__sections-box__section">
 
             <div class="fp-grid-coll-reg-18-24" >
                 <div class="fp-grid-with-gutter">
@@ -67,12 +67,12 @@
 <!--            />-->
 <!--        </div>-->
 
-        <div class="fp-grid-coll-reg-container fp-grid-coll-reg-container--center v-fondation__profiles fp-page__sections-box__section">
+        <div class="fp-grid-coll-container fp-grid-coll-container--center v-fondation__profiles fp-page__sections-box__section">
             <div class="fp-grid-coll-reg-18-24" >
                 <h3>Les conseillers et conseillères</h3>
 
 
-                    <div class="fp-grid-coll-reg-container">
+                    <div class="fp-grid-coll-container">
                         <div class="fp-grid-coll-reg-8-24 fp-grid-with-gutter" >
                             <profile-item
                                 :small="true"
