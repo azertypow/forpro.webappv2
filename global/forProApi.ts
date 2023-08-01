@@ -1,17 +1,11 @@
 export interface IForProApi_site {
     "title":        string,
-    "description":  string,
-    "footer": {
-        "left": string,
-        "right": string
-    },
     "sectionsDetails": {[key: string]: IWebsiteApiSectionUrl},
     blogDetails: {
         title: {
             value: string
         }
     },
-    "newsletterCode": string
 }
 
 export interface IWebsiteApiSectionUrl {
