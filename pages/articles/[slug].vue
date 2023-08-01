@@ -158,6 +158,11 @@ const eventDate: ComputedRef<null | string> = computed(() => {
     text-align: center;
     color: var(--fp-theme-color-main);
 
+    > * {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .v-article-name__img {
         padding-bottom: calc( 100% / 12 * 7 );
         background-color: var(--fp-color-grey);
