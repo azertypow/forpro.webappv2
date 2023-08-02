@@ -21,53 +21,53 @@
         <div
             class="fp-page__sections-box"
         >
-        <template
-            v-if="pageData"
-            v-for="block of pageData.content"
-        >
-            <div
-                v-if="block.type === 'quote'"
-                class="fp-grid-coll-container fp-grid-coll-container--center fp-page__sections-box__section"
+            <template
+                v-if="pageData"
+                v-for="block of pageData.content"
             >
-                <div class="fp-grid-coll-24-24 fp-grid-with-gutter">
-                    <text-quote
-                        :text="(block as IForPro_blocksContent_isTextContent).html"
+                <div
+                    v-if="block.type === 'quote'"
+                    class="fp-grid-coll-container fp-grid-coll-container--center fp-page__sections-box__section"
+                >
+                    <div class="fp-grid-coll-24-24 fp-grid-with-gutter">
+                        <text-quote
+                            :text="(block as IForPro_blocksContent_isTextContent).html"
+                        />
+                    </div>
+                </div>
+
+                <div
+                    v-else-if="block.type === 'text'"
+                    class="fp-page__sections-box__section fp-grid-coll-container fp-grid-coll-container--center"
+                >
+                    <div class="fp-grid-coll-24-24 fp-grid-coll-reg-18-24 fp-grid-with-gutter">
+                        <text-content
+                            :content="(block as IForPro_blocksContent_isTextContent).html"
+                        />
+                    </div>
+                </div>
+
+                <div
+                    v-else-if="block.type === 'heading'"
+                    class="fp-page__sections-box__section fp-grid-coll-container fp-grid-coll-container--center"
+                >
+                    <div class="fp-grid-coll-24-24 fp-grid-coll-reg-18-24">
+                        <text-content
+                            :content="(block as IForPro_blocksContent_isTextContent).html"
+                        />
+                    </div>
+                </div>
+
+                <div
+                    v-else-if="block.type === 'image'"
+                    class="fp-page__sections-box__section fp-page__sections-box__section--is-image"
+                >
+                    <image-content
+                        :imageBlockContent="(block as IForPro_blocksContent_isImage).data"
                     />
                 </div>
-            </div>
 
-            <div
-                v-else-if="block.type === 'text'"
-                class="fp-page__sections-box__section fp-grid-coll-container fp-grid-coll-container--center"
-            >
-                <div class="fp-grid-coll-24-24 fp-grid-coll-reg-18-24 fp-grid-with-gutter">
-                    <text-content
-                        :content="(block as IForPro_blocksContent_isTextContent).html"
-                    />
-                </div>
-            </div>
-
-            <div
-                v-else-if="block.type === 'heading'"
-                class="fp-page__sections-box__section fp-grid-coll-container fp-grid-coll-container--center"
-            >
-                <div class="fp-grid-coll-24-24 fp-grid-coll-reg-18-24">
-                    <text-content
-                        :content="(block as IForPro_blocksContent_isTextContent).html"
-                    />
-                </div>
-            </div>
-
-            <div
-                v-else-if="block.type === 'image'"
-                class="fp-page__sections-box__section fp-page__sections-box__section--is-image"
-            >
-                <image-content
-                    :imageBlockContent="(block as IForPro_blocksContent_isImage).data"
-                />
-            </div>
-
-        </template>
+            </template>
         </div>
 
 
