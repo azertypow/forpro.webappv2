@@ -55,8 +55,8 @@
                     class="fp-grid-coll-24-24 fp-grid-coll-reg-16-24 fp-grid-with-gutter fp-text--center"
                 >
                     <h4>Oops, nous avons un rencontré un problème.</h4>
-                    <p >{{useError().value.statusCode}}, {{useError().value.message}}</p>
-                    <button @click="clearError({redirect: '/'})"  >Retour au site</button>
+                    <p v-if="isObjectWithStatusCode(error)" >{{error.statusCode}}, {{error.message}}</p>
+                    <button @click="backToHome()"  >Retour au site</button>
                 </div>
             </div>
         </main>
@@ -231,8 +231,11 @@
 <script lang="ts" setup >
 import {useAppStateStore} from "~/stores/appState"
 import {onMounted, useError} from "#imports"
-import {Ref} from "vue"
 import {setForProSiteData} from "~/global/appDataSeters";
+
+defineProps<{
+    error: Error
+}>()
 
 const stateLoading = ref(false)
 const stateIsLoaded = ref(false)
@@ -257,5 +260,21 @@ onMounted(() => {
     })
 })
 
+const error = useError().value
+
+function isObjectWithStatusCode(value: any): value is {
+    url: string;
+    statusCode: number;
+    statusMessage: string;
+    message: string;
+    description: string;
+    data?: any;
+} {
+    return value.hasOwnProperty('statusCode')
+}
+
+function backToHome() {
+    clearError({redirect: '/'})
+}
 
 </script>

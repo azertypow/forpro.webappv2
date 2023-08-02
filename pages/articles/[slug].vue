@@ -94,7 +94,8 @@
                     class="fp-page__sections-box__section"
                 >
                     <image-content
-                        :imageBlockContent="(block as IForPro_blocksContent_isImage).data"
+                        v-if="(block as IForPro_blocksContent_isImage).data"
+                        :imageBlockContent="(block as IForPro_blocksContent_isImage).data!"
                     />
                 </div>
 
