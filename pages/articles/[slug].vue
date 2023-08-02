@@ -74,6 +74,17 @@
                 </div>
             </div>
 
+            <div
+                v-else-if="block.type === 'heading'"
+                class="fp-page__sections-box__section fp-grid-coll-container fp-grid-coll-container--center"
+            >
+                <div class="fp-grid-coll-24-24 fp-grid-coll-reg-18-24">
+                    <text-content
+                        :content="(block as IForPro_blocksContent_isTextContent).html"
+                    />
+                </div>
+            </div>
+
 
             <div
                 v-if="block.type === 'image'"

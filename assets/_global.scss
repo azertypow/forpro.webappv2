@@ -65,3 +65,12 @@ a {
   color: var(--fp-theme-color-secondary);
 }
 
+.fp-text-color-default            {&.is-active {color: var(--fp-color-Default)              !important;}  &:hover{color: var(--fp-color-Default)            !important}}
+.fp-text-color-LearningLab        {&.is-active {color: var(--fp-color-LearningLab)          !important;}  &:hover{color: var(--fp-color-LearningLab)        !important}}
+.fp-text-color-MakerLab           {&.is-active {color: var(--fp-color-MakerLab)             !important;}  &:hover{color: var(--fp-color-MakerLab)           !important}}
+.fp-text-color-GrandLab           {&.is-active {color: var(--fp-color-GrandLab)             !important;}  &:hover{color: var(--fp-color-GrandLab)           !important}}
+.fp-text-color-Accueil            {&.is-active {color: var(--fp-color-Accueil)              !important;}  &:hover{color: var(--fp-color-Accueil)            !important}}
+.fp-text-color-Foodlab            {&.is-active {color: var(--fp-color-Foodlab)              !important;}  &:hover{color: var(--fp-color-Foodlab)            !important}}
+.fp-text-color-Hotel_Entreprises  {&.is-active {color: var(--fp-color-Hotel_Entreprises)    !important;}  &:hover{color: var(--fp-color-Hotel_Entreprises)  !important}}
+.fp-text-color-Creche             {&.is-active {color: var(--fp-color-Creche)               !important;}  &:hover{color: var(--fp-color-Creche)             !important}}
+.fp-text-color-Ecole_Horlogerie   {&.is-active {color: var(--fp-color-Ecole_Horlogerie)     !important;}  &:hover{color: var(--fp-color-Ecole_Horlogerie)   !important}}

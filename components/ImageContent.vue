@@ -2,21 +2,21 @@
     <section
         class="v-image-content"
         :class="{
-            'has-fixed-effect': (imageBlockContent.data?.isfixed || false),
+            'has-fixed-effect': (imageBlockContent.isfixed || false),
         }"
     >
         <div
             class="v-image-content__fixed-effect"
-            v-if="imageBlockContent.data?.isfixed && imageBlockContent.data.image"
+            v-if="imageBlockContent.isfixed && imageBlockContent.image"
             :style="{
-                backgroundImage: `url(${imageBlockContent.data.image.resize.xxl})`,
+                backgroundImage: `url(${imageBlockContent.image.resize.xxl})`,
             }"
         ></div>
         <img
-            v-else-if="imageBlockContent.data?.image"
+            v-else-if="imageBlockContent.image"
             class="v-image-content__img"
                 alt="lorem ipsum image"
-                :src="imageBlockContent.data.image.resize.xxl"
+                :src="imageBlockContent.image.resize.xxl"
         >
     </section>
 </template>
@@ -27,11 +27,11 @@
 
 <script lang="ts" setup>
 import {PropType} from "vue"
-import {IForPro_blocksContent_isImage} from "~/global/forProApi"
+import {IForPro_blocksContent_isImage, IForPro_imageByFixedOption} from "~/global/forProApi"
 
 defineProps({
     imageBlockContent: {
-        type: Object as PropType<IForPro_blocksContent_isImage>,
+        type: Object as PropType<IForPro_imageByFixedOption>,
         required: true,
     },
 })

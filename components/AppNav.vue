@@ -79,7 +79,7 @@
                     class="v-app-nav__nav__content__container__coll fp-remove-margin-child">
                     <div class="fp-heading-h3">
                         <nuxt-link
-                            class="v-app-nav__link"
+                            class="v-app-nav__link fp-text-color-default"
                             to="/fondation"
                             :class="{
                               'is-active': curentRoutePath === '/fondation'
@@ -89,7 +89,7 @@
                     </div>
                     <div class="fp-heading-h3">
                         <nuxt-link
-                            class="v-app-nav__link"
+                            class="v-app-nav__link fp-text-color-default"
                             to="/partenaires"
                             :class="{
                               'is-active': curentRoutePath === '/partenaires'
@@ -99,7 +99,7 @@
                     </div>
                     <div class="fp-heading-h3">
                         <nuxt-link
-                            class="v-app-nav__link"
+                            class="v-app-nav__link fp-text-color-default"
                             to="/faq"
                             :class="{
                               'is-active': curentRoutePath === '/faq'
@@ -112,7 +112,7 @@
                         class="fp-heading-h3"
                     >
                         <nuxt-link
-                            class="v-app-nav__link"
+                            class="v-app-nav__link fp-text-color-default"
                             to="/news"
                             :class="{
                               'is-active': curentRoutePath === '/news'
@@ -138,9 +138,17 @@
                             class="v-app-nav__link"
                             :to="`/lieu/${pageRef.slug}`"
                             :class="{
-                                'is-active': curentRoutePath === `/lieu/${pageRef.slug}`
+                                'is-active': curentRoutePath === `/lieu/${pageRef.slug}`,
+                                'fp-text-color-LearningLab': pageRef.slug         ==='learninglab',
+                                'fp-text-color-MakerLab': pageRef.slug            ==='makerlab',
+                                'fp-text-color-GrandLab': pageRef.slug            ==='grandlab',
+                                'fp-text-color-Accueil': pageRef.slug             ==='accueil',
+                                'fp-text-color-Foodlab': pageRef.slug             ==='foodlab',
+                                'fp-text-color-Hotel_Entreprises': pageRef.slug   ==='hotel-entreprises',
+                                'fp-text-color-Creche': pageRef.slug              ==='creche',
                             }"
                         >{{pageRef.title.value}}
+                        {{pageRef.slug}}
                         </nuxt-link>
                     </div>
                 </div>
@@ -351,10 +359,6 @@ const pagesReferencies: ComputedRef<{[key: string]: IWebsiteApiSectionUrl}> = co
 .v-app-nav__link {
   color: inherit;
   text-decoration: inherit;
-
-  &.is-active {
-    color: var(--fp-theme-color-main);
-  }
 }
 
 .v-app-nav__building-space {

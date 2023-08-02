@@ -1,3 +1,6 @@
+import {_AsyncData} from "#app/composables/asyncData"
+import {FetchError} from "ofetch"
+
 export interface IForProApi_site {
     "title":        string,
     "sectionsDetails": {[key: string]: IWebsiteApiSectionUrl},
@@ -46,15 +49,17 @@ export interface IForPro_blocksContent {
 }
 // todo: clean create generic type for diff blocks types
 export interface IForPro_blocksContent_isImage extends IForPro_blocksContent {
-    data?: {
-        "title": string,
-        "isfixed": boolean,
-        "photographer": string,
-        "license": string,
-        "image": IForPro_image | null
-    },
+    data?: IForPro_imageByFixedOption,
     "type":
       | "image"
+}
+
+export interface IForPro_imageByFixedOption {
+    "title": string,
+    "isfixed": boolean,
+    "photographer": string,
+    "license": string,
+    "image": IForPro_image | null
 }
 
 export interface IForPro_blocksContent_isTextContent extends IForPro_blocksContent {
@@ -65,11 +70,26 @@ export interface IForPro_blocksContent_isTextContent extends IForPro_blocksConte
       | "quote",
 }
 
+export interface IFOrProApi_home {
+    "title": string,
+    "coverImage": IForPro_image,
+    "textIntro": string,
+    "content": {[key: string]: IForPro_blocksContent}
+    "imageFooter": null | IForPro_imageByFixedOption
+}
+
 export interface IForPro_blog {
     "title": string,
     "pages": {
         [key: string]: IForPro_blog_articleInformations
     }
+}
+
+export interface IForPro_blogLastArticlesInAllSections {
+    "lastEvent"?: IForPro_blog_articleInformations
+    "lastArticle"?: IForPro_blog_articleInformations
+    "lastProject"?: IForPro_blog_articleInformations
+    "lastConstruction"?: IForPro_blog_articleInformations
 }
 
 export interface IForPro_blog_articleInformations {
@@ -133,7 +153,7 @@ export interface IForPro_blogArticle extends IForPro_blog_articleInformations {
 
 
 export async function fetchForProApi_site(): Promise<IForProApi_site> {
-    const response = await fetch(`${useRuntimeConfig().public.apiBaseUrl}/api-v2/site`)
+    const response = await fetch(`${useRuntimeConfig().public.apiBaseUrl}/api-v2/site-informations`)
     return await response.json()
 }
 
@@ -145,6 +165,15 @@ export async function fetchForProApi_section(slug: string): Promise<IForProApi_s
 export async function fetchForProApi_blog(): Promise<IForPro_blog> {
     const response = await fetch(`${useRuntimeConfig().public.apiBaseUrl}/api-v2/blog`)
     return await response.json()
+}
+
+export async function fetchForProApi_home(): Promise<IFOrProApi_home> {
+    const response = await fetch(`${useRuntimeConfig().public.apiBaseUrl}/api-v2/home`)
+    return await response.json()
+}
+
+export async function fetchForProApi_blogLastArticles(): Promise<_AsyncData<IForPro_blogLastArticlesInAllSections, FetchError<any> | null>> {
+    return useFetch(`${useRuntimeConfig().public.apiBaseUrl}/api-v2/blog`)
 }
 
 export async function fetchForProApi_blogArticle(slug: string): Promise<IForPro_blogArticle> {

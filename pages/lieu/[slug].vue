@@ -29,7 +29,7 @@
                 v-if="block.type === 'quote'"
                 class="fp-grid-coll-container fp-grid-coll-container--center fp-page__sections-box__section"
             >
-                <div class="fp-grid-coll-24-24">
+                <div class="fp-grid-coll-24-24 fp-grid-with-gutter">
                     <text-quote
                         :text="(block as IForPro_blocksContent_isTextContent).html"
                     />

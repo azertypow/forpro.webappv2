@@ -133,7 +133,14 @@ defineProps({
     padding-bottom: 4rem;
 }
 
-
+blockquote {
+    footer {
+        font-weight: 500;
+        margin-top: var(--fp-line-height-small);
+        font-size: var(--fp-font-size-small);
+        line-height: var(--fp-line-height-small);
+    }
+}
 
 .v-text-quote__container {
     box-sizing: border-box;

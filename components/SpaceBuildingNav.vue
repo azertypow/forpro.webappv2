@@ -1,6 +1,8 @@
 <template>
     <section class="v-space-build-nav" >
 
+        {{ currentRouteSlug }}
+
         <svg
             id="Layer_2"
             data-name="Layer 2"
@@ -9,16 +11,16 @@
         >
             <g id="Layer_1-2" data-name="Layer 1">
                 <g>
-                    <rect :class="{'is-active': currentRouteName === 'Creche'}"               @click="goToPage('Creche')"              class="Creche"            x="975" y="0" width="166" height="69" style="fill: #d2c8b4;"/>
-                    <rect :class="{'is-active': currentRouteName === ''}"                                                                            class="EcoleHorlogerie"   x="225" y="390" width="750" height="88" style="fill: #bea5e6;"/>
-                    <rect :class="{'is-active': currentRouteName === ''}"                                                                            class="EcoleHorlogerie"   y="132" width="1200" height="128" style="fill: #bea5e6;"/>
-                    <rect :class="{'is-active': currentRouteName === 'Hôtel Entreprises'}"    @click="goToPage('Hôtel Entreprises')"   class="HotelEntreprise"   y="61" width="1200" height="71" style="fill: #aac8ff;"/>
-                    <rect :class="{'is-active': currentRouteName === 'Hôtel Entreprises'}"    @click="goToPage('Hôtel Entreprises')"   class="HotelEntreprise"   x="975" y="390" width="225" height="88" style="fill: #aac8ff;"/>
-                    <rect :class="{'is-active': currentRouteName === 'FoodLab'}"              @click="goToPage('FoodLab')"             class="FoodLab"           x="70.0027" width="905.03136" height="69" style="fill: #fffe00;"/>
-                    <rect :class="{'is-active': currentRouteName === 'MakerLab'}"             @click="goToPage('MakerLab')"            class="MakerLab"          x="975" y="260" width="225" height="130" style="fill: #3a4bcc;"/>
-                    <rect :class="{'is-active': currentRouteName === 'LearningLab'}"          @click="goToPage('LearningLab')"         class="LearningLab"       x="225" y="260" width="750" height="130" style="fill: #ff6917;"/>
-                    <rect :class="{'is-active': currentRouteName === 'GrandLab'}"             @click="goToPage('GrandLab')"            class="GrandLab"           y="260" width="225" height="130" style="fill: #ffc78c;"/>
-                    <rect :class="{'is-active': currentRouteName === 'Accueil'}"              @click="goToPage('Accueil')"             class="Accueil"           y="390" width="225" height="88" style="fill: #f64a42;"/>
+                    <rect :class="{'is-active': currentRouteSlug === 'creche'}"             @click="goToPage('creche')"             class="v-space-build-nav__svg-building-link Creche" x="975" y="0" width="166" height="69"                style="fill: var(--fp-color-Creche);"/>
+                    <rect :class="{'is-active': currentRouteSlug === 'ecole-horlogerie'}"                                                     class="EcoleHorlogerie" x="225" y="390" width="750" height="88"   style="fill: var(--fp-color-Ecole_Horlogerie);"/>
+                    <rect :class="{'is-active': currentRouteSlug === 'ecole-horlogerie'}"                                                     class="EcoleHorlogerie" y="132" width="1200" height="128"         style="fill: var(--fp-color-Ecole_Horlogerie);"/>
+                    <rect :class="{'is-active': currentRouteSlug === 'hotel-entreprises'}" @click="goToPage('hotel-entreprises')"   class="v-space-build-nav__svg-building-link HotelEntreprise" y="61" width="1200" height="71"             style="fill: var(--fp-color-Hotel_Entreprises);"/>
+                    <rect :class="{'is-active': currentRouteSlug === 'hotel-entreprises'}" @click="goToPage('hotel-entreprises')"   class="v-space-build-nav__svg-building-link HotelEntreprise" x="975" y="390" width="225" height="88"     style="fill: var(--fp-color-Hotel_Entreprises);"/>
+                    <rect :class="{'is-active': currentRouteSlug === 'foodlab'}"            @click="goToPage('foodlab')"            class="v-space-build-nav__svg-building-link FoodLab" x="70.0027" width="905.03136" height="69"           style="fill: var(--fp-color-Foodlab);"/>
+                    <rect :class="{'is-active': currentRouteSlug === 'makerlab'}"           @click="goToPage('makerlab')"           class="v-space-build-nav__svg-building-link MakerLab" x="975" y="260" width="225" height="130"           style="fill: var(--fp-color-MakerLab);"/>
+                    <rect :class="{'is-active': currentRouteSlug === 'learninglab'}"        @click="goToPage('learninglab')"        class="v-space-build-nav__svg-building-link LearningLab" x="225" y="260" width="750" height="130"        style="fill: var(--fp-color-LearningLab);"/>
+                    <rect :class="{'is-active': currentRouteSlug === 'grandlab'}"           @click="goToPage('grandlab')"           class="v-space-build-nav__svg-building-link GrandLab" y="260" width="225" height="130"                   style="fill: var(--fp-color-GrandLab);"/>
+                    <rect :class="{'is-active': currentRouteSlug === 'accueil'}"            @click="goToPage('accueil')"            class="v-space-build-nav__svg-building-link Accueil" y="390" width="225" height="88"                     style="fill: var(--fp-color-Accueil);"/>
 
                     <g>
                         <path d="m1192,69v401H8V69h1184m8-8H0v417h1200V61h0Z" style="fill: #222221;"/>
@@ -47,17 +49,15 @@
 // defineProps<{
 // }>()
 
-import router from "#app/plugins/router";
-
 const currentPage = useRoute()
-const currentRouteName = ref( useRouter().currentRoute.value.name )
+const currentRouteSlug = computed( () => useRoute().params.slug)
 
 onMounted(() => {
     console.log(currentPage)
 })
 
-function goToPage(pageName: string) {
-    navigateTo({name: pageName})
+function goToPage(pageSlug: string) {
+    navigateTo(`/lieu/${pageSlug}`)
 }
 
 </script>
@@ -70,10 +70,14 @@ function goToPage(pageName: string) {
 .v-space-build-nav {
 
 }
-;
+
 svg {
     rect:not(:hover):not(.is-active) {
         fill: var(--fp-color-white) !important;
     }
+}
+
+.v-space-build-nav__svg-building-link {
+    cursor: pointer;
 }
 </style>
