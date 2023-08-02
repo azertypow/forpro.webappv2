@@ -1,1 +1,0 @@
-import{a as t,o as n,i as o}from"./entry.67fe5d42.js";const r=["innerHTML"],i=t({__name:"TextIntro",props:{content:{type:String,required:!0}},setup(e){return(_,s)=>(n(),o("section",{class:"v-text-intro",innerHTML:e.content},null,8,r))}});export{i as _};
