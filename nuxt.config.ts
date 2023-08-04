@@ -11,7 +11,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       apiBaseUrl: process.env.NODE_ENV === 'development'
-        ? 'http://localhost:8000'
+        ? 'https://forpro.sdrvl.ch'
         : 'https://forpro.sdrvl.ch',
     }
   },

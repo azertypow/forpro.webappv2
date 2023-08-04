@@ -38,7 +38,13 @@
       }
 
       &.fp-page__sections-box__section--is-image {
+        &:last-child {
+          padding-bottom: 0;
+        }
+      }
 
+      &.fp-page__sections-box__section--is-heading {
+        padding-bottom: 0;
       }
     }
   }
