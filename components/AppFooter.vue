@@ -3,7 +3,8 @@
             class="v-app-footer fp-remove-margin-child" >
         <div
                 class="v-app-footer__coll fp-remove-margin-child">
-            <h3>ForPro</h3>
+
+            <logo-forpro/>
 
             <h6>
                 <b>Fondation ForPro</b>
