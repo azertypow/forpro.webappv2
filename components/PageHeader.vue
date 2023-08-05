@@ -131,6 +131,7 @@ const map = (
 }
 
 .v-page-header__title {
+  position: relative;
   padding-top:    2.5rem;
   padding-bottom: 2.5rem;
   text-align: center;
