@@ -126,7 +126,6 @@
                                 'fp-text-color-Creche': pageRef.slug              ==='creche',
                             }"
                         >{{pageRef.title.value}}
-                        {{pageRef.slug}}
                         </nuxt-link>
                     </div>
                 </div>
