@@ -4,6 +4,10 @@ export default defineNuxtConfig({
   app: {
     // baseURL: '/',
     baseURL: '/forpro.webappv2/',
+    pageTransition: {
+      name: 'page',
+      mode: 'out-in',
+    },
   },
 
   // ssr: true,
