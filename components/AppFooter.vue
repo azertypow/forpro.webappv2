@@ -100,7 +100,7 @@
 .v-app-footer {
     container-type: inline-size;
     background: var(--fp-theme-color-ternary);
-    padding-top: 1rem;
+    padding-top: var(--fp-section-margin);
     display: flex;
     flex-wrap: wrap;
 }
