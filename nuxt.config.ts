@@ -14,9 +14,7 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      apiBaseUrl: process.env.NODE_ENV === 'development'
-        ? 'https://forpro.sdrvl.ch'
-        : 'https://forpro.sdrvl.ch',
+      apiBaseUrl: 'https://forpro.sdrvl.ch',
     }
   },
 
