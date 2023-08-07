@@ -26,9 +26,13 @@
 
   > div {
       box-sizing: border-box;
-      width: calc(50% - .5rem);
       padding-left: 2rem;
       position: relative;
+      width: 100%;
+
+      @media (min-width: 1000px) {
+        width: calc(50% - .5rem);
+      }
 
       &:before {
           content: '';

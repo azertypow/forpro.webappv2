@@ -51,7 +51,7 @@
             >
                 <h2>L'équipe</h2>
                 <div class="fp-grid-coll-container fp-grid-coll-container--center v-fondation__profiles">
-                    <div class="fp-grid-coll-reg-8-24" >
+                    <div class="fp-grid-coll-24-24 fp-grid-coll-reg-8-24" >
                         <profile-item
                             profile-desc=""
                             profile-name="Joëlle Mathey"
@@ -60,7 +60,7 @@
                             mail="voir le mail"
                         />
                     </div>
-                    <div class="fp-grid-coll-reg-8-24" >
+                    <div class="fp-grid-coll-24-24 fp-grid-coll-reg-8-24" >
                         <profile-item
                             profile-desc=""
                             profile-name="Fabrice Voan"
@@ -69,7 +69,7 @@
                             mail="voir le mail"
                         />
                     </div>
-                    <div class="fp-grid-coll-reg-8-24" >
+                    <div class="fp-grid-coll-24-24 fp-grid-coll-reg-8-24" >
                         <profile-item
                             profile-desc=""
                             profile-name="Thierry Schlatter"
@@ -78,7 +78,7 @@
                             mail="voir le mail"
                         />
                     </div>
-                    <div class="fp-grid-coll-reg-8-24" >
+                    <div class="fp-grid-coll-24-24 fp-grid-coll-reg-8-24" >
                         <profile-item
                             profile-desc=""
                             profile-name="François Antille"
@@ -87,7 +87,7 @@
                             mail="voir le mail"
                         />
                     </div>
-                    <div class="fp-grid-coll-reg-8-24" >
+                    <div class="fp-grid-coll-24-24 p-grid-coll-reg-8-24" >
                         <profile-item
                             profile-desc=""
                             profile-name="Mélissa Catoquessa"
@@ -96,7 +96,7 @@
                             mail="voir le mail"
                         />
                     </div>
-                    <div class="fp-grid-coll-reg-8-24" >
+                    <div class="fp-grid-coll-24-24 fp-grid-coll-reg-8-24" >
                         <profile-item
                             profile-desc=""
                             profile-name="Lina Borén"
@@ -113,35 +113,35 @@
             >
                 <h3>Le Conseil de Fondation</h3>
                 <div class="fp-grid-coll-container">
-                    <div class="fp-grid-coll-reg-12-24 fp-grid-with-gutter" >
+                    <div class="fp-grid-coll-24-24 fp-grid-coll-reg-12-24 fp-grid-with-gutter" >
                         <profile-item
                             :small="true"
                             profile-name="François Abbé-Decarroux"
                             profile-type="Président"
                         />
                     </div>
-                    <div class="fp-grid-coll-reg-12-24 fp-grid-with-gutter" >
+                    <div class="fp-grid-coll-24-24 fp-grid-coll-reg-12-24 fp-grid-with-gutter" >
                         <profile-item
                             :small="true"
                             profile-name="Marie Barbier-Mueller"
                             profile-type="Membre"
                         />
                     </div>
-                    <div class="fp-grid-coll-reg-12-24 fp-grid-with-gutter" >
+                    <div class="fp-grid-coll-24-24 fp-grid-coll-reg-12-24 fp-grid-with-gutter" >
                         <profile-item
                             :small="true"
                             profile-name="Marc Maugué"
                             profile-type="Membre"
                         />
                     </div>
-                    <div class="fp-grid-coll-reg-12-24 fp-grid-with-gutter" >
+                    <div class="fp-grid-coll-24-24 fp-grid-coll-reg-12-24 fp-grid-with-gutter" >
                         <profile-item
                             :small="true"
                             profile-name="Abir Oreibi"
                             profile-type="Membre"
                         />
                     </div>
-                    <div class="fp-grid-coll-reg-12-24 fp-grid-with-gutter" >
+                    <div class="fp-grid-coll-24-24 fp-grid-coll-reg-12-24 fp-grid-with-gutter" >
                         <profile-item
                             :small="true"
                             profile-name="Olivier Sandoz"
@@ -180,6 +180,7 @@ onMounted(() => {
 
 <style lang="scss" scoped >
 .v-fondation {
+    padding-bottom: 5rem;
 }
 
 .v-fondation__profiles {

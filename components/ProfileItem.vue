@@ -4,14 +4,20 @@
         :class="{
             'with-photo': src,
             'small': small,
-            'list-mode': listMode,
-            'v-profile-item--is-open': descriptionIsOpen
+            'v-profile-item--is-open': descriptionIsOpen,
+            'has-details-to-show': hasDetailsToShow,
         }"
         @click="descriptionIsOpen = !descriptionIsOpen"
     >
         <div
             class="v-profile-item__header"
         >
+            <span
+                v-if="hasDetailsToShow"
+                class="v-profile-item__icon">
+                    <span class="v-profile-item__icon__horizontal"></span>
+                    <span class="v-profile-item__icon__vertical"></span>
+                </span>
             <div
                 v-if="src"
                 class="v-profile-item__img"
@@ -21,14 +27,7 @@
             ></div>
             <h5
                 class="v-profile-item__name"
-            >{{profileName}}
-                <span
-                    v-if="listMode && profileDesc"
-                    class="v-profile-item__icon">
-                    <span class="v-profile-item__icon__horizontal" ></span>
-                    <span class="v-profile-item__icon__vertical" ></span>
-                </span>
-            </h5>
+            >{{profileName}}</h5>
             <h5     class="v-profile-item__type">{{profileType}}</h5>
         </div>
 
@@ -62,6 +61,7 @@
 
 <script lang="ts" setup>
 import {ComputedRef} from "vue";
+import {readUser} from "rc9";
 
 const props = defineProps<{
     src?: string
@@ -78,8 +78,14 @@ const props = defineProps<{
 
 const descriptionIsOpen = ref(false)
 
+const hasDetailsToShow: ComputedRef<boolean> = computed(() => {
+    if( !props.profileDesc && !props.externalLink && !props.mail) return false
+    return true
+})
+
 const showDetails: ComputedRef<boolean> = computed(() => {
-    if(! props.listMode) return props.profileDesc !== undefined
+    if(!props.profileDesc) return false
+    if(props.src) return true
     return descriptionIsOpen.value
 })
 
@@ -99,34 +105,53 @@ const showDetails: ComputedRef<boolean> = computed(() => {
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    //max-width: 15rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    &.with-photo {
+        max-width: 20rem;
+    }
+
+    &:not(.with-photo) {
+        border-bottom: solid 1px;
+    }
+
+    user-select: none;
+
+    &.has-details-to-show {
+        cursor: pointer;
+    }
 
     &.with-photo {
         align-items: center;
         text-align: center;
     }
 
-    &.list-mode {
-        border-bottom: solid 1px;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-
-        &:first-child {
-            border-top: solid 1px;
-        }
+    @media (min-width: 1000px) {
+        border: none !important;
     }
 }
 
+
 .v-profile-item__header {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    flex-direction: row;
+    align-items: flex-start;
 
-    .list-mode & {
-        cursor: pointer;
-        flex-direction: row;
+
+    .has-details-to-show & {
+        padding-right: 1.5rem;
+    }
+
+    .with-photo & {
         align-items: center;
+    }
+
+    @media (min-width: 1000px) {
+        flex-direction: column;
     }
 }
 
@@ -145,27 +170,27 @@ const showDetails: ComputedRef<boolean> = computed(() => {
 
 .v-profile-item__name {
     color: var(--fp-theme-color-secondary);
+    padding-left: 0;
+    margin-top: 0;
+    padding-right: var(--fp-gutter);
+    width: calc(100% / 2 * 1);
+    box-sizing: border-box;
 
-    .list-mode & {
-        padding-left: 3rem;
-        padding-right: var(--fp-gutter);
-        margin-top: 0;
-        width: calc(100% / 2 * 1);
-        box-sizing: border-box;
-        position: relative;
+    @media (min-width: 1000px) {
+        padding-right: 0;
+        width: 100%;
     }
 }
 .v-profile-item__type {
     margin-top: 0;
+    box-sizing: border-box;
 
-    .with-photo & {
+    width: calc(100% / 3 * 1);
+    padding-left: var(--fp-gutter);
 
-    }
-
-    .list-mode & {
-        width: calc(100% / 3 * 1);
-        box-sizing: border-box;
-        padding-left: var(--fp-gutter);
+    @media (min-width: 1000px) {
+        width: 100%;
+        padding-left: 0;
     }
 }
 
@@ -219,7 +244,7 @@ p {
 .v-profile-item__icon {
     position: absolute;
     top: 50%;
-    left: 0;
+    right: 0;
     transform: translate(0, -50%);
     width: var(--button-width);
     height: var(--button-width);
@@ -239,6 +264,10 @@ p {
 
     .v-profile-item--is-open & {
         transform: rotate(45deg) translate(-35%, -35%);
+    }
+
+    .with-photo & {
+        display: none;
     }
 }
 
