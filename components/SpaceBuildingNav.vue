@@ -1,7 +1,12 @@
 <template>
     <section class="v-space-build-nav" >
 
-        {{ currentRouteSlug }}
+        <div
+            class="v-space-build-nav__title"
+            v-if="titleOfCurrentRoute"
+        >
+            {{ titleOfCurrentRoute.title.value }}
+        </div>
 
         <svg
             id="Layer_2"
@@ -51,6 +56,7 @@
 
 import {useAppStateStore} from "~/stores/appState";
 import {IWebsiteApiSectionUrl} from "~/global/forProApi";
+import {ComputedRef, UnwrapRef} from "vue";
 
 const currentPage = useRoute()
 const currentRouteSlug = computed( () => useRoute().params.slug)
@@ -63,10 +69,12 @@ function goToPage(pageSlug: string) {
     navigateTo(`/lieu/${pageSlug}`)
 }
 
-const titleOfCurrentRoute = computed(() => {
-    return Object.values(useAppStateStore().siteData?.sectionsDetails).find( (value: IWebsiteApiSectionUrl) => {
+const titleOfCurrentRoute: ComputedRef<IWebsiteApiSectionUrl | null> = computed(() => {
+    const siteData = useAppStateStore().siteData
+    if(siteData === null) return null
+    return Object.values(siteData.sectionsDetails).find( (value) => {
         return value.slug === currentRouteSlug.value
-    })
+    }) || null
 })
 
 </script>
@@ -78,6 +86,11 @@ const titleOfCurrentRoute = computed(() => {
 <style lang="scss" scoped >
 .v-space-build-nav {
 
+}
+
+.v-space-build-nav__title {
+    font-size: var(--fp-font-size-small);
+    text-align: center;
 }
 
 svg {
