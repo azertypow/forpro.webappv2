@@ -3,7 +3,7 @@
         <h3>Des questions?</h3>
         <button>
             <nuxt-link
-                    :href="href || '/faq'"
+                    href="#"
             >F.A.Q.</nuxt-link>
         </button>
     </div>

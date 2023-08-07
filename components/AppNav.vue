@@ -75,16 +75,16 @@
                         >Partenaires
                         </nuxt-link>
                     </div>
-                    <div class="fp-heading-h3">
-                        <nuxt-link
-                            class="v-app-nav__link fp-text-color-default"
-                            to="/faq"
-                            :class="{
-                              'is-active': curentRoutePath === '/faq'
-                            }"
-                        >F.A.Q.
-                        </nuxt-link>
-                    </div>
+<!--                    <div class="fp-heading-h3">-->
+<!--                        <nuxt-link-->
+<!--                            class="v-app-nav__link fp-text-color-default"-->
+<!--                            to="/faq"-->
+<!--                            :class="{-->
+<!--                              'is-active': curentRoutePath === '/faq'-->
+<!--                            }"-->
+<!--                        >F.A.Q.-->
+<!--                        </nuxt-link>-->
+<!--                    </div>-->
                     <div
                         v-if="siteData"
                         class="fp-heading-h3"
