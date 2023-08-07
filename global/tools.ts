@@ -8,18 +8,18 @@ export const map = (
 
 
 
-export function getDateBy_FR_stringFormat(date: string) {
+export function getDateBy_FR_stringFormat(date: string, withStringDay = true) {
 
   const eventDate = new Date(date)
 
   const stringDay = [
-    'dmanche',
-    'lund',
-    'mard',
-    'mercred',
-    'jeud',
-    'vendred',
-    'samed',
+    'dimanche',
+    'lundi',
+    'mardi',
+    'mercredi',
+    'jeudi',
+    'vendredi',
+    'samedi',
   ][eventDate.getDay()]
 
 
@@ -38,6 +38,6 @@ export function getDateBy_FR_stringFormat(date: string) {
     'décembre',
   ][eventDate.getMonth()]
 
-
-  return `${stringDay} ${eventDate.getDay()} ${stringMounth} ${eventDate.getFullYear()}`
+  if(withStringDay) return `${stringDay} ${eventDate.getDay()} ${stringMounth} ${eventDate.getFullYear()}`
+  return `${eventDate.getDay()} ${stringMounth} ${eventDate.getFullYear()}`
 }

@@ -142,7 +142,7 @@
     background-color: var(--fp-theme-color-ternary);
     padding-bottom: var(--fp-app-bottom-height);
 
-    [data-theme="4"] & {
+    [data-theme="white_pink_blue"] & {
         border-top: solid 3px var(--fp-theme-color-secondary);
     }
 }

@@ -102,18 +102,6 @@
             </template>
         </div>
 
-        <div
-            class="fp-grid-coll-container fp-grid-coll-container--center fp-page__sections-box__section fp-page__sections--background-color"
-        >
-            <div
-                class="fp-grid-coll-reg-16-24"
-            >
-                <block-f-a-q
-                    href="/faq#Accueil">
-                </block-f-a-q>
-            </div>
-        </div>
-
     </main>
 </template>
 

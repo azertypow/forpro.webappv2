@@ -49,6 +49,9 @@
 // defineProps<{
 // }>()
 
+import {useAppStateStore} from "~/stores/appState";
+import {IWebsiteApiSectionUrl} from "~/global/forProApi";
+
 const currentPage = useRoute()
 const currentRouteSlug = computed( () => useRoute().params.slug)
 
@@ -59,6 +62,12 @@ onMounted(() => {
 function goToPage(pageSlug: string) {
     navigateTo(`/lieu/${pageSlug}`)
 }
+
+const titleOfCurrentRoute = computed(() => {
+    return Object.values(useAppStateStore().siteData?.sectionsDetails).find( (value: IWebsiteApiSectionUrl) => {
+        return value.slug === currentRouteSlug.value
+    })
+})
 
 </script>
 

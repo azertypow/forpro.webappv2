@@ -37,7 +37,7 @@
                 v-if="typeOfContent !== 'event'"
                 class="v-article-item__date fp-grid-with-gutter"
             >
-                {{getDateBy_FR_stringFormat(date)}}
+                {{getDateBy_FR_stringFormat(date, false)}}
             </div>
         </div>
     </nuxt-link>

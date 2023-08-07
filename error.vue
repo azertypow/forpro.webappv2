@@ -151,7 +151,7 @@
     padding-bottom: var(--fp-app-bottom-height);
     margin-top: 5rem;
 
-    [data-theme="4"] & {
+    [data-theme="white_pink_blue"] & {
         border-top: solid 3px var(--fp-theme-color-secondary);
     }
 }
