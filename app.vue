@@ -233,7 +233,6 @@
 <script lang="ts" setup >
 import {useAppStateStore} from "~/stores/appState"
 import {onMounted} from "#imports"
-import {Ref} from "vue"
 import {setForProSiteData} from "~/global/appDataSeters";
 
 const stateLoading = ref(false)

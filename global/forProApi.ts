@@ -172,8 +172,8 @@ export async function fetchForProApi_home(): Promise<IFOrProApi_home> {
     return await response.json()
 }
 
-export async function fetchForProApi_blogLastArticles(): Promise<_AsyncData<IForPro_blogLastArticlesInAllSections, FetchError<any> | null>> {
-    return useFetch(`${useRuntimeConfig().public.apiBaseUrl}/api-v2/blog`)
+export async function fetchForProApi_blogLastArticles(): Promise<_AsyncData<string, FetchError<any> | null> & Promise<_AsyncData<unknown, FetchError<any> | null>>> {
+    return useFetch(`${useRuntimeConfig().public.apiBaseUrl}/api-v2/blog/last`)
 }
 
 export async function fetchForProApi_blogArticle(slug: string): Promise<IForPro_blogArticle> {

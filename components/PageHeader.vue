@@ -64,7 +64,6 @@ defineProps({
 
 const headerMain: Ref<null | HTMLElement> = ref(null)
 const headerContainer: Ref<null | HTMLElement> = ref(null)
-const graphicToMove: Ref<null | HTMLElement> = ref(null)
 
 const baseURL = useRuntimeConfig().app.baseURL
 
@@ -80,22 +79,31 @@ onMounted(() => {
     observer.observe(headerContainer.value)
   })
 
-  window.addEventListener('scroll',() => {
-    if( ! (headerMain.value instanceof HTMLElement) ) return
-    if( ! (graphicToMove.value instanceof SVGElement) ) return
-
-    const YTranslation = map(
-      headerMain.value.getBoundingClientRect().height + headerMain.value.getBoundingClientRect().top,
-      0,
-      headerMain.value.getBoundingClientRect().height,
-      -100,
-      50,
-    )
-
-    graphicToMove.value.style.transform = `translate(0, ${YTranslation}px)`
-
-  })
+  window.addEventListener('scroll', onScrollCallback)
 })
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', onScrollCallback)
+})
+
+const onScrollCallback = () => {
+  if( ! (headerMain.value instanceof HTMLElement) ) return
+
+  const headerGraphicImage = document.querySelector('.v-page-header__graphique-image')
+
+  if( ! (headerGraphicImage instanceof SVGElement) ) return
+
+  const YTranslation = map(
+    headerMain.value.getBoundingClientRect().height + headerMain.value.getBoundingClientRect().top,
+    0,
+    headerMain.value.getBoundingClientRect().height,
+    0,
+    100,
+  )
+
+  headerGraphicImage.style.setProperty('--scroll-percent', (YTranslation / 100).toString())
+
+}
 
 const map = (
   value: number,
@@ -139,6 +147,8 @@ const map = (
 }
 
 .v-page-header__graphique-image {
+  --scroll-percent: 100;
+
   display: block;
   height: 100vh;
   position: absolute;
@@ -147,6 +157,33 @@ const map = (
 
   path {
     fill: var(--fp-theme-color-secondary) !important;
+  }
+
+  // animation
+  animation: header-animation 1s ease-in-out infinite;
+  animation-delay: calc(var(--scroll-percent) * -1s);
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+  animation-play-state: paused;
+  //animation-iteration-count: infinite;
+  //animation-play-state: running;
+}
+
+@keyframes header-animation {
+  0% {
+    transform: translate(0rem, 15vh) rotate(-10deg);
+  }
+
+  25% {
+    transform: translate(0, -8vh) rotate(0);
+  }
+
+  50% {
+    transform: translate(0, -4vh) rotate(0);
+  }
+
+  100% {
+    transform: translate(0, 6.4vh) rotate(0deg);
   }
 }
 

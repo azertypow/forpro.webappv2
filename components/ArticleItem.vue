@@ -2,6 +2,9 @@
     <nuxt-link
         class="v-article-item"
         :href="`/articles/${slug}`"
+        :class="{
+            'is-negative-color': isNegativeColor
+        }"
     >
         <div
             class="v-article-item__title fp-remove-margin-child"
@@ -79,6 +82,11 @@ defineProps({
         type: String,
         required: true,
     },
+    isNegativeColor: {
+        type: Boolean,
+        required: false,
+        default: false,
+    }
 })
 
 </script>
@@ -90,11 +98,16 @@ defineProps({
 <style lang="scss" scoped >
 .v-article-item {
     width: 100%;
-    color: inherit;
+    color: var(--fp-color-black);
+    display: block;
 
     .v-app--is-dark & {
         background: var(--fp-color-white);
         color: var(--fp-color-black);
+    }
+
+    &.is-negative-color {
+        color: var(--fp-color-white);
     }
 }
 
@@ -133,8 +146,18 @@ defineProps({
     color: var(--fp-color-grey-dark);
     font-size: var(--fp-font-size-small);
     line-height: var(--fp-line-height-small);
+
+    .is-negative-color & {
+        color: var(--fp-color-white);
+        opacity: .5;
+    }
 }
 </style>
+
+
+
+
+
 
 
 <style lang="scss">

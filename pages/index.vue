@@ -94,88 +94,27 @@
             :imageBlockContent="homeData.imageFooter"
         />
 
-        <div
-            v-if="useAppStateStore().newsletterBarIsVisible"
-            class="fp-grid-coll-reg-container"
-        >
-            <div
-                class="fp-grid-coll-reg-24-24"
-            >
-                <bar-newsletter
-                    text="Newsletter"
-                    @on-close-newsletter-bar="() => useAppStateStore().newsletterBarIsVisible = false"
-                />
-            </div>
-        </div>
+<!--        <div-->
+<!--            v-if="useAppStateStore().newsletterBarIsVisible"-->
+<!--            class="fp-grid-coll-reg-container"-->
+<!--        >-->
+<!--            <div-->
+<!--                class="fp-grid-coll-reg-24-24"-->
+<!--            >-->
+<!--                <bar-newsletter-->
+<!--                    text="Newsletter"-->
+<!--                    @on-close-newsletter-bar="() => useAppStateStore().newsletterBarIsVisible = false"-->
+<!--                />-->
+<!--            </div>-->
+<!--        </div>-->
 
         <section
             class="fp-remove-margin-child v-index__articles"
         >
-            <h2>Articles</h2>
-            <div
-                style="
-                display: flex;
-                flex-wrap: wrap;
-            "
-            >
-
-<!--                <last-news/>-->
-
-                <!--        todo: image implementation-->
-<!--                <div style="width: calc(100% / 3)" class="fp-grid-with-gutter" >-->
-<!--                    <div-->
-<!--                        style="background: white; height: 100%"-->
-<!--                    >-->
-<!--                        <article-item-->
-<!--                            src="images/article-646380fd3aa09.jpg"-->
-<!--                        >-->
-<!--                            <h4>Le LearningLab entre dans une nouvelle ère !</h4>-->
-<!--                            <div>Depuis l’automne dernier, les choses ont bien bougé du côté du LearningLab ! Toutefois, avant de vous dévoiler les avancées du projet dans une interview du responsable du projet, voici deux nouvelles; un déménagement et une nouvelle arrivée dans l’équipe…</div>-->
-<!--                        </article-item>-->
-<!--                    </div>-->
-<!--                </div>-->
-
-                <!--        todo: image implementation-->
-
-<!--                <div style="width: calc(100% / 3)" class="fp-grid-with-gutter">-->
-<!--                    <div-->
-<!--                        style="background: white; height: 100%"-->
-<!--                    >-->
-<!--                        <article-item-->
-<!--                            src="/images/article-63e00b8e9989f.jpg"-->
-<!--                        >-->
-<!--                            <h4>À chaque gazette, son portrait!</h4>-->
-<!--                            <div>Pour ce nouveau numéro, Morgane Robert, architecte chez brodbeck roulet, a répondu à quelque-unes de nos questions.</div>-->
-<!--                        </article-item>-->
-<!--                    </div>-->
-<!--                </div>-->
-
-
-                <!--        todo: image implementation-->
-
-<!--                <div style="width: calc(100% / 3)" class="fp-grid-with-gutter">-->
-<!--                    <div-->
-<!--                        style="background: white; height: 100%"-->
-<!--                    >-->
-<!--                        <article-item-->
-<!--                            src="/images/article-63dfea075f324.jpg"-->
-<!--                        >-->
-<!--                            <h4>Les apprenti.e.s à l'honneur sur le chantier</h4>-->
-<!--                            <div>Sur le site de ForPro, les travaux vont bon train! L’École d’horlogerie de Genève, le FoodCourt et les sous-sols sont en construction, et pour assurer le bon déroulé des travaux, divers corps de métier se suivent et se succèdent…</div>-->
-<!--                        </article-item>-->
-<!--                    </div>-->
-<!--                </div>-->
+            <h2>Blog</h2>
+            <div>
+                <last-news/>
             </div>
-
-
-
-
-
-
-
-
-
-
 
             <button
                 class="v-index__articles__button"
@@ -240,13 +179,13 @@ h2 {
     background-color: var(--fp-theme-color-secondary);
     color: var(--fp-color-white);
     padding-top: var(--fp-section-margin);
-    padding-bottom: 6rem;
+    padding-bottom: var(--fp-section-margin);
 }
 
 .v-index__articles__button {
-    position: absolute;
-    bottom: 2rem;
-    right: .5rem;
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
 }
 
 .v-index__space-building {
