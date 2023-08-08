@@ -53,56 +53,85 @@
         >
             <div
                 class="v-app-nav__nav__content__container">
-                <div
-                    class="v-app-nav__nav__content__container__coll fp-remove-margin-child">
+                <div class="v-app-nav__nav__content__container__coll fp-remove-margin-child">
                     <div class="fp-heading-h3">
                         <nuxt-link
-                            class="v-app-nav__link fp-text-color-default"
-                            to="/fondation"
-                            :class="{
-                              'is-active': curentRoutePath === '/fondation'
-                            }"
+                                class="v-app-nav__link fp-text-color-default"
+                                to="/fondation"
+                                :class="{
+                                'is-active': curentRoutePath === '/fondation'
+                              }"
                         >Fondation ForPro
                         </nuxt-link>
                     </div>
                     <div class="fp-heading-h3">
                         <nuxt-link
-                            class="v-app-nav__link fp-text-color-default"
-                            to="/partenaires"
-                            :class="{
-                              'is-active': curentRoutePath === '/partenaires'
-                            }"
+                                class="v-app-nav__link fp-text-color-default"
+                                to="/partenaires"
+                                :class="{
+                                'is-active': curentRoutePath === '/partenaires'
+                              }"
                         >Partenaires
+                        </nuxt-link>
+                    </div>
+                    <div
+                            v-if="siteData"
+                            class="fp-heading-h3"
+                    >
+                        <nuxt-link
+                                class="v-app-nav__link fp-text-color-default"
+                                to="/news"
+                                :class="{
+                            'is-active': curentRoutePath === '/news'
+                          }"
+                        >{{ siteData.blogDetails.title.value }}
                         </nuxt-link>
                     </div>
 <!--                    <div class="fp-heading-h3">-->
 <!--                        <nuxt-link-->
-<!--                            class="v-app-nav__link fp-text-color-default"-->
-<!--                            to="/faq"-->
-<!--                            :class="{-->
-<!--                              'is-active': curentRoutePath === '/faq'-->
-<!--                            }"-->
+<!--                                class="v-app-nav__link fp-text-color-default"-->
+<!--                                to="/faq"-->
+<!--                                :class="{-->
+<!--                                                      'is-active': curentRoutePath === '/faq'-->
+<!--                                                    }"-->
 <!--                        >F.A.Q.-->
 <!--                        </nuxt-link>-->
 <!--                    </div>-->
-                    <div
-                        v-if="siteData"
-                        class="fp-heading-h3"
-                    >
-                        <nuxt-link
-                            class="v-app-nav__link fp-text-color-default"
-                            to="/news"
-                            :class="{
-                              'is-active': curentRoutePath === '/news'
-                            }"
-                        >{{siteData.blogDetails.title.value}}
-                        </nuxt-link>
+                    <div class="v-app-nav__other-links fp-remove-margin-child">
+                        <div class="fp-heading-h4">
+                          <nuxt-link href="/contact" class="v-app-nav__link fp-text-color-default">Contact</nuxt-link>
+                        </div>
+                        <div class="fp-heading-h4">
+                          <nuxt-link href="/impressum" class="v-app-nav__link fp-text-color-default">Impressum</nuxt-link>
+                        </div>
+                        <div class="fp-heading-h4">
+                          <span class="v-app-nav__link fp-text-color-default">Newsletter</span>
+                        </div>
                     </div>
-                    <div class="v-app-nav__impressum fp-remove-margin-child">
-                        <p>Contact
-                            <br>Newsletter
-                            <br>Location
-                        </p>
+                    <div
+                            class="v-app-nav__nav__bottom__container__social"
+                    >
+                        <a href="https://www.linkedin.com/company/86763245/admin/">
+                            <svg
+                                    width="25.400707mm"
+                                    height="25.400002mm"
+                                    viewBox="0 0 25.400707 25.400002"
+                                    version="1.1"
+                                    id="svg5"
+                                    xml:space="preserve"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:svg="http://www.w3.org/2000/svg"
+                            >
+                              <g
+                                      id="g142"
+                                      transform="matrix(0.03527778,0,0,-0.03527778,0,25.400002)">
+                                  <path
+                                          d="M 613.664,106.355 H 505.422 v 187.817 c 0,55.418 -23.559,72.508 -53.945,72.508 -32.114,0 -63.61,-24.176 -63.61,-73.891 V 106.355 H 279.625 v 343.872 h 104.102 v -47.641 h 1.378 c 10.473,21.168 47.036,57.309 102.883,57.309 60.403,0 125.676,-35.829 125.676,-140.864 z M 160.48,498.137 c -34.468,0 -62.4058,26.23 -62.4058,62.129 0,35.898 27.9378,62.164 62.4058,62.164 34.461,0 62.407,-26.266 62.407,-62.164 0,-35.899 -27.946,-62.129 -62.407,-62.129 z m 54.122,-391.52 H 106.359 V 450.492 H 214.602 Z M 666.871,720 H 53.1523 C 23.7969,720 0,696.203 0,666.848 V 53.1484 C 0,23.7969 23.7969,0 53.1523,0 H 666.871 c 29.352,0 53.149,23.7969 53.149,53.1484 V 666.848 c 0,29.355 -23.797,53.152 -53.149,53.152"
+                                          style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                                  />
+                              </g>
+                            </svg>
+                        </a>
                     </div>
                 </div>
                 <div
@@ -130,35 +159,6 @@
                     </div>
                 </div>
             </div>
-            <div
-                class="v-app-nav__nav__bottom__container"
-            >
-                <div
-                    class="v-app-nav__nav__bottom__container__social"
-                >
-                    <a href="https://www.linkedin.com/company/86763245/admin/">
-                        <svg
-                                width="25.400707mm"
-                                height="25.400002mm"
-                                viewBox="0 0 25.400707 25.400002"
-                                version="1.1"
-                                id="svg5"
-                                xml:space="preserve"
-                                xmlns="http://www.w3.org/2000/svg"
-                                xmlns:svg="http://www.w3.org/2000/svg"
-                        >
-                        <g
-                                id="g142"
-                                transform="matrix(0.03527778,0,0,-0.03527778,0,25.400002)">
-                            <path
-                                    d="M 613.664,106.355 H 505.422 v 187.817 c 0,55.418 -23.559,72.508 -53.945,72.508 -32.114,0 -63.61,-24.176 -63.61,-73.891 V 106.355 H 279.625 v 343.872 h 104.102 v -47.641 h 1.378 c 10.473,21.168 47.036,57.309 102.883,57.309 60.403,0 125.676,-35.829 125.676,-140.864 z M 160.48,498.137 c -34.468,0 -62.4058,26.23 -62.4058,62.129 0,35.898 27.9378,62.164 62.4058,62.164 34.461,0 62.407,-26.266 62.407,-62.164 0,-35.899 -27.946,-62.129 -62.407,-62.129 z m 54.122,-391.52 H 106.359 V 450.492 H 214.602 Z M 666.871,720 H 53.1523 C 23.7969,720 0,696.203 0,666.848 V 53.1484 C 0,23.7969 23.7969,0 53.1523,0 H 666.871 c 29.352,0 53.149,23.7969 53.149,53.1484 V 666.848 c 0,29.355 -23.797,53.152 -53.149,53.152"
-                                    style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-                            />
-                        </g>
-                    </svg>
-                    </a>
-                </div>
-            </div>
         </div>
     </nav>
   </div>
@@ -171,6 +171,7 @@ import {IForProApi_section, IForProApi_site, IWebsiteApiSectionUrl} from "~/glob
 import {ComputedRef, Ref, UnwrapRef} from "vue";
 import {UnwrapRefSimple} from "@vue/reactivity";
 import LogoForpro from "~/components/LogoForpro.vue"
+import page from "nuxt/dist/pages/runtime/page";
 
 const siteData: ComputedRef<UnwrapRefSimple<IForProApi_site> | null> = computed(() => useAppStateStore().siteData)
 
@@ -277,6 +278,8 @@ const pagesReferencies: ComputedRef<{[key: string]: IWebsiteApiSectionUrl}> = co
     left: 0;
     height: calc( 100% - var(--fp-app-nav-height));
     width: 100%;
+    overflow: auto;
+  padding-bottom: 5rem;
     container-type: inline-size;
 
     .v-app-nav__nav__content__container {
@@ -309,13 +312,11 @@ const pagesReferencies: ComputedRef<{[key: string]: IWebsiteApiSectionUrl}> = co
             margin-bottom: .5rem;
         }
     }
-    .v-app-nav__nav__bottom__container {
-        padding-top: 2rem;
-    }
     .v-app-nav__nav__bottom__container__social {
         display: flex;
         gap: .5rem;
-      padding-bottom: 2rem;
+      padding-top: 1rem;
+        padding-bottom: 2rem;
 
         svg {
             display: block;
@@ -335,8 +336,6 @@ const pagesReferencies: ComputedRef<{[key: string]: IWebsiteApiSectionUrl}> = co
 .v-app-nav__nav__content {
     box-sizing: border-box;
     width: 100%;
-    height: 100%;
-    overflow: auto;
     color: var(--fp-color-black);
 }
 
@@ -349,12 +348,11 @@ const pagesReferencies: ComputedRef<{[key: string]: IWebsiteApiSectionUrl}> = co
     margin-top: 1rem;
 }
 
-.v-app-nav__impressum {
+.v-app-nav__other-links {
     padding-top: 1rem;
-
-    @media (min-width: scss-params.$fp-breakpoint-sm) {
-        padding-top: 5rem;
-    }
+  > * {
+    margin: 0 !important;
+  }
 }
 
 </style>

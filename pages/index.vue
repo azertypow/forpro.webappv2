@@ -111,7 +111,7 @@
         <section
             class="fp-remove-margin-child v-index__articles"
         >
-            <h2>Blog</h2>
+            <h2>News</h2>
             <div>
                 <last-news/>
             </div>

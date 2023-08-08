@@ -87,7 +87,7 @@
                             mail="voir le mail"
                         />
                     </div>
-                    <div class="fp-grid-coll-24-24 p-grid-coll-reg-8-24" >
+                    <div class="fp-grid-coll-24-24 fp-grid-coll-reg-8-24" >
                         <profile-item
                             profile-desc=""
                             profile-name="Mélissa Catoquessa"

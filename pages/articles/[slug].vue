@@ -155,6 +155,7 @@ const eventDate: ComputedRef<null | string> = computed(() => {
 
 <style lang="scss" scoped >
 .v-article-name {
+    padding-bottom: 5rem;
 }
 
 .v-article-name__header {

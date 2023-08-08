@@ -53,18 +53,6 @@
       &:nth-child( 2n ):before {
           background-image: url('../assets/SVGs/v-text-bullet-point--06.svg');
       }
-      //&:nth-child( 3n ):before {
-      //    background-image: url('../assets/SVGs/v-text-bullet-point--03.svg');
-      //}
-      //&:nth-child( 4n ):before {
-      //    background-image: url('../assets/SVGs/v-text-bullet-point--04.svg');
-      //}
-      //&:nth-child( 5n ):before {
-      //    background-image: url('../assets/SVGs/v-text-bullet-point--05.svg');
-      //}
-      //&:nth-child( 6n ):before {
-      //    background-image: url('../assets/SVGs/v-text-bullet-point--06.svg');
-      //}
   }
 }
 </style>

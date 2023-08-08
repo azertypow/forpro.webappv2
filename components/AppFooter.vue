@@ -50,14 +50,6 @@
             </p>
 
             <button>S'inscrire</button>
-
-            <h6>
-                Images du bâtiment et portraits d'apprenti·e·s: Estelle Bouchet et Alicia Dubuis
-                <br>Développement: Nicolas Baldran
-                <br>Webdesign: Sonia Dominguez & Rob van Leijsen
-                <br>Photographie: Raphaëlle Mueller
-
-            </h6>
         </div>
     </section>
 </template>
