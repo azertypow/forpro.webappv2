@@ -3,7 +3,6 @@
         class="v-profile-item"
         :class="{
             'with-photo': src,
-            'small': small,
             'v-profile-item--is-open': descriptionIsOpen,
             'has-details-to-show': hasDetailsToShow,
         }"
@@ -22,13 +21,13 @@
                 v-if="src"
                 class="v-profile-item__img"
                 :style="{
-                    backgroundImage: `url(${src})` || '',
+                    backgroundImage: `url(${src.resize.reg})` || '',
                 }"
             ></div>
             <h5
                 class="v-profile-item__name"
             >{{profileName}}</h5>
-            <h5     class="v-profile-item__type">{{profileType}}</h5>
+            <h5     v-if="profileType" class="v-profile-item__type">{{profileType}}</h5>
         </div>
 
         <transition>
@@ -36,16 +35,19 @@
                 v-if="showDetails"
                 class="v-profile-item__details"
             >
-                <p class="v-profile-item__desc">{{profileDesc}}</p>
+                <div
+                    class="v-profile-item__desc fp-remove-margin-child"
+                    v-html="profileDesc"
+                ></div>
                 <a
                     class="v-profile-item__link"
-                    v-if="mail"
+                    v-if="externalLink"
                     :href="`mailto:${mail}`"
                     target="_blank"
                 ><img src="../assets/icons/mail_FILL0_wght400_GRAD0_opsz48.svg" alt="get mail contact"></a>
                 <a
                     class="v-profile-item__link"
-                    v-if="externalLink"
+                    v-if="mail"
                     :href="`${externalLink}`"
                     target="_blank"
                 ><img src="../assets/icons/link_FILL0_wght400_GRAD0_opsz48.svg" alt="get external link"></a>
@@ -62,9 +64,10 @@
 <script lang="ts" setup>
 import {ComputedRef} from "vue";
 import {readUser} from "rc9";
+import {IForPro_image} from "~/global/forProApi";
 
 const props = defineProps<{
-    src?: string
+    src?: IForPro_image
     small?: boolean
     mail?: string
     externalLink?: string
@@ -72,20 +75,21 @@ const props = defineProps<{
     listMode?: boolean
 
     profileName: string
-    profileType: string
+    profileType?: string
 
 }>()
 
 const descriptionIsOpen = ref(false)
 
 const hasDetailsToShow: ComputedRef<boolean> = computed(() => {
+    if( props.src ) return false
     if( !props.profileDesc && !props.externalLink && !props.mail) return false
     return true
 })
 
 const showDetails: ComputedRef<boolean> = computed(() => {
     if(!props.profileDesc) return false
-    if(props.src) return true
+    if(props.src && props.profileDesc) return true
     return descriptionIsOpen.value
 })
 
@@ -148,6 +152,7 @@ const showDetails: ComputedRef<boolean> = computed(() => {
 
     .with-photo & {
         align-items: center;
+        padding-right: 0;
     }
 
     @media (min-width: 1000px) {
@@ -196,13 +201,18 @@ const showDetails: ComputedRef<boolean> = computed(() => {
 
 .v-profile-item__desc {
     display: block;
-
-    .with-photo & {
-        display: none;
-    }
 }
 
 .v-profile-item__details {
+    .with-photo & {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        > * {
+            display: block;
+        }
+    }
     .list-mode & {
         padding-left: 3rem;
     }
@@ -211,12 +221,16 @@ const showDetails: ComputedRef<boolean> = computed(() => {
 .v-profile-item__link {
     color: inherit;
     text-decoration: underline;
-    margin-top: 1rem;
+    display: block;
+    margin-top: .5rem;
+
+    & + & {
+        margin-left: var(--fp-gutter);
+    }
 
     > img {
         display: block;
         height: 1.5rem;
-        margin-right: var(--fp-gutter);
     }
 
     p + &,
@@ -234,12 +248,6 @@ const showDetails: ComputedRef<boolean> = computed(() => {
 p {
     margin-top: 1rem;
 }
-
-.small p {
-    font-size: var(--fp-font-size-small);
-    line-height: var(--fp-line-height-small);
-}
-
 
 .v-profile-item__icon {
     position: absolute;
@@ -264,10 +272,6 @@ p {
 
     .v-profile-item--is-open & {
         transform: rotate(45deg) translate(-35%, -35%);
-    }
-
-    .with-photo & {
-        display: none;
     }
 }
 
@@ -297,5 +301,19 @@ p {
 .v-leave-to {
     opacity: 0;
     transform: translateY(-.5rem);
+}
+</style>
+
+
+<style lang="scss">
+.v-profile-item__desc {
+    margin-top: .5rem;
+    font-size: var(--fp-font-size-small);
+    line-height: var(--fp-line-height-small);
+
+    p {
+        font-size: var(--fp-font-size-small);
+        line-height: var(--fp-line-height-small);
+    }
 }
 </style>

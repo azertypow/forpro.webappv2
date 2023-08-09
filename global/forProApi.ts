@@ -129,6 +129,28 @@ export interface IForPro_image {
     }
 }
 
+export interface IForPro_profileItem         {
+    "name": string,
+    "topic": string | null,
+    "link": string | null,
+    "cover": {[key: string]: IForPro_image} | null,
+    "text": string | null,
+}
+
+export interface IForPro_fondation {
+    "title": string,
+    "textIntro": string,
+    "blockContent": (IForPro_blocksContent_isImage | IForPro_blocksContent_isTextContent)[],
+    "team": IForPro_profileItem[],
+    "conseil": IForPro_profileItem[]
+}
+
+export interface IForPro_partners {
+    "title": string,
+    "textIntro": string,
+    "partners": IForPro_profileItem[]
+}
+
 export type blogArticleTypeOfContent = "event" | "article" | "project" | "construction"
 
 export function converteBlogArticleTypeOfContent(typeContent: blogArticleTypeOfContent): string {
@@ -178,6 +200,16 @@ export async function fetchForProApi_blogLastArticles(): Promise<_AsyncData<stri
 
 export async function fetchForProApi_blogArticle(slug: string): Promise<IForPro_blogArticle> {
     const response = await fetch(`${useRuntimeConfig().public.apiBaseUrl}/api-v2/blog/article/${slug}`)
+    return await response.json()
+}
+
+export async function fetchForProApi_fondation(): Promise<IForPro_fondation> {
+    const response = await fetch(`${useRuntimeConfig().public.apiBaseUrl}/api-v2/fondation`)
+    return await response.json()
+}
+
+export async function fetchForProApi_partners(): Promise<IForPro_partners> {
+    const response = await fetch(`${useRuntimeConfig().public.apiBaseUrl}/api-v2/partenaires`)
     return await response.json()
 }
 

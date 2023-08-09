@@ -1,16 +1,18 @@
 <template>
     <main class="v-fondation fp-page" >
         <page-header
-                page-title="ForPro"
+            v-if="fondationData"
+            :page-title="fondationData.title"
         />
         <div
             class="fp-grid-coll-container fp-grid-coll-container--center"
         >
             <div
+                v-if="fondationData"
                 class="fp-grid-coll-reg-16-24 fp-grid-with-gutter fp-page__sections-box__section"
             >
                 <text-intro
-                    content="<p>La fondation ForPro naît de constats simples: le modèle suisse de formation professionnelle est un « passeport pour l’emploi ». Les perspectives d’employabilité et de développement offertes par la formation professionnelle permettent une carrière riche et en adéquation aux besoins des entreprises et du marché du travail. Cependant, la filière de l’apprentissage (CFC et AFP) fait pâle figure à Genève, où un tiers des jeunes choisissent cette voie contre deux tiers en moyenne suisse. De plus, l’enthousiasme pour l’apprentissage n’est pas toujours de mise pour les jeunes et leur entourage.</p>"
+                    :content="fondationData.textIntro"
                 />
             </div>
 
@@ -47,105 +49,42 @@
             </div>
 
             <div
+                v-if="fondationData && fondationData.team.length > 0"
                 class="fp-grid-coll-reg-16-24 fp-grid-with-gutter fp-page__sections-box__section"
             >
                 <h2>L'équipe</h2>
                 <div class="fp-grid-coll-container fp-grid-coll-container--center v-fondation__profiles">
-                    <div class="fp-grid-coll-24-24 fp-grid-coll-reg-8-24" >
+                    <div
+                        v-for="teamProfileItem of fondationData.team"
+                        class="fp-grid-coll-24-24 fp-grid-coll-reg-8-24"
+                    >
                         <profile-item
-                            profile-desc=""
-                            profile-name="Joëlle Mathey"
-                            profile-type="Directrice"
-                            src="https://api.for-pro.ch/media/pages/fondation-forpro/5f4154f182-1658748305/img-2423-2-500x.jpg"
-                            mail="voir le mail"
-                        />
-                    </div>
-                    <div class="fp-grid-coll-24-24 fp-grid-coll-reg-8-24" >
-                        <profile-item
-                            profile-desc=""
-                            profile-name="Fabrice Voan"
-                            profile-type="Adjoint de direction"
-                            src="https://api.for-pro.ch/media/pages/fondation-forpro/62583a7409-1658748307/img-2419-500x.jpg"
-                            mail="voir le mail"
-                        />
-                    </div>
-                    <div class="fp-grid-coll-24-24 fp-grid-coll-reg-8-24" >
-                        <profile-item
-                            profile-desc=""
-                            profile-name="Thierry Schlatter"
-                            profile-type="Chef de projet «FoodLab»"
-                            src="https://api.for-pro.ch/media/pages/fondation-forpro/351dd4aa39-1658748273/portrait-thierry-500x.jpg"
-                            mail="voir le mail"
-                        />
-                    </div>
-                    <div class="fp-grid-coll-24-24 fp-grid-coll-reg-8-24" >
-                        <profile-item
-                            profile-desc=""
-                            profile-name="François Antille"
-                            profile-type="Chef de projet «LearningLab»"
-                            src="https://api.for-pro.ch/media/pages/fondation-forpro/11eb995d45-1658748314/1517005721061-500x.jpg"
-                            mail="voir le mail"
-                        />
-                    </div>
-                    <div class="fp-grid-coll-24-24 fp-grid-coll-reg-8-24" >
-                        <profile-item
-                            profile-desc=""
-                            profile-name="Mélissa Catoquessa"
-                            profile-type="Cheffe de projet «Documentation»"
-                            src="https://api.for-pro.ch/media/pages/fondation-forpro/a7e2dfc9c9-1663765038/whatsapp-image-2022-08-09-at-16-12-11-500x.jpg"
-                            mail="voir le mail"
-                        />
-                    </div>
-                    <div class="fp-grid-coll-24-24 fp-grid-coll-reg-8-24" >
-                        <profile-item
-                            profile-desc=""
-                            profile-name="Lina Borén"
-                            profile-type="Cheffe de projet «Communication»"
-                            src="https://api.for-pro.ch/media/pages/fondation-forpro/1ed858132d-1683017261/lina-boren-portrait-2022-nb-500x.jpg"
-                            mail="voir le mail"
+                            :profile-desc="teamProfileItem.text ? teamProfileItem.text : undefined"
+                            :profile-name="teamProfileItem.name"
+                            :profile-type="teamProfileItem.topic ? teamProfileItem.topic : undefined"
+                            :src="teamProfileItem.cover ? Object.values(teamProfileItem.cover)[0] : undefined"
+                            :mail="teamProfileItem.link ? teamProfileItem.link : undefined"
                         />
                     </div>
                 </div>
             </div>
 
             <div
+                v-if="fondationData && fondationData.conseil.length > 0"
                 class="fp-grid-coll-reg-16-24 fp-grid-with-gutter fp-page__sections-box__section"
             >
                 <h3>Le Conseil de Fondation</h3>
                 <div class="fp-grid-coll-container">
-                    <div class="fp-grid-coll-24-24 fp-grid-coll-reg-12-24 fp-grid-with-gutter" >
+                    <div
+                        v-for="conseilProfileItem of fondationData.conseil"
+                        class="fp-grid-coll-24-24 fp-grid-coll-reg-12-24 fp-grid-with-gutter"
+                    >
                         <profile-item
-                            :small="true"
-                            profile-name="François Abbé-Decarroux"
-                            profile-type="Président"
-                        />
-                    </div>
-                    <div class="fp-grid-coll-24-24 fp-grid-coll-reg-12-24 fp-grid-with-gutter" >
-                        <profile-item
-                            :small="true"
-                            profile-name="Marie Barbier-Mueller"
-                            profile-type="Membre"
-                        />
-                    </div>
-                    <div class="fp-grid-coll-24-24 fp-grid-coll-reg-12-24 fp-grid-with-gutter" >
-                        <profile-item
-                            :small="true"
-                            profile-name="Marc Maugué"
-                            profile-type="Membre"
-                        />
-                    </div>
-                    <div class="fp-grid-coll-24-24 fp-grid-coll-reg-12-24 fp-grid-with-gutter" >
-                        <profile-item
-                            :small="true"
-                            profile-name="Abir Oreibi"
-                            profile-type="Membre"
-                        />
-                    </div>
-                    <div class="fp-grid-coll-24-24 fp-grid-coll-reg-12-24 fp-grid-with-gutter" >
-                        <profile-item
-                            :small="true"
-                            profile-name="Olivier Sandoz"
-                            profile-type="Membre"
+                            :profile-desc="conseilProfileItem.text ? conseilProfileItem.text : undefined"
+                            :profile-name="conseilProfileItem.name"
+                            :profile-type="conseilProfileItem.topic ? conseilProfileItem.topic : undefined"
+                            :src="conseilProfileItem.cover ? Object.values(conseilProfileItem.cover)[0] : undefined"
+                            :mail="conseilProfileItem.link ? conseilProfileItem.link : undefined"
                         />
                     </div>
                 </div>
@@ -162,13 +101,16 @@
 import TextBulletPoint from "~/components/TextBulletPoint.vue";
 import ProfileItem from "~/components/ProfileItem.vue";
 import {useAppStateStore} from "~/stores/appState"
-import {onMounted} from "#imports"
+import {Ref, UnwrapRef} from "vue";
+import {
+    fetchForProApi_fondation,
+    IForPro_fondation
+} from "~/global/forProApi";
 
-// defineProps<{
-// }>()
+const fondationData: Ref<UnwrapRef<null | IForPro_fondation>> = ref(null)
 
-// todo: theme color after fetch
-onMounted(() => {
+fetchForProApi_fondation().then((value: IForPro_fondation) => {
+    fondationData.value = value
     useAppStateStore().updateTheme('white_pink_blue')
 })
 
