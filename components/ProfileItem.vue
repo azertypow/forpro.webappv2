@@ -23,7 +23,7 @@
             >{{profileName}}</h5>
             <h5     v-if="profileType" class="v-profile-item__type">{{profileType}}</h5>
             <span
-                v-if="hasDetailsToShow & !descriptionIsOpen"
+                v-if="hasDetailsToShow && !descriptionIsOpen"
                 class="v-profile-item__icon fp-heading-h5">
                 +
                 </span>
