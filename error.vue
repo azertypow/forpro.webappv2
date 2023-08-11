@@ -151,7 +151,7 @@
     padding-bottom: var(--fp-app-bottom-height);
     margin-top: 5rem;
 
-    [data-theme="white_pink_blue"] & {
+    [data-theme="fp-var-theme-color-default"] & {
         border-top: solid 3px var(--fp-theme-color-secondary);
     }
 }
@@ -243,7 +243,7 @@ const stateIsLoaded = ref(false)
 onMounted(() => {
 
     setForProSiteData()
-    useAppStateStore().updateTheme('white_pink_blue')
+    useAppStateStore().updateTheme('fp-var-theme-color-default')
 
     window.addEventListener('scroll', () => {
         useAppStateStore().updateBackgroundColor()

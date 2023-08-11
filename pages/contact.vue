@@ -56,7 +56,7 @@ const stateIsLoaded = ref(false)
 onMounted(() => {
 
     setForProSiteData()
-    useAppStateStore().updateTheme('white_pink_blue')
+    useAppStateStore().updateTheme('fp-var-theme-color-default')
 
     window.addEventListener('scroll', () => {
         useAppStateStore().updateBackgroundColor()

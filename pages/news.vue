@@ -63,7 +63,7 @@ const blogData: Ref<UnwrapRef<null | IForPro_blog>> = ref(null)
 
 fetchForProApi_blog().then((value: IForPro_blog) => {
     blogData.value = value
-    useAppStateStore().updateTheme('white_pink_blue')
+    useAppStateStore().updateTheme('fp-var-theme-color-default')
 })
 
 function getPageDate(blogPageDetails: IForPro_blog_articleInformations): string {

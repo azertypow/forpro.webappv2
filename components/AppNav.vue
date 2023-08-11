@@ -153,6 +153,7 @@
                                 'fp-text-color-Foodlab': pageRef.slug             ==='foodlab',
                                 'fp-text-color-Hotel_Entreprises': pageRef.slug   ==='hotel-entreprises',
                                 'fp-text-color-Creche': pageRef.slug              ==='creche',
+                                'fp-text-color-Ecole_Horlogerie': pageRef.slug    ==='ecole-horlogerie',
                             }"
                         >{{pageRef.title.value}}
                         </nuxt-link>
@@ -221,7 +222,7 @@ const pagesReferencies: ComputedRef<{[key: string]: IWebsiteApiSectionUrl}> = co
         box-shadow: 0 0 0 3px var(--fp-theme-color-secondary);
     }
 
-    [data-theme="white_pink_blue"] & {
+    [data-theme="fp-var-theme-color-default"] & {
         box-shadow: 0 0 0 3px var(--fp-theme-color-secondary);
     }
 }

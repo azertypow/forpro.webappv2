@@ -127,7 +127,7 @@ const slug = useRoute().params.slug
 
 if( typeof slug  === 'string') fetchForProApi_blogArticle(slug).then((value: IForPro_blogArticle) => {
     articleData.value = value
-    useAppStateStore().updateTheme('white_pink_blue')
+    useAppStateStore().updateTheme('fp-var-theme-color-default')
 })
 
 

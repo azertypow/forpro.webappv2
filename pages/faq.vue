@@ -348,7 +348,7 @@ import {onMounted} from "#imports"
 
 // todo: theme color after fetch
 onMounted(() => {
-    useAppStateStore().updateTheme('white_pink_blue')
+    useAppStateStore().updateTheme('fp-var-theme-color-default')
 })
 
 const navStickyContainer = ref()

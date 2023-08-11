@@ -21,13 +21,13 @@ export interface IWebsiteApiSectionUrl {
 }
 
 export type forProThemeColor =
-    'brown_purple_red'
-  | 'sky_blue_orange'
-  | 'green_pink_blue'
-  | 'brown_yellow_purple'
-  | 'white_pink_blue'
-  | 'orange_green_pink'
-  | 'purple_white_blue'
+    'fp-var-theme-color-accueil'
+  | 'fp-var-theme-color-learningLab'
+  | 'fp-var-theme-color-makerlab'
+  | 'fp-var-theme-color-foodlab'
+  | 'fp-var-theme-color-default'
+  | 'fp-var-theme-color-grandlab'
+  | 'fp-var-theme-color-hotel_entreprise'
 
 export interface IForProApi_section {
     "title": string,

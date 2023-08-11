@@ -148,14 +148,14 @@ import {
 
 
 onMounted(() => {
-    useAppStateStore().updateTheme('white_pink_blue')
+    useAppStateStore().updateTheme('fp-var-theme-color-default')
 })
 
 const homeData: Ref<UnwrapRef<null | IFOrProApi_home>> = ref(null)
 
 fetchForProApi_home().then((value: IFOrProApi_home) => {
     homeData.value = value
-    useAppStateStore().updateTheme('white_pink_blue')
+    useAppStateStore().updateTheme('fp-var-theme-color-default')
 })
 
 </script>

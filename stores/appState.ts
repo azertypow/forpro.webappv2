@@ -7,7 +7,7 @@ export const useAppStateStore = defineStore('appState', {
         navIsOpen: false,
         newsletterBarIsVisible: true,
         isIntersecting: false,
-        theme: 'brown_purple_red' as forProThemeColor,
+        theme: 'fp-var-theme-color-default' as forProThemeColor,
         siteData: null as IForProApi_site | null,
     }),
 
@@ -25,40 +25,50 @@ export const useAppStateStore = defineStore('appState', {
         updateTheme(themeColor: forProThemeColor) {
             this.theme = themeColor
 
-            if(this.theme === 'brown_purple_red') { // accueil
-                document.documentElement.style.setProperty('--fp-theme-color-main',       'rgb(120, 51, 161)')
-                document.documentElement.style.setProperty('--fp-theme-color-secondary',  'rgb(242,3,13)')
-                document.documentElement.style.setProperty('--fp-theme-color-ternary',    'rgb(227,212,190)')
+            if(this.theme === 'fp-var-theme-color-accueil') {
+                document.documentElement.style.setProperty('--fp-theme-color-main',             'var(--fp-theme-color-accueil-main)')
+                document.documentElement.style.setProperty('--fp-theme-color-secondary',        'var(--fp-theme-color-accueil-secondary)')
+                document.documentElement.style.setProperty('--fp-theme-color-ternary',          'var(--fp-theme-color-accueil-ternary)')
             }
-            else if(this.theme === 'sky_blue_orange') { // learning lab
-                document.documentElement.style.setProperty('--fp-theme-color-ternary',    'rgb(170, 200, 255)')
-                document.documentElement.style.setProperty('--fp-theme-color-secondary',  'rgb(255, 105, 23)')
-                document.documentElement.style.setProperty('--fp-theme-color-main',       'rgb(0, 0, 255)')
+            else if(this.theme === 'fp-var-theme-color-learningLab') {
+                document.documentElement.style.setProperty('--fp-theme-color-ternary',          'var(--fp-theme-color-learningLab-main)')
+                document.documentElement.style.setProperty('--fp-theme-color-secondary',        'var(--fp-theme-color-learningLab-secondary)')
+                document.documentElement.style.setProperty('--fp-theme-color-main',             'var(--fp-theme-color-learningLab-ternary)')
             }
-            else if(this.theme === 'green_pink_blue') { // makerlab
-                document.documentElement.style.setProperty('--fp-theme-color-ternary', 'rgb(61, 240, 105)')
-                document.documentElement.style.setProperty('--fp-theme-color-secondary', 'rgb(23, 84, 255)')
-                document.documentElement.style.setProperty('--fp-theme-color-main', 'rgb(255, 0, 252)')
+            else if(this.theme === 'fp-var-theme-color-makerlab') {
+                document.documentElement.style.setProperty('--fp-theme-color-ternary',          'var(--fp-theme-color-makerlab-main)')
+                document.documentElement.style.setProperty('--fp-theme-color-secondary',        'var(--fp-theme-color-makerlab-secondary)')
+                document.documentElement.style.setProperty('--fp-theme-color-main',             'var(--fp-theme-color-makerlab-ternary)')
             }
-            else if(this.theme === 'brown_yellow_purple') { // foodlab
-                    document.documentElement.style.setProperty('--fp-theme-color-ternary',    'rgb(210, 200, 180)')
-                    document.documentElement.style.setProperty('--fp-theme-color-secondary',  'rgb(41, 0, 125)')
-                    document.documentElement.style.setProperty('--fp-theme-color-main',       'rgb(255, 248, 0)')
+            else if(this.theme === 'fp-var-theme-color-foodlab') {
+                    document.documentElement.style.setProperty('--fp-theme-color-ternary',      'var(--fp-theme-color-foodlab-main)')
+                    document.documentElement.style.setProperty('--fp-theme-color-secondary',    'var(--fp-theme-color-foodlab-secondary)')
+                    document.documentElement.style.setProperty('--fp-theme-color-main',         'var(--fp-theme-color-foodlab-ternary)')
             }
-            else if(this.theme === 'white_pink_blue') { // neutre
-                document.documentElement.style.setProperty('--fp-theme-color-ternary',    'rgb(255, 255, 255)')
-                document.documentElement.style.setProperty('--fp-theme-color-secondary',  'rgb(0,89,255)')
-                document.documentElement.style.setProperty('--fp-theme-color-main',       'rgb(255,0,255)')
+            else if(this.theme === 'fp-var-theme-color-default') {
+                document.documentElement.style.setProperty('--fp-theme-color-ternary',          'var(--fp-theme-color-default-main)')
+                document.documentElement.style.setProperty('--fp-theme-color-secondary',        'var(--fp-theme-color-default-secondary)')
+                document.documentElement.style.setProperty('--fp-theme-color-main',             'var(--fp-theme-color-default-ternary)')
             }
-            else if(this.theme === 'orange_green_pink') { // grandlab
-                document.documentElement.style.setProperty('--fp-theme-color-ternary',    'rgb(255, 199, 140)')
-                document.documentElement.style.setProperty('--fp-theme-color-secondary',  'rgb(245, 0, 180)')
-                document.documentElement.style.setProperty('--fp-theme-color-main',       'rgb(50, 173, 133)')
+            else if(this.theme === 'fp-var-theme-color-grandlab') {
+                document.documentElement.style.setProperty('--fp-theme-color-ternary',          'var(--fp-theme-color-grandlab-main)')
+                document.documentElement.style.setProperty('--fp-theme-color-secondary',        'var(--fp-theme-color-grandlab-secondary)')
+                document.documentElement.style.setProperty('--fp-theme-color-main',             'var(--fp-theme-color-grandlab-ternary)')
             }
-            else if(this.theme === 'purple_white_blue') { // hotel entreprise
-                document.documentElement.style.setProperty('--fp-theme-color-ternary',    'rgb(137, 141, 209)')
-                document.documentElement.style.setProperty('--fp-theme-color-secondary',  'rgb(170, 200, 208)')
-                document.documentElement.style.setProperty('--fp-theme-color-main',       'rgb(255, 255, 255)')
+            else if(this.theme === 'fp-var-theme-color-hotel_entreprise') {
+                document.documentElement.style.setProperty('--fp-theme-color-ternary',          'var(--fp-theme-color-hotel_entreprise-main)')
+                document.documentElement.style.setProperty('--fp-theme-color-secondary',        'var(--fp-theme-color-hotel_entreprise-secondary)')
+                document.documentElement.style.setProperty('--fp-theme-color-main',             'var(--fp-theme-color-hotel_entreprise-ternary)')
+            }
+            else if(this.theme === 'fp-var-theme-color-creche') {
+                document.documentElement.style.setProperty('--fp-theme-color-ternary',          'var(--fp-theme-color-creche-main)')
+                document.documentElement.style.setProperty('--fp-theme-color-secondary',        'var(--fp-theme-color-creche-secondary)')
+                document.documentElement.style.setProperty('--fp-theme-color-main',             'var(--fp-theme-color-creche-ternary)')
+            }
+            else if(this.theme === 'fp-var-theme-color-ecole_horlogerie') {
+                document.documentElement.style.setProperty('--fp-theme-color-ternary',          'var(--fp-theme-color-ecole_horlogerie-main)')
+                document.documentElement.style.setProperty('--fp-theme-color-secondary',        'var(--fp-theme-color-ecole_horlogerie-secondary)')
+                document.documentElement.style.setProperty('--fp-theme-color-main',             'var(--fp-theme-color-ecole_horlogerie-ternary)')
             }
 
             this.updateBackgroundColor()
