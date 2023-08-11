@@ -322,7 +322,7 @@ const pagesReferencies: ComputedRef<{[key: string]: IWebsiteApiSectionUrl}> = co
         svg {
             display: block;
             width:  auto;
-            height: 2rem;
+            height: 1.5rem;
             box-sizing: border-box;
             color: var(--fp-theme-color-ternary);
             cursor: pointer;

@@ -1,6 +1,6 @@
 <template>
     <div class="v-block-faq fp-remove-margin-child" >
-        <h3>Des questions?</h3>
+        <h3>Des questions?<br>Contactez-nous</h3>
         <button>
             <a
                 target="_blank"

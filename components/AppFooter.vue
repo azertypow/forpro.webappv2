@@ -11,7 +11,6 @@
                 <br>Rte de la Galaise 15B
                 <br>1228 Plan-les-Ouates
                 <br>+41 76 358 42 23
-                <br>info@for-pro.ch
             </h6>
 
             <h6><a target="_blank" href="mailto:info@for-pro.ch" >info@for-pro.ch</a></h6>
@@ -78,7 +77,7 @@
 
     svg {
         width: auto;
-        height: 2rem;
+        height: 1.5rem;
         color: var(--fp-theme-color-ternary);
         cursor: pointer;
         display: block;

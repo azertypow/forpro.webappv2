@@ -1,7 +1,7 @@
 <template>
     <main class="v-contact fp-page fp-page--no-margin-bottom" >
         <page-header
-            page-title="contact"
+            page-title="Contact"
             :is-home="true"
         />
 

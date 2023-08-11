@@ -48,5 +48,16 @@
   .cls-2 {
     fill: var(--fp-theme-color-secondary);
   }
+
+    [data-theme="fp-var-theme-color-learningLab"] & {
+        .cls-1 {
+            fill: var(--fp-theme-color-secondary);
+        }
+
+        .cls-2 {
+            fill: var(--fp-theme-color-main);
+        }
+    }
 }
+
 </style>
