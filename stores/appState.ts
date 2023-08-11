@@ -65,7 +65,7 @@ export const useAppStateStore = defineStore('appState', {
                 document.documentElement.style.setProperty('--fp-theme-color-ternary',          'var(--fp-theme-color-hotel_entreprise-main)')
                 document.documentElement.style.setProperty('--fp-theme-color-secondary',        'var(--fp-theme-color-hotel_entreprise-secondary)')
                 document.documentElement.style.setProperty('--fp-theme-color-main',             'var(--fp-theme-color-hotel_entreprise-ternary)')
-                document.documentElement.style.setProperty('--fp-theme-color-menu',             'var(--fp-color-hotel_entreprise)')
+                document.documentElement.style.setProperty('--fp-theme-color-menu',             'var(--fp-color-hotel_entreprises)')
             }
             else if(this.theme === 'fp-var-theme-color-creche') {
                 document.documentElement.style.setProperty('--fp-theme-color-ternary',          'var(--fp-theme-color-creche-main)')

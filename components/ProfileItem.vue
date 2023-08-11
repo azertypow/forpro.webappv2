@@ -11,12 +11,6 @@
         <div
             class="v-profile-item__header"
         >
-            <span
-                v-if="hasDetailsToShow"
-                class="v-profile-item__icon">
-                    <span class="v-profile-item__icon__horizontal"></span>
-                    <span class="v-profile-item__icon__vertical"></span>
-                </span>
             <div
                 v-if="src"
                 class="v-profile-item__img"
@@ -28,6 +22,11 @@
                 class="v-profile-item__name"
             >{{profileName}}</h5>
             <h5     v-if="profileType" class="v-profile-item__type">{{profileType}}</h5>
+            <span
+                v-if="hasDetailsToShow & !descriptionIsOpen"
+                class="v-profile-item__icon fp-heading-h5">
+                +
+                </span>
         </div>
 
         <transition>
@@ -193,6 +192,8 @@ const showDetails: ComputedRef<boolean> = computed(() => {
     width: calc(100% / 3 * 1);
     padding-left: var(--fp-gutter);
 
+    font-weight: 400;
+
     @media (min-width: 1000px) {
         width: 100%;
         padding-left: 0;
@@ -250,10 +251,6 @@ p {
 }
 
 .v-profile-item__icon {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translate(0, -50%);
     width: var(--button-width);
     height: var(--button-width);
     cursor: pointer;
@@ -261,6 +258,8 @@ p {
     flex-shrink: 0;
     transition: transform ease-in-out .25s;
     transform-origin: center;
+    color: var(--fp-theme-color-secondary);
+    margin-top: 0;
 
     > * {
         width: var(--line-width);

@@ -204,7 +204,7 @@ const pagesReferencies: ComputedRef<{[key: string]: IWebsiteApiSectionUrl}> = co
     overflow: hidden;
 
     transition: height ease-in-out .5s, background-color ease-in-out .5s, box-shadow ease-in-out .5s;
-    box-shadow: 0 0 0 0 var(--fp-theme-color-secondary);
+    box-shadow: 0 0 0 0 var(--fp-theme-color-menu);
     height: var(--fp-app-nav-height);
 
     .v-app--is-dark & {

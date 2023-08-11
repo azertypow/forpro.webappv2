@@ -49,13 +49,26 @@
     fill: var(--fp-theme-color-secondary);
   }
 
-    [data-theme="fp-var-theme-color-learningLab"] & {
+    [data-theme="fp-var-theme-color-learningLab"] &,
+    [data-theme="fp-var-theme-color-hotel_entreprise"] &,
+    [data-theme="fp-var-theme-color-ecole_horlogerie"] &,
+    [data-theme="fp-var-theme-color-creche"] & {
         .cls-1 {
             fill: var(--fp-theme-color-secondary);
         }
 
         .cls-2 {
             fill: var(--fp-theme-color-main);
+        }
+    }
+
+    [data-theme="fp-var-theme-color-default"] & {
+        .cls-1 {
+            fill: var(--fp-theme-color-secondary);
+        }
+
+        .cls-2 {
+            fill: rgb(61, 240, 105);;
         }
     }
 }
