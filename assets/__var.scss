@@ -71,19 +71,20 @@
   --fp-theme-color-main:             var(--fp-theme-color-default-main);
   --fp-theme-color-secondary:        var(--fp-theme-color-default-secondary);
   --fp-theme-color-ternary:          var(--fp-theme-color-default-ternary);
+  --fp-theme-color-menu:             var(--fp-color-default);
 
   --fp-app-nav-height: 2rem;
 
   --fp-app-bottom-height: 2rem;
 
-  --fp-color-Default:                 var(--fp-theme-color-default-ternary);
-  --fp-color-Accueil:                 var(--fp-theme-color-accueil-secondary);
-  --fp-color-MakerLab:                var(--fp-theme-color-makerlab-secondary);
-  --fp-color-LearningLab:             var(--fp-theme-color-learningLab-secondary);
-  --fp-color-Foodlab:                 var(--fp-theme-color-foodlab-ternary);
-  --fp-color-GrandLab:                var(--fp-theme-color-grandlab-main);
-  --fp-color-Hotel_Entreprises:       var(--fp-theme-color-hotel_entreprise-ternary);
-  --fp-color-Ecole_Horlogerie:        var(--fp-theme-color-ecole_horlogerie-main);
-  --fp-color-Creche:                  var(--fp-theme-color-creche-secondary);
+  --fp-color-default:                 var(--fp-theme-color-default-ternary);
+  --fp-color-accueil:                 var(--fp-theme-color-accueil-secondary);
+  --fp-color-makerlab:                var(--fp-theme-color-makerlab-secondary);
+  --fp-color-learninglab:             var(--fp-theme-color-learningLab-secondary);
+  --fp-color-foodlab:                 var(--fp-theme-color-foodlab-ternary);
+  --fp-color-grandlab:                var(--fp-theme-color-grandlab-main);
+  --fp-color-hotel_entreprises:       var(--fp-theme-color-hotel_entreprise-ternary);
+  --fp-color-ecole_horlogerie:        var(--fp-theme-color-ecole_horlogerie-main);
+  --fp-color-creche:                  var(--fp-theme-color-creche-secondary);
 
 }

@@ -213,17 +213,17 @@ const pagesReferencies: ComputedRef<{[key: string]: IWebsiteApiSectionUrl}> = co
 
     &.is-intersecting {
         background: transparent;
-        box-shadow: 0 0 0 0 var(--fp-theme-color-secondary) !important;
+        //box-shadow: 0 0 0 0 var(--fp-theme-color-secondary) !important;
     }
 
     .nav-is-open & {
         height: 100%;
         background-color: var(--fp-color-white);
-        box-shadow: 0 0 0 3px var(--fp-theme-color-secondary);
+        box-shadow: 0 0 0 3px var(--fp-theme-color-menu);
     }
 
     [data-theme="fp-var-theme-color-default"] & {
-        box-shadow: 0 0 0 3px var(--fp-theme-color-secondary);
+        box-shadow: 0 0 0 3px var(--fp-theme-color-menu);
     }
 }
 
@@ -270,6 +270,10 @@ const pagesReferencies: ComputedRef<{[key: string]: IWebsiteApiSectionUrl}> = co
         display: block;
         height: 35px;
         fill: var(--fp-theme-color-secondary);
+
+        .nav-is-open & {
+          fill: var(--fp-color-black);
+        }
     }
 }
 
