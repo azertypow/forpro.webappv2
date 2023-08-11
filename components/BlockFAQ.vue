@@ -2,9 +2,10 @@
     <div class="v-block-faq fp-remove-margin-child" >
         <h3>Des questions?</h3>
         <button>
-            <nuxt-link
-                    href="#"
-            >F.A.Q.</nuxt-link>
+            <a
+                target="_blank"
+                    href="mailto:info@for-pro.ch"
+            >info@for-pro.ch</a>
         </button>
     </div>
 </template>

@@ -14,7 +14,7 @@
                 <br>info@for-pro.ch
             </h6>
 
-            <h6><a href="mailto:info@for-pro.ch" >info@for-pro.ch</a></h6>
+            <h6><a target="_blank" href="mailto:info@for-pro.ch" >info@for-pro.ch</a></h6>
 
             <div
                 class="v-app-footer__socials"
