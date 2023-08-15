@@ -18,8 +18,10 @@
         </div>
 
 
-<!--        todo: pour l'instant l'effet sur la home va etre le meme que dans les autres pages-->
-<!--        <background-effect/>-->
+<!--
+todo: pour l'instant l'effet sur la home va etre le meme que dans les autres pages
+voir chore: clean, remove unused backgroundEffect.vue component
+-->
 
 
         <div
