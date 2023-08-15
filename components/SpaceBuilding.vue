@@ -133,7 +133,7 @@
                 <g id="Cache-GrandLab"          @mouseover="mouseOverGrandLab = true"           @mouseout="mouseOverGrandLab = false"           @click="goToPage('grandlab')">
                     <rect y="255" width="215" height="139" style="fill: #ffffff00;"/>
                 </g>
-                <g id="Cache-Ecole_Horlogerie"  @mouseover="mouseOverEcole_Horlogerie = true"   @mouseout="mouseOverEcole_Horlogerie = false"  >
+                <g id="Cache-Ecole_Horlogerie"  @mouseover="mouseOverEcole_Horlogerie = true"   @mouseout="mouseOverEcole_Horlogerie = false"   @click="openURLInNewTab('https://edu.ge.ch/site/cfpt-horlogerie/')">
                     <g>
                         <rect y="127" width="1200" height="128" style="fill: #ffffff00;"/>
                         <rect x="227" y="394" width="749" height="84" style="fill: #ffffff00;"/>
@@ -267,6 +267,10 @@ const onSectionIsActive = computed(() => {
 function goToPage(pageSlug: string) {
     console.log('hello')
     navigateTo(`/lieu/${pageSlug}`)
+}
+
+function openURLInNewTab(url: string) {
+    window.open(url, '_blank')
 }
 
 </script>
