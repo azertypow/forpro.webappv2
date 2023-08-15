@@ -12,12 +12,18 @@
                 {{eventDate}}
             </h5>
             <div
-                v-if="headerImageObject"
-                class="v-article-name__img"
-                :style="{
-                    backgroundImage: `url(${headerImageObject.resize.xxl})`,
-                }"
-            ></div>
+                class="fp-grid-coll-container fp-grid-coll-container--center"
+            >
+                <div class="fp-grid-coll-24-24 fp-grid-coll-reg-16-24 fp-grid-with-gutter">
+                    <div
+                        v-if="headerImageObject"
+                        class="v-article-name__img"
+                        :style="{
+                            backgroundImage: `url(${headerImageObject.resize.large})`,
+                        }"
+                    ></div>
+                </div>
+            </div>
         </header>
 
 
@@ -159,7 +165,7 @@ const eventDate: ComputedRef<null | string> = computed(() => {
 }
 
 .v-article-name__header {
-    padding-top:    2.5rem;
+    padding-top:    4rem;
     text-align: center;
     color: var(--fp-theme-color-main);
 
