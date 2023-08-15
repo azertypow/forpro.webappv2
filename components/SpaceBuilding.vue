@@ -3,7 +3,7 @@
 
         <h2 class="v-space-building__title">Le lieu</h2>
 
-        <p>Le  bâtiment de ForPro a été pensé pour répondre aux attentes des apprenti∙e∙s et des entreprises, tout en mettant à disposition des espaces ouverts au public. Dès la rentrée 2023, ForPro accueillera l’École d’horlogerie. Ensuite, progressivement durant 2024, des entreprises du secteur industriel et artisanal, un LearningLab et un MakerLab, des espaces de restauration ainsi qu’une crèche et un espace polyvalent.</p>
+        <p>Le bâtiment de ForPro a été pensé pour répondre aux attentes des apprenti∙e∙s et des entreprises, tout en mettant à disposition des espaces ouverts au public. Dès la rentrée 2023, ForPro accueillera l’École d’horlogerie. Ensuite, progressivement durant 2024, un espace d’accueil, des entreprises du secteur industriel et artisanal, un LearningLab, un MakerLab, le GrandLab, le FoodLab ainsi qu’une crèche.</p>
 
         <div
             class="v-space-building__section-name"
@@ -161,7 +161,7 @@
                 >
                     <h3>Accueil</h3>
                     <p>Un espace polyvalent où se mêleront les vies professionnelles et
-                        privées, les visites ponctuelles et routines quotidiennes. L’accueil orientera et informera le public,
+                        privées, les visites ponctuelles et routines quotidiennes. <strong>L’Accueil</strong> orientera et informera le public,
                         et sera aussi un lieu de pause entre deux rendez-vous. Il sera le centre des informations et la
                         «vitrine» de toutes les activités du bâtiment.</p>
                 </div>
@@ -170,7 +170,7 @@
                     v-if="mouseOverMakerLab"
                 >
                     <h3>MakerLab</h3>
-                    <p><strong>MakerLab</strong><em> </em>sera l’espace de fabrication où
+                    <p><strong>MakerLab</strong> sera l’espace de fabrication où
                         la créativité et le faire seront au cœur des activités et où il sera possible d’expérimenter, de rater
                         et de recommencer autour du terme Do-It-Yourself. L’ambition est de favoriser et encourager le faire
                         pour apprendre et pour comprendre, l’esprit d’expérimentation et de test, la curiosité.</p>
@@ -193,14 +193,14 @@
                     v-if="mouseOverGrandLab"
                 >
                     <h3>GrandLab</h3>
-                    <p>???</p>
+                    <p>Espace polyvalent et modulable, le <strong>GrandLab</strong> permettra des aménagements temporaires en vue de designer des espaces de production, des simulations de fonctionnement dans ces espaces ; ainsi que d’organiser des conférences, des expositions en lien avec les activités de tous les habitants du bâtiment.</p>
                 </div>
                 <div
                     class="v-space-building__sections__description fp-remove-margin-child v-space-building__section-description--Ecole_Horlogerie"
                     v-if="mouseOverEcole_Horlogerie"
                 >
                     <h3>École Horlogerie</h3>
-                    <p>L’École d’horlogerie prendra ses quartiers chez ForPro, où les
+                    <p><strong>L’École d’horlogerie</strong> prendra ses quartiers chez ForPro, où les
                         apprenti∙e∙s disposeront d’infrastructures à la hauteur de leurs ambitions. Idéalement située, l’École
                         s’axera sur les nouveaux métiers, offrira des formations variées et bénéficiera de la proximité avec le
                         secteur horloger pour créer du lien avec les entreprises.&nbsp;</p>
@@ -221,9 +221,8 @@
                     v-if="mouseOverCreche"
                 >
                     <h3>Crèche</h3>
-                    <p>Au dernier étage, une crèche permettra de former aux métiers de la
-                        petite enfance. Les enfants des apprenti∙e∙s, des employé∙e∙s de l’Espace Tourbillon et de la ZIPLO ou
-                        encore de la commune pourront ainsi s'épanouir avec vue sur le Salève.&nbsp;</p>
+                    <p>Au dernier étage, <strong>la Crèche</strong> de 32 places verra le jour en 2025. Ce nouvel espace de vie
+                        enfantine permettra de former aux métiers de la petite enfance.</p>
                 </div>
                 <div
                     class="v-space-building__sections__description fp-remove-margin-child v-space-building__section-description--Foodlab"
@@ -231,8 +230,8 @@
                 >
                     <h3>Foodlab</h3>
                     <p>Le <strong>FoodLab</strong> se déclinera en quatre propositions de
-                        restauration, dont un <strong>Food Court</strong> pour les apprenti∙e∙s, un bistrot, un café, ainsi
-                        qu'un service traiteur pour l’Espace Tourbillon. Le <strong>FoodLab</strong> formera des apprenti∙e∙s
+                        restauration, dont un <strong>Food Court</strong> pour les apprenti∙e∙s, un bistrot ainsi
+                        qu'un café pour l’Espace Tourbillon. Le <strong>FoodLab</strong> formera des apprenti∙e∙s
                         aux métiers de la restauration et invitera gourmand∙e∙s et professionnel∙le∙s à déguster et imaginer la
                         cuisine de demain.&nbsp;&nbsp;</p>
                 </div>
