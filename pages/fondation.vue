@@ -108,6 +108,7 @@
             >
                 <h3>Le Conseil de Fondation</h3>
                 <div class="fp-grid-coll-container">
+<!--                    todo: remove gutter system with padding by gap-->
                     <div
                         v-for="conseilProfileItem of fondationData.conseil"
                         class="fp-grid-coll-24-24 fp-grid-coll-reg-12-24 fp-grid-with-gutter"
