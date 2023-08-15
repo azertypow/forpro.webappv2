@@ -44,6 +44,7 @@ export interface IForPro_blocksContent {
         "heading"
         | "text"
         | "image"
+        | "list"
         | "quote",
     "isHidden": boolean
 }
@@ -67,6 +68,7 @@ export interface IForPro_blocksContent_isTextContent extends IForPro_blocksConte
     "type":
       "heading"
       | "text"
+      | "list"
       | "quote",
 }
 

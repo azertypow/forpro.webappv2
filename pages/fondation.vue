@@ -16,37 +16,70 @@
                 />
             </div>
 
-            <div
-                class="fp-grid-coll-reg-16-24 fp-grid-with-gutter fp-page__sections-box__section"
-            >
-                <h2>Mission</h2>
-                <p>Le but de la fondation ForPro répond à la nécessité de soutenir, promouvoir et renforcer la filière «formation professionnelle». Il s’agit de contribuer à renforcer le capital humain de demain. Les ambitions sont:</p>
-                <text-bullet-point>
-                    <div>Contribuer à faire de la formation professionnelle une voie d’excellence</div>
-                    <div>Accompagner la réussite des parcours individuels de formation professionnelle</div>
-                    <div>Promouvoir le monde de l’entreprise auprès des publics jeunes</div>
-                    <div>Offrir aux entreprises un processus optimisé de recrutement d’apprenti·e·s</div>
-                    <div>Favoriser l’entrepreneuriat des jeunes diplômé·e·s</div>
-                    <div>Sensibiliser les parents aux enjeux et aux opportunités de la formation professionnelle</div>
-                </text-bullet-point>
-            </div>
 
             <div
-                class="fp-grid-coll-reg-16-24 fp-grid-with-gutter fp-page__sections-box__section"
+                class="fp-page__sections-box"
             >
-                <h2>Principes</h2>
-                <p>La fondation ForPro réunit des partenaires désirant travailler de manière ouverte, collaborative et itérative. Cela implique que chacun∙e partage une compréhension commune de l’approche résolument orientée sur les futurs utilisateurs et utilisatrices. Concrètement, les offres sont imaginées avec les publics cibles, testées auprès de ces derniers et seront adaptées chemin faisant.</p>
-                <text-bullet-point>
-                    <div>Parier sur la CONFIANCE et offrir des conditions cadre paisibles pour favoriser l’estime de soi et la confiance en l’autre pour croire en ses compétences et son potentiel.</div>
-                    <div>ÉCOUTER et accorder de l’importance au récit, tenir compte du contexte et des intentions de la personne pour co-construire une offre «sensible» et sur mesure.</div>
-                    <div>CRÉER et FAIRE différemment, oser, tester, explorer et découvrir sa capacité à se remettre en cause pour inventer, rénover.</div>
-                    <div>Impliquer les destinataires, parties prenantes, partenaires et bénévoles pour MUTUALISER ressources et savoirs.</div>
-                    <div>Viser la MIXITÉ, faire cohabiter des univers habituellement distants afin de mêler les générations, cultures et univers professionnels variés.</div>
-                    <div>Reconnaître et valoriser les ÉTAPES des parcours individuels pour avoir conscience des changements progressifs qui conduisent à destination.</div>
-                    <div>SYNCHRONISER les efforts et les productions entre les parties prenantes pour construire un objet commun et gagner en efficacité.</div>
-                    <div>FLUIDIFIER les relations et engagements entre les parties prenantes pour tendre vers une gouvernance partagée.</div>
-                </text-bullet-point>
+                <template
+                    v-if="fondationData"
+                    v-for="block of fondationData.blockContent"
+                >
+                    <div
+                        v-if="block.type === 'list'"
+                        class="fp-grid-coll-container fp-grid-coll-container--center fp-page__sections-box__section"
+                    >
+                        <div class="fp-grid-coll-24-24 fp-grid-with-gutter">
+                            <text-bullet-point
+                                :htmlContent="(block as IForPro_blocksContent_isTextContent).html"
+                            />
+                        </div>
+                    </div>
+                    <div
+                        v-if="block.type === 'quote'"
+                        class="fp-grid-coll-container fp-grid-coll-container--center fp-page__sections-box__section"
+                    >
+                        <div class="fp-grid-coll-24-24 fp-grid-with-gutter">
+                            <text-quote
+                                :text="(block as IForPro_blocksContent_isTextContent).html"
+                            />
+                        </div>
+                    </div>
+
+                    <div
+                        v-else-if="block.type === 'text'"
+                        class="fp-page__sections-box__section fp-grid-coll-container fp-grid-coll-container--center"
+                    >
+                        <div class="fp-grid-coll-24-24 fp-grid-coll-reg-18-24 fp-grid-with-gutter">
+                            <text-content
+                                :content="(block as IForPro_blocksContent_isTextContent).html"
+                            />
+                        </div>
+                    </div>
+
+                    <div
+                        v-else-if="block.type === 'heading'"
+                        class="fp-page__sections-box__section fp-page__sections-box__section--is-heading fp-grid-coll-container fp-grid-coll-container--center"
+                    >
+                        <div class="fp-grid-coll-24-24 fp-grid-coll-reg-18-24">
+                            <text-content
+                                :content="(block as IForPro_blocksContent_isTextContent).html"
+                            />
+                        </div>
+                    </div>
+
+                    <div
+                        v-else-if="block.type === 'image'"
+                        class="fp-page__sections-box__section fp-page__sections-box__section--is-image"
+                    >
+                        <image-content
+                            v-if="(block as IForPro_blocksContent_isImage).data"
+                            :imageBlockContent="(block as IForPro_blocksContent_isImage).data!"
+                        />
+                    </div>
+
+                </template>
             </div>
+
 
             <div
                 v-if="fondationData && fondationData.team.length > 0"
@@ -103,7 +136,7 @@ import ProfileItem from "~/components/ProfileItem.vue";
 import {useAppStateStore} from "~/stores/appState"
 import {Ref, UnwrapRef} from "vue";
 import {
-    fetchForProApi_fondation,
+    fetchForProApi_fondation, IForPro_blocksContent_isImage, IForPro_blocksContent_isTextContent,
     IForPro_fondation
 } from "~/global/forProApi";
 

@@ -1,7 +1,8 @@
 <template>
-    <section class="v-text-bullet-point" >
-        <slot/>
-    </section>
+    <section
+        class="v-text-bullet-point v-text-content"
+        v-html="htmlContent"
+    ></section>
 </template>
 
 
@@ -9,8 +10,9 @@
 
 
 <script lang="ts" setup>
-// defineProps<{
-// }>()
+defineProps<{
+    htmlContent: string
+}>()
 
 </script>
 
@@ -24,7 +26,8 @@
     flex-wrap: wrap;
     gap: 1rem;
 
-  > div {
+  > li
+  > ul {
       box-sizing: border-box;
       padding-left: 2rem;
       position: relative;
