@@ -20,7 +20,7 @@
         <div
                 class="v-article-item__img"
                 :style="{
-                    backgroundImage: `url(${imageInstance.resize.xxl})`,
+                    backgroundImage: `url(${imageInstance.resize.small})`,
                 }"
         >
         </div>
