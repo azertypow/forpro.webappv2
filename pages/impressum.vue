@@ -64,8 +64,8 @@
                         class="fp-grid-coll-24-24 fp-grid-coll-reg-18-24 fp-grid-with-gutter">
                         <text-content
                             content="<p>
-                            <br>Webdesign: Sonia Dominguez & Rob van Leijsen
-                            <br>Développement: Nicolas Baldran
+                            <br>Webdesign : Sonia Dominguez & Rob van Leijsen
+                            <br>Développement : Nicolas Baldran
                             </p>"
                         />
                     </div>
@@ -98,7 +98,7 @@
                         <text-content
                             content="<p>
                             Raphaëlle Mueller
-                            <br> Images du bâtiment et portraits d'apprenti·e·s: Estelle Bouchet et Alicia Dubuis
+                            <br> Images du bâtiment et portraits d'apprenti·e·s : Estelle Bouchet & Alicia Dubuis
                             </p>"
                         />
                     </div>
