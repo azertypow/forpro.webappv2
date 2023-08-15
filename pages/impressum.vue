@@ -11,6 +11,41 @@
             class="fp-page__sections-box"
         >
             <div>
+
+                <div
+                    class="fp-page__sections-box__section fp-page__sections-box__section--is-heading fp-grid-coll-container fp-grid-coll-container--center"
+                >
+                    <div class="fp-grid-coll-24-24 fp-grid-coll-reg-18-24">
+                        <text-content
+                            content="<h4>Identité visuelle</h4>"
+                        />
+                    </div>
+                </div>
+                <div
+                    style="padding-top: 0"
+                    class="fp-page__sections-box__section fp-grid-coll-container fp-grid-coll-container--center"
+                >
+                    <div class="fp-grid-coll-24-24 fp-grid-coll-reg-18-24 fp-grid-with-gutter">
+                        <text-content
+                            content="<p><br>Sonia Dominguez & Rob van Leijsen</p>"
+                        />
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 <div
                     class="fp-page__sections-box__section fp-page__sections-box__section--is-heading fp-grid-coll-container fp-grid-coll-container--center"
                 >
@@ -22,30 +57,54 @@
                 </div>
 
                 <div
+                    style="padding-top: 0"
                     class="fp-page__sections-box__section fp-grid-coll-container fp-grid-coll-container--center"
                 >
-                    <div class="fp-grid-coll-24-24 fp-grid-coll-reg-18-24 fp-grid-with-gutter">
+                    <div
+                        class="fp-grid-coll-24-24 fp-grid-coll-reg-18-24 fp-grid-with-gutter">
                         <text-content
-                            content="<h6>
-                            Images du bâtiment et portraits d'apprenti·e·s: Estelle Bouchet et Alicia Dubuis
-                            <br>Développement: Nicolas Baldran
+                            content="<p>
                             <br>Webdesign: Sonia Dominguez & Rob van Leijsen
-                            <br>Photographie: Raphaëlle Mueller
-
-                            </h6>"
+                            <br>Développement: Nicolas Baldran
+                            </p>"
                         />
                     </div>
                 </div>
+
+
+
+
+
+
+
+
 
                 <div
                     class="fp-page__sections-box__section fp-page__sections-box__section--is-heading fp-grid-coll-container fp-grid-coll-container--center"
                 >
                     <div class="fp-grid-coll-24-24 fp-grid-coll-reg-18-24">
                         <text-content
-                            content="<h4>Identité visuelle et signaletique</h4>"
+                            content="<h4>Photographie</h4>"
                         />
                     </div>
                 </div>
+
+                <div
+                    style="padding-top: 1rem"
+                    class="fp-page__sections-box__section fp-grid-coll-container fp-grid-coll-container--center"
+                >
+                    <div
+                        class="fp-grid-coll-24-24 fp-grid-coll-reg-18-24 fp-grid-with-gutter">
+                        <text-content
+                            content="<p>
+                            Raphaëlle Mueller
+                            <br> Images du bâtiment et portraits d'apprenti·e·s: Estelle Bouchet et Alicia Dubuis
+                            </p>"
+                        />
+                    </div>
+                </div>
+
+
             </div>
         </div>
 
