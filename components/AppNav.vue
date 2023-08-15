@@ -99,13 +99,13 @@
 <!--                    </div>-->
                     <div class="v-app-nav__other-links fp-remove-margin-child">
                         <div class="fp-heading-h4">
+                          <span class="v-app-nav__link fp-text-color-default">Newsletter</span>
+                        </div>
+                        <div class="fp-heading-h4">
                           <nuxt-link href="/contact" class="v-app-nav__link fp-text-color-default">Contact</nuxt-link>
                         </div>
                         <div class="fp-heading-h4">
                           <nuxt-link href="/impressum" class="v-app-nav__link fp-text-color-default">Impressum</nuxt-link>
-                        </div>
-                        <div class="fp-heading-h4">
-                          <span class="v-app-nav__link fp-text-color-default">Newsletter</span>
                         </div>
                     </div>
                     <div
