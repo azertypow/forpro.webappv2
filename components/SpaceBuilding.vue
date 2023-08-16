@@ -1,6 +1,5 @@
 <template>
     <section
-        ref="spaceBuildingElement"
         class="v-space-building"
     >
 
@@ -22,6 +21,7 @@
         </div>
 
         <div
+                ref="spaceBuildingElement"
                 class="v-space-building__plan"
                 :class="{
                     'on-section-is-active': onSectionIsActive,
@@ -285,15 +285,17 @@ let spaceBuildingElementObserver: IntersectionObserver | undefined = undefined
 
 onMounted(() => {
     nextTick(() => {
-         spaceBuildingElementObserver = new IntersectionObserver((entries) => {
-            entries.forEach( value => {
+
+        const bottomRootMarginValue: number =
+            window.innerHeight - (document.querySelector('.v-app__building-nav')?.getBoundingClientRect().height | 0) - 30
+        spaceBuildingElementObserver = new IntersectionObserver((entries) => {
+            entries.forEach(value => {
 
                 const thisComponentName = 'spaceBuilding'
 
-                if(value.isIntersecting) {
+                if (value.isIntersecting) {
 
                     useAppStateStore().hideBuildingNav.push(thisComponentName)
-
                 } else {
 
                     useAppStateStore().hideBuildingNav.splice(
@@ -303,10 +305,10 @@ onMounted(() => {
                 }
             })
         }, {
-             rootMargin: '-500px 0px 0px 0px'
-         })
+            rootMargin: `${-1 *  bottomRootMarginValue }px 0px 0px 0px`
+        })
 
-        if(! (spaceBuildingElement.value instanceof HTMLElement) ) return
+        if (!(spaceBuildingElement.value instanceof HTMLElement)) return
         spaceBuildingElementObserver.observe(spaceBuildingElement.value)
     })
 })
