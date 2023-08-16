@@ -112,9 +112,6 @@
 .v-app__page-container {
     position: relative;
     transition: transform 1s ease-in-out;
-
-    .state-is-loaded & {
-    }
 }
 
 .v-app__building-nav {
@@ -141,7 +138,7 @@
     .hide_building_nav & {
         opacity: 0;
         pointer-events: none;
-        transform: scale(.95, .95);
+        transform: translate(25%, 0);
         transition: opacity .25s ease-in-out, transform .5s ease-in-out;
     }
 }
@@ -189,13 +186,6 @@
         animation-duration: 1s;
         animation-iteration-count: initial;
         animation-fill-mode: forwards;
-    }
-
-    .state-is-loaded & {
-        animation: none;
-
-        --anim-fill-1: #3df069 !important;
-        --anim-fill-2: #1754ff !important;
     }
 }
 
