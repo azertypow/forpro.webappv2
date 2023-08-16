@@ -1,5 +1,8 @@
 <template>
-    <section class="v-space-building">
+    <section
+        ref="spaceBuildingElement"
+        class="v-space-building"
+    >
 
         <h2 class="v-space-building__title">Le lieu</h2>
 
@@ -244,6 +247,10 @@
 
 <script lang="ts" setup>
 
+import {onMounted} from "#imports";
+import {Ref, UnwrapRef} from "vue";
+import {useAppStateStore} from "~/stores/appState";
+
 const mouseOverAccueil              = ref(false)
 const mouseOverMakerLab             = ref(false)
 const mouseOverLearningLab          = ref(false)
@@ -252,6 +259,8 @@ const mouseOverEcole_Horlogerie     = ref(false)
 const mouseOverHotel_Entreprises    = ref(false)
 const mouseOverCreche               = ref(false)
 const mouseOverFoodlab              = ref(false)
+
+const spaceBuildingElement: Ref<UnwrapRef<null | HTMLElement>> = ref(null)
 
 const onSectionIsActive = computed(() => {
     return mouseOverAccueil.value
@@ -265,13 +274,46 @@ const onSectionIsActive = computed(() => {
 })
 
 function goToPage(pageSlug: string) {
-    console.log('hello')
     navigateTo(`/lieu/${pageSlug}`)
 }
 
 function openURLInNewTab(url: string) {
     window.open(url, '_blank')
 }
+
+let spaceBuildingElementObserver: IntersectionObserver | undefined = undefined
+
+onMounted(() => {
+    nextTick(() => {
+         spaceBuildingElementObserver = new IntersectionObserver((entries) => {
+            entries.forEach( value => {
+
+                const thisComponentName = 'spaceBuilding'
+
+                if(value.isIntersecting) {
+
+                    useAppStateStore().hideBuildingNav.push(thisComponentName)
+
+                } else {
+
+                    useAppStateStore().hideBuildingNav.splice(
+                        useAppStateStore().hideBuildingNav.indexOf(thisComponentName), 1
+                    )
+
+                }
+            })
+        }, {
+             rootMargin: '-500px 0px 0px 0px'
+         })
+
+        if(! (spaceBuildingElement.value instanceof HTMLElement) ) return
+        spaceBuildingElementObserver.observe(spaceBuildingElement.value)
+    })
+})
+
+onUnmounted(() => {
+    spaceBuildingElementObserver?.disconnect()
+})
 
 </script>
 

@@ -6,6 +6,7 @@
                 'v-app--newsletter-bar-is-visible': useAppStateStore().newsletterBarIsVisible,
                 'state-loading': stateLoading,
                 'state-is-loaded': stateIsLoaded,
+                'hide_building_nav': useAppStateStore().hideBuildingNav.length > 0,
             }"
     >
         <div
@@ -135,6 +136,13 @@
 
     @media (min-width: scss-params.$fp-breakpoint-sm) {
         display: block;
+    }
+
+    .hide_building_nav & {
+        opacity: 0;
+        pointer-events: none;
+        transform: scale(.95, .95);
+        transition: opacity .25s ease-in-out, transform .5s ease-in-out;
     }
 }
 
