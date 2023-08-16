@@ -280,14 +280,14 @@ function openURLInNewTab(url: string) {
 @use "assets/_scss-params";
 
 
-.is-Accueil-color               {color: #f2030d;}
-.is-MakerLab-color              {color: #2154ff;}
-.is-LearningLab-color           {color: #ff6917;}
-.is-Foodlab-color               {color: #fff800;}
-.is-GrandLab-color              {color: #ffc78c;}
-.is-Hotel_Entreprises-color     {color: #9bcf00;}
+.is-Accueil-color               {color: var(--fp-color-accueil);}
+.is-MakerLab-color              {color: var(--fp-color-makerlab);}
+.is-LearningLab-color           {color: var(--fp-color-learninglab);}
+.is-Foodlab-color               {color: var(--fp-color-foodlab);}
+.is-GrandLab-color              {color: var(--fp-color-grandlab);}
+.is-Hotel_Entreprises-color     {color: var(--fp-color-hotel_entreprises);}
 .is-Ecole_Horlogerie-color      {color: var(--fp-color-ecole_horlogerie);}
-.is-Creche-color                {color: #b9e6ff;}
+.is-Creche-color                {color: var(--fp-color-creche);}
 
 
 [id^="Cache-"] {
