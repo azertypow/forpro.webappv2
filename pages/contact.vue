@@ -46,10 +46,6 @@ import {useAppStateStore} from "~/stores/appState"
 import {onMounted, useError} from "#imports"
 import {setForProSiteData} from "~/global/appDataSeters";
 
-defineProps<{
-    error: Error
-}>()
-
 const stateLoading = ref(false)
 const stateIsLoaded = ref(false)
 
