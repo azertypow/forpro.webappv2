@@ -88,7 +88,7 @@ const articlesWithoutFuturEvent: ComputedRef<UnwrapRef<IForPro_blog_articleInfor
         }
 
         return true
-    })
+    }).reverse()
 })
 
 const futurEvents: ComputedRef<UnwrapRef<IForPro_blog_articleInformations>[]> = computed(() => {
