@@ -151,6 +151,7 @@ import {
 
 onMounted(() => {
     useAppStateStore().updateTheme('fp-var-theme-color-default')
+    useRoute().meta.pageName = 'home'
 })
 
 const homeData: Ref<UnwrapRef<null | IFOrProApi_home>> = ref(null)

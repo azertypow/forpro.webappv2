@@ -146,6 +146,7 @@ const fondationData: Ref<UnwrapRef<null | IForPro_fondation>> = ref(null)
 fetchForProApi_fondation().then((value: IForPro_fondation) => {
     fondationData.value = value
     useAppStateStore().updateTheme('fp-var-theme-color-default')
+    useRoute().meta.pageName = fondationData.value?.title
 })
 
 </script>

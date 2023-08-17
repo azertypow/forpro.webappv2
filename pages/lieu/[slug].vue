@@ -1,8 +1,8 @@
 <template>
-    <head>
-        <title>{{pageData.title}}</title>
-    </head>
     <main class="v-section-name fp-page" >
+        <head>
+            <title>{{pageData?.title}}</title>
+        </head>
         <page-header
             v-if="pageData"
             :page-title="pageData.title"
@@ -102,8 +102,9 @@ import {
     IForPro_image,
     IForProApi_section
 } from "~/global/forProApi";
-import {ComputedRef, Ref, UnwrapRef} from "vue";
+import {ComputedRef, onMounted, Ref, UnwrapRef} from "vue";
 import {useAppStateStore} from "~/stores/appState"
+import {RouteLocationNormalizedLoaded} from "vue-router";
 
 const pageData: Ref<UnwrapRef<null | IForProApi_section>> = ref(null)
 
@@ -111,9 +112,8 @@ const slug = useRoute().params.slug
 
 if( typeof slug  === 'string') fetchForProApi_section(slug).then((value: IForProApi_section) => {
     pageData.value = value
-    console.log(useRuntimeConfig().public.apiBaseUrl)
-    console.log(value.themeColor)
     useAppStateStore().updateTheme(value.themeColor)
+    useRoute().meta.pageName = pageData.value?.title
 })
 
 const headerImageObject: ComputedRef<undefined | IForPro_image > = computed(() => {

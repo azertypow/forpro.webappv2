@@ -117,6 +117,12 @@
 
 <script lang="ts" setup>
 
+import {onMounted} from "vue";
+
+onMounted(() => {
+    useRoute().meta.pageName = " "
+})
+
 </script>
 
 

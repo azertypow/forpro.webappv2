@@ -134,6 +134,7 @@ const slug = useRoute().params.slug
 if( typeof slug  === 'string') fetchForProApi_blogArticle(slug).then((value: IForPro_blogArticle) => {
     articleData.value = value
     useAppStateStore().updateTheme('fp-var-theme-color-default')
+    useRoute().meta.pageName = useAppStateStore().siteData?.blogDetails.title.value
 })
 
 

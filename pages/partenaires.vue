@@ -80,6 +80,7 @@ const partnersData: Ref<UnwrapRef<null | IForPro_partners>> = ref(null)
 fetchForProApi_partners().then((value: IForPro_partners) => {
     partnersData.value = value
     useAppStateStore().updateTheme('fp-var-theme-color-default')
+    useRoute().meta.pageName = partnersData.value?.title
 })
 
 </script>

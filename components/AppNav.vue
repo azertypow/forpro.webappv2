@@ -17,7 +17,7 @@
           <div
               class="v-app-nav__page-title"
           >
-              {{ route.meta.name }}
+              {{ route.meta.pageName }}
           </div>
 
           <div
