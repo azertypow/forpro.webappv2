@@ -5,7 +5,7 @@
             class="v-space-build-nav__title"
             v-if="titleOfCurrentRoute"
         >
-            {{ titleOfCurrentRoute.title.value }}
+            {{ currentOverSectionName }}
         </div>
 
         <svg
@@ -16,16 +16,16 @@
         >
             <g id="Layer_1-2" data-name="Layer 1">
                 <g>
-                    <rect :class="{'is-over': currentOverSection === 'creche', 'is-active': currentRouteSlug === 'creche'}"             @mousedown="currentOverSection = 'creche'"              @click="openURLInNewTab('https://www.popepoppa.ch/fr/')" class="v-space-build-nav__svg-building-link Creche" x="975" y="0" width="166" height="69" style="fill: var(--fp-color-creche);"/>
-                    <rect :class="{'is-over': currentOverSection === 'creche', 'is-active': currentRouteSlug === 'ecole-horlogerie'}"   @mousedown="currentOverSection = 'horlogerie'"          @click="openURLInNewTab('https://edu.ge.ch/site/cfpt-horlogerie/')" class="v-space-build-nav__svg-building-link EcoleHorlogerie" x="225" y="390" width="750" height="88" style="fill: var(--fp-color-ecole_horlogerie);"/>
-                    <rect :class="{'is-over': currentOverSection === 'creche', 'is-active': currentRouteSlug === 'ecole-horlogerie'}"   @mousedown="currentOverSection = 'horlogerie'"          @click="openURLInNewTab('https://edu.ge.ch/site/cfpt-horlogerie/')" class="v-space-build-nav__svg-building-link EcoleHorlogerie" y="132" width="1200" height="128" style="fill: var(--fp-color-ecole_horlogerie);"/>
-                    <rect :class="{'is-over': currentOverSection === 'creche', 'is-active': currentRouteSlug === 'hotel-entreprises'}"  @mousedown="currentOverSection = 'entreprises'"         @click="goToPage('hotel-entreprises')" class="v-space-build-nav__svg-building-link HotelEntreprise" y="61" width="1200" height="71" style="fill: var(--fp-color-hotel_entreprises);"/>
-                    <rect :class="{'is-over': currentOverSection === 'creche', 'is-active': currentRouteSlug === 'hotel-entreprises'}"  @mousedown="currentOverSection = 'entreprises'"         @click="goToPage('hotel-entreprises')" class="v-space-build-nav__svg-building-link HotelEntreprise" x="975" y="390" width="225" height="88" style="fill: var(--fp-color-hotel_entreprises);"/>
-                    <rect :class="{'is-over': currentOverSection === 'creche', 'is-active': currentRouteSlug === 'foodlab'}"            @mousedown="currentOverSection = 'foodlab'"             @click="goToPage('foodlab')" class="v-space-build-nav__svg-building-link FoodLab" x="70.0027" width="905.03136" height="69" style="fill: var(--fp-color-foodlab);"/>
-                    <rect :class="{'is-over': currentOverSection === 'creche', 'is-active': currentRouteSlug === 'makerlab'}"           @mousedown="currentOverSection = 'makerlab'"            @click="goToPage('makerlab')" class="v-space-build-nav__svg-building-link MakerLab" x="975" y="260" width="225" height="130" style="fill: var(--fp-color-makerlab);"/>
-                    <rect :class="{'is-over': currentOverSection === 'creche', 'is-active': currentRouteSlug === 'learninglab'}"        @mousedown="currentOverSection = 'learninglab'"         @click="goToPage('learninglab')" class="v-space-build-nav__svg-building-link LearningLab" x="225" y="260" width="750" height="130" style="fill: var(--fp-color-learninglab);"/>
-                    <rect :class="{'is-over': currentOverSection === 'creche', 'is-active': currentRouteSlug === 'grandlab'}"           @mousedown="currentOverSection = 'grandlab'"            @click="goToPage('grandlab')" class="v-space-build-nav__svg-building-link GrandLab" y="260" width="225" height="130" style="fill: var(--fp-color-grandlab);"/>
-                    <rect :class="{'is-over': currentOverSection === 'creche', 'is-active': currentRouteSlug === 'accueil'}"            @mousedown="currentOverSection = 'accueil'"             @click="goToPage('accueil')" class="v-space-build-nav__svg-building-link Accueil" y="390" width="225" height="88" style="fill: var(--fp-color-accueil);"/>
+                    <rect :class="{'is-over': currentOverSection === 'creche',                  'is-active': currentRouteSlug === 'creche'}"             @mouseover="currentOverSection = 'creche'"              @click="openURLInNewTab('https://www.popepoppa.ch/fr/')" class="v-space-build-nav__svg-building-link Creche" x="975" y="0" width="166" height="69" style="fill: var(--fp-color-creche);"/>
+                    <rect :class="{'is-over': currentOverSection === 'horlogerie',              'is-active': currentRouteSlug === 'ecole-horlogerie'}"   @mouseover="currentOverSection = 'horlogerie'"          @click="openURLInNewTab('https://edu.ge.ch/site/cfpt-horlogerie/')" class="v-space-build-nav__svg-building-link EcoleHorlogerie" x="225" y="390" width="750" height="88" style="fill: var(--fp-color-ecole_horlogerie);"/>
+                    <rect :class="{'is-over': currentOverSection === 'horlogerie',              'is-active': currentRouteSlug === 'ecole-horlogerie'}"   @mouseover="currentOverSection = 'horlogerie'"          @click="openURLInNewTab('https://edu.ge.ch/site/cfpt-horlogerie/')" class="v-space-build-nav__svg-building-link EcoleHorlogerie" y="132" width="1200" height="128" style="fill: var(--fp-color-ecole_horlogerie);"/>
+                    <rect :class="{'is-over': currentOverSection === 'hotel-entreprises',       'is-active': currentRouteSlug === 'hotel-entreprises'}"  @mouseover="currentOverSection = 'hotel-entreprises'"   @click="goToPage('hotel-entreprises')" class="v-space-build-nav__svg-building-link HotelEntreprise" y="61" width="1200" height="71" style="fill: var(--fp-color-hotel_entreprises);"/>
+                    <rect :class="{'is-over': currentOverSection === 'hotel-entreprises',       'is-active': currentRouteSlug === 'hotel-entreprises'}"  @mouseover="currentOverSection = 'hotel-entreprises'"   @click="goToPage('hotel-entreprises')" class="v-space-build-nav__svg-building-link HotelEntreprise" x="975" y="390" width="225" height="88" style="fill: var(--fp-color-hotel_entreprises);"/>
+                    <rect :class="{'is-over': currentOverSection === 'foodlab',                 'is-active': currentRouteSlug === 'foodlab'}"            @mouseover="currentOverSection = 'foodlab'"             @click="goToPage('foodlab')" class="v-space-build-nav__svg-building-link FoodLab" x="70.0027" width="905.03136" height="69" style="fill: var(--fp-color-foodlab);"/>
+                    <rect :class="{'is-over': currentOverSection === 'makerlab',                'is-active': currentRouteSlug === 'makerlab'}"           @mouseover="currentOverSection = 'makerlab'"            @click="goToPage('makerlab')" class="v-space-build-nav__svg-building-link MakerLab" x="975" y="260" width="225" height="130" style="fill: var(--fp-color-makerlab);"/>
+                    <rect :class="{'is-over': currentOverSection === 'learninglab',             'is-active': currentRouteSlug === 'learninglab'}"        @mouseover="currentOverSection = 'learninglab'"         @click="goToPage('learninglab')" class="v-space-build-nav__svg-building-link LearningLab" x="225" y="260" width="750" height="130" style="fill: var(--fp-color-learninglab);"/>
+                    <rect :class="{'is-over': currentOverSection === 'grandlab',                'is-active': currentRouteSlug === 'grandlab'}"           @mouseover="currentOverSection = 'grandlab'"            @click="goToPage('grandlab')" class="v-space-build-nav__svg-building-link GrandLab" y="260" width="225" height="130" style="fill: var(--fp-color-grandlab);"/>
+                    <rect :class="{'is-over': currentOverSection === 'accueil',                 'is-active': currentRouteSlug === 'accueil'}"            @mouseover="currentOverSection = 'accueil'"             @click="goToPage('accueil')" class="v-space-build-nav__svg-building-link Accueil" y="390" width="225" height="88" style="fill: var(--fp-color-accueil);"/>
 
                     <g>
                         <path d="m1192,69v401H8V69h1184m8-8H0v417h1200V61h0Z" style="fill: #222221;"/>
@@ -56,11 +56,20 @@
 
 import {useAppStateStore} from "~/stores/appState";
 import {IWebsiteApiSectionUrl} from "~/global/forProApi";
-import {ComputedRef, UnwrapRef} from "vue";
+import {ComputedRef, Ref, UnwrapRef} from "vue";
 
 const currentPage = useRoute()
 const currentRouteSlug = computed( () => useRoute().params.slug)
-const currentOverSection = ref('')
+const currentOverSection: Ref<UnwrapRef<
+    ''
+    | 'creche'
+    | 'horlogerie'
+    | 'hotel-entreprises'
+    | 'foodlab'
+    | 'makerlab'
+    | 'learninglab'
+    | 'grandlab'
+    | 'accueil'>> = ref('' as '')
 
 function goToPage(pageSlug: string) {
     navigateTo(`/lieu/${pageSlug}`)
@@ -70,6 +79,17 @@ function openURLInNewTab(url: string) {
     window.open(url, '_blank')
 }
 
+const listeOfAllSections = useAppStateStore().siteData?.sectionsDetails
+
+const currentOverSectionName: ComputedRef<string> = computed(() => {
+    if(listeOfAllSections === undefined) return ''
+
+    const arrayOfAllSections = Object.values(listeOfAllSections)
+
+    return arrayOfAllSections.find((value) => {
+        return value.slug === currentOverSection.value
+    })?.title.value || ''
+})
 
 const titleOfCurrentRoute: ComputedRef<IWebsiteApiSectionUrl | null> = computed(() => {
     const siteData = useAppStateStore().siteData
@@ -96,11 +116,8 @@ const titleOfCurrentRoute: ComputedRef<IWebsiteApiSectionUrl | null> = computed(
 }
 
 svg {
-    rect:not(:hover):not(.is-active) {
+    rect:not(.is-over):not(.is-active) {
         fill: var(--fp-color-white) !important;
-    }
-    rect.is-active {
-
     }
 }
 
