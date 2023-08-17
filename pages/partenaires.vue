@@ -1,7 +1,8 @@
 <template>
     <main class="v-partenaires fp-page" >
         <page-header
-                page-title="Les Partenaires"
+            v-if="partnersData"
+            :page-title="partnersData.title"
         />
 
         <div
