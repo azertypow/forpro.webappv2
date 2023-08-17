@@ -29,7 +29,9 @@
                     <rect  :class="{'is-over': currentOverSection === 'grandlab',                'is-active': currentRouteSlug === 'grandlab'}"           @mouseover="currentOverSection = 'grandlab'"            @click="goToPage('grandlab')" class="v-space-build-nav__svg-building-link GrandLab" y="260" width="225" height="130" style="fill: var(--fp-color-grandlab);"/>
                     <rect  :class="{'is-over': currentOverSection === 'accueil',                 'is-active': currentRouteSlug === 'accueil'}"            @mouseover="currentOverSection = 'accueil'"             @click="goToPage('accueil')" class="v-space-build-nav__svg-building-link Accueil" y="390" width="225" height="88" style="fill: var(--fp-color-accueil);"/>
 
-                    <g>
+                    <g
+                        style="pointer-events: none"
+                    >
                         <path d="m1192,69v401H8V69h1184m8-8H0v417h1200V61h0Z" style="fill: #222221;"/>
                         <path d="m1133,8v53H78V8h1055M1141,0H70v69h1071V0h0Z" style="fill: #222221;"/>
                         <line y1="132" x2="1200" y2="132" style="fill: none; stroke: #222221; stroke-miterlimit: 10; stroke-width: 8px;"/>
