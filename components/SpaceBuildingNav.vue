@@ -107,12 +107,17 @@ const titleOfCurrentRoute: ComputedRef<IWebsiteApiSectionUrl | null> = computed(
 
 <style lang="scss" scoped >
 .v-space-build-nav {
-
+    position: relative;
 }
 
 .v-space-build-nav__title {
     font-size: var(--fp-font-size-small);
     text-align: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    white-space: nowrap;
 }
 
 svg {
