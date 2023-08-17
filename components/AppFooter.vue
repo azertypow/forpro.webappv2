@@ -1,6 +1,5 @@
 <template>
     <section
-            ref="footerElement"
             class="v-app-footer fp-remove-margin-child" >
         <div
                 class="v-app-footer__coll fp-remove-margin-child">
@@ -50,12 +49,6 @@
             </p>
 
             <button>S'inscrire</button>
-
-            <div
-                class="v-app-footer__map-nav"
-            >
-                <space-building-nav/>
-            </div>
         </div>
     </section>
 </template>
@@ -71,43 +64,6 @@ import {onMounted} from "#imports";
 import {useAppStateStore} from "~/stores/appState";
 import {Ref, UnwrapRef} from "vue";
 
-const footerElement: Ref<UnwrapRef<null | HTMLElement>> = ref(null)
-
-let footerElementObserver: IntersectionObserver | undefined = undefined
-
-onMounted(() => {
-    nextTick(() => {
-
-        const bottomRootMarginValue: number =
-            window.innerHeight - (document.querySelector('.v-app__building-nav')?.getBoundingClientRect().height | 0) - 30
-        footerElementObserver = new IntersectionObserver((entries) => {
-            entries.forEach(value => {
-
-                const thisComponentName = 'footer'
-
-                if (value.isIntersecting) {
-
-                    useAppStateStore().hideBuildingNav.push(thisComponentName)
-                } else {
-
-                    useAppStateStore().hideBuildingNav.splice(
-                        useAppStateStore().hideBuildingNav.indexOf(thisComponentName), 1
-                    )
-
-                }
-            })
-        }, {
-            rootMargin: `${-1 *  bottomRootMarginValue }px 0px 0px 0px`
-        })
-
-        if (!(footerElement.value instanceof HTMLElement)) return
-        footerElementObserver.observe(footerElement.value)
-    })
-})
-
-onUnmounted(() => {
-    footerElementObserver?.disconnect()
-})
 </script>
 
 
