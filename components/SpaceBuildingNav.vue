@@ -62,10 +62,6 @@ const currentPage = useRoute()
 const currentRouteSlug = computed( () => useRoute().params.slug)
 const currentOverSection = ref('')
 
-onMounted(() => {
-    console.log(currentPage)
-})
-
 function goToPage(pageSlug: string) {
     navigateTo(`/lieu/${pageSlug}`)
 }
