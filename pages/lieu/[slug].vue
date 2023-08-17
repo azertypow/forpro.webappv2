@@ -1,4 +1,7 @@
 <template>
+    <head>
+        <title>{{pageData.title}}</title>
+    </head>
     <main class="v-section-name fp-page" >
         <page-header
             v-if="pageData"
