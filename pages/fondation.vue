@@ -9,120 +9,133 @@
         >
             <div
                 v-if="fondationData"
-                class="fp-grid-coll-reg-16-24 fp-grid-with-gutter fp-page__sections-box__section"
+                class="fp-grid-coll-24-24 fp-grid-coll-reg-16-24 fp-grid-with-gutter"
             >
                 <text-intro
                     :content="fondationData.textIntro"
                 />
             </div>
+        </div>
 
-
-            <div
-                class="fp-page__sections-box"
+        <div
+            class="fp-page__sections-box"
+        >
+            <template
+                v-if="fondationData"
+                v-for="block of fondationData.blockContent"
             >
-                <template
-                    v-if="fondationData"
-                    v-for="block of fondationData.blockContent"
+                <div
+                    v-if="block.type === 'list'"
+                    class="fp-grid-coll-container fp-grid-coll-container--center fp-page__sections-box__section"
                 >
-                    <div
-                        v-if="block.type === 'list'"
-                        class="fp-grid-coll-container fp-grid-coll-container--center fp-page__sections-box__section"
-                    >
-                        <div class="fp-grid-coll-24-24 fp-grid-with-gutter">
-                            <text-bullet-point
-                                :htmlContent="(block as IForPro_blocksContent_isTextContent).html"
-                            />
-                        </div>
-                    </div>
-                    <div
-                        v-if="block.type === 'quote'"
-                        class="fp-grid-coll-container fp-grid-coll-container--center fp-page__sections-box__section"
-                    >
-                        <div class="fp-grid-coll-24-24 fp-grid-with-gutter">
-                            <text-quote
-                                :text="(block as IForPro_blocksContent_isTextContent).html"
-                            />
-                        </div>
-                    </div>
-
-                    <div
-                        v-else-if="block.type === 'text'"
-                        class="fp-page__sections-box__section fp-grid-coll-container fp-grid-coll-container--center"
-                    >
-                        <div class="fp-grid-coll-24-24 fp-grid-coll-reg-18-24 fp-grid-with-gutter">
-                            <text-content
-                                :content="(block as IForPro_blocksContent_isTextContent).html"
-                            />
-                        </div>
-                    </div>
-
-                    <div
-                        v-else-if="block.type === 'heading'"
-                        class="fp-page__sections-box__section fp-page__sections-box__section--is-heading fp-grid-coll-container fp-grid-coll-container--center"
-                    >
-                        <div class="fp-grid-coll-24-24 fp-grid-coll-reg-18-24">
-                            <text-content
-                                :content="(block as IForPro_blocksContent_isTextContent).html"
-                            />
-                        </div>
-                    </div>
-
-                    <div
-                        v-else-if="block.type === 'image'"
-                        class="fp-page__sections-box__section fp-page__sections-box__section--is-image"
-                    >
-                        <image-content
-                            v-if="(block as IForPro_blocksContent_isImage).data"
-                            :imageBlockContent="(block as IForPro_blocksContent_isImage).data!"
+                    <div class="fp-grid-coll-24-24 fp-grid-with-gutter">
+                        <text-bullet-point
+                            :htmlContent="(block as IForPro_blocksContent_isTextContent).html"
                         />
                     </div>
+                </div>
+                <div
+                    v-if="block.type === 'quote'"
+                    class="fp-grid-coll-container fp-grid-coll-container--center fp-page__sections-box__section"
+                >
+                    <div class="fp-grid-coll-24-24 fp-grid-with-gutter">
+                        <text-quote
+                            :text="(block as IForPro_blocksContent_isTextContent).html"
+                        />
+                    </div>
+                </div>
 
-                </template>
-            </div>
+                <div
+                    v-else-if="block.type === 'text'"
+                    class="fp-page__sections-box__section fp-grid-coll-container fp-grid-coll-container--center"
+                >
+                    <div class="fp-grid-coll-24-24 fp-grid-coll-reg-18-24 fp-grid-with-gutter">
+                        <text-content
+                            :content="(block as IForPro_blocksContent_isTextContent).html"
+                        />
+                    </div>
+                </div>
 
+                <div
+                    v-else-if="block.type === 'heading'"
+                    class="fp-page__sections-box__section fp-page__sections-box__section--is-heading fp-grid-coll-container fp-grid-coll-container--center"
+                >
+                    <div class="fp-grid-coll-24-24 fp-grid-coll-reg-18-24">
+                        <text-content
+                            :content="(block as IForPro_blocksContent_isTextContent).html"
+                        />
+                    </div>
+                </div>
 
+                <div
+                    v-else-if="block.type === 'image'"
+                    class="fp-page__sections-box__section fp-page__sections-box__section--is-image"
+                >
+                    <image-content
+                        v-if="(block as IForPro_blocksContent_isImage).data"
+                        :imageBlockContent="(block as IForPro_blocksContent_isImage).data!"
+                    />
+                </div>
+
+            </template>
+        </div>
+
+        <div
+            class="fp-page__sections-box"
+        >
             <div
-                v-if="fondationData && fondationData.team.length > 0"
-                class="fp-grid-coll-reg-16-24 fp-grid-with-gutter fp-page__sections-box__section"
+                class="fp-grid-coll-container fp-grid-coll-container--center"
             >
-                <h2>L'équipe</h2>
-                <div class="fp-grid-coll-container fp-grid-coll-container--center v-fondation__profiles">
+                <div
+                    class="fp-grid-coll-24-24 fp-grid-coll-reg-16-24"
+                >
+
+
                     <div
-                        v-for="teamProfileItem of fondationData.team"
-                        class="fp-grid-coll-24-24 fp-grid-coll-reg-8-24"
+                        v-if="fondationData && fondationData.team.length > 0"
+                        class="fp-page__sections-box__section"
                     >
-                        <profile-item
-                            :profile-desc="teamProfileItem.text ? teamProfileItem.text : undefined"
-                            :profile-name="teamProfileItem.name"
-                            :profile-type="teamProfileItem.topic ? teamProfileItem.topic : undefined"
-                            :src="teamProfileItem.cover ? Object.values(teamProfileItem.cover)[0] : undefined"
-                            :mail="teamProfileItem.link ? teamProfileItem.link : undefined"
-                        />
+                        <h2>L'équipe</h2>
+                        <div class="fp-grid-coll-container fp-grid-coll-container--center v-fondation__profiles">
+                            <div
+                                v-for="teamProfileItem of fondationData.team"
+                                class="fp-grid-coll-24-24 fp-grid-coll-reg-8-24"
+                            >
+                                <profile-item
+                                    :profile-desc="teamProfileItem.text ? teamProfileItem.text : undefined"
+                                    :profile-name="teamProfileItem.name"
+                                    :profile-type="teamProfileItem.topic ? teamProfileItem.topic : undefined"
+                                    :src="teamProfileItem.cover ? Object.values(teamProfileItem.cover)[0] : undefined"
+                                    :mail="teamProfileItem.link ? teamProfileItem.link : undefined"
+                                />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        v-if="fondationData && fondationData.conseil.length > 0"
+                        class="fp-page__sections-box__section"
+                    >
+                        <h3>Le Conseil de Fondation</h3>
+                        <div class="fp-grid-coll-container">
+                            <!--                    todo: remove gutter system with padding by gap-->
+                            <div
+                                v-for="conseilProfileItem of fondationData.conseil"
+                                class="fp-grid-coll-24-24 fp-grid-coll-reg-12-24 fp-grid-with-gutter"
+                            >
+                                <profile-item
+                                    :profile-desc="conseilProfileItem.text ? conseilProfileItem.text : undefined"
+                                    :profile-name="conseilProfileItem.name"
+                                    :profile-type="conseilProfileItem.topic ? conseilProfileItem.topic : undefined"
+                                    :src="conseilProfileItem.cover ? Object.values(conseilProfileItem.cover)[0] : undefined"
+                                    :mail="conseilProfileItem.link ? conseilProfileItem.link : undefined"
+                                />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div
-                v-if="fondationData && fondationData.conseil.length > 0"
-                class="fp-grid-coll-reg-16-24 fp-grid-with-gutter fp-page__sections-box__section"
-            >
-                <h3>Le Conseil de Fondation</h3>
-                <div class="fp-grid-coll-container">
-<!--                    todo: remove gutter system with padding by gap-->
-                    <div
-                        v-for="conseilProfileItem of fondationData.conseil"
-                        class="fp-grid-coll-24-24 fp-grid-coll-reg-12-24 fp-grid-with-gutter"
-                    >
-                        <profile-item
-                            :profile-desc="conseilProfileItem.text ? conseilProfileItem.text : undefined"
-                            :profile-name="conseilProfileItem.name"
-                            :profile-type="conseilProfileItem.topic ? conseilProfileItem.topic : undefined"
-                            :src="conseilProfileItem.cover ? Object.values(conseilProfileItem.cover)[0] : undefined"
-                            :mail="conseilProfileItem.link ? conseilProfileItem.link : undefined"
-                        />
-                    </div>
-                </div>
-            </div>
         </div>
     </main>
 </template>
