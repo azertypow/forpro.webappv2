@@ -50,6 +50,12 @@
             </p>
 
             <button>S'inscrire</button>
+
+            <div
+                class="v-app-footer__map-nav"
+            >
+                <space-building-nav/>
+            </div>
         </div>
     </section>
 </template>
@@ -151,5 +157,10 @@ onUnmounted(() => {
 
 h6 {
     margin-top: 1rem;
+}
+
+.v-app-footer__map-nav {
+    width: 10rem;
+    margin: 2rem 0 0 auto;
 }
 </style>
