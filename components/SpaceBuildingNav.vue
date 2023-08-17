@@ -118,10 +118,11 @@ const currentOverSectionName: ComputedRef<string> = computed(() => {
     font-size: var(--fp-font-size-small);
     text-align: center;
     position: absolute;
-    top: 0;
+    top: -5px;
     left: 50%;
     transform: translate(-50%, -100%);
     white-space: nowrap;
+    font-weight: 500;
 }
 
 svg {

@@ -138,7 +138,6 @@
     .hide_building_nav & {
         opacity: 0;
         pointer-events: none;
-        transform: translate(25%, 0);
         transition: opacity .25s ease-in-out, transform .5s ease-in-out;
     }
 }

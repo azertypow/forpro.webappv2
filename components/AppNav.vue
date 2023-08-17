@@ -246,6 +246,8 @@ const pagesReferencies: ComputedRef<{[key: string]: IWebsiteApiSectionUrl}> = co
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 1.25rem;
+    font-weight: 500;
+  user-select: none;
 
     .is-intersecting & {
 
