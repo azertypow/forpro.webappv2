@@ -287,7 +287,7 @@ onMounted(() => {
     nextTick(() => {
 
         const bottomRootMarginValue: number =
-            window.innerHeight - (document.querySelector('.v-app__building-nav')?.getBoundingClientRect().height | 0) - 30
+            window.innerHeight - (document.querySelector('.v-app__building-nav')?.getBoundingClientRect().height || 0) - 30
         spaceBuildingElementObserver = new IntersectionObserver((entries) => {
             entries.forEach(value => {
 

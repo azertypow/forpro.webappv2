@@ -102,7 +102,7 @@ const currentOverSectionName: ComputedRef<string> = computed(() => {
     if(sectionNameFindingBySlug) return sectionNameFindingBySlug
     if(currentOverSection.value === 'horlogerie') return "École d'horlogerie"
     if(currentOverSection.value === 'creche') return "Crèche"
-
+    return ''
 })
 
 </script>
