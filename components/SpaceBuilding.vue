@@ -10,14 +10,14 @@
         <div
             class="v-space-building__section-name"
         >
-            <div :class="{'is-active': mouseOverAccueil             }"       @mouseover="mouseOverAccueil               = true"   @mouseout="mouseOverAccueil               = false"   @click="goToPage('accueil')"                 class="fp-heading-h5 fp-text--without-margin is-Accueil-color"                  >Accueil</div>
-            <div :class="{'is-active': mouseOverMakerLab            }"       @mouseover="mouseOverMakerLab              = true"   @mouseout="mouseOverMakerLab              = false"   @click="goToPage('makerlab')"                class="fp-heading-h5 fp-text--without-margin is-MakerLab-color"                 >MakerLab</div>
-            <div :class="{'is-active': mouseOverLearningLab         }"       @mouseover="mouseOverLearningLab           = true"   @mouseout="mouseOverLearningLab           = false"   @click="goToPage('learninglab')"             class="fp-heading-h5 fp-text--without-margin is-LearningLab-color"              >LearningLab</div>
-            <div :class="{'is-active': mouseOverFoodlab             }"       @mouseover="mouseOverFoodlab               = true"   @mouseout="mouseOverFoodlab               = false"   @click="goToPage('foodlab')"                 class="fp-heading-h5 fp-text--without-margin is-Foodlab-color"                  >FoodLab</div>
-            <div :class="{'is-active': mouseOverGrandLab            }"       @mouseover="mouseOverGrandLab              = true"   @mouseout="mouseOverGrandLab              = false"   @click="goToPage('grandlab')"                class="fp-heading-h5 fp-text--without-margin is-GrandLab-color"                 >GrandLab</div>
-            <div :class="{'is-active': mouseOverHotel_Entreprises   }"       @mouseover="mouseOverHotel_Entreprises     = true"   @mouseout="mouseOverHotel_Entreprises     = false"   @click="goToPage('hotel-entreprises')"       class="fp-heading-h5 fp-text--without-margin is-Hotel_Entreprises-color"        >Hôtel Entreprises</div>
-            <div :class="{'is-active': mouseOverEcole_Horlogerie    }"       @mouseover="mouseOverEcole_Horlogerie      = true"   @mouseout="mouseOverEcole_Horlogerie      = false"                                                         class="fp-heading-h5 fp-text--without-margin is-Ecole_Horlogerie-color"         >École Horlogerie</div>
-            <div :class="{'is-active': mouseOverCreche              }"       @mouseover="mouseOverCreche                = true"   @mouseout="mouseOverCreche                = false"   @click="goToPage('creche')"                  class="fp-heading-h5 fp-text--without-margin is-Creche-color"                   >Crèche</div>
+            <div :class="{'is-active': mouseOverAccueil             }"       @mouseover="mouseOverAccueil               = true"   @mouseout="mouseOverAccueil               = false"   @click="goToPage('accueil')"                                         class="fp-heading-h5 fp-text--without-margin is-Accueil-color"                  >Accueil</div>
+            <div :class="{'is-active': mouseOverMakerLab            }"       @mouseover="mouseOverMakerLab              = true"   @mouseout="mouseOverMakerLab              = false"   @click="goToPage('makerlab')"                                        class="fp-heading-h5 fp-text--without-margin is-MakerLab-color"                 >MakerLab</div>
+            <div :class="{'is-active': mouseOverLearningLab         }"       @mouseover="mouseOverLearningLab           = true"   @mouseout="mouseOverLearningLab           = false"   @click="goToPage('learninglab')"                                     class="fp-heading-h5 fp-text--without-margin is-LearningLab-color"              >LearningLab</div>
+            <div :class="{'is-active': mouseOverFoodlab             }"       @mouseover="mouseOverFoodlab               = true"   @mouseout="mouseOverFoodlab               = false"   @click="goToPage('foodlab')"                                         class="fp-heading-h5 fp-text--without-margin is-Foodlab-color"                  >FoodLab</div>
+            <div :class="{'is-active': mouseOverGrandLab            }"       @mouseover="mouseOverGrandLab              = true"   @mouseout="mouseOverGrandLab              = false"   @click="goToPage('grandlab')"                                        class="fp-heading-h5 fp-text--without-margin is-GrandLab-color"                 >GrandLab</div>
+            <div :class="{'is-active': mouseOverHotel_Entreprises   }"       @mouseover="mouseOverHotel_Entreprises     = true"   @mouseout="mouseOverHotel_Entreprises     = false"   @click="goToPage('hotel-entreprises')"                               class="fp-heading-h5 fp-text--without-margin is-Hotel_Entreprises-color"        >Hôtel Entreprises</div>
+            <div :class="{'is-active': mouseOverEcole_Horlogerie    }"       @mouseover="mouseOverEcole_Horlogerie      = true"   @mouseout="mouseOverEcole_Horlogerie      = false"   @click="openURLInNewTab('https://edu.ge.ch/site/cfpt-horlogerie/')"       class="fp-heading-h5 fp-text--without-margin is-Ecole_Horlogerie-color"         >École Horlogerie</div>
+            <div :class="{'is-active': mouseOverCreche              }"       @mouseover="mouseOverCreche                = true"   @mouseout="mouseOverCreche                = false"                                                                                 class="fp-heading-h5 fp-text--without-margin is-Creche-color"                   >Crèche</div>
         </div>
 
         <div
@@ -148,7 +148,7 @@
                         <rect x="976" y="394" width="224" height="84" style="fill: #ffffff00;"/>
                     </g>
                 </g>
-                <g id="Cache-Creche"            @mouseover="mouseOverCreche = true"             @mouseout="mouseOverCreche = false"             @click="goToPage('creche')">
+                <g id="Cache-Creche"            @mouseover="mouseOverCreche = true"             @mouseout="mouseOverCreche = false"             >
                     <rect x="863" width="268" height="61" style="fill: #ffffff00;"/>
                 </g>
                 <g id="Cache-Foodlab"           @mouseover="mouseOverFoodlab = true"            @mouseout="mouseOverFoodlab = false"            @click="goToPage('foodlab')">
