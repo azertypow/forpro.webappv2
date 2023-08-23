@@ -25,7 +25,10 @@ export const useAppStateStore = defineStore('appState', {
             else document.body.classList.remove('nav-is-open')
         },
         updateTheme(themeColor: forProThemeColor) {
+
             this.theme = themeColor
+
+            if(typeof document === "undefined") return
 
             if(this.theme === 'fp-var-theme-color-accueil') {
                 document.documentElement.style.setProperty('--fp-theme-color-main',             'var(--fp-theme-color-accueil-main)')

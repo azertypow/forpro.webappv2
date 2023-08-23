@@ -286,6 +286,8 @@ let spaceBuildingElementObserver: IntersectionObserver | undefined = undefined
 onMounted(() => {
     nextTick(() => {
 
+        if(typeof document === "undefined") return
+
         const bottomRootMarginValue: number =
             window.innerHeight - (document.querySelector('.v-app__building-nav')?.getBoundingClientRect().height || 0) - 30
         spaceBuildingElementObserver = new IntersectionObserver((entries) => {
