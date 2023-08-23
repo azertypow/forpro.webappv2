@@ -48,7 +48,7 @@
                 Vous avez une question ou un commentaire? Vous souhaitez participer à l’aventure en proposant une idée? Écrivez-nous pour un premier échange. Si vous souhaitez simplement être informé∙e de l’avancement du projet, vous pouvez vous inscrire à notre newsletter en cliquant ici.
             </p>
 
-            <button>S'inscrire</button>
+            <button @click="useAppStateStore().newsletterIsOpen = true" >S'inscrire</button>
         </div>
     </section>
 </template>

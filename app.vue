@@ -60,6 +60,13 @@
             <app-footer/>
         </div>
 
+        <div
+            class="v-app__footer fp-grid-with-gutter"
+            v-if="useAppStateStore().newsletterIsOpen"
+        >
+            <app-newsletter-form/>
+        </div>
+
     </div>
 
 </template>

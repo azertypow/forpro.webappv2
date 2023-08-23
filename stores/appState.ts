@@ -10,6 +10,7 @@ export const useAppStateStore = defineStore('appState', {
         theme: 'fp-var-theme-color-default' as forProThemeColor,
         siteData: null as IForProApi_site | null,
         hideBuildingNav: [] as string[],
+        newsletterIsOpen: false,
     }),
 
     actions: {
