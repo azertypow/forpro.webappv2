@@ -64,7 +64,11 @@
             class="v-app__newsletter fp-grid-with-gutter"
             v-if="useAppStateStore().newsletterIsOpen"
         >
-            <app-newsletter-form/>
+            <div
+                class="v-app__newsletter__box"
+            >
+                <app-newsletter-form/>
+            </div>
         </div>
 
     </div>
@@ -165,7 +169,15 @@
     width: 100%;
     height: 100%;
     z-index: 9999999999;
-    background: rgba(255, 255, 255, .75);
+    background: rgba(0, 0, 0, .85);
+
+    .v-app__newsletter__box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: -2px -2px 5px 0px var(--fp-theme-color-main), 2px 2px 5px 0px var(--fp-theme-color-secondary);
+    }
 }
 
 .v-app__animation {
