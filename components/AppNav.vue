@@ -16,6 +16,7 @@
 
           <div
               class="v-app-nav__page-title"
+              v-if="route.meta.pageName !== 'home'"
           >
               {{ route.meta.pageName }}
           </div>
