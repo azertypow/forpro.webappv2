@@ -141,6 +141,19 @@ export interface IForPro_profileItem         {
 
 export interface IForPro_fondation {
     "title": string,
+    "coverImage": {
+        "url":          string,
+        "mediaUrl":     string,
+        "width":        number,
+        "height":       number,
+        "resize": {
+            "tiny":     string,
+            "small":    string,
+            "reg":      string,
+            "large":    string,
+            "xxl":      string
+        }
+    },
     "textIntro": string,
     "blockContent": (IForPro_blocksContent_isImage | IForPro_blocksContent_isTextContent)[],
     "team": IForPro_profileItem[],
