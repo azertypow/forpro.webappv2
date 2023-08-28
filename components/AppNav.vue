@@ -241,6 +241,7 @@ function openNewsletterFromNav() {
     position: relative;
     height: var(--fp-app-nav-height);
     display: block;
+    perspective: 100px;
 }
 
 .v-app-nav__logo {
@@ -254,13 +255,20 @@ function openNewsletterFromNav() {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     font-size: 1.25rem;
     font-weight: 500;
-  user-select: none;
+    user-select: none;
+    pointer-events: none;
+
+    transition: opacity .5s .5s ease-in-out, transform .25s .5s ease-in-out;
+    opacity: 1;
+    transform-origin: 50% center;
+    transform: translate(-50%, -50%) rotate3d(1, 0, 0, 0deg);
 
     .is-intersecting & {
-
+      transition: opacity .5s ease-in-out, transform 0s .5s ease-in-out;
+      opacity: 0;
+      transform: translate(-50%, -50%) rotate3d(1, 0, 0, 90deg);
     }
 }
 
