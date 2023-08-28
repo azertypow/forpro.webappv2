@@ -3,7 +3,7 @@
         <page-header
             v-if="fondationData"
             :page-title="fondationData.title"
-            :image-data-for-pro-a-p-i="fondationData"
+            :image-data-for-pro-a-p-i="fondationData.coverImage"
         />
         <div
             class="fp-grid-coll-container fp-grid-coll-container--center"
