@@ -227,7 +227,7 @@ const map = (
 
 @keyframes header-animation--right {
   0% {
-      transform: translate(0, 50vh) rotate(15deg);
+      transform: translate(-5vw, 75vh) rotate(20deg);
   }
 
   50% {
@@ -235,7 +235,7 @@ const map = (
   }
 
   100% {
-    transform: translate(0, 0) rotate(0deg);
+    transform: translate(2.5%, 0) rotate(0deg);
   }
 }
 
