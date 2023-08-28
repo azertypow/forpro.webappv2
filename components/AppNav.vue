@@ -100,7 +100,7 @@
 <!--                    </div>-->
                     <div class="v-app-nav__other-links fp-remove-margin-child">
                         <div class="fp-heading-h4">
-                          <span class="v-app-nav__link fp-text-color-default" @click="useAppStateStore().newsletterIsOpen = true" >Newsletter</span>
+                          <span class="v-app-nav__link fp-text-color-default" @click="openNewsletterFromNav" >Newsletter</span>
                         </div>
                         <div class="fp-heading-h4">
                           <nuxt-link href="/contact" class="v-app-nav__link fp-text-color-default">Contact</nuxt-link>
@@ -183,6 +183,13 @@ const curentRoutePath = computed(() => useRoute().path)
 const pagesReferencies: ComputedRef<{[key: string]: IWebsiteApiSectionUrl}> = computed(() => {
     return useAppStateStore().siteData?.sectionsDetails || {}
 })
+
+function openNewsletterFromNav() {
+  useAppStateStore().closeNav()
+  setTimeout(() => {
+    useAppStateStore().newsletterIsOpen = true
+  }, 500)
+}
 
 </script>
 
@@ -350,6 +357,8 @@ const pagesReferencies: ComputedRef<{[key: string]: IWebsiteApiSectionUrl}> = co
 .v-app-nav__link {
   color: inherit;
   text-decoration: inherit;
+  user-select: none;
+  cursor: pointer;
 }
 
 .v-app-nav__building-space {

@@ -61,7 +61,7 @@
         </div>
 
         <div
-            class="v-app__footer fp-grid-with-gutter"
+            class="v-app__newsletter fp-grid-with-gutter"
             v-if="useAppStateStore().newsletterIsOpen"
         >
             <app-newsletter-form/>
@@ -156,6 +156,16 @@
     [data-theme="fp-var-theme-color-default"] & {
         border-top: solid 3px var(--fp-theme-color-secondary);
     }
+}
+
+.v-app__newsletter {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999999;
+    background: rgba(255, 255, 255, .75);
 }
 
 .v-app__animation {
