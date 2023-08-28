@@ -11,6 +11,15 @@ export const useAppStateStore = defineStore('appState', {
         siteData: null as IForProApi_site | null,
         hideBuildingNav: [] as string[],
         newsletterIsOpen: false,
+        currentOverSection: '' as ''
+          | 'creche'
+          | 'horlogerie'
+          | 'hotel-entreprises'
+          | 'foodlab'
+          | 'makerlab'
+          | 'learninglab'
+          | 'grandlab'
+          | 'accueil'
     }),
 
     actions: {

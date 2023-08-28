@@ -141,11 +141,13 @@
                     <div
                         v-for="pageRef of pagesReferencies"
                         class="fp-heading-h3"
+                        :class="{'nav-has-section-hover': useAppStateStore().currentOverSection.length > 0}"
                     >
                         <nuxt-link
                             class="v-app-nav__link"
                             :to="`/lieu/${pageRef.slug}`"
                             :class="{
+                                'is-hover-from-nav': useAppStateStore().currentOverSection === pageRef.slug,
                                 'is-active': curentRoutePath === `/lieu/${pageRef.slug}`,
                                 'fp-text-color-LearningLab': pageRef.slug         ==='learninglab',
                                 'fp-text-color-MakerLab': pageRef.slug            ==='makerlab',
@@ -370,6 +372,10 @@ function openNewsletterFromNav() {
   > * {
     margin: 0 !important;
   }
+}
+
+.nav-has-section-hover .is-active:not(.is-hover-from-nav) {
+  color: inherit !important;
 }
 
 </style>
