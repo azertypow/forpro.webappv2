@@ -50,6 +50,11 @@ button,
     border-color: var(--fp-color-grey-light);
     background:   var(--fp-color-grey-light);
     color: var(--fp-color-black);
+
+    &.is-active {
+      color: var(--fp-color-grey-light);
+      background: var(--fp-color-black);
+    }
   }
 
   &.fp-ui-button--small {

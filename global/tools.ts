@@ -38,6 +38,6 @@ export function getDateBy_FR_stringFormat(date: string, withStringDay = true) {
     'décembre',
   ][eventDate.getMonth()]
 
-  if(withStringDay) return `${stringDay} ${eventDate.getDay()} ${stringMounth} ${eventDate.getFullYear()}`
-  return `${eventDate.getDay()} ${stringMounth} ${eventDate.getFullYear()}`
+  if(withStringDay) return `${stringDay} ${eventDate.getDay() + 1} ${stringMounth} ${eventDate.getFullYear()}`
+  return `${eventDate.getDay() + 1} ${stringMounth} ${eventDate.getFullYear()}`
 }
