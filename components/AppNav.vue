@@ -204,7 +204,7 @@ function syncOverGlobalStore(sectionSlug: string) {
   else if (sectionSlug === 'foodlab') useAppStateStore().currentOverSection = 'foodlab'
   else if (sectionSlug === 'hotel-entreprises') useAppStateStore().currentOverSection = 'hotel-entreprises'
   else if (sectionSlug === 'creche') useAppStateStore().currentOverSection = 'creche'
-  else if (sectionSlug === 'ecole-horlogerie') useAppStateStore().currentOverSection = 'ecole-horlogerie'
+  else if (sectionSlug === 'ecole-horlogerie') useAppStateStore().currentOverSection = 'horlogerie'
 }
 
 </script>
