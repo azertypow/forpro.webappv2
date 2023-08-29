@@ -136,7 +136,9 @@
                     </div>
                 </div>
                 <div
-                    class="v-app-nav__nav__content__container__coll fp-remove-margin-child">
+                    class="v-app-nav__nav__content__container__coll fp-remove-margin-child"
+                    @mouseout="useAppStateStore().currentOverSection = ''"
+                >
 
                     <div
                         v-for="pageRef of pagesReferencies"
@@ -253,7 +255,6 @@ function syncOverGlobalStore(sectionSlug: string) {
     position: relative;
     height: var(--fp-app-nav-height);
     display: block;
-    perspective: 100px;
 }
 
 .v-app-nav__logo {
@@ -275,12 +276,12 @@ function syncOverGlobalStore(sectionSlug: string) {
     transition: opacity .5s .5s ease-in-out, transform .25s .5s ease-in-out;
     opacity: 1;
     transform-origin: 50% center;
-    transform: translate(-50%, -50%) rotate3d(1, 0, 0, 0deg);
+    transform: translate(-50%, -50%);
 
     .is-intersecting & {
       transition: opacity .5s ease-in-out, transform 0s .5s ease-in-out;
       opacity: 0;
-      transform: translate(-50%, -50%) rotate3d(1, 0, 0, 90deg);
+      transform: translate(-50%, -50%);
     }
 }
 

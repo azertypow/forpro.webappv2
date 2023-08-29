@@ -14,19 +14,58 @@
                 'is-home': isHome,
               }"
       >
+<!--          <svg-->
+<!--                  class="v-page-header__graphique-image v-page-header__graphique-image&#45;&#45;left"-->
+<!--                  viewBox="0 0 4310.6665 1991.5146"-->
+<!--                  xmlns="http://www.w3.org/2000/svg"-->
+<!--                  ref="graphicToMove"-->
+<!--          >-->
+<!--              <g-->
+<!--                      transform="matrix(1.3333333,0,0,-1.3333333,0,4000)"-->
+<!--              >-->
+<!--                  <path-->
+<!--                          d="m 0,1623.1341 v 1260.096 c 0,84.069 38.732,116.77 122.24197,116.77 H 1703.679 c 149.938,-47.145 382.746,-214.095 519.991,-372.894 179.769,-207.998 377.718,-278.564 668.365,-278.564 H 3203 c 16.568,0 30,-13.431 30,-30 v -130.72 c 0,-16.569 -13.432,-30 -30,-30 h -310.965 c -199.5435,3.2233 -488.596,-70.566 -668.365,-278.564 -137.245,-158.799 -257.798,-372.894 -519.991,-372.894 H 122.24197 C 38.732,1506.3641 0,1539.0651 0,1623.1341"-->
+<!--                          style="fill:#f500b4;fill-opacity:1;fill-rule:nonzero;stroke:none"-->
+<!--                  />-->
+<!--              </g>-->
+<!--          </svg>-->
+
+
+<!--          svg v2 longue tige-->
+<!--          <svg-->
+<!--                  id="Layer_2"-->
+<!--                  class="v-page-header__graphique-image v-page-header__graphique-image&#45;&#45;left"-->
+<!--                  data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1008.32481 372.06538">-->
+<!--              <defs>-->
+<!--                  <clipPath id="clippath">-->
+<!--                      <rect width="1008.32481" height="372.06538" style="fill: none;"/>-->
+<!--                  </clipPath>-->
+<!--              </defs>-->
+<!--              <g id="Layer_1-2" data-name="Layer 1">-->
+<!--                  <g style="clip-path: url(#clippath);">-->
+<!--                      <path-->
+<!--                              d="m1008.32422,197.13461v-22.20205c0-6.99268-5.67041-12.66306-12.66306-12.66306l-67.73488.00893c-72.39868,0-121.70779-17.577-166.48716-69.38774C727.25005,53.33199,697.22143.00239,631.90778.00239H30.45094C9.64861.00239-.00059,8.14761-.00059,29.0899v313.88735c0,20.9423,9.6492,29.08752,30.45153,29.08752h601.45684c65.31366,0,95.34227-53.3296,129.53134-92.88828,44.77937-51.81075,94.08848-69.38776,166.48716-69.38776l62.133.00893h5.60188c6.99266,0,12.66306-5.67038,12.66306-12.66306" style="fill: #1754ff;"-->
+<!--                      />-->
+<!--                  </g>-->
+<!--              </g>-->
+<!--          </svg>-->
+<!--          svg v2 longue tige-->
+
+
           <svg
+                  id="Layer_2"
+                  data-name="Layer 2"
                   class="v-page-header__graphique-image v-page-header__graphique-image--left"
-                  viewBox="0 0 4310.6665 1991.5146"
-                  xmlns="http://www.w3.org/2000/svg"
-                  ref="graphicToMove"
-          >
-              <g
-                      transform="matrix(1.3333333,0,0,-1.3333333,0,4000)"
-              >
-                  <path
-                          d="m 0,1623.1341 v 1260.096 c 0,84.069 38.732,116.77 122.24197,116.77 H 1703.679 c 149.938,-47.145 382.746,-214.095 519.991,-372.894 179.769,-207.998 377.718,-278.564 668.365,-278.564 H 3203 c 16.568,0 30,-13.431 30,-30 v -130.72 c 0,-16.569 -13.432,-30 -30,-30 h -310.965 c -199.5435,3.2233 -488.596,-70.566 -668.365,-278.564 -137.245,-158.799 -257.798,-372.894 -519.991,-372.894 H 122.24197 C 38.732,1506.3641 0,1539.0651 0,1623.1341"
-                          style="fill:#f500b4;fill-opacity:1;fill-rule:nonzero;stroke:none"
-                  />
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 988.3234 372.06538">
+              <defs>
+                  <clipPath id="clippath">
+                      <rect x=".00059" width="988.32281" height="372.06538" style="fill: none;"/>
+                  </clipPath>
+              </defs>
+              <g id="Layer_1-2" data-name="Layer 1">
+                  <g style="clip-path: url(#clippath);">
+                      <path d="m988.32281,197.13461v-22.20205c0-6.99268-5.67041-12.66306-12.66306-12.66306l-47.73288.00893c-72.39868,0-121.70779-17.577-166.48716-69.38774C727.25064,53.33199,697.22202.00239,631.90837.00239H30.45153C9.6492.00239,0,8.14761,0,29.0899v313.88735c0,20.9423,9.6492,29.08752,30.45153,29.08752h601.45684c65.31366,0,95.34227-53.3296,129.53134-92.88828,44.77937-51.81075,94.08848-69.38776,166.48716-69.38776l47.73288.00893c6.99266,0,12.66306-5.67038,12.66306-12.66306" style="fill: #1754ff;"/>
+                  </g>
               </g>
           </svg>
 
@@ -137,6 +176,8 @@ const map = (
 
 <style lang="scss" scoped>
 
+@use "assets/_scss-params";
+
 .v-page-header {
   position: relative;
   width: 100%;
@@ -177,9 +218,9 @@ const map = (
   }
 
   &.v-page-header__graphique-image--left {
-    height: 100vh;
-    bottom: -50%;
-    right: 50%;
+    height: 75vh;
+    bottom: -36%;
+    right: 25%;
 
     // animation
     animation: header-animation--left 1s ease-in-out infinite;
@@ -189,6 +230,19 @@ const map = (
     animation-play-state: paused;
     //animation-iteration-count: infinite;
     //animation-play-state: running;
+
+    @media (min-width: scss-params.$fp-breakpoint-xs) {
+      width: auto;
+      height: 100vh;
+      bottom: -50%;
+      right: 33.33333%;
+    }
+
+    @media (min-width: scss-params.$fp-breakpoint-sm) {
+      height: 100vh;
+      bottom: -50%;
+      right: 50%;
+    }
   }
 
   &.v-page-header__graphique-image--right {
