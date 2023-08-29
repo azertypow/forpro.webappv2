@@ -12,10 +12,8 @@
                 class="fp-grid-coll-reg-16-24 fp-grid-with-gutter fp-page__sections-box__section"
             >
                 <text-intro
-                    content="
-                    <p>Afin de servir son but et ses missions, ForPro offre un lieu où les projets et actions des Labs sont imaginés, proposés et discutés par des partenaires. Ces derniers apportent ainsi leur perspective et leur expertise au domaine de la formation professionnelle. Basé sur la co-construction, la valorisation des compétences et la gouvernance partagée, la diversité des expériences est essentielle à la mise en oeuvre des prestations.</p>
-                    <p>Depuis octobre 2021, de nombreux partenaires apportent leur pierre à l’édifice et façonnent pas à pas la future identité de ForPro:</p>
-                    "
+                    v-if="partnersData && partnersData.textIntro"
+                    :content="partnersData.textIntro"
                 />
             </div>
         </div>
