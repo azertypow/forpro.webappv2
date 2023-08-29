@@ -227,6 +227,10 @@ function syncOverGlobalStore(sectionSlug: string) {
     background-color: var(--fp-theme-color-ternary);
     overflow: hidden;
 
+    [data-theme="fp-var-theme-color-hotel_entreprise"] & {
+      color: var(--fp-theme-color-main);
+    }
+
     transition: height ease-in-out .5s, background-color ease-in-out .5s, box-shadow ease-in-out .5s;
     box-shadow: 0 0 0 0 var(--fp-theme-color-menu);
     height: var(--fp-app-nav-height);
@@ -303,6 +307,10 @@ function syncOverGlobalStore(sectionSlug: string) {
         display: block;
         height: 35px;
         fill: var(--fp-theme-color-secondary);
+
+      [data-theme="fp-var-theme-color-hotel_entreprise"] & {
+        fill: var(--fp-theme-color-main) !important;
+      }
 
         .nav-is-open & {
           fill: var(--fp-color-black);
