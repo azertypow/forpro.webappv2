@@ -144,9 +144,9 @@
                         :class="{'nav-has-section-hover': useAppStateStore().currentOverSection.length > 0}"
                     >
                         <nuxt-link
-                            class="v-app-nav__link"
-                            :to="`/lieu/${pageRef.slug}`"
-                            :class="{
+                                class="v-app-nav__link"
+                                :to="`/lieu/${pageRef.slug}`"
+                                :class="{
                                 'is-hover-from-nav': useAppStateStore().currentOverSection === pageRef.slug,
                                 'is-active': curentRoutePath === `/lieu/${pageRef.slug}`,
                                 'fp-text-color-LearningLab': pageRef.slug         ==='learninglab',
@@ -158,7 +158,8 @@
                                 'fp-text-color-Creche': pageRef.slug              ==='creche',
                                 'fp-text-color-Ecole_Horlogerie': pageRef.slug    ==='ecole-horlogerie',
                             }"
-                        >{{pageRef.title.value}}
+                                @mouseover='syncOverGlobalStore(pageRef.slug)'
+                        >{{ pageRef.title.value }}
                         </nuxt-link>
                     </div>
                 </div>
@@ -191,6 +192,17 @@ function openNewsletterFromNav() {
   setTimeout(() => {
     useAppStateStore().newsletterIsOpen = true
   }, 500)
+}
+
+function syncOverGlobalStore(sectionSlug: string) {
+  if (sectionSlug === 'learninglab') useAppStateStore().currentOverSection = 'learninglab'
+  else if (sectionSlug === 'makerlab') useAppStateStore().currentOverSection = 'makerlab'
+  else if (sectionSlug === 'grandlab') useAppStateStore().currentOverSection = 'grandlab'
+  else if (sectionSlug === 'accueil') useAppStateStore().currentOverSection = 'accueil'
+  else if (sectionSlug === 'foodlab') useAppStateStore().currentOverSection = 'foodlab'
+  else if (sectionSlug === 'hotel-entreprises') useAppStateStore().currentOverSection = 'hotel-entreprises'
+  else if (sectionSlug === 'creche') useAppStateStore().currentOverSection = 'creche'
+  else if (sectionSlug === 'ecole-horlogerie') useAppStateStore().currentOverSection = 'ecole-horlogerie'
 }
 
 </script>
@@ -382,8 +394,8 @@ function openNewsletterFromNav() {
   }
 }
 
-.nav-has-section-hover .is-active:not(.is-hover-from-nav) {
-  color: inherit !important;
-}
+//.nav-has-section-hover .is-active:not(.is-hover-from-nav) {
+//  color: inherit !important;
+//}
 
 </style>
