@@ -113,10 +113,28 @@
                     v-if="block.type === 'image'"
                     class="fp-page__sections-box__section"
                 >
-                    <image-content
-                        v-if="(block as IForPro_blocksContent_isImage).data"
-                        :imageBlockContent="(block as IForPro_blocksContent_isImage).data!"
-                    />
+                    <div
+                        v-if="(block as IForPro_blocksContent_isImage).data!.isfixed"
+                    >
+                        <image-content
+                            v-if="(block as IForPro_blocksContent_isImage).data"
+                            :imageBlockContent="(block as IForPro_blocksContent_isImage).data!"
+                        />
+                    </div>
+                    <div
+                        v-else
+                        class="fp-grid-coll-container fp-grid-coll-container--center"
+                    >
+                        <div
+                            class="fp-grid-coll-24-24 fp-grid-coll-reg-18-24 fp-grid-with-gutter"
+                            style="max-width: 35rem;"
+                        >
+                            <image-content
+                                v-if="(block as IForPro_blocksContent_isImage).data"
+                                :imageBlockContent="(block as IForPro_blocksContent_isImage).data!"
+                            />
+                        </div>
+                    </div>
                 </div>
 
             </template>

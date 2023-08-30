@@ -53,7 +53,7 @@ const baseURL = useRuntimeConfig().app.baseURL
     position: relative;
     display: block;
     width: 100%;
-    height: 80vh;
+    height: auto;
     object-fit: contain;
 }
 
