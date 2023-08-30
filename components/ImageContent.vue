@@ -47,13 +47,14 @@ const baseURL = useRuntimeConfig().app.baseURL
 <style lang="scss" scoped >
 .v-image-content {
     position: relative;
-    background-color: var(--fp-theme-color-main);
 }
 
 .v-image-content__img {
     position: relative;
     display: block;
     width: 100%;
+    height: 80vh;
+    object-fit: contain;
 }
 
 .v-image-content__fixed-effect {

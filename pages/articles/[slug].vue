@@ -2,19 +2,27 @@
     <main class="v-article-name fp-page" >
         <header
             v-if="articleData"
-            class="v-article-name__header fp-grid-with-gutter fp-remove-margin-child"
+            class="v-article-name__header"
         >
-            <h1 class="fp-heading-h2" >{{articleData.title.value}}</h1>
-            <h5
-                class="v-article-name__date"
-                v-if="eventDate"
+            <div
+                class="fp-grid-coll-container fp-grid-coll-container--center fp-grid-with-gutter"
             >
-                {{eventDate}}
-            </h5>
+                <div
+                    class="fp-grid-coll-18-24 fp-remove-margin-child"
+                >
+                    <h1 class="fp-heading-h2 v-article-name__title" >{{articleData.title.value}}</h1>
+                    <h5
+                        class="v-article-name__date"
+                        v-if="eventDate"
+                    >
+                        {{eventDate}}
+                    </h5>
+                </div>
+            </div>
             <div
                 class="fp-grid-coll-container fp-grid-coll-container--center"
             >
-                <div class="fp-grid-coll-24-24 fp-grid-coll-reg-16-24 fp-grid-with-gutter">
+                <div class="fp-grid-coll-24-24 fp-grid-coll-reg-17-24 fp-grid-with-gutter">
                     <div
                         v-if="headerImageObject"
                         class="v-article-name__img"
@@ -31,7 +39,7 @@
             v-if="articleData"
             class="fp-grid-coll-container fp-grid-coll-container--center"
         >
-            <div class="fp-grid-coll-24-24 fp-grid-coll-reg-16-24 fp-grid-with-gutter">
+            <div class="fp-grid-coll-24-24 fp-grid-coll-reg-17-24 fp-grid-with-gutter">
                 <text-intro
                     :content="articleData.textIntro.value"
                 />
@@ -47,8 +55,14 @@
                 <div
                     class="fp-grid-coll-container fp-grid-coll-container--center"
                 >
-                    <div>
-                        <p class="fp-text-small">{{articleData.author}}</p>
+                    <div
+                        class="fp-grid-coll-18-24"
+                    >
+                        <p class="fp-text-small fp-text--center v-article-name__author">{{articleData.author}}</p>
+                        <p
+                            v-if="!eventDate"
+                            class="fp-text-small fp-text--center v-article-name__publicationDate"
+                        >Publié le {{getDateBy_FR_stringFormat(articleData.publicationDate.value)}}</p>
                     </div>
                 </div>
             </div>
@@ -165,15 +179,18 @@ const eventDate: ComputedRef<null | string> = computed(() => {
     padding-bottom: 5rem;
 }
 
+.v-article-name__author {
+    font-weight: 700;
+}
+
+.v-article-name__publicationDate {
+    color: var(--fp-color-grey-dark);
+}
+
 .v-article-name__header {
     padding-top:    4rem;
     text-align: center;
     color: var(--fp-theme-color-main);
-
-    > * {
-        margin-left: auto;
-        margin-right: auto;
-    }
 
     .v-article-name__img {
         padding-bottom: calc( 100% / 12 * 7 );
@@ -184,8 +201,12 @@ const eventDate: ComputedRef<null | string> = computed(() => {
     }
 }
 
+.v-article-name__title {
+    margin-bottom: 2rem;
+}
+
 .v-article-name__date {
     color: var(--fp-theme-color-secondary);
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 </style>
