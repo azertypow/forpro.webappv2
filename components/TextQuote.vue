@@ -3,47 +3,47 @@
         <div
             class="v-text-quote__container">
 
-            <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 189.48005 241.37402"
+            <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 143.61808 218.79945"
                  class="v-text-quote__img-1"
             >
                 <defs>
                     <clipPath id="clippath">
-                        <rect y=".00123" width="189.47883" height="241.37279" style="fill: none;"/>
+                        <rect x=".00082" width="143.61602" height="218.79885" style="fill: none;"/>
                     </clipPath>
                 </defs>
                 <g id="Layer_1-2" data-name="Layer 1">
                     <g style="clip-path: url(#clippath);">
-                        <path d="m128.45866,0H61.0226S45.24686,57.51365.00122,100.39246v140.98033h189.47883V100.39246C144.23441,57.51365,128.45866,0,128.45866,0" style="fill: #fff700;"/>
+                        <path d="m82.23728.00061c1.10277,5.42588,1.68177,11.04,1.68177,16.79322,0,46.34504-37.57197,83.91701-83.91906,83.91701v118.08861h143.61808V.00061h-61.38079Z" style="fill: #ffc78c;"/>
                     </g>
                 </g>
             </svg>
 
-            <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 151.55514 259.22886"
+            <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 287.23184 183.20206"
                  class="v-text-quote__img-2"
             >
                 <defs>
                     <clipPath id="clippath">
-                        <rect x=".00021" y=".00027" width="151.55448" height="259.22859" style="fill: none;"/>
+                        <rect width="287.23184" height="183.20206" style="fill: none;"/>
                     </clipPath>
                 </defs>
                 <g id="Layer_1-2" data-name="Layer 1">
                     <g style="clip-path: url(#clippath);">
-                        <path d="m10.51989,257.34009v-90.3249c0-19.35708-8.11836-44.40406-9.589-60.30162-1.46793-15.89483-1.3811-23.82326,1.57917-35.92211,2.96298-12.09885,17.31121-20.26606,27.92043-12.55469,10.60651,7.71134,11.70542,22.53171,18.93108,22.03515,6.02636-.41514,5.23135-9.11414,5.23135-21.38666C54.59293,41.39497,58.85019,0,97.17633,0c40.63521,0,48.70474,35.12439,50.33546,43.49511,1.63073,8.3707,5.64107,38.03581,3.35642,66.36596-2.28464,28.33286-10.1181,51.62702-11.09763,70.04256-.97952,18.41283,0,79.32495,0,79.32495l-129.25069-1.8885Z" style="fill: #fff700;"/>
+                        <path d="m194.86775,183.20206c51.01212,0,92.36409-41.01105,92.36409-91.59969C287.23184,41.01106,245.87987,0,194.86775,0v61.33015H0v60.54444h194.86775v61.32747Z" style="fill: #ffc78c;"/>
                     </g>
                 </g>
             </svg>
 
-            <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 287.99973 161.64638"
+            <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 294.53221 261.87689"
                  class="v-text-quote__img-3"
             >
                 <defs>
                     <clipPath id="clippath">
-                        <rect x=".00051" y=".00078" width="287.99922" height="161.6456" style="fill: none;"/>
+                        <rect y="0" width="294.53076" height="261.87689" style="fill: none;"/>
                     </clipPath>
                 </defs>
                 <g id="Layer_1-2" data-name="Layer 1">
                     <g style="clip-path: url(#clippath);">
-                        <path d="m287.99922,0H0c0,58.64507,35.07851,109.06771,85.38282,131.5232v30.1224h117.23614v-30.1224C252.92071,109.06771,287.99922,58.64507,287.99922,0" style="fill: #fff700;"/>
+                        <path d="m144.4263,1.02349C155.76795,82.85489,0,154.88012,0,154.88012l147.26832,106.9956s155.38921-79.72923,146.93069-202.22971c-6.53547-17.06972-52.12523-67.42163-149.7727-58.62252" style="fill: #ffc78c;"/>
                     </g>
                 </g>
             </svg>
@@ -100,8 +100,8 @@ blockquote {
 
 .v-text-quote__img-1 {
     position: absolute;
-    top: 3.5rem;
-    left: 0rem;
+    top: 2.5rem;
+    left: 1rem;
     fill: var(--fp-theme-color-secondary);
     width: 7rem;
     transform: rotate(115deg);
@@ -114,8 +114,8 @@ blockquote {
 
 .v-text-quote__img-2 {
     position: absolute;
-    bottom: -3rem;
-    left: 12rem;
+    bottom: 1rem;
+    left: 28%;
     fill: var(--fp-theme-color-main);
     width: 9rem;
     transform: rotate(55deg);
@@ -129,8 +129,8 @@ blockquote {
     top: 4rem;
     right: 4rem;
     fill: var(--fp-theme-color-main);
-    width: 10rem;
-    transform: rotate(-35deg);
+    width: 10.8rem;
+    transform: rotate(0deg);
 
     * {
         fill: var(--fp-theme-color-main) !important;
