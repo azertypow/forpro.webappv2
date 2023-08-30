@@ -90,7 +90,7 @@ blockquote {
     left: 0;
     fill: var(--fp-theme-color-main);
     width: 10rem;
-    transform: rotate(-35deg) translate(-40%, 0);
+    transform: rotate(-35deg) translate(30%, 35%);
     z-index: 10;
 }
 
@@ -106,9 +106,9 @@ blockquote {
 .v-text-quote__img-3 {
     position: absolute;
     top: 4rem;
-    right: 2rem;
+    right: 4rem;
     fill: var(--fp-theme-color-main);
-    width: 8rem;
+    width: 7.5rem;
     transform: rotate(-35deg);
 }
 
