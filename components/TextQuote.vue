@@ -86,27 +86,27 @@ blockquote {
 
 .v-text-quote__img-1 {
     position: absolute;
-    top: 80%;
-    transform-origin: center center;
-    bottom: auto;
-    left: 9%;
-    fill: var(--fp-theme-color-secondary);
-    width: 7.5rem;
-    transform: rotate(10deg) translate(-50%, -50%);
-    z-index: 10;
+    top: auto;
+    bottom: 35%;
+    right: 10%;
+    fill: var(--fp-theme-color-main);
+    width: 8rem;
+    transform: rotate(190deg);
 
     * {
-        fill: var(--fp-theme-color-secondary) !important;
+        fill: var(--fp-theme-color-main) !important;
     }
 }
 
 .v-text-quote__img-2 {
     position: absolute;
-    top: 35%;
-    left: 25%;
+    top: 22%;
+    left: 15%;
     fill: var(--fp-theme-color-main);
-    width: 10rem;
-    transform: rotate(25deg) translate(-50%, -50%);
+    width: 9rem;
+    transform: translate(-50%, -50%) rotate(-10deg);
+    z-index: 10;
+
     * {
         fill: var(--fp-theme-color-main) !important;
     }
@@ -114,15 +114,18 @@ blockquote {
 
 .v-text-quote__img-3 {
     position: absolute;
-    top: auto;
-    bottom: 30%;
-    right: 10%;
-    fill: var(--fp-theme-color-main);
-    width: 8.5rem;
-    transform: rotate(40deg);
+    top: 94%;
+    transform-origin: center center;
+    bottom: auto;
+    left: 27%;
+    fill: var(--fp-theme-color-secondary);
+    width: 7rem;
+    transform: translate(-50%, -50%) rotate(135deg);
+    z-index: 10;
+
 
     * {
-        fill: var(--fp-theme-color-main) !important;
+        fill: var(--fp-theme-color-secondary) !important;
     }
 }
 
