@@ -100,11 +100,11 @@ blockquote {
 
 .v-text-quote__img-1 {
     position: absolute;
-    top: 2.5rem;
-    left: 1rem;
+    top: -3rem;
+    left: 3rem;
     fill: var(--fp-theme-color-secondary);
     width: 7rem;
-    transform: rotate(115deg);
+    transform: scale(-1, 1) rotate(245deg);
     z-index: 10;
 
     * {
