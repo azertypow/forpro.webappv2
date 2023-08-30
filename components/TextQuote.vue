@@ -148,12 +148,17 @@ blockquote {
 
 .v-text-quote__img-1 {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 15%;
+    left: 8%;
     fill: var(--fp-theme-color-main);
     width: 10rem;
-    transform: rotate(-35deg) translate(-40%, 0);
+    transform-origin: center center;
+    transform: translate(-50%, -50%) rotate(-25deg);
     z-index: 10;
+
+    * {
+        fill: var(--fp-theme-color-main) !important;
+    }
 }
 
 .v-text-quote__img-2 {
@@ -163,6 +168,10 @@ blockquote {
     fill: var(--fp-theme-color-secondary);
     width: 6rem;
     transform: rotate(55deg);
+
+    * {
+        fill: var(--fp-theme-color-secondary) !important;
+    }
 }
 
 .v-text-quote__img-3 {
@@ -172,6 +181,10 @@ blockquote {
     fill: var(--fp-theme-color-main);
     width: 8rem;
     transform: rotate(-35deg);
+
+    * {
+        fill: var(--fp-theme-color-main) !important;
+    }
 }
 
 
