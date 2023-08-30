@@ -2,96 +2,34 @@
     <section class="v-text-quote" >
         <div
             class="v-text-quote__container">
-            <svg
-                class="v-text-quote__img-1"
-                version="1.1"
-                viewBox="0 0 322.53731 333.33332"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:svg="http://www.w3.org/2000/svg">
-                <defs
-                    id="defs2922" />
-                <g
-                    id="g2926"
-                    transform="matrix(1.3333333,0,0,-1.3333333,-662.44612,1156.1532)">
-                    <g
-                        id="g2944"
-                        transform="translate(644.7006,867.1149)">
-                        <path
-                            d="M 0,0 -6.302,-98.476 -53.829,0 l 21.287,-104.823 -69.784,80.065 48.741,-97.855 -82.301,53.242 70.625,-78.947 -82.605,23.318 82.605,-51.849 -70.625,-3.782 82.301,-21.921 -48.741,-22.689 69.784,4.901 L -53.829,-250 -6.302,-226.689 0,-250 l 19.938,29.66 28.561,-4.901 -7.52,22.689 41.081,21.921 -29.404,3.782 41.381,51.849 -41.381,-23.318 29.404,78.947 -41.081,-53.242 7.52,97.855 -28.561,-80.065 z"
-                            style="fill-opacity:1;fill-rule:nonzero;stroke:none"
-                            id="path2946" />
-                    </g>
+
+            <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 243.87915 163.83867"
+                 class="v-text-quote__img-1"
+            >
+                <g id="Layer_1-2" data-name="Layer 1">
+                    <polygon points="0 0 0 27.37483 40.20662 27.37483 40.20662 136.46134 0 136.46134 0 163.83867 243.87915 163.83867 243.87915 136.46134 202.02883 136.46134 202.02883 27.37483 243.87915 27.37483 243.87915 0 0 0"/>
                 </g>
             </svg>
 
-            <svg
-                class="v-text-quote__img-2"
-                viewBox="0 0 238.78518 333.33308"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:svg="http://www.w3.org/2000/svg">
-                <defs
-                    id="defs2922">
-                    <clipPath
-                        clipPathUnits="userSpaceOnUse"
-                        id="clipPath2954">
-                        <path
-                            d="m 623.753,95.674 h 179.089 v 250 H 623.753 Z"
-                            id="path2952" />
-                    </clipPath>
-                </defs>
-                <g
-                    id="g2926"
-                    transform="matrix(1.3333333,0,0,-1.3333333,-831.67078,460.89839)">
-                    <g
-                        id="g2948">
-                        <g
-                            id="g2950"
-                            clip-path="url(#clipPath2954)">
-                            <g
-                                id="g2956"
-                                transform="translate(730.3931,345.6738)">
-                                <path
-                                    d="m 0,0 h -34.19 c -40.014,0 -72.45,-31.619 -72.45,-70.621 v -108.757 c 0,-39.003 32.436,-70.622 72.45,-70.622 H 0 c 40.013,0 72.451,31.619 72.451,70.622 V -70.621 C 72.451,-31.619 40.013,0 0,0"
-                                    style="fill-opacity:1;fill-rule:nonzero;stroke:none"
-                                    id="path2958" />
-                            </g>
-                        </g>
-                    </g>
+            <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 223.55525 231.03445"
+                 class="v-text-quote__img-2"
+            >
+                <g id="Layer_1-2" data-name="Layer 1">
+                    <polygon points="136.65066 0 92.72962 91.0046 86.90667 0 86.90459 0 68.4795 96.87338 42.08563 22.87928 49.03357 113.31096 11.07089 64.10656 38.24394 137.06524 0 115.51722 38.24394 163.43203 11.07089 166.9258 49.03357 187.18839 42.08563 208.15517 68.4795 203.62597 86.90667 231.03445 92.72962 209.49267 136.65066 231.03445 116.97973 203.62597 181.46963 208.15517 136.42566 187.18839 212.48644 166.9258 147.21737 163.43203 223.55525 115.51931 223.55525 115.51722 147.21737 137.06524 212.48644 64.10656 136.42566 113.31096 181.46963 22.87928 116.97973 96.87338 136.65066 0" style="fill: #f2030d;"/>
                 </g>
             </svg>
 
-            <svg
-                class="v-text-quote__img-3"
-                viewBox="0 0 218.79492 333.33201"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:svg="http://www.w3.org/2000/svg">
-                <defs
-                    id="defs2922">
-                    <clipPath
-                        clipPathUnits="userSpaceOnUse"
-                        id="clipPath2978">
-                        <path
-                            d="M 390.6,95.773 H 554.697 V 345.772 H 390.6 Z"
-                            id="path2976" />
+            <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 128.85204 162.83649"
+                 class="v-text-quote__img-3"
+            >
+                <defs>
+                    <clipPath id="clippath">
+                        <rect width="128.85171" height="162.83649" style="fill: none;"/>
                     </clipPath>
                 </defs>
-                <g
-                    id="g2926"
-                    transform="matrix(1.3333333,0,0,-1.3333333,-520.79999,461.02932)">
-                    <g
-                        id="g2972">
-                        <g
-                            id="g2974"
-                            clip-path="url(#clipPath2978)">
-                            <g
-                                id="g2980"
-                                transform="translate(484.5632,345.772)">
-                                <path
-                                    d="m 0,0 c 1.259,-6.199 1.923,-12.615 1.923,-19.187 0,-52.957 -42.929,-95.884 -95.887,-95.884 V -250 H 70.133 V 0 Z"
-                                    style="fill-opacity:1;fill-rule:nonzero;stroke:none"
-                                    id="path2982" />
-                            </g>
-                        </g>
+                <g id="Layer_1-2" data-name="Layer 1">
+                    <g style="clip-path: url(#clippath);">
+                        <path d="m76.72543,0h-24.60015C23.33727,0,.00034,22.41671.00034,50.06865v62.69919C.00034,140.41979,23.33727,162.83649,52.12528,162.83649h24.60015c28.78802,0,52.12662-22.4167,52.12662-50.06865v-62.69919C128.85204,22.41671,105.51345,0,76.72543,0" style="fill: #f2030d;"/>
                     </g>
                 </g>
             </svg>
@@ -161,7 +99,7 @@ blockquote {
     bottom: -2rem;
     left: 10rem;
     fill: var(--fp-theme-color-secondary);
-    width: 6rem;
+    width: 10rem;
     transform: rotate(55deg);
 }
 
