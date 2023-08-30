@@ -1,6 +1,7 @@
 import { defineStore } from 'pinia'
 import type {IForProApi_site, forProThemeColor} from "~/global/forProApi";
 import {map} from "~/global/tools"
+import {parseToRgba, rgba} from "color2k";
 
 export const useAppStateStore = defineStore('appState', {
     state: () => ({
@@ -113,10 +114,17 @@ export const useAppStateStore = defineStore('appState', {
 
                 if(! (backgroundEffect instanceof HTMLElement) ) return
 
-                backgroundEffect.style.backgroundColor =
-                  getComputedStyle(document.documentElement)
-                    .getPropertyValue('--fp-theme-color-ternary')
-                    .replace(')', `, ${backgroundOpacity})`)
+                const colorForBackground =
+                    parseToRgba(getComputedStyle(document.documentElement)
+                        .getPropertyValue('--fp-theme-color-ternary')
+                    )
+
+                backgroundEffect.style.backgroundColor = rgba(
+                    colorForBackground[0],
+                    colorForBackground[1],
+                    colorForBackground[2],
+                    backgroundOpacity,
+                )
             })
 
 
