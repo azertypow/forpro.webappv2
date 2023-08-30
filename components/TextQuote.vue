@@ -100,28 +100,28 @@ blockquote {
 
 .v-text-quote__img-1 {
     position: absolute;
-    top: auto;
-    bottom: 0%;
-    left: -2%;
-    fill: var(--fp-theme-color-secondary);
-    width: 6.5rem;
-    transform: rotate(145deg) translate(-50%, -50%);
+    top: 45%;
+    left: 10.5%;
+    fill: var(--fp-theme-color-main);
+    width: 11rem;
+    transform-origin: center center;
+    transform: translate(-50%, -50%) rotate(55deg);
     z-index: 10;
 
     * {
-        fill: var(--fp-theme-color-secondary) !important;
+        fill: var(--fp-theme-color-main) !important;
     }
 }
 
 .v-text-quote__img-2 {
     position: absolute;
-    top: 42%;
+    top: 78%;
     left: 25%;
-    fill: var(--fp-theme-color-main);
-    width: 9rem;
-    transform: rotate(55deg) translate(-50%, -50%);
+    fill: var(--fp-theme-color-secondary);
+    width: 6rem;
+    transform: rotate(45deg) translate(-50%, -50%);
     * {
-        fill: var(--fp-theme-color-main) !important;
+        fill: var(--fp-theme-color-secondary) !important;
     }
 }
 
@@ -130,12 +130,12 @@ blockquote {
     top: auto;
     bottom: 6%;
     right: 10%;
-    fill: var(--fp-theme-color-main);
-    width: 10.8rem;
-    transform: rotate(40deg);
+    fill: var(--fp-theme-color-secondary);
+    width: 7rem;
+    transform: rotate(10deg) translate(-50%, -50%);
 
     * {
-        fill: var(--fp-theme-color-main) !important;
+        fill: var(--fp-theme-color-secondary) !important;
     }
 }
 
