@@ -100,8 +100,8 @@ blockquote {
 
 .v-text-quote__img-1 {
     position: absolute;
-    top: -3rem;
-    left: 44%;
+    bottom: 0rem;
+    right: 20%;
     fill: var(--fp-theme-color-secondary);
     width: 6.5rem;
     transform: rotate(-65deg);
@@ -114,11 +114,11 @@ blockquote {
 
 .v-text-quote__img-2 {
     position: absolute;
-    bottom: -.5rem;
-    left: 10rem;
+    bottom: 3.5rem;
+    left: 8rem;
     fill: var(--fp-theme-color-main);
-    width: 9rem;
-    transform: rotate(55deg);
+    width: 10rem;
+    transform: rotate(35deg);
     * {
         fill: var(--fp-theme-color-main) !important;
     }
