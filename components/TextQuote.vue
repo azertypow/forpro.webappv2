@@ -179,7 +179,7 @@ blockquote {
     top: 4rem;
     right: 2rem;
     fill: var(--fp-theme-color-main);
-    width: 8rem;
+    width: 9rem;
     transform: rotate(-35deg);
 
     * {
