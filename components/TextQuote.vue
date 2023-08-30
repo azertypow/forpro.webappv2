@@ -131,8 +131,8 @@ blockquote {
     bottom: 6%;
     right: 10%;
     fill: var(--fp-theme-color-main);
-    width: 10.8rem;
-    transform: rotate(40deg);
+    width: 11.8rem;
+    transform: rotate(140deg);
 
     * {
         fill: var(--fp-theme-color-main) !important;
