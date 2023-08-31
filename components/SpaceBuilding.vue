@@ -203,7 +203,7 @@
                     v-if="mouseOverEcole_Horlogerie"
                 >
                     <h3>École Horlogerie</h3>
-                    <p><strong>L’École d’horlogerie</strong> prendra ses quartiers chez ForPro, où les
+                    <p><strong>L’École d’Horlogerie</strong> prendra ses quartiers chez ForPro, où les
                         apprenti∙e∙s disposeront d’infrastructures à la hauteur de leurs ambitions. Idéalement située, l’École
                         s’axera sur les nouveaux métiers, offrira des formations variées et bénéficiera de la proximité avec le
                         secteur horloger pour créer du lien avec les entreprises.&nbsp;</p>
