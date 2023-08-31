@@ -269,6 +269,7 @@ function syncOverGlobalStore(sectionSlug: string) {
 }
 
 .v-app-nav__page-title {
+  display: none;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -287,6 +288,10 @@ function syncOverGlobalStore(sectionSlug: string) {
       opacity: 0;
       transform: translate(-50%, -50%);
     }
+
+  @media (min-width: scss-params.$fp-breakpoint-xs ) {
+    display: block;
+  }
 }
 
 .v-app-nav__menu-toggle {
