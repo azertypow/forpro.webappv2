@@ -7,8 +7,8 @@ h1,
   max-width: 9em;
 
   //
-  line-height:  3rem;
-  font-size:    3rem;
+  line-height:  2rem;
+  font-size:    2rem;
   margin-top: 3rem;
   margin-bottom: 1.5rem;
 
@@ -18,7 +18,7 @@ h1,
 
   @media (min-width: scss-params.$fp-breakpoint-xs) {
     line-height:  5rem;
-    font-size:    5rem;
+  font-size:    5rem;
     margin-top: 3rem;
     margin-bottom: 1.5rem;
   }
@@ -225,7 +225,7 @@ p,
   }
 
   @media (min-width: scss-params.$fp-breakpoint-md ) {
-    line-height: 1.35rem;
+    line-height: 1.42rem;
     font-size: 1.15rem;
   }
 }
