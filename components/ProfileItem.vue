@@ -172,11 +172,6 @@ const showDetails: ComputedRef<boolean> = computed(() => {
         height: 8rem;
         border-radius: 50%;
         background-size: cover;
-        box-shadow: 0 0 0 0 magenta;
-    }
-
-    .v-profile-item:hover & {
-        box-shadow: inset 0 0 0 10px var(--fp-theme-color-main);
     }
 }
 
