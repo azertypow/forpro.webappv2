@@ -34,6 +34,7 @@ voir chore: clean, remove unused backgroundEffect.vue component
                 <div
                     v-if="block.type === 'quote'"
                     class="fp-grid-coll-container fp-grid-coll-container--center fp-page__sections-box__section"
+                    style="z-index: -10"
                 >
                     <div class="fp-grid-coll-24-24 fp-grid-with-gutter">
                         <text-quote

@@ -32,6 +32,9 @@ defineProps({
 
 .v-text-content {
     max-width: 35rem;
+    position: relative;
+    z-index: 1;
+
     h3 {
         color: var(--fp-theme-color-main);
     }

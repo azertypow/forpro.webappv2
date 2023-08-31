@@ -28,6 +28,8 @@ defineProps({
 <style lang="scss" >
 @use "assets/typography";
 .v-text-intro {
+    position: relative;
+    z-index: 1;
     > p {
         @extend .fp-heading-h4;
         margin-left: auto;
