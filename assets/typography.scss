@@ -223,6 +223,11 @@ p,
   & + & {
     margin-top: 1rem;
   }
+
+  @media (min-width: scss-params.$fp-breakpoint-md ) {
+    line-height: 1.35rem;
+    font-size: 1.15rem;
+  }
 }
 
 
