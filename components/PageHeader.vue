@@ -223,7 +223,7 @@ const map = (
 
   &.v-page-header__graphique-image--left {
     height: 34vh;
-    bottom: -125px;
+    bottom: -21%;
     right: 15%;
 
     // animation
