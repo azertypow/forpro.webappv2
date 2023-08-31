@@ -178,9 +178,9 @@ blockquote {
 .v-text-quote__img-3 {
     position: absolute;
     top: 4rem;
-    right: 2rem;
+    right: 4rem;
     fill: var(--fp-theme-color-main);
-    width: 9rem;
+    width: 8rem;
     transform: rotate(-35deg);
 
     * {
