@@ -67,8 +67,14 @@ defineProps({
 .v-text-quote-accueil {
     position: relative;
     container-type: inline-size;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+
+    @media (min-width: scss-params.$fp-breakpoint-sm) {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
 }
 
 blockquote {
