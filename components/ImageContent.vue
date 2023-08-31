@@ -45,6 +45,8 @@ const baseURL = useRuntimeConfig().app.baseURL
 
 
 <style lang="scss" scoped >
+@use "assets/_scss-params";
+
 .v-image-content {
     position: relative;
 }
@@ -59,9 +61,13 @@ const baseURL = useRuntimeConfig().app.baseURL
 
 .v-image-content__fixed-effect {
     width: 100%;
-    height: calc(100vh );
+    height: 50vh;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+
+    @media (min-width: scss-params.$fp-breakpoint-sm) {
+        height: 100vh;
+    }
 }
 </style>

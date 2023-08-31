@@ -192,11 +192,15 @@ const map = (
 }
 
 .v-page-header__img {
-  height: 100vh;
   width: 100%;
   background-position: center;
   background-size: cover;
   position: relative;
+  height: 50vh;
+
+  @media (min-width: scss-params.$fp-breakpoint-sm) {
+    height: 100vh;
+  }
 }
 
 .v-page-header__title {
