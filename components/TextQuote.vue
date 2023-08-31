@@ -94,10 +94,10 @@ blockquote {
 
 .v-text-quote__img-1 {
     position: absolute;
-    top: 13%;
-    left: 20%;
+    top: -3vw;
+    left: 20vw;
     fill: var(--fp-theme-color-main);
-    width: 8.5rem;
+    width: 15vw;
     transform-origin: center center;
     transform: translate(-50%, -50%) rotate(155deg);
     z-index: 10;
@@ -109,10 +109,10 @@ blockquote {
 
 .v-text-quote__img-2 {
     position: absolute;
-    top: 85%;
-    left: 20%;
+    top: 22vw;
+    left: 18vw;
     fill: var(--fp-theme-color-secondary);
-    width: 5.5rem;
+    width: 9.8vw;
     transform: rotate(45deg) translate(-50%, -50%);
     * {
         fill: var(--fp-theme-color-secondary) !important;
@@ -121,11 +121,10 @@ blockquote {
 
 .v-text-quote__img-3 {
     position: absolute;
-    top: auto;
-    bottom: 4%;
-    right: 10%;
+    top: 6vw;
+    right: 9.5vw;
     fill: var(--fp-theme-color-secondary);
-    width: 7.5rem;
+    width: 12.5vw;
     transform: rotate(10deg) translate(-50%, -50%);
 
     * {
