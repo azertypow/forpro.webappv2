@@ -152,7 +152,7 @@ blockquote {
     top: 15%;
     left: 8%;
     fill: var(--fp-theme-color-main);
-    width: 10rem;
+    width: 12.5vw;
     transform-origin: center center;
     transform: translate(-50%, -50%) rotate(-25deg);
     z-index: 10;
