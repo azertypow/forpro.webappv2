@@ -27,6 +27,9 @@ defineProps({
 
 
 <style lang="scss" >
+@use 'assets/_scss-params';
+
+
 .v-text-content {
     max-width: 35rem;
     h3 {
@@ -35,6 +38,10 @@ defineProps({
 
     h5 {
         color: var(--fp-theme-color-secondary);
+    }
+
+    @media (min-width: scss-params.$fp-breakpoint-md ) {
+        max-width:50rem;
     }
 }
 </style>

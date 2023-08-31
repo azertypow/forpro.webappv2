@@ -10,7 +10,7 @@
         >
             <div
                 v-if="fondationData"
-                class="fp-grid-coll-24-24 fp-grid-coll-reg-16-24 fp-grid-with-gutter"
+                class="fp-grid-coll-24-24 fp-grid-coll-reg-18-24 fp-grid-with-gutter"
             >
                 <text-intro
                     :content="fondationData.textIntro"

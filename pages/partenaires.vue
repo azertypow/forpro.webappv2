@@ -9,7 +9,7 @@
             class="fp-grid-coll-container fp-grid-coll-container--center"
         >
             <div
-                class="fp-grid-coll-reg-16-24 fp-grid-with-gutter fp-page__sections-box__section"
+                class="fp-grid-coll-reg-18-24 fp-grid-with-gutter fp-page__sections-box__section"
             >
                 <text-intro
                     v-if="partnersData && partnersData.textIntro"

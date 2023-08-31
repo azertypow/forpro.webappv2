@@ -14,7 +14,7 @@
             v-if="pageData"
             class="fp-grid-coll-container fp-grid-coll-container--center"
         >
-            <div class="fp-grid-coll-24-24 fp-grid-coll-reg-16-24 fp-grid-with-gutter">
+            <div class="fp-grid-coll-24-24 fp-grid-coll-reg-18-24 fp-grid-with-gutter">
                 <text-intro
                     :content="pageData.textIntro"
                 />

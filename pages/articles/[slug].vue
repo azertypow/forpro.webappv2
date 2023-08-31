@@ -10,7 +10,9 @@
                 <div
                     class="fp-grid-coll-18-24 fp-remove-margin-child"
                 >
-                    <h1 class="fp-heading-h2 v-article-name__title" >{{articleData.title.value}}</h1>
+                    <h1
+                        class="fp-heading-h2 v-article-name__title"
+                    >{{articleData.title.value}}</h1>
                     <h5
                         class="v-article-name__date"
                         v-if="eventDate"
@@ -22,7 +24,7 @@
             <div
                 class="fp-grid-coll-container fp-grid-coll-container--center"
             >
-                <div class="fp-grid-coll-24-24 fp-grid-coll-reg-17-24 fp-grid-with-gutter">
+                <div class="fp-grid-coll-24-24 fp-grid-coll-reg-18-24 fp-grid-with-gutter">
                     <div
                         v-if="headerImageObject"
                         class="v-article-name__img"
@@ -39,7 +41,7 @@
             v-if="articleData"
             class="fp-grid-coll-container fp-grid-coll-container--center"
         >
-            <div class="fp-grid-coll-24-24 fp-grid-coll-reg-17-24 fp-grid-with-gutter">
+            <div class="fp-grid-coll-24-24 fp-grid-coll-reg-18-24 fp-grid-with-gutter">
                 <text-intro
                     :content="articleData.textIntro.value"
                 />
@@ -202,6 +204,7 @@ const eventDate: ComputedRef<null | string> = computed(() => {
 }
 
 .v-article-name__title {
+    margin: auto;
     margin-bottom: 2rem;
 }
 
