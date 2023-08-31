@@ -202,6 +202,10 @@ const showDetails: ComputedRef<boolean> = computed(() => {
 
     font-weight: 400;
 
+    .with-photo & {
+        width: 100%;
+    }
+
     @media (min-width: 1000px) {
         width: 100%;
         padding-left: 0;
