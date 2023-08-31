@@ -18,18 +18,11 @@
                 </g>
             </svg>
 
-            <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 115.01141 273.31739"
+            <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115.01111 260.57174"
                  class="v-text-quote__img-2"
             >
-                <defs>
-                    <clipPath id="clippath">
-                        <rect x=".00029" width="115.01111" height="273.31739" style="fill: none;"/>
-                    </clipPath>
-                </defs>
                 <g id="Layer_1-2" data-name="Layer 1">
-                    <g style="clip-path: url(#clippath);">
-                        <path d="m53.25489,273.31739h8.50134c29.4138,0,53.25489-23.84406,53.25489-53.25489v-118.5237L57.50556,0,0,101.53881v118.5237c0,29.41083,23.84406,53.25489,53.25489,53.25489" style="fill: #ff6917;"/>
-                    </g>
+                    <path d="m53.25489,260.57174h8.50134c29.41186,0,53.25489-23.84303,53.25489-53.25489v-121.524L68.98516,6.72368c-5.02767-8.9649-17.93154-8.9649-22.95921,0L0,85.79285v121.524c0,29.41083,23.84406,53.25489,53.25489,53.25489" style="fill: #ff6917;"/>
                 </g>
             </svg>
 
