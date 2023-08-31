@@ -138,8 +138,6 @@ blockquote {
     text-align: center;
     position: relative;
     z-index: 5;
-    line-height: 1em;
-    font-size: 6.61375vw;
 }
 
 blockquote {
