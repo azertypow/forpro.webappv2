@@ -222,9 +222,9 @@ const map = (
   }
 
   &.v-page-header__graphique-image--left {
-    height: 75vh;
-    bottom: -36%;
-    right: 25%;
+    height: 34vh;
+    bottom: -125px;
+    right: 15%;
 
     // animation
     animation: header-animation--left 1s ease-in-out infinite;
@@ -237,9 +237,9 @@ const map = (
 
     @media (min-width: scss-params.$fp-breakpoint-xs) {
       width: auto;
-      height: 100vh;
-      bottom: -50%;
-      right: 33.33333%;
+      height: 50vh;
+      bottom: -36%;
+      right: 25%;
     }
 
     @media (min-width: scss-params.$fp-breakpoint-sm) {
