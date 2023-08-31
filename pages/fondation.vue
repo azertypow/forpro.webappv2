@@ -102,13 +102,17 @@
                                 v-for="teamProfileItem of fondationData.team"
                                 class="fp-grid-coll-24-24 fp-grid-coll-reg-8-24"
                             >
-                                <profile-item
-                                    :profile-desc="teamProfileItem.text ? teamProfileItem.text : undefined"
-                                    :profile-name="teamProfileItem.name"
-                                    :profile-type="teamProfileItem.topic ? teamProfileItem.topic : undefined"
-                                    :src="teamProfileItem.cover ? Object.values(teamProfileItem.cover)[0] : undefined"
-                                    :mail="teamProfileItem.link ? teamProfileItem.link : undefined"
-                                />
+                                <div
+                                    class="fp-grid-with-gutter fp-grid-coll-container fp-grid-coll-container--center"
+                                >
+                                    <profile-item
+                                        :profile-desc="teamProfileItem.text ? teamProfileItem.text : undefined"
+                                        :profile-name="teamProfileItem.name"
+                                        :profile-type="teamProfileItem.topic ? teamProfileItem.topic : undefined"
+                                        :src="teamProfileItem.cover ? Object.values(teamProfileItem.cover)[0] : undefined"
+                                        :mail="teamProfileItem.link ? teamProfileItem.link : undefined"
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>
