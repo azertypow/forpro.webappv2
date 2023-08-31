@@ -128,6 +128,7 @@
 .v-app__building-nav {
     position: fixed;
     width: calc( (100% / 24 * 4) - (var(--fp-gutter) * 3 ) );
+    max-width: 12rem;
     right: 1.25rem;
     bottom: 1rem;
     z-index: 9999999999;
