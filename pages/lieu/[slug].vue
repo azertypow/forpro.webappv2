@@ -33,7 +33,28 @@
                     class="fp-grid-coll-container fp-grid-coll-container--center fp-page__sections-box__section"
                 >
                     <div class="fp-grid-coll-24-24 fp-grid-with-gutter">
-                        <text-quote
+                        <text-quote-accueil
+                            v-if="slug === 'accueil'"
+                            :text="(block as IForPro_blocksContent_isTextContent).html"
+                        />
+                        <text-quote-foodlab
+                            v-else-if="slug === 'foodlab'"
+                            :text="(block as IForPro_blocksContent_isTextContent).html"
+                        />
+                        <text-quote-grandlab
+                            v-else-if="slug === 'grandlab'"
+                            :text="(block as IForPro_blocksContent_isTextContent).html"
+                        />
+                        <text-quote-hotel
+                            v-else-if="slug === 'hotel-entreprises'"
+                            :text="(block as IForPro_blocksContent_isTextContent).html"
+                        />
+                        <text-quote-learninglab
+                            v-else-if="slug === 'learninglab'"
+                            :text="(block as IForPro_blocksContent_isTextContent).html"
+                        />
+                        <text-quote-makerlab
+                            v-else-if="slug === 'makerlab'"
                             :text="(block as IForPro_blocksContent_isTextContent).html"
                         />
                     </div>

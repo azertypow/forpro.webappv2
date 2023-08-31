@@ -1,10 +1,10 @@
 <template>
-    <section class="v-text-quote" >
+    <section class="v-text-quote-makerlab" >
         <div
-            class="v-text-quote__container">
+            class="v-text-quote-makerlab__container">
 
             <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 204.47177 201.83823"
-                 class="v-text-quote__img-1"
+                 class="v-text-quote-makerlab__img-1"
             >
                 <g id="Layer_1-2" data-name="Layer 1">
                     <polygon points="82.53005 0 54.31218 27.86268 26.09176 0 0 0 0 161.54619 40.84259 201.83823 204.47177 201.83823 204.47177 176.07883 176.25135 148.21868 204.47177 120.35601 204.47177 103.00971 100.10215 0 82.53005 0" style="fill: #1754ff;"/>
@@ -12,7 +12,7 @@
             </svg>
 
             <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 202.38208 202.38208"
-                 class="v-text-quote__img-2"
+                 class="v-text-quote-makerlab__img-2"
             >
                 <g id="Layer_1-2" data-name="Layer 1">
                     <polygon points="0 0 .33869 110.7959 9.60228 120.0569 44.07637 85.58282 116.79926 158.3083 82.32517 192.77981 91.58876 202.0434 202.38208 202.38208 202.03304 91.59652 192.77204 82.33552 157.98253 117.12502 85.25706 44.40213 120.04914 9.61004 110.78815 .34645 0 0" style="fill: #1754ff;"/>
@@ -20,7 +20,7 @@
             </svg>
 
             <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 206.26261 202.84134"
-                 class="v-text-quote__img-3"
+                 class="v-text-quote-makerlab__img-3"
             >
                 <defs>
                     <clipPath id="clippath">
@@ -36,7 +36,7 @@
 
 
             <p
-                class="v-text-quote__text fp-heading-h2--xl"
+                class="v-text-quote-makerlab__text fp-heading-h2--xl"
                 v-html="text"
             ></p>
         </div>
@@ -64,7 +64,7 @@ defineProps({
 <style lang="scss" >
 @use "assets/_scss-params";
 
-.v-text-quote {
+.v-text-quote-makerlab {
     position: relative;
     container-type: inline-size;
     padding-top: 4rem;
@@ -80,12 +80,12 @@ blockquote {
     }
 }
 
-.v-text-quote__container {
+.v-text-quote-makerlab__container {
     box-sizing: border-box;
     position: relative;
 }
 
-.v-text-quote__img-1 {
+.v-text-quote-makerlab__img-1 {
     position: absolute;
     top: auto;
     bottom: 5vw;
@@ -99,7 +99,7 @@ blockquote {
     }
 }
 
-.v-text-quote__img-2 {
+.v-text-quote-makerlab__img-2 {
     position: absolute;
     top: 1.5vw;
     left: 15vw;
@@ -113,7 +113,7 @@ blockquote {
     }
 }
 
-.v-text-quote__img-3 {
+.v-text-quote-makerlab__img-3 {
     position: absolute;
     top: 25vw;
     transform-origin: center center;
@@ -130,7 +130,7 @@ blockquote {
 }
 
 
-.v-text-quote__text {
+.v-text-quote-makerlab__text {
     margin: auto;
     text-align: center;
     position: relative;

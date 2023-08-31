@@ -1,10 +1,10 @@
 <template>
-    <section class="v-text-quote" >
+    <section class="v-text-quote-foodlab" >
         <div
-            class="v-text-quote__container">
+            class="v-text-quote-foodlab__container">
 
             <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 189.48005 241.37402"
-                 class="v-text-quote__img-1"
+                 class="v-text-quote-foodlab__img-1"
             >
                 <defs>
                     <clipPath id="clippath">
@@ -19,7 +19,7 @@
             </svg>
 
             <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 151.55514 259.22886"
-                 class="v-text-quote__img-2"
+                 class="v-text-quote-foodlab__img-2"
             >
                 <defs>
                     <clipPath id="clippath">
@@ -34,7 +34,7 @@
             </svg>
 
             <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 287.99973 161.64638"
-                 class="v-text-quote__img-3"
+                 class="v-text-quote-foodlab__img-3"
             >
                 <defs>
                     <clipPath id="clippath">
@@ -50,7 +50,7 @@
 
 
             <p
-                class="v-text-quote__text fp-heading-h2--xl"
+                class="v-text-quote-foodlab__text fp-heading-h2--xl"
                 v-html="text"
             ></p>
         </div>
@@ -78,7 +78,7 @@ defineProps({
 <style lang="scss" >
 @use "assets/_scss-params";
 
-.v-text-quote {
+.v-text-quote-foodlab {
     position: relative;
     container-type: inline-size;
     padding-top: 4rem;
@@ -94,12 +94,12 @@ blockquote {
     }
 }
 
-.v-text-quote__container {
+.v-text-quote-foodlab__container {
     box-sizing: border-box;
     position: relative;
 }
 
-.v-text-quote__img-1 {
+.v-text-quote-foodlab__img-1 {
     position: absolute;
     bottom: -7vw;
     right: 18vw;
@@ -113,7 +113,7 @@ blockquote {
     }
 }
 
-.v-text-quote__img-2 {
+.v-text-quote-foodlab__img-2 {
     position: absolute;
     top: -8vw;
     left: 13vw;
@@ -125,7 +125,7 @@ blockquote {
     }
 }
 
-.v-text-quote__img-3 {
+.v-text-quote-foodlab__img-3 {
     position: absolute;
     top: -2vw;
     right: 6vw;
@@ -139,7 +139,7 @@ blockquote {
 }
 
 
-.v-text-quote__text {
+.v-text-quote-foodlab__text {
     margin: auto;
     text-align: center;
     position: relative;

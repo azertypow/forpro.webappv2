@@ -1,10 +1,10 @@
 <template>
-    <section class="v-text-quote" >
+    <section class="v-text-quote-accueil" >
         <div
-            class="v-text-quote__container">
+            class="v-text-quote-accueil__container">
 
             <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 243.87915 163.83867"
-                 class="v-text-quote__img-1"
+                 class="v-text-quote-accueil__img-1"
             >
                 <g id="Layer_1-2" data-name="Layer 1">
                     <polygon points="0 0 0 27.37483 40.20662 27.37483 40.20662 136.46134 0 136.46134 0 163.83867 243.87915 163.83867 243.87915 136.46134 202.02883 136.46134 202.02883 27.37483 243.87915 27.37483 243.87915 0 0 0"/>
@@ -12,7 +12,7 @@
             </svg>
 
             <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 223.55525 231.03445"
-                 class="v-text-quote__img-2"
+                 class="v-text-quote-accueil__img-2"
             >
                 <g id="Layer_1-2" data-name="Layer 1">
                     <polygon points="136.65066 0 92.72962 91.0046 86.90667 0 86.90459 0 68.4795 96.87338 42.08563 22.87928 49.03357 113.31096 11.07089 64.10656 38.24394 137.06524 0 115.51722 38.24394 163.43203 11.07089 166.9258 49.03357 187.18839 42.08563 208.15517 68.4795 203.62597 86.90667 231.03445 92.72962 209.49267 136.65066 231.03445 116.97973 203.62597 181.46963 208.15517 136.42566 187.18839 212.48644 166.9258 147.21737 163.43203 223.55525 115.51931 223.55525 115.51722 147.21737 137.06524 212.48644 64.10656 136.42566 113.31096 181.46963 22.87928 116.97973 96.87338 136.65066 0" style="fill: #f2030d;"/>
@@ -20,7 +20,7 @@
             </svg>
 
             <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 128.85204 162.83649"
-                 class="v-text-quote__img-3"
+                 class="v-text-quote-accueil__img-3"
             >
                 <defs>
                     <clipPath id="clippath">
@@ -36,7 +36,7 @@
 
 
             <p
-                class="v-text-quote__text fp-heading-h2--xl"
+                class="v-text-quote-accueil__text fp-heading-h2--xl"
                 v-html="text"
             ></p>
         </div>
@@ -64,7 +64,7 @@ defineProps({
 <style lang="scss" >
 @use "assets/_scss-params";
 
-.v-text-quote {
+.v-text-quote-accueil {
     position: relative;
     container-type: inline-size;
     padding-top: 4rem;
@@ -80,12 +80,12 @@ blockquote {
     }
 }
 
-.v-text-quote__container {
+.v-text-quote-accueil__container {
     box-sizing: border-box;
     position: relative;
 }
 
-.v-text-quote__img-1 {
+.v-text-quote-accueil__img-1 {
     position: absolute;
     top: -9vw;
     left: 2.6vw;
@@ -95,7 +95,7 @@ blockquote {
     z-index: 10;
 }
 
-.v-text-quote__img-2 {
+.v-text-quote-accueil__img-2 {
     position: absolute;
     bottom: -8vw;
     left: 25vw;
@@ -104,7 +104,7 @@ blockquote {
     transform: rotate(30deg);
 }
 
-.v-text-quote__img-3 {
+.v-text-quote-accueil__img-3 {
     position: absolute;
     top: -3vw;
     right: 9vw;
@@ -114,7 +114,7 @@ blockquote {
 }
 
 
-.v-text-quote__text {
+.v-text-quote-accueil__text {
     margin: auto;
     text-align: center;
     position: relative;

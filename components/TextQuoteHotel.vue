@@ -1,10 +1,10 @@
 <template>
-    <section class="v-text-quote" >
+    <section class="v-text-quote-hotel" >
         <div
-            class="v-text-quote__container">
+            class="v-text-quote-hotel__container">
 
             <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 220.11578 224.07194"
-                 class="v-text-quote__img-1"
+                 class="v-text-quote-hotel__img-1"
             >
                 <defs>
                     <clipPath id="clippath">
@@ -19,7 +19,7 @@
             </svg>
 
             <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 199.69803 227.0124"
-                 class="v-text-quote__img-2"
+                 class="v-text-quote-hotel__img-2"
             >
                 <defs>
                     <clipPath id="clippath">
@@ -34,7 +34,7 @@
             </svg>
 
             <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 342.21108 149.14359"
-                 class="v-text-quote__img-3"
+                 class="v-text-quote-hotel__img-3"
             >
                 <defs>
                     <clipPath id="clippath">
@@ -50,7 +50,7 @@
 
 
             <p
-                class="v-text-quote__text fp-heading-h2--xl"
+                class="v-text-quote-hotel__text fp-heading-h2--xl"
                 v-html="text"
             ></p>
         </div>
@@ -78,7 +78,7 @@ defineProps({
 <style lang="scss" >
 @use "assets/_scss-params";
 
-.v-text-quote {
+.v-text-quote-hotel {
     position: relative;
     container-type: inline-size;
     padding-top: 4rem;
@@ -94,12 +94,12 @@ blockquote {
     }
 }
 
-.v-text-quote__container {
+.v-text-quote-hotel__container {
     box-sizing: border-box;
     position: relative;
 }
 
-.v-text-quote__img-1 {
+.v-text-quote-hotel__img-1 {
     position: absolute;
     top: auto;
     bottom: -8vw;
@@ -114,7 +114,7 @@ blockquote {
     }
 }
 
-.v-text-quote__img-2 {
+.v-text-quote-hotel__img-2 {
     position: absolute;
     top: 5vw;
     left: 25vw;
@@ -126,7 +126,7 @@ blockquote {
     }
 }
 
-.v-text-quote__img-3 {
+.v-text-quote-hotel__img-3 {
     position: absolute;
     top: auto;
     bottom: -4vw;
@@ -141,7 +141,7 @@ blockquote {
 }
 
 
-.v-text-quote__text {
+.v-text-quote-hotel__text {
     margin: auto;
     text-align: center;
     position: relative;

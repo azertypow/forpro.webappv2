@@ -1,10 +1,10 @@
 <template>
-    <section class="v-text-quote" >
+    <section class="v-text-quote-learninglab" >
         <div
-            class="v-text-quote__container">
+            class="v-text-quote-learninglab__container">
 
             <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 273.31782 138.40687"
-                 class="v-text-quote__img-1"
+                 class="v-text-quote-learninglab__img-1"
             >
                 <defs>
                     <clipPath id="clippath">
@@ -19,7 +19,7 @@
             </svg>
 
             <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115.01111 260.57174"
-                 class="v-text-quote__img-2"
+                 class="v-text-quote-learninglab__img-2"
             >
                 <g id="Layer_1-2" data-name="Layer 1">
                     <path d="m53.25489,260.57174h8.50134c29.41186,0,53.25489-23.84303,53.25489-53.25489v-121.524L68.98516,6.72368c-5.02767-8.9649-17.93154-8.9649-22.95921,0L0,85.79285v121.524c0,29.41083,23.84406,53.25489,53.25489,53.25489" style="fill: #ff6917;"/>
@@ -27,7 +27,7 @@
             </svg>
 
             <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 178.69193 273.31815"
-                 class="v-text-quote__img-3"
+                 class="v-text-quote-learninglab__img-3"
             >
                 <defs>
                     <clipPath id="clippath">
@@ -43,7 +43,7 @@
 
 
             <p
-                class="v-text-quote__text fp-heading-h2--xl"
+                class="v-text-quote-learninglab__text fp-heading-h2--xl"
                 v-html="text"
             ></p>
         </div>
@@ -71,7 +71,7 @@ defineProps({
 <style lang="scss" >
 @use "assets/_scss-params";
 
-.v-text-quote {
+.v-text-quote-learninglab {
     position: relative;
     container-type: inline-size;
     padding-top: 4rem;
@@ -87,12 +87,12 @@ blockquote {
     }
 }
 
-.v-text-quote__container {
+.v-text-quote-learninglab__container {
     box-sizing: border-box;
     position: relative;
 }
 
-.v-text-quote__img-1 {
+.v-text-quote-learninglab__img-1 {
     position: absolute;
     top: -3vw;
     left: 20vw;
@@ -107,7 +107,7 @@ blockquote {
     }
 }
 
-.v-text-quote__img-2 {
+.v-text-quote-learninglab__img-2 {
     position: absolute;
     top: 22vw;
     left: 18vw;
@@ -119,7 +119,7 @@ blockquote {
     }
 }
 
-.v-text-quote__img-3 {
+.v-text-quote-learninglab__img-3 {
     position: absolute;
     top: 6vw;
     right: 9.5vw;
@@ -133,7 +133,7 @@ blockquote {
 }
 
 
-.v-text-quote__text {
+.v-text-quote-learninglab__text {
     margin: auto;
     text-align: center;
     position: relative;

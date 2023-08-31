@@ -1,10 +1,10 @@
 <template>
-    <section class="v-text-quote" >
+    <section class="v-text-quote-grandlab" >
         <div
-            class="v-text-quote__container">
+            class="v-text-quote-grandlab__container">
 
             <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 143.61808 218.79945"
-                 class="v-text-quote__img-1"
+                 class="v-text-quote-grandlab__img-1"
             >
                 <defs>
                     <clipPath id="clippath">
@@ -19,7 +19,7 @@
             </svg>
 
             <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 287.23184 183.20206"
-                 class="v-text-quote__img-2"
+                 class="v-text-quote-grandlab__img-2"
             >
                 <defs>
                     <clipPath id="clippath">
@@ -34,7 +34,7 @@
             </svg>
 
             <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 294.53221 261.87689"
-                 class="v-text-quote__img-3"
+                 class="v-text-quote-grandlab__img-3"
             >
                 <defs>
                     <clipPath id="clippath">
@@ -50,7 +50,7 @@
 
 
             <p
-                class="v-text-quote__text fp-heading-h2--xl"
+                class="v-text-quote-grandlab__text fp-heading-h2--xl"
                 v-html="text"
             ></p>
         </div>
@@ -78,7 +78,7 @@ defineProps({
 <style lang="scss" >
 @use "assets/_scss-params";
 
-.v-text-quote {
+.v-text-quote-grandlab {
     position: relative;
     container-type: inline-size;
     padding-top: 4rem;
@@ -94,12 +94,12 @@ blockquote {
     }
 }
 
-.v-text-quote__container {
+.v-text-quote-grandlab__container {
     box-sizing: border-box;
     position: relative;
 }
 
-.v-text-quote__img-1 {
+.v-text-quote-grandlab__img-1 {
     position: absolute;
     top: -10vw;
     left: 8vw;
@@ -113,7 +113,7 @@ blockquote {
     }
 }
 
-.v-text-quote__img-2 {
+.v-text-quote-grandlab__img-2 {
     position: absolute;
     bottom: -7vw;
     left: 26vw;
@@ -125,7 +125,7 @@ blockquote {
     }
 }
 
-.v-text-quote__img-3 {
+.v-text-quote-grandlab__img-3 {
     position: absolute;
     top: -3vw;
     right: 6vw;
@@ -139,7 +139,7 @@ blockquote {
 }
 
 
-.v-text-quote__text {
+.v-text-quote-grandlab__text {
     margin: auto;
     text-align: center;
     position: relative;
