@@ -144,6 +144,10 @@ const showDetails: ComputedRef<boolean> = computed(() => {
     flex-direction: row;
     align-items: flex-start;
 
+    .with-photo & {
+        flex-direction: column;
+    }
+
 
     .has-details-to-show & {
         padding-right: 1.5rem;
