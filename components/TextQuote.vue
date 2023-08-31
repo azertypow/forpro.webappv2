@@ -96,6 +96,7 @@ blockquote {
 
 .v-text-quote__container {
     box-sizing: border-box;
+    position: relative;
 }
 
 .v-text-quote__img-1 {
