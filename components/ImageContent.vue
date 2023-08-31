@@ -64,9 +64,10 @@ const baseURL = useRuntimeConfig().app.baseURL
     height: 50vh;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
 
     @media (min-width: scss-params.$fp-breakpoint-sm) {
+        background-attachment: fixed;
         height: 100vh;
     }
 }
