@@ -87,29 +87,29 @@ blockquote {
 
 .v-text-quote__img-1 {
     position: absolute;
-    top: -10%;
-    left: 2.6%;
+    top: -9vw;
+    left: 2.6vw;
     fill: var(--fp-theme-color-main);
-    width: 8rem;
+    width: 13.5vw;
     transform: translate(50%, 50%) rotate(-35deg);
     z-index: 10;
 }
 
 .v-text-quote__img-2 {
     position: absolute;
-    bottom: -2rem;
-    left: 15rem;
+    bottom: -8vw;
+    left: 25vw;
     fill: var(--fp-theme-color-secondary);
-    width: 10rem;
-    transform: rotate(55deg);
+    width: 15vw;
+    transform: rotate(30deg);
 }
 
 .v-text-quote__img-3 {
     position: absolute;
-    top: 2rem;
-    right: 5.5rem;
+    top: -3vw;
+    right: 9vw;
     fill: var(--fp-theme-color-main);
-    width: 7.5rem;
+    width: 12.5vw;
     transform: rotate(-35deg);
 }
 
