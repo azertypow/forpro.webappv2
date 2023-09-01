@@ -158,38 +158,50 @@ blockquote {
     top: 0;
     left: 9vw;
     fill: var(--fp-theme-color-main);
-    width: 13.5vw;
+    width: 25vw;
     transform-origin: center center;
     transform: translate(-50%, -50%) rotate(-25deg);
 
     * {
         fill: var(--fp-theme-color-main) !important;
     }
+
+    @media (min-width: scss-params.$fp-breakpoint-xs) {
+        width: 13.5vw;
+    }
 }
 
 .v-text-quote__img-2 {
     position: absolute;
-    bottom: -10vw;
-    left: 16vw;
+    bottom: -2vw;
+    left: 22vw;
     fill: var(--fp-theme-color-secondary);
-    width: 10vw;
-    transform: rotate(55deg);
+    width: 18vw;
+    transform: translate(-50%, 50%) rotate(55deg);
 
     * {
         fill: var(--fp-theme-color-secondary) !important;
+    }
+
+    @media (min-width: scss-params.$fp-breakpoint-xs) {
+        width: 10vw;
     }
 }
 
 .v-text-quote__img-3 {
     position: absolute;
-    top: 0;
-    right: 6.5vw;
+    top: 10vw;
+    right: 15vw;
     fill: var(--fp-theme-color-main);
-    width: 13.5vw;
-    transform: rotate(-35deg);
+    width: 18vw;
+    transform: translate(50%, -50%) rotate(-35deg);
 
     * {
         fill: var(--fp-theme-color-main) !important;
+    }
+
+    @media (min-width: scss-params.$fp-breakpoint-xs) {
+        width: 13.5vw;
     }
 }
 
