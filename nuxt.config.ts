@@ -2,8 +2,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
-    // baseURL: '/',
-    baseURL: '/forpro.webappv2/',
+    baseURL: '/',
+    // baseURL: '/forpro.webappv2/',
     pageTransition: {
       name: 'page',
       mode: 'out-in',
