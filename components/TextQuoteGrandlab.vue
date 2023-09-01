@@ -112,7 +112,6 @@ blockquote {
     fill: var(--fp-theme-color-secondary);
     width: 10vw;
     transform: scale(-1, 1) rotate(245deg);
-    z-index: 10;
 
     * {
         fill: var(--fp-theme-color-secondary) !important;

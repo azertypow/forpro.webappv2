@@ -161,7 +161,6 @@ blockquote {
     width: 13.5vw;
     transform-origin: center center;
     transform: translate(-50%, -50%) rotate(-25deg);
-    z-index: 10;
 
     * {
         fill: var(--fp-theme-color-main) !important;

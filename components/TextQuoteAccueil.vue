@@ -98,7 +98,6 @@ blockquote {
     fill: var(--fp-theme-color-main);
     width: 13.5vw;
     transform: translate(50%, 50%) rotate(-35deg);
-    z-index: 10;
 }
 
 .v-text-quote-accueil__img-2 {
