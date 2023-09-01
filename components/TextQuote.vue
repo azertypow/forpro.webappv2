@@ -1,7 +1,12 @@
 <template>
-    <section class="v-text-quote" >
+    <section
+        class="v-text-quote"
+        ref="quoteComponent"
+    >
         <div
-            class="v-text-quote__container">
+            class="v-text-quote__container"
+            ref="quoteContainer"
+        >
             <svg
                 class="v-text-quote__img-1"
                 version="1.1"
@@ -110,12 +115,42 @@
 
 
 <script lang="ts" setup>
+import {onMounted, Ref, UnwrapRef} from "vue";
+
 defineProps({
     text: {
         type: String,
         required: true,
     }
 })
+//
+// const quoteComponent: Ref<UnwrapRef<null | HTMLElement>> = ref(null)
+// const quoteContainer: Ref<UnwrapRef<null | HTMLElement>> = ref(null)
+//
+// const positionX = ref(0)
+// const positionY = ref(0)
+//
+// onMounted(() => {
+//     nextTick(() => {
+//         const mouseOverDetectionElement = quoteComponent.value
+//         const effect3DContainer = quoteContainer.value
+//
+//         if(mouseOverDetectionElement === null ) return
+//         if(effect3DContainer === null ) return
+//
+//         mouseOverDetectionElement.addEventListener("mousemove", e => {
+//             const offsetRealtiveValue_x =    e.offsetX >= 0 ? e.offsetX / mouseOverDetectionElement.getBoundingClientRect().width : 0
+//             const offsetRealtiveValue_y =    e.offsetY >= 0 ? e.offsetY / mouseOverDetectionElement.getBoundingClientRect().height : 0
+//
+//             console.log(
+//                 offsetRealtiveValue_x,
+//                 offsetRealtiveValue_y,
+//             )
+//
+//             effect3DContainer.style.transform = `rotate3d(${offsetRealtiveValue_y - 0.5}, ${offsetRealtiveValue_x - 0.5}, 0, 5deg)`
+//         })
+//     })
+// })
 
 </script>
 
@@ -131,7 +166,8 @@ defineProps({
     container-type: inline-size;
     padding-top: 2rem;
     padding-bottom: 2rem;
-
+    perspective: 999px;
+    transform-style: preserve-3d;
 
     @media (min-width: scss-params.$fp-breakpoint-sm) {
         padding-top: 4rem;
@@ -151,6 +187,7 @@ blockquote {
 .v-text-quote__container {
     box-sizing: border-box;
     position: relative;
+    pointer-events: none;
 }
 
 .v-text-quote__img-1 {
@@ -160,7 +197,7 @@ blockquote {
     fill: var(--fp-theme-color-main);
     width: 25vw;
     transform-origin: center center;
-    transform: translate(-50%, -50%) rotate(-25deg);
+    transform: translate3d(-50%, -50%, 0px) rotate(-25deg);
 
     * {
         fill: var(--fp-theme-color-main) !important;
