@@ -10,6 +10,13 @@
             {{ currentOverSectionName }}
         </div>
 
+        <div
+            v-if="useAppStateStore().isIntersecting && currentOverSectionName.length < 1"
+            class="v-space-build-nav__title"
+        >
+            {{ useRoute().meta.pageName }}
+        </div>
+
         <svg
             id="Layer_2"
             data-name="Layer 2"
