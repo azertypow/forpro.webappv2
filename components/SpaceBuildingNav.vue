@@ -14,7 +14,7 @@
             v-if="useAppStateStore().isIntersecting && currentOverSectionName.length < 1"
             class="v-space-build-nav__title"
         >
-            {{ useRoute().meta.pageName }}
+            {{ route.meta.pageName }}
         </div>
 
         <svg
@@ -71,6 +71,7 @@ import {ComputedRef, Ref, UnwrapRef} from "vue";
 
 const currentPage = useRoute()
 const currentRouteSlug = computed( () => useRoute().params.slug)
+const route = useRoute()
 
 function goToPage(pageSlug: string) {
     navigateTo(`/lieu/${pageSlug}`)
