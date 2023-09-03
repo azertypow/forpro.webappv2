@@ -55,7 +55,7 @@
           <svg
                   id="Layer_2"
                   data-name="Layer 2"
-                  class="v-page-header__graphique-image v-page-header__graphique-image--left"
+                  class="v-page-header__graphique-image v-page-header__graphique-image--left v-page-header__graphique-image--left--desktop"
                   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 988.3234 372.06538">
               <defs>
                   <clipPath id="clippath">
@@ -66,6 +66,17 @@
                   <g style="clip-path: url(#clippath);">
                       <path d="m988.32281,197.13461v-22.20205c0-6.99268-5.67041-12.66306-12.66306-12.66306l-47.73288.00893c-72.39868,0-121.70779-17.577-166.48716-69.38774C727.25064,53.33199,697.22202.00239,631.90837.00239H30.45153C9.6492.00239,0,8.14761,0,29.0899v313.88735c0,20.9423,9.6492,29.08752,30.45153,29.08752h601.45684c65.31366,0,95.34227-53.3296,129.53134-92.88828,44.77937-51.81075,94.08848-69.38776,166.48716-69.38776l47.73288.00893c6.99266,0,12.66306-5.67038,12.66306-12.66306" style="fill: #1754ff;"/>
                   </g>
+              </g>
+          </svg>
+
+          <svg id="Layer_2"
+               data-name="Layer 2"
+               xmlns="http://www.w3.org/2000/svg"
+               viewBox="0 0 290.70082 360.02124"
+               class="v-page-header__graphique-image v-page-header__graphique-image--left v-page-header__graphique-image--left--mobile"
+          >
+              <g id="Layer_1-2" data-name="Layer 1">
+                  <path d="m278.03773,141.245l-37.73189.00897c-61.43823,0-101.70581-2.5755-146.48517-54.38629C66.56488,55.33124,41.95282,15.04352,0,0v360.02124c41.95282-15.04352,66.56488-55.33124,93.82068-86.86774,44.77936-51.81073,85.04694-54.38623,146.48517-54.38623l32.12996.00891h5.60193c6.99268,0,12.66309-5.67035,12.66309-12.66302v-52.20508c0-6.99268-5.67041-12.66309-12.66309-12.66309Z" style="fill: #1754ff;"/>
               </g>
           </svg>
 
@@ -261,6 +272,28 @@ const map = (
     animation-play-state: paused;
     //animation-iteration-count: infinite;
     //animation-play-state: running;
+  }
+}
+
+
+.v-page-header__graphique-image--left--desktop {
+  display: none;
+
+  @media (min-width: scss-params.$fp-breakpoint-sm) {
+    display: block;
+  }
+}
+
+.v-page-header__graphique-image--left--mobile {
+  display: block;
+  left: 0;
+  height: 70vh !important;
+  bottom: -70% !important;
+  max-width: 80vw;
+  animation: none !important;
+
+  @media (min-width: scss-params.$fp-breakpoint-sm) {
+    display: none;
   }
 }
 
