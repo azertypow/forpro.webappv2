@@ -23,9 +23,11 @@
             >{{profileName}}</h5>
             <h5     v-if="profileType" class="v-profile-item__type">{{profileType}}</h5>
             <span
-                v-if="hasDetailsToShow && !descriptionIsOpen"
-                class="v-profile-item__icon fp-heading-h5">
-                +
+                v-if="hasDetailsToShow"
+                class="v-profile-item__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                        <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                    </svg>
                 </span>
         </div>
 
@@ -36,20 +38,24 @@
             >
                 <div
                     class="v-profile-item__desc fp-remove-margin-child"
+                    v-if="profileDesc"
                     v-html="profileDesc"
                 ></div>
-                <a
-                    class="v-profile-item__link"
-                    v-if="externalLink"
-                    :href="`mailto:${mail}`"
-                    target="_blank"
-                ><img src="../assets/icons/mail_FILL0_wght400_GRAD0_opsz48.svg" alt="get mail contact"></a>
-                <a
-                    class="v-profile-item__link"
-                    v-if="mail"
-                    :href="`${externalLink}`"
-                    target="_blank"
-                ><img src="../assets/icons/link_FILL0_wght400_GRAD0_opsz48.svg" alt="get external link"></a>
+
+                <div class="v-profile-item__link-container fp-grid-coll-container" >
+                    <a
+                        class="v-profile-item__link"
+                        v-if="mail"
+                        :href="`mailto:${mail}`"
+                        target="_blank"
+                    ><img src="../assets/icons/mail_FILL0_wght400_GRAD0_opsz48.svg" alt="get mail contact"></a>
+                    <a
+                        class="v-profile-item__link"
+                        v-if="externalLink"
+                        :href="`${externalLink}`"
+                        target="_blank"
+                    ><img src="../assets/icons/link_FILL0_wght400_GRAD0_opsz48.svg" alt="get external link"></a>
+                </div>
             </div>
         </transition>
 
@@ -87,6 +93,7 @@ const hasDetailsToShow: ComputedRef<boolean> = computed(() => {
 })
 
 const showDetails: ComputedRef<boolean> = computed(() => {
+    if(props.src) return true
     if(!props.profileDesc) return false
     if(props.src && props.profileDesc) return true
     return descriptionIsOpen.value
@@ -99,6 +106,9 @@ const showDetails: ComputedRef<boolean> = computed(() => {
 
 
 <style lang="scss" scoped >
+@use 'assets/_scss-params';
+
+
 .v-profile-item {
     --button-width: 1rem;
     --button-width-half: calc( var(--button-width) / 2 );
@@ -141,8 +151,12 @@ const showDetails: ComputedRef<boolean> = computed(() => {
     width: 100%;
     position: relative;
     box-sizing: border-box;
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start;
+
+    @media (min-width: scss-params.$fp-breakpoint-xs) {
+        flex-direction: row;
+    }
 
     .with-photo & {
         flex-direction: column;
@@ -151,6 +165,10 @@ const showDetails: ComputedRef<boolean> = computed(() => {
 
     .has-details-to-show & {
         padding-right: 1.5rem;
+
+        @media (min-width: scss-params.$fp-breakpoint-sm) {
+            padding-right: 0;
+        }
     }
 
     .with-photo & {
@@ -180,28 +198,34 @@ const showDetails: ComputedRef<boolean> = computed(() => {
     padding-left: 0;
     margin-top: 0;
     padding-right: var(--fp-gutter);
-    width: calc(100% / 2 * 1);
+    width: 50%;
     box-sizing: border-box;
 
     @media (min-width: 1000px) {
         padding-right: 0;
         width: 100%;
     }
+    .with-photo & {
+        padding-right: 0;
+    }
 }
 .v-profile-item__type {
     margin-top: 0;
     box-sizing: border-box;
-
-    width: calc(100% / 3 * 1);
-    padding-left: var(--fp-gutter);
-
+    width: 50%;
+    padding-left: 0;
     font-weight: 400;
 
-    .with-photo & {
-        width: 100%;
+    @media (min-width: scss-params.$fp-breakpoint-xs) {
+        padding-left: var(--fp-gutter);
     }
 
-    @media (min-width: 1000px) {
+    @media (min-width: scss-params.$fp-breakpoint-sm) {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .with-photo & {
         width: 100%;
         padding-left: 0;
     }
@@ -221,7 +245,7 @@ const showDetails: ComputedRef<boolean> = computed(() => {
         align-items: center;
 
         > * {
-            display: block;
+            justify-content: center;
         }
     }
     .list-mode & {
@@ -233,7 +257,7 @@ const showDetails: ComputedRef<boolean> = computed(() => {
     color: inherit;
     text-decoration: underline;
     display: block;
-    margin-top: .5rem;
+    margin-top: 0.5rem;
 
     & + & {
         margin-left: var(--fp-gutter);
@@ -242,11 +266,6 @@ const showDetails: ComputedRef<boolean> = computed(() => {
     > img {
         display: block;
         height: 1.5rem;
-    }
-
-    p + &,
-    h5+ & {
-        margin-top: 0;
     }
 
     .list-mode & {
@@ -264,23 +283,30 @@ p {
     width: var(--button-width);
     height: var(--button-width);
     cursor: pointer;
-    //background: red;
-    flex-shrink: 0;
+    position: absolute;
+    right: 0;
     transition: transform ease-in-out .25s;
     transform-origin: center;
-    color: var(--fp-theme-color-secondary);
-    margin-top: 0;
+    top: .5rem;
+    transform: translate(0, -50%) rotate(45deg);
 
     > * {
-        width: var(--line-width);
-        background: var(--fp-color-black);
+        width: var(--button-width);
         height: var(--button-width);
-        position: absolute;
-        left: calc( var(--button-width-half) - var(--line-width) / 2 );
     }
 
     .v-profile-item--is-open & {
-        transform: rotate(45deg) translate(-35%, -35%);
+        transform: translate(0, -50%) rotate(0deg);
+    }
+
+    @media (min-width: scss-params.$fp-breakpoint-sm) {
+        position: relative;
+        top: 1rem;
+        transition: none;
+
+        .v-profile-item--is-open & {
+            display: none;
+        }
     }
 }
 
