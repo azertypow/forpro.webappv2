@@ -209,6 +209,9 @@ const showDetails: ComputedRef<boolean> = computed(() => {
 
 .v-profile-item__desc {
     display: block;
+    margin-top: .5rem;
+    font-size: var(--fp-font-size-small);
+    line-height: var(--fp-line-height-small);
 }
 
 .v-profile-item__details {
@@ -313,10 +316,6 @@ p {
 
 <style lang="scss">
 .v-profile-item__desc {
-    margin-top: .5rem;
-    font-size: var(--fp-font-size-small);
-    line-height: var(--fp-line-height-small);
-
     p {
         font-size: var(--fp-font-size-small);
         line-height: var(--fp-line-height-small);
