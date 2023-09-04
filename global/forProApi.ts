@@ -135,6 +135,7 @@ export interface IForPro_profileItem         {
     "name": string,
     "topic": string | null,
     "link": string | null,
+    "email": string | null,
     "cover": {[key: string]: IForPro_image} | null,
     "text": string | null,
 }

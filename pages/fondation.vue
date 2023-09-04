@@ -110,7 +110,8 @@
                                         :profile-name="teamProfileItem.name"
                                         :profile-type="teamProfileItem.topic ? teamProfileItem.topic : undefined"
                                         :src="teamProfileItem.cover ? Object.values(teamProfileItem.cover)[0] : undefined"
-                                        :mail="teamProfileItem.link ? teamProfileItem.link : undefined"
+                                        :mail="teamProfileItem.email ? teamProfileItem.email : undefined"
+                                        :external-link="teamProfileItem.link ? teamProfileItem.link : undefined"
                                     />
                                 </div>
                             </div>
@@ -133,7 +134,8 @@
                                     :profile-name="conseilProfileItem.name"
                                     :profile-type="conseilProfileItem.topic ? conseilProfileItem.topic : undefined"
                                     :src="conseilProfileItem.cover ? Object.values(conseilProfileItem.cover)[0] : undefined"
-                                    :mail="conseilProfileItem.link ? conseilProfileItem.link : undefined"
+                                    :mail="conseilProfileItem.email ? conseilProfileItem.email : undefined"
+                                    :external-link="conseilProfileItem.link ? conseilProfileItem.link : undefined"
                                 />
                             </div>
                         </div>

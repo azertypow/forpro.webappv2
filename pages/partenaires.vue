@@ -34,7 +34,8 @@
                             :profile-name="partner.name"
                             :profile-type="partner.topic ? partner.topic : undefined"
                             :src="partner.cover ? Object.values(partner.cover)[0] : undefined"
-                            :mail="partner.link ? partner.link : undefined"
+                            :mail="partner.email ? partner.email : undefined"
+                            :external-link="partner.link ? partner.link : undefined"
                         />
                     </div>
                 </div>
