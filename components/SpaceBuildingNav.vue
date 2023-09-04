@@ -11,7 +11,7 @@
         </div>
 
         <div
-            v-if="useAppStateStore().isIntersecting && currentOverSectionName.length < 1"
+            v-if="useAppStateStore().isIntersecting && currentOverSectionName.length < 1 && route.meta.pageName !== 'home'"
             class="v-space-build-nav__title"
         >
             {{ route.meta.pageName }}
@@ -82,6 +82,10 @@ function openURLInNewTab(url: string) {
 }
 
 const listeOfAllSections = computed(() => useAppStateStore().siteData?.sectionsDetails)
+
+useRouter().beforeEach(() => {
+    useAppStateStore().currentOverSection = ''
+})
 
 const currentOverSectionName: ComputedRef<string> = computed(() => {
 
