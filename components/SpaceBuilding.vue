@@ -167,6 +167,7 @@
                         privées, les visites ponctuelles et routines quotidiennes. <strong>L’Accueil</strong> orientera et informera le public,
                         et sera aussi un lieu de pause entre deux rendez-vous. Il sera le centre des informations et la
                         «vitrine» de toutes les activités du bâtiment.</p>
+                    <nuxt-link class="fp-ui-button" href="./lieu/accueil" >Accéder à la page</nuxt-link>
                 </div>
                 <div
                     class="v-space-building__sections__description fp-remove-margin-child v-space-building__section-description--MakerLab"
@@ -177,6 +178,7 @@
                         la créativité et le faire seront au cœur des activités et où il sera possible d’expérimenter, de rater
                         et de recommencer autour du terme Do-It-Yourself. L’ambition est de favoriser et encourager le faire
                         pour apprendre et pour comprendre, l’esprit d’expérimentation et de test, la curiosité.</p>
+                    <nuxt-link class="fp-ui-button" href="./lieu/makerlab" >Accéder à la page</nuxt-link>
                 </div>
                 <div
                     class="v-space-building__sections__description fp-remove-margin-child v-space-building__section-description--LearningLab"
@@ -190,6 +192,7 @@
                         le développement de compétences professionnelles et d’employabilité. C’est un lieu carrefour qui
                         permettra de positionner l’apprentissage dans une vision globale et intégrée de l’acquisition et de la
                         diffusion des connaissances et compétences.</p>
+                    <nuxt-link class="fp-ui-button" href="./lieu/learninglab" >Accéder à la page</nuxt-link>
                 </div>
                 <div
                     class="v-space-building__sections__description fp-remove-margin-child v-space-building__section-description--GrandLab"
@@ -197,6 +200,8 @@
                 >
                     <h3>GrandLab</h3>
                     <p>Espace polyvalent et modulable, le <strong>GrandLab</strong> permettra des aménagements temporaires en vue de designer des espaces de production, des simulations de fonctionnement dans ces espaces ; ainsi que d’organiser des conférences, des expositions en lien avec les activités de tous les habitants du bâtiment.</p>
+
+                    <nuxt-link class="fp-ui-button" href="./lieu/grandlab" >Accéder à la page</nuxt-link>
                 </div>
                 <div
                     class="v-space-building__sections__description fp-remove-margin-child v-space-building__section-description--Ecole_Horlogerie"
@@ -207,6 +212,7 @@
                         apprenti∙e∙s disposeront d’infrastructures à la hauteur de leurs ambitions. Idéalement située, l’École
                         s’axera sur les nouveaux métiers, offrira des formations variées et bénéficiera de la proximité avec le
                         secteur horloger pour créer du lien avec les entreprises.&nbsp;</p>
+                    <a class="fp-ui-button" href="https://edu.ge.ch/site/cfpt-horlogerie/" >Accéder à la page</a>
                 </div>
                 <div
                     class="v-space-building__sections__description fp-remove-margin-child v-space-building__section-description--Hotel_Entreprises"
@@ -218,6 +224,7 @@
                         l’engagement d’apprenti∙e∙s et deviendront des lieux d’expérimentation en situation réelle pour les
                         jeunes en orientation. Les diplômé∙e∙s à l’âme entrepreneuriale pourront s’installer dans l’hôtel à
                         entreprises et seront soutenu∙e∙s dans le lancement de leur projet.&nbsp;</p>
+                    <nuxt-link class="fp-ui-button" href="./lieu/hotel-entreprises" >Accéder à la page</nuxt-link>
                 </div>
                 <div
                     class="v-space-building__sections__description fp-remove-margin-child v-space-building__section-description--Creche"
@@ -237,6 +244,7 @@
                         qu'un café pour l’Espace Tourbillon. Le <strong>FoodLab</strong> formera des apprenti∙e∙s
                         aux métiers de la restauration et invitera gourmand∙e∙s et professionnel∙le∙s à déguster et imaginer la
                         cuisine de demain.&nbsp;&nbsp;</p>
+                    <nuxt-link class="fp-ui-button" href="./lieu/foodlab" >Accéder à la page</nuxt-link>
                 </div>
 
             </div>
@@ -527,6 +535,10 @@ svg {
 
 
 .v-space-building__section-description--Accueil {
+    > .fp-ui-button {
+        border-color: var(--fp-color-accueil) !important;
+    }
+
     @media (min-width: scss-params.$fp-breakpoint-sm) {
         top: -1rem;
         right: calc( -100% / 18 * 2 );
@@ -536,6 +548,10 @@ svg {
 }
 
 .v-space-building__section-description--MakerLab {
+    .fp-ui-button {
+        border-color: var(--fp-color-makerlab)
+    }
+
     @media (min-width: scss-params.$fp-breakpoint-sm) {
         top: -1rem;
         right: auto;
@@ -545,6 +561,10 @@ svg {
 }
 
 .v-space-building__section-description--LearningLab {
+    .fp-ui-button {
+        border-color: var(--fp-color-learninglab)
+    }
+
     @media (min-width: scss-params.$fp-breakpoint-sm) {
         top: -1rem;
         right: calc( -100% / 18 * 2 );
@@ -554,6 +574,10 @@ svg {
 }
 
 .v-space-building__section-description--Foodlab {
+    .fp-ui-button {
+        border-color: var(--fp-color-foodlab)
+    }
+
     @media (min-width: scss-params.$fp-breakpoint-sm) {
         top: 3rem;
         right: auto;
@@ -563,6 +587,10 @@ svg {
 }
 
 .v-space-building__section-description--GrandLab {
+    .fp-ui-button {
+        border-color: var(--fp-color-grandlab)
+    }
+
     @media (min-width: scss-params.$fp-breakpoint-sm) {
         top: 1rem;
         right: calc( 100% / 18 * 2 );
@@ -572,6 +600,10 @@ svg {
 }
 
 .v-space-building__section-description--Hotel_Entreprises {
+    .fp-ui-button {
+        border-color: var(--fp-color-hotel_entreprises)
+    }
+
     @media (min-width: scss-params.$fp-breakpoint-sm) {
         top: -1rem;
         right: auto;
@@ -581,6 +613,10 @@ svg {
 }
 
 .v-space-building__section-description--Ecole_Horlogerie {
+    .fp-ui-button {
+        border-color: var(--fp-color-ecole_horlogerie)
+    }
+
     @media (min-width: scss-params.$fp-breakpoint-sm) {
         top: -1rem;
         right: auto;
@@ -590,6 +626,10 @@ svg {
 }
 
 .v-space-building__section-description--Creche {
+    .fp-ui-button {
+        border-color: var(--fp-color-creche)
+    }
+
     @media (min-width: scss-params.$fp-breakpoint-sm) {
         top: -1rem;
         right: auto;
