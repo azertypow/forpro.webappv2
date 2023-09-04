@@ -287,7 +287,7 @@ const map = (
 .v-page-header__graphique-image--left--mobile {
   display: block;
   left: 0;
-  height: 70vh !important;
+  height: 65vh !important;
   bottom: -70% !important;
   max-width: 80vw;
   animation: none !important;
