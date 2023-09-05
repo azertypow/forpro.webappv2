@@ -212,7 +212,7 @@
                         apprenti∙e∙s disposeront d’infrastructures à la hauteur de leurs ambitions. Idéalement située, l’École
                         s’axera sur les nouveaux métiers, offrira des formations variées et bénéficiera de la proximité avec le
                         secteur horloger pour créer du lien avec les entreprises.&nbsp;</p>
-                    <a class="fp-ui-button" href="https://edu.ge.ch/site/cfpt-horlogerie/" >Accéder à la page</a>
+                    <a class="fp-ui-button" href="https://edu.ge.ch/site/cfpt-horlogerie/" >Accéder au site</a>
                 </div>
                 <div
                     class="v-space-building__sections__description fp-remove-margin-child v-space-building__section-description--Hotel_Entreprises"
