@@ -520,6 +520,10 @@ svg {
         position: absolute;
         pointer-events: none;
         top: -1rem;
+
+        .fp-ui-button {
+            display: none;
+        }
     }
 }
 
