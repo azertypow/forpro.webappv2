@@ -148,7 +148,7 @@
                         <rect x="976" y="394" width="224" height="84" style="fill: #ffffff00;"/>
                     </g>
                 </g>
-                <g id="Cache-Creche" @mouseover="callbackWidthMDMaxWidth(()=>{sectionIsActive_Creche = true})" @mouseout="callbackWidthMDMaxWidth(()=>{sectionIsActive_Creche = false})"             @click="callbackWidthMDMaxWidth(()=>{},                                                                  ()=>{toggleActiveSection('Creche')})">
+                <g id="Cache-Creche" @mouseover="callbackWidthMDMaxWidth(()=>{sectionIsActive_Creche = true})" @mouseout="callbackWidthMDMaxWidth(()=>{sectionIsActive_Creche = false})"             @click="callbackWidthMDMaxWidth(()=>{},                                                                  ()=>{toggleActiveSection('Creche')})" style="cursor: default">
                     <rect x="863" width="268" height="61" style="fill: #ffffff00;"/>
                 </g>
                 <g id="Cache-Foodlab" @mouseover="callbackWidthMDMaxWidth(()=>{sectionIsActive_Foodlab = true})" @mouseout="callbackWidthMDMaxWidth(()=>{sectionIsActive_Foodlab = false})" @click="callbackWidthMDMaxWidth(()=>{ goToPage('foodlab')},                                     ()=>{toggleActiveSection('Foodlab')})">
