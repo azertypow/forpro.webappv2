@@ -123,20 +123,24 @@
                         class="fp-page__sections-box__section"
                     >
                         <h3>Le Conseil de Fondation</h3>
-                        <div class="fp-grid-coll-container">
+                        <div class="fp-grid-coll-container fp-grid-coll-container--center">
                             <!--                    todo: remove gutter system with padding by gap-->
-                            <div
-                                v-for="conseilProfileItem of fondationData.conseil"
-                                class="fp-grid-coll-24-24 fp-grid-coll-reg-12-24 fp-grid-with-gutter"
-                            >
-                                <profile-item
-                                    :profile-desc="conseilProfileItem.text ? conseilProfileItem.text : undefined"
-                                    :profile-name="conseilProfileItem.name"
-                                    :profile-type="conseilProfileItem.topic ? conseilProfileItem.topic : undefined"
-                                    :src="conseilProfileItem.cover ? Object.values(conseilProfileItem.cover)[0] : undefined"
-                                    :mail="conseilProfileItem.email ? conseilProfileItem.email : undefined"
-                                    :external-link="conseilProfileItem.link ? conseilProfileItem.link : undefined"
-                                />
+                            <div class="fp-grid-coll-max_width-35rem" >
+                                <div class="fp-grid-coll-container" >
+                                    <div
+                                        v-for="conseilProfileItem of fondationData.conseil"
+                                        class="fp-grid-coll-24-24 fp-grid-coll-reg-12-24 fp-grid-with-gutter"
+                                    >
+                                        <profile-item
+                                            :profile-desc="conseilProfileItem.text ? conseilProfileItem.text : undefined"
+                                            :profile-name="conseilProfileItem.name"
+                                            :profile-type="conseilProfileItem.topic ? conseilProfileItem.topic : undefined"
+                                            :src="conseilProfileItem.cover ? Object.values(conseilProfileItem.cover)[0] : undefined"
+                                            :mail="conseilProfileItem.email ? conseilProfileItem.email : undefined"
+                                            :external-link="conseilProfileItem.link ? conseilProfileItem.link : undefined"
+                                        />
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
