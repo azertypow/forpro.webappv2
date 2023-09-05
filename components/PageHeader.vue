@@ -216,10 +216,14 @@ const map = (
 
 .v-page-header__title {
   position: relative;
-  padding-top:    2.5rem;
-  padding-bottom: 2.5rem;
+  padding-top:    6rem;
+  padding-bottom: 1rem;
   text-align: center;
   color: var(--fp-theme-color-main);
+
+  @media (min-width: scss-params.$fp-breakpoint-xs) {
+    padding-top: 3rem;
+  }
 }
 
 .v-page-header__graphique-image {
