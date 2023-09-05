@@ -1,7 +1,7 @@
 <template>
     <nuxt-link
         class="v-article-item"
-        :href="`/articles/${slug}`"
+        :href="`/news/${slug}`"
         :class="{
             'is-negative-color': isNegativeColor
         }"
