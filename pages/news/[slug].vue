@@ -124,9 +124,12 @@
             </template>
         </div>
 
-        <div class="fp-grid-coll-container fp-grid-coll-container--center">
+        <div
+            class="fp-grid-coll-container fp-grid-coll-container--center"
+            style="padding-top: 2rem"
+        >
             <nuxt-link
-                class="fp-ui-button fp-ui-button--variante"
+                class="fp-ui-button fp-ui-button--variante-with-background"
                 :href="{name: 'news'}"
             >
                 Voir toutes les News

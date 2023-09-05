@@ -50,6 +50,12 @@ button,
     border-color: var(--fp-theme-color-main);
   }
 
+  &.fp-ui-button--variante-with-background {
+    border-color: var(--fp-theme-color-main);
+    background: var(--fp-theme-color-secondary);
+    color: var(--fp-color-white);
+  }
+
   &.fp-ui-button--light {
     border-color: var(--fp-color-grey-light);
     background:   var(--fp-color-grey-light);
