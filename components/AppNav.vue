@@ -269,7 +269,7 @@ function syncOverGlobalStore(sectionSlug: string) {
 }
 
 .v-app-nav__page-title {
-  display: none;
+    display: none;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -411,5 +411,12 @@ function syncOverGlobalStore(sectionSlug: string) {
 //.nav-has-section-hover .is-active:not(.is-hover-from-nav) {
 //  color: inherit !important;
 //}
+
+@media (min-width: scss-params.$fp-breakpoint-md) {
+  .fp-heading-h3 {
+    line-height: 3rem;
+    font-size: 2.8rem;
+  }
+}
 
 </style>
