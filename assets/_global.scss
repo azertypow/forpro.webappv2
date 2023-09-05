@@ -46,6 +46,10 @@ button,
     text-decoration: none;
   }
 
+  &.fp-ui-button--variante {
+    border-color: var(--fp-theme-color-main);
+  }
+
   &.fp-ui-button--light {
     border-color: var(--fp-color-grey-light);
     background:   var(--fp-color-grey-light);
