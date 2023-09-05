@@ -102,7 +102,7 @@ const currentOverSectionName: ComputedRef<string> = computed(() => {
 
 
     if(sectionNameFindingBySlug) return sectionNameFindingBySlug
-    if(useAppStateStore().currentOverSection === 'horlogerie') return "École d'horlogerie"
+    if(useAppStateStore().currentOverSection === 'horlogerie') return "École d'Horlogerie"
     if(useAppStateStore().currentOverSection === 'creche') return "Crèche"
     return ''
 })
