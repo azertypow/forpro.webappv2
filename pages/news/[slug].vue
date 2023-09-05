@@ -124,6 +124,15 @@
             </template>
         </div>
 
+        <div class="fp-grid-coll-container fp-grid-coll-container--center">
+            <nuxt-link
+                class="fp-ui-button fp-ui-button--variante"
+                :href="{name: 'news'}"
+            >
+                Voir toutes les News
+            </nuxt-link>
+        </div>
+
     </main>
 </template>
 
