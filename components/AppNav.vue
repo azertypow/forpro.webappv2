@@ -324,6 +324,7 @@ function syncOverGlobalStore(sectionSlug: string) {
 }
 
 .v-app-nav__nav {
+    overscroll-behavior: none;
     position: absolute;
     top: var(--fp-app-nav-height);
     left: 0;
@@ -332,6 +333,23 @@ function syncOverGlobalStore(sectionSlug: string) {
     overflow: auto;
   padding-bottom: 5rem;
     container-type: inline-size;
+
+  &::-webkit-scrollbar {
+    //width: .5rem;
+    display: none;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    outline: none;
+  }
+
+  .v-app-nav__nav__content {
+    min-height: calc(100% + 1px);
+  }
 
     .v-app-nav__nav__content__container {
         display: flex;

@@ -10,9 +10,20 @@ body {
   line-height: 1rem;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  overflow-y: scroll;
 
-  &.nav-is-open {
-    overflow: hidden;
+  &::-webkit-scrollbar {
+    width: .5rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: var(--fp-color-grey-light);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--fp-theme-color-secondary);
+    outline: none;
+    border-radius: 2rem;
   }
 }
 
