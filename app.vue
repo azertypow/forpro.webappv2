@@ -9,7 +9,7 @@
             }"
     >
         <transition
-            name="intro-enter"
+            name="intro"
         >
             <div
                 class="v-app__animation"
@@ -43,6 +43,8 @@
                 </div>
             </div>
         </transition>
+
+
         <div
             class="v-app__nav"
         >
@@ -207,6 +209,7 @@
     left: .5rem;
     border-radius: 1rem;
     overflow: hidden;
+    transition: opacity 1s ease-in;
 }
 
 .v-app__animation__logo {
@@ -248,12 +251,43 @@
     }
 }
 
-.v-app__animation__logo-container {
-
+@keyframes logo-animation {
+    //0% {
+    //    opacity: 0;
+    //    transform: translate(-50%, -50%) scale(.85);
+    //}
+    //5% {
+    //    opacity: 1;
+    //    transform: translate(-50%, -50%) scale(.90);
+    //}
+    //100% {
+    //    transform: translate(-50%, -50%) scale(1);
+    //}
 }
+
+
 </style>
 
 <style lang="scss" >
+
+//.intro-enter-active {
+//    transition: all 10s;
+//}
+//
+//.intro-enter-active-from {
+//    opacity: 0;
+//    .v-app__animation__logo-container {
+//        opacity: 0;
+//    }
+//}
+//
+//.intro-enter-active-to {
+//    opacity: 1;
+//    .v-app__animation__logo-container {
+//        opacity: 1;
+//    }
+//}
+
 .page-enter-active,
 .page-leave-active {
     transition: all .5s;
@@ -293,7 +327,7 @@ onMounted(() => {
     nextTick(() => {
         setTimeout(() => {
             stateIsLoaded.value = true
-        }, 1_000)
+        }, 10_000)
     })
 })
 
