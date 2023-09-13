@@ -243,7 +243,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transition: transform 1s .25s ease-in-out;
+    transition: transform 1s .25s ease-in;
     transform: translate(-50%, -50%);
 }
 
@@ -251,10 +251,24 @@
     0% {
         opacity: 0;
         transform: scale(.85);
+        --anim-fill-1: rgb(255, 105, 23);
+        --anim-fill-2: rgb(0, 0, 255);
     }
     5% {
         opacity: 1;
         transform: scale(.90);
+    }
+    8% {
+        --anim-fill-1: rgb(23, 84, 255);
+        --anim-fill-2: rgb(255, 0, 252);
+    }
+    10% {
+        --anim-fill-1: rgb(41, 0, 125);
+        --anim-fill-2: rgb(255, 248, 0);
+    }
+    15% {
+        --anim-fill-1: #3df069;
+        --anim-fill-2: #1754ff;
     }
     100% {
         transform: scale(1);
@@ -273,7 +287,7 @@
 }
 
 .intro-enter-leave-active {
-    transition: opacity 1s 1s;
+    transition: opacity 1s 1s ;
 }
 
 .intro-enter-leave-to {
@@ -284,7 +298,7 @@
     }
 
     .v-app__animation__logo-container__translation {
-        transform: translate(-50%, -50%) translate(0, 200%);
+        transform: translate(-50%, -50%) translate(0, -50vw);
     }
 
     .v-app__animation__logo {
