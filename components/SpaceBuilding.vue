@@ -15,7 +15,7 @@
             <div :class="{'is-active': sectionIsActive_LearningLab         }" @mouseover="callbackWidthMDMaxWidth(()=>{sectionIsActive_LearningLab       = true})" @mouseout="callbackWidthMDMaxWidth(()=>{sectionIsActive_LearningLab       = false})" @click="callbackWidthMDMaxWidth(()=>{ goToPage('learninglab')},                                 ()=>{toggleActiveSection('LearningLab')})"          class="fp-heading-h5 fp-text--without-margin is-LearningLab-color"              >LearningLab</div>
             <div :class="{'is-active': sectionIsActive_Foodlab             }" @mouseover="callbackWidthMDMaxWidth(()=>{sectionIsActive_Foodlab           = true})" @mouseout="callbackWidthMDMaxWidth(()=>{sectionIsActive_Foodlab           = false})" @click="callbackWidthMDMaxWidth(()=>{ goToPage('foodlab')},                                     ()=>{toggleActiveSection('Foodlab')})"              class="fp-heading-h5 fp-text--without-margin is-Foodlab-color"                  >FoodLab</div>
             <div :class="{'is-active': sectionIsActive_GrandLab            }" @mouseover="callbackWidthMDMaxWidth(()=>{sectionIsActive_GrandLab          = true})" @mouseout="callbackWidthMDMaxWidth(()=>{sectionIsActive_GrandLab          = false})" @click="callbackWidthMDMaxWidth(()=>{ goToPage('grandlab')},                                    ()=>{toggleActiveSection('GrandLab')})"             class="fp-heading-h5 fp-text--without-margin is-GrandLab-color"                 >GrandLab</div>
-            <div :class="{'is-active': sectionIsActive_Hotel_Entreprises   }" @mouseover="callbackWidthMDMaxWidth(()=>{sectionIsActive_Hotel_Entreprises = true})" @mouseout="callbackWidthMDMaxWidth(()=>{sectionIsActive_Hotel_Entreprises = false})" @click="callbackWidthMDMaxWidth(()=>{ goToPage('hotel-entreprises')},                           ()=>{toggleActiveSection('Hotel_Entreprises')})"    class="fp-heading-h5 fp-text--without-margin is-Hotel_Entreprises-color"        >Hôtel Entreprises</div>
+            <div :class="{'is-active': sectionIsActive_Hotel_Entreprises   }" @mouseover="callbackWidthMDMaxWidth(()=>{sectionIsActive_Hotel_Entreprises = true})" @mouseout="callbackWidthMDMaxWidth(()=>{sectionIsActive_Hotel_Entreprises = false})" @click="callbackWidthMDMaxWidth(()=>{ goToPage('FactoryLab')},                                  ()=>{toggleActiveSection('PopUp')})"    class="fp-heading-h5 fp-text--without-margin is-Hotel_Entreprises-color"               >FactoryLab</div>
             <div :class="{'is-active': sectionIsActive_Ecole_Horlogerie    }" @mouseover="callbackWidthMDMaxWidth(()=>{sectionIsActive_Ecole_Horlogerie  = true})" @mouseout="callbackWidthMDMaxWidth(()=>{sectionIsActive_Ecole_Horlogerie  = false})" @click="callbackWidthMDMaxWidth(()=>{ openURLInNewTab('https://edu.ge.ch/site/cfpt-horlogerie/')},   ()=>{toggleActiveSection('Ecole_Horlogerie')})"     class="fp-heading-h5 fp-text--without-margin is-Ecole_Horlogerie-color"         >École Horlogerie</div>
             <div :class="{'is-active': sectionIsActive_Creche              }" @mouseover="callbackWidthMDMaxWidth(()=>{sectionIsActive_Creche            = true})" @mouseout="callbackWidthMDMaxWidth(()=>{sectionIsActive_Creche            = false})" @click="callbackWidthMDMaxWidth(()=>{},                                                                  ()=>{toggleActiveSection('Creche')})"               class="fp-heading-h5 fp-text--without-margin is-Creche-color"                   >Crèche</div>
         </div>
@@ -81,7 +81,7 @@
                     </g>
                 </g>
                 <g
-                    id="Section-Hotel_Entreprises"
+                    id="Section-FactoryLab"
                     :class="{'is-active': sectionIsActive_Hotel_Entreprises }"
                 >
                     <polygon points=".00015 60.71073 .00015 69.51311 189.8009 122.18276 234.06589 122.18276 234.06589 127.21615 415.88624 127.21615 415.88624 122.18276 507.71186 122.18276 507.71184 127.21615 515.67071 127.19843 515.67071 93.39032 686.97126 93.39032 686.97126 127.19843 694.23644 127.21615 694.23644 122.18276 786.04966 122.18276 786.04966 127.21615 967.87001 127.19771 967.87001 122.18276 1008.80892 122.18276 1199.99999 69.51311 1200 60.71073 .00015 60.71073" style="fill: #9bcf00;"/>
@@ -142,7 +142,7 @@
                         <rect x="227" y="394" width="749" height="84" style="fill: #ffffff00;"/>
                     </g>
                 </g>
-                <g id="Cache-Hotel_Entreprises" @mouseover="callbackWidthMDMaxWidth(()=>{sectionIsActive_Hotel_Entreprises = true})" @mouseout="callbackWidthMDMaxWidth(()=>{sectionIsActive_Hotel_Entreprises = false})" @click="callbackWidthMDMaxWidth(()=>{ goToPage('hotel-entreprises')},                           ()=>{toggleActiveSection('Hotel_Entreprises')})">
+                <g id="Cache-FactoryLab" @mouseover="callbackWidthMDMaxWidth(()=>{sectionIsActive_Hotel_Entreprises = true})" @mouseout="callbackWidthMDMaxWidth(()=>{sectionIsActive_Hotel_Entreprises = false})" @click="callbackWidthMDMaxWidth(()=>{ goToPage('FactoryLab')},                           ()=>{toggleActiveSection('FactoryLab')})">
                     <g>
                         <rect y="61" width="1200" height="66" style="fill: #ffffff00;"/>
                         <rect x="976" y="394" width="224" height="84" style="fill: #ffffff00;"/>
@@ -224,7 +224,7 @@
                         l’engagement d’apprenti∙e∙s et deviendront des lieux d’expérimentation en situation réelle pour les
                         jeunes en orientation. Les diplômé∙e∙s à l’âme entrepreneuriale pourront s’installer dans l’hôtel à
                         entreprises et seront soutenu∙e∙s dans le lancement de leur projet.&nbsp;</p>
-                    <nuxt-link class="fp-ui-button" href="/lieu/hotel-entreprises" >Accéder à la page</nuxt-link>
+                    <nuxt-link class="fp-ui-button" href="/lieu/FactoryLab" >Accéder à la page</nuxt-link>
                 </div>
                 <div
                     class="v-space-building__sections__description fp-remove-margin-child v-space-building__section-description--Creche"
@@ -295,7 +295,7 @@ function clearAllActiveSections() {
 
 
 
-function toggleActiveSection(sectionToTgole: "PopUp" | "MakerLab" | "LearningLab" | "GrandLab" | "Ecole_Horlogerie" | "Hotel_Entreprises" | "Creche" | "Foodlab") {
+function toggleActiveSection(sectionToTgole: "PopUp" | "MakerLab" | "LearningLab" | "GrandLab" | "Ecole_Horlogerie" | "FactoryLab" | "Creche" | "Foodlab") {
 
     if(sectionToTgole === "PopUp") {
         if(sectionIsActive_popup.value) {
@@ -337,7 +337,7 @@ function toggleActiveSection(sectionToTgole: "PopUp" | "MakerLab" | "LearningLab
             sectionIsActive_Ecole_Horlogerie.value = true
         }
     }
-    else if(sectionToTgole === "Hotel_Entreprises") {
+    else if(sectionToTgole === "FactoryLab") {
         if(sectionIsActive_Hotel_Entreprises.value) {
             sectionIsActive_Hotel_Entreprises.value = false
         } else {

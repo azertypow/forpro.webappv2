@@ -28,13 +28,13 @@
                     <rect  :class="{'is-over': useAppStateStore().currentOverSection === 'creche',                  'is-active': currentRouteSlug === 'creche'}"             @mouseover="useAppStateStore().currentOverSection = 'creche'"                                                                                        class="v-space-build-nav__svg-building-link Creche" x="975" y="0" width="166" height="69" style="cursor: default; fill: var(--fp-color-creche);"/>
                     <rect  :class="{'is-over': useAppStateStore().currentOverSection === 'horlogerie',              'is-active': currentRouteSlug === 'ecole-horlogerie'}"   @mouseover="useAppStateStore().currentOverSection = 'horlogerie'"          @click="openURLInNewTab('https://edu.ge.ch/site/cfpt-horlogerie/')"   class="v-space-build-nav__svg-building-link EcoleHorlogerie" x="225" y="390" width="750" height="88" style="fill: var(--fp-color-ecole_horlogerie);"/>
                     <rect  :class="{'is-over': useAppStateStore().currentOverSection === 'horlogerie',              'is-active': currentRouteSlug === 'ecole-horlogerie'}"   @mouseover="useAppStateStore().currentOverSection = 'horlogerie'"          @click="openURLInNewTab('https://edu.ge.ch/site/cfpt-horlogerie/')"   class="v-space-build-nav__svg-building-link EcoleHorlogerie" y="132" width="1200" height="128" style="fill: var(--fp-color-ecole_horlogerie);"/>
-                    <rect  :class="{'is-over': useAppStateStore().currentOverSection === 'hotel-entreprises',       'is-active': currentRouteSlug === 'hotel-entreprises'}"  @mouseover="useAppStateStore().currentOverSection = 'hotel-entreprises'"   @click="goToPage('hotel-entreprises')"                           class="v-space-build-nav__svg-building-link HotelEntreprise" y="61" width="1200" height="71" style="fill: var(--fp-color-hotel_entreprises);"/>
-                    <rect  :class="{'is-over': useAppStateStore().currentOverSection === 'hotel-entreprises',       'is-active': currentRouteSlug === 'hotel-entreprises'}"  @mouseover="useAppStateStore().currentOverSection = 'hotel-entreprises'"   @click="goToPage('hotel-entreprises')"                           class="v-space-build-nav__svg-building-link HotelEntreprise" x="975" y="390" width="225" height="88" style="fill: var(--fp-color-hotel_entreprises);"/>
+                    <rect  :class="{'is-over': useAppStateStore().currentOverSection === 'FactoryLab',              'is-active': currentRouteSlug === 'FactoryLab'}"         @mouseover="useAppStateStore().currentOverSection = 'FactoryLab'"          @click="goToPage('FactoryLab')"                                  class="v-space-build-nav__svg-building-link HotelEntreprise" y="61" width="1200" height="71" style="fill: var(--fp-color-hotel_entreprises);"/>
+                    <rect  :class="{'is-over': useAppStateStore().currentOverSection === 'FactoryLab',              'is-active': currentRouteSlug === 'FactoryLab'}"         @mouseover="useAppStateStore().currentOverSection = 'FactoryLab'"          @click="goToPage('FactoryLab')"                                  class="v-space-build-nav__svg-building-link HotelEntreprise" x="975" y="390" width="225" height="88" style="fill: var(--fp-color-hotel_entreprises);"/>
                     <rect  :class="{'is-over': useAppStateStore().currentOverSection === 'foodlab',                 'is-active': currentRouteSlug === 'foodlab'}"            @mouseover="useAppStateStore().currentOverSection = 'foodlab'"             @click="goToPage('foodlab')"                                     class="v-space-build-nav__svg-building-link FoodLab" x="70.0027" width="905.03136" height="69" style="fill: var(--fp-color-foodlab);"/>
                     <rect  :class="{'is-over': useAppStateStore().currentOverSection === 'makerlab',                'is-active': currentRouteSlug === 'makerlab'}"           @mouseover="useAppStateStore().currentOverSection = 'makerlab'"            @click="goToPage('makerlab')"                                    class="v-space-build-nav__svg-building-link MakerLab" x="975" y="260" width="225" height="130" style="fill: var(--fp-color-makerlab);"/>
                     <rect  :class="{'is-over': useAppStateStore().currentOverSection === 'learninglab',             'is-active': currentRouteSlug === 'learninglab'}"        @mouseover="useAppStateStore().currentOverSection = 'learninglab'"         @click="goToPage('learninglab')"                                 class="v-space-build-nav__svg-building-link LearningLab" x="225" y="260" width="750" height="130" style="fill: var(--fp-color-learninglab);"/>
                     <rect  :class="{'is-over': useAppStateStore().currentOverSection === 'grandlab',                'is-active': currentRouteSlug === 'grandlab'}"           @mouseover="useAppStateStore().currentOverSection = 'grandlab'"            @click="goToPage('grandlab')"                                    class="v-space-build-nav__svg-building-link GrandLab" y="260" width="225" height="130" style="fill: var(--fp-color-grandlab);"/>
-                    <rect  :class="{'is-over': useAppStateStore().currentOverSection === 'popup',                   'is-active': currentRouteSlug === 'popup'}"            @mouseover="useAppStateStore().currentOverSection   = 'popup'"               @click="goToPage('popup')"                                       class="v-space-build-nav__svg-building-link Accueil" y="390" width="225" height="88" style="fill: var(--fp-color-accueil);"/>
+                    <rect  :class="{'is-over': useAppStateStore().currentOverSection === 'popup',                   'is-active': currentRouteSlug === 'popup'}"              @mouseover="useAppStateStore().currentOverSection   = 'popup'"             @click="goToPage('popup')"                                       class="v-space-build-nav__svg-building-link Accueil" y="390" width="225" height="88" style="fill: var(--fp-color-accueil);"/>
 
                     <g
                         style="pointer-events: none"
@@ -65,7 +65,7 @@
 // defineProps<{
 // }>()
 
-import {useAppStateStore} from "~/stores/appState";
+import {TPageSectionSlug, useAppStateStore} from "~/stores/appState";
 import {IWebsiteApiSectionUrl} from "~/global/forProApi";
 import {ComputedRef, Ref, UnwrapRef} from "vue";
 
@@ -73,7 +73,7 @@ const currentPage = useRoute()
 const currentRouteSlug = computed( () => useRoute().params.slug)
 const route = useRoute()
 
-function goToPage(pageSlug: string) {
+function goToPage(pageSlug: TPageSectionSlug) {
     navigateTo(`/lieu/${pageSlug}`)
 }
 

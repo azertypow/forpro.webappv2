@@ -46,7 +46,7 @@
                             :text="(block as IForPro_blocksContent_isTextContent).html"
                         />
                         <text-quote-hotel
-                            v-else-if="slug === 'hotel-entreprises'"
+                            v-else-if="slug === 'FactoryLab'"
                             :text="(block as IForPro_blocksContent_isTextContent).html"
                         />
                         <text-quote-learninglab

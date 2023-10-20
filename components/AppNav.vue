@@ -156,7 +156,7 @@
                                 'fp-text-color-GrandLab': pageRef.slug            ==='grandlab',
                                 'fp-text-color-Accueil': pageRef.slug             ==='popup',
                                 'fp-text-color-Foodlab': pageRef.slug             ==='foodlab',
-                                'fp-text-color-Hotel_Entreprises': pageRef.slug   ==='hotel-entreprises',
+                                'fp-text-color-Hotel_Entreprises': pageRef.slug   ==='FactoryLab',
                                 'fp-text-color-Creche': pageRef.slug              ==='creche',
                                 'fp-text-color-Ecole_Horlogerie': pageRef.slug    ==='ecole-horlogerie',
                             }"
@@ -202,7 +202,7 @@ function syncOverGlobalStore(sectionSlug: TPageSectionSlug) {
   else if (sectionSlug === 'grandlab'           ) useAppStateStore().currentOverSection = 'grandlab'
   else if (sectionSlug === 'popup'              ) useAppStateStore().currentOverSection = 'popup'
   else if (sectionSlug === 'foodlab'            ) useAppStateStore().currentOverSection = 'foodlab'
-  else if (sectionSlug === 'hotel-entreprises'  ) useAppStateStore().currentOverSection = 'hotel-entreprises'
+  else if (sectionSlug === 'FactoryLab'         ) useAppStateStore().currentOverSection = 'FactoryLab'
   else if (sectionSlug === 'creche'             ) useAppStateStore().currentOverSection = 'creche'
   else if (sectionSlug === 'ecole-horlogerie'   ) useAppStateStore().currentOverSection = 'horlogerie'
 }
