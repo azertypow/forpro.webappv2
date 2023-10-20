@@ -15,7 +15,7 @@
         <img
             v-else-if="imageBlockContent.image"
             class="v-image-content__img"
-                alt="image de contenu"
+                :alt="imageBlockContent.title + ',' + imageBlockContent.photographer"
                 :src="imageBlockContent.image.resize.xxl"
         >
     </section>
