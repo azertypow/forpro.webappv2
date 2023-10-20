@@ -3,6 +3,16 @@ import type {IForProApi_site, forProThemeColor} from "~/global/forProApi";
 import {map} from "~/global/tools"
 import {parseToRgba, rgba} from "color2k";
 
+export type TCurrentOverSection = ''
+    | 'creche'
+    | 'horlogerie'
+    | 'hotel-entreprises'
+    | 'foodlab'
+    | 'makerlab'
+    | 'learninglab'
+    | 'grandlab'
+    | 'popup'
+
 export const useAppStateStore = defineStore('appState', {
     state: () => ({
         navIsOpen: false,
@@ -12,15 +22,7 @@ export const useAppStateStore = defineStore('appState', {
         siteData: null as IForProApi_site | null,
         hideBuildingNav: [] as string[],
         newsletterIsOpen: false,
-        currentOverSection: '' as ''
-          | 'creche'
-          | 'horlogerie'
-          | 'hotel-entreprises'
-          | 'foodlab'
-          | 'makerlab'
-          | 'learninglab'
-          | 'grandlab'
-          | 'accueil'
+        currentOverSection: '' as TCurrentOverSection
     }),
 
     actions: {
