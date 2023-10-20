@@ -13,6 +13,15 @@ export type TCurrentOverSection = ''
     | 'grandlab'
     | 'popup'
 
+export type TPageSectionSlug = 'learninglab'
+    | 'makerlab'
+    | 'grandlab'
+    | 'popup'
+    | 'foodlab'
+    | 'hotel-entreprises'
+    | 'creche'
+    | 'ecole-horlogerie'
+
 export const useAppStateStore = defineStore('appState', {
     state: () => ({
         navIsOpen: false,

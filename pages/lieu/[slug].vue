@@ -103,7 +103,7 @@
                 class="fp-grid-coll-24-24 fp-grid-coll-reg-16-24"
             >
                 <block-f-a-q
-                    href="/faq#Accueil">
+                    href="/faq#PoPup">
                 </block-f-a-q>
             </div>
         </div>

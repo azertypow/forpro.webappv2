@@ -154,7 +154,7 @@
                                 'fp-text-color-LearningLab': pageRef.slug         ==='learninglab',
                                 'fp-text-color-MakerLab': pageRef.slug            ==='makerlab',
                                 'fp-text-color-GrandLab': pageRef.slug            ==='grandlab',
-                                'fp-text-color-Accueil': pageRef.slug             ==='accueil',
+                                'fp-text-color-Accueil': pageRef.slug             ==='popup',
                                 'fp-text-color-Foodlab': pageRef.slug             ==='foodlab',
                                 'fp-text-color-Hotel_Entreprises': pageRef.slug   ==='hotel-entreprises',
                                 'fp-text-color-Creche': pageRef.slug              ==='creche',
@@ -172,7 +172,7 @@
 </template>
 
 <script lang="ts" setup>
-import {useAppStateStore} from "~/stores/appState";
+import {TCurrentOverSection, TPageSectionSlug, useAppStateStore} from "~/stores/appState";
 import {useRouter} from "nuxt/app"
 import {IForProApi_section, IForProApi_site, IWebsiteApiSectionUrl} from "~/global/forProApi";
 import {ComputedRef, Ref, UnwrapRef} from "vue";
@@ -196,15 +196,15 @@ function openNewsletterFromNav() {
   }, 500)
 }
 
-function syncOverGlobalStore(sectionSlug: string) {
-  if (sectionSlug === 'learninglab') useAppStateStore().currentOverSection = 'learninglab'
-  else if (sectionSlug === 'makerlab') useAppStateStore().currentOverSection = 'makerlab'
-  else if (sectionSlug === 'grandlab') useAppStateStore().currentOverSection = 'grandlab'
-  else if (sectionSlug === 'accueil') useAppStateStore().currentOverSection = 'accueil'
-  else if (sectionSlug === 'foodlab') useAppStateStore().currentOverSection = 'foodlab'
-  else if (sectionSlug === 'hotel-entreprises') useAppStateStore().currentOverSection = 'hotel-entreprises'
-  else if (sectionSlug === 'creche') useAppStateStore().currentOverSection = 'creche'
-  else if (sectionSlug === 'ecole-horlogerie') useAppStateStore().currentOverSection = 'horlogerie'
+function syncOverGlobalStore(sectionSlug: TPageSectionSlug) {
+  if      (sectionSlug      === 'learninglab'        ) useAppStateStore().currentOverSection = 'learninglab'
+  else if (sectionSlug === 'makerlab'           ) useAppStateStore().currentOverSection = 'makerlab'
+  else if (sectionSlug === 'grandlab'           ) useAppStateStore().currentOverSection = 'grandlab'
+  else if (sectionSlug === 'popup'              ) useAppStateStore().currentOverSection = 'popup'
+  else if (sectionSlug === 'foodlab'            ) useAppStateStore().currentOverSection = 'foodlab'
+  else if (sectionSlug === 'hotel-entreprises'  ) useAppStateStore().currentOverSection = 'hotel-entreprises'
+  else if (sectionSlug === 'creche'             ) useAppStateStore().currentOverSection = 'creche'
+  else if (sectionSlug === 'ecole-horlogerie'   ) useAppStateStore().currentOverSection = 'horlogerie'
 }
 
 </script>

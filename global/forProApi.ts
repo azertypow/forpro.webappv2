@@ -1,5 +1,6 @@
 import {_AsyncData} from "#app/composables/asyncData"
 import {FetchError} from "ofetch"
+import {TPageSectionSlug} from "~/stores/appState";
 
 export interface IForProApi_site {
     "title":        string,
@@ -16,7 +17,7 @@ export interface IWebsiteApiSectionUrl {
         "value": string
     },
     "url": string,
-    "slug": string,
+    "slug": TPageSectionSlug,
     "blueprint": string
 }
 
