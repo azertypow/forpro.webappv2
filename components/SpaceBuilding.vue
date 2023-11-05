@@ -164,7 +164,7 @@
                 >
                     <h3>PoPup</h3>
                     <p>Un espace polyvalent où se mêleront les vies professionnelles et
-                        privées, les visites ponctuelles et routines quotidiennes. <strong>L’Accueil</strong> orientera et informera le public,
+                        privées, les visites ponctuelles et routines quotidiennes. <strong>Le PopUp</strong> orientera et informera le public,
                         et sera aussi un lieu de pause entre deux rendez-vous. Il sera le centre des informations et la
                         «vitrine» de toutes les activités du bâtiment.</p>
                     <nuxt-link class="fp-ui-button" href="/lieu/accueil" >Accéder à la page</nuxt-link>
@@ -218,12 +218,12 @@
                     class="v-space-building__sections__description fp-remove-margin-child v-space-building__section-description--Hotel_Entreprises"
                     v-if="sectionIsActive_Hotel_Entreprises"
                 >
-                    <h3>Hôtel Entreprises</h3>
+                    <h3>FactoryLab</h3>
                     <p>Un lieu pour accueillir des entreprises du secteur secondaire ainsi
                         que des jeunes entrepreneurs et entrepreneuses. Les entreprises profiteront d’un accompagnement à
                         l’engagement d’apprenti∙e∙s et deviendront des lieux d’expérimentation en situation réelle pour les
-                        jeunes en orientation. Les diplômé∙e∙s à l’âme entrepreneuriale pourront s’installer dans l’hôtel à
-                        entreprises et seront soutenu∙e∙s dans le lancement de leur projet.&nbsp;</p>
+                        jeunes en orientation. Les diplômé∙e∙s à l’âme entrepreneuriale pourront s’installer dans
+                        le FactoryLab et seront soutenu∙e∙s dans le lancement de leur projet.&nbsp;</p>
                     <nuxt-link class="fp-ui-button" href="/lieu/FactoryLab" >Accéder à la page</nuxt-link>
                 </div>
                 <div
