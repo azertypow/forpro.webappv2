@@ -159,10 +159,22 @@ const articleData: Ref<UnwrapRef<null | IForPro_blogArticle>> = ref(null)
 
 const slug = useRoute().params.slug
 
-if( typeof slug  === 'string') fetchForProApi_blogArticle(slug).then((value: IForPro_blogArticle) => {
-    articleData.value = value
-    useAppStateStore().updateTheme('fp-var-theme-color-default')
-    useRoute().meta.pageName = useAppStateStore().siteData?.blogDetails.title.value
+if( typeof slug  === 'string') fetchForProApi_blogArticle(slug).then((value: IForPro_blogArticle | {errors: string}) => {
+        console.log(value)
+
+    if( 'errors' in value ) {
+
+        showError({
+            statusCode: 404,
+            statusMessage: value.errors[0],
+        })
+
+    } else {
+        articleData.value = value
+        useAppStateStore().updateTheme('fp-var-theme-color-default')
+        useRoute().meta.pageName = useAppStateStore().siteData?.blogDetails.title.value
+    }
+
 })
 
 
