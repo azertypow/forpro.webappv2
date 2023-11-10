@@ -29,27 +29,53 @@
                 <div
                     class="fp-grid-coll-24-24 fp-grid-coll-reg-18-24 fp-grid-with-gutter fp-remove-margin-child"
                 >
-                    <iframe
-                        type="text/html"
-                        width="720"
-                        height="405"
-                        src="https://www.youtube.com/embed/K8hkcHexRh4?controls=0&color=white&rel=0"
-                        frameborder="0" allowfullscreen
-                    />
-                    <iframe
-                        type="text/html"
-                        width="720"
-                        height="405"
-                        src="https://www.youtube.com/embed/IbjWlD3urr4?controls=0&color=white&rel=0"
-                        frameborder="0" allowfullscreen
-                    />
-                    <iframe
-                        type="text/html"
-                        width="720"
-                        height="405"
-                        src="https://www.youtube.com/embed/6jGrEwKLNvI?controls=0&color=white&rel=0"
-                        frameborder="0" allowfullscreen
-                    />
+                    <div
+                        class="v-recrutement__video-box"
+                    >
+                        <div
+                            class="v-recrutement__video-box__item"
+                        >
+                            <iframe
+                                type="text/html"
+                                width="720"
+                                height="405"
+                                src="https://www.youtube.com/embed/K8hkcHexRh4?controls=0&color=white&rel=0"
+                                frameborder="0" allowfullscreen
+                            />
+                        </div>
+                    </div>
+
+                    <div
+                        class="v-recrutement__video-box"
+                    >
+                        <div
+                            class="v-recrutement__video-box__item is-learningLab"
+                        >
+                            <iframe
+                                type="text/html"
+                                width="720"
+                                height="405"
+                                src="https://www.youtube.com/embed/IbjWlD3urr4?controls=0&color=white&rel=0"
+                                frameborder="0" allowfullscreen
+                            />
+                        </div>
+                    </div>
+
+                    <div
+                        class="v-recrutement__video-box"
+                    >
+                        <div
+                            class="v-recrutement__video-box__item is-foodLab"
+                        >
+                            <iframe
+                                type="text/html"
+                                width="720"
+                                height="405"
+                                src="https://www.youtube.com/embed/6jGrEwKLNvI?controls=0&color=white&rel=0"
+                                frameborder="0" allowfullscreen
+                            />
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -142,11 +168,42 @@ useAppStateStore().updateTheme('fp-var-theme-color-default')
 <style lang="scss" scoped >
 .v-recrutement {
 
+}
+
+.v-recrutement__video-box {
+    max-width: 720px;
+    margin: auto;
+}
+
+.v-recrutement__video-box__item {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 56.25%;
+    margin: 0 auto 4rem;
+    overflow: hidden;
+    border-radius: 1rem;
+    border: solid 5px var(--fp-theme-color-default-ternary--light);
+
+    &.is-learningLab {
+        border-color: var(--fp-theme-color-learningLab-main);
+    }
+
+    &.is-foodLab {
+        border-color: var(--fp-theme-color-foodlab-main);
+    }
+
     iframe {
         display: block;
-        margin: 0 auto 4rem;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
 }
+
 
 .v-recrutement__pdf-item {
     box-sizing: border-box;
@@ -165,6 +222,8 @@ useAppStateStore().updateTheme('fp-var-theme-color-default')
     }
 
     svg {
+        display: block;
+        position: relative;
         fill: var(--fp-theme-color-secondary);
         height: 1rem;
         width: auto;
@@ -173,8 +232,11 @@ useAppStateStore().updateTheme('fp-var-theme-color-default')
     &:hover {
         color: white;
         background: var(--fp-theme-color-secondary);
+
         svg {
             fill: white;
+            transform: scale3d(1.5, 1.5, 1) rotate(-10deg);
+            transition: transform .25s ease-out;
         }
     }
 

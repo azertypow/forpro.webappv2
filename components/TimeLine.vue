@@ -1,5 +1,8 @@
 <template>
-    <section class="v-time-line" >
+    <section
+            class="v-time-line"
+            ref="timelineElement"
+    >
         <div
                 class="v-time-line__item"
         >
@@ -82,6 +85,34 @@
 // defineProps<{
 // }>()
 
+import {Ref, UnwrapRef} from "vue";
+
+const timelineElement: Ref<UnwrapRef<null | HTMLElement>> = ref(null)
+
+onMounted(() => {
+    setTimelineInteractionObserver(timelineElement.value)
+})
+
+function setTimelineInteractionObserver(timelineElement: HTMLElement | null) {
+    if( timelineElement === null) return null
+
+    const timelineItemInteractionObserver = new IntersectionObserver(
+        entries => interactionObserverCallback(entries),
+        {}
+    )
+
+    timelineElement.querySelectorAll('.v-time-line__item').forEach(timelineItem => {
+        timelineItemInteractionObserver.observe(timelineItem)
+    })
+}
+
+function interactionObserverCallback(timelineItem: IntersectionObserverEntry[]) {
+    timelineItem.forEach(value => {
+        if( ! (value.target instanceof HTMLElement) ) return
+        if(value.isIntersecting) value.target.classList.add('ts-is-intersecting')
+        else value.target.classList.remove('ts-is-intersecting')
+    })
+}
 
 </script>
 
@@ -119,12 +150,15 @@
       width: 1.5rem;
       height: 1.5rem;
       box-sizing: border-box;
-      background: #ffcb8f;
       border: solid 3px var(--fp-theme-color-secondary);
       border-radius: 100%;
       right: 0;
       top: 0;
       transform: translate(50%, -25%);
+
+      //transition with InteractionObserver (see css below)
+      transition: background-color 1s ease-in-out;
+      background-color: white;
     }
 
     &:first-child {
@@ -146,11 +180,21 @@
 
     .v-time-line__item__date {
       color: var(--fp-theme-color-secondary);
+
+      //transition with InteractionObserver (see css below)
+      transition: opacity .75s ease-in-out, transform .55s ease-in-out;
+      transform: translateY(2rem);
+      opacity: 0;
     }
 
     .v-time-line__item__title {
       margin: 0;
       text-align: left;
+
+      //transition with InteractionObserver (see css below)
+      transition: opacity .75s ease-in-out, transform .65s ease-in-out;
+      transform: translateY(2rem);
+      opacity: 0;
     }
 
     .v-time-line__item__desc {
@@ -158,9 +202,35 @@
       text-align: left;
       padding-top: 1rem;
 
+      //transition with InteractionObserver (see css below)
+      transition: opacity .75s ease-in-out, transform .75s ease-in-out;
+      transform: translateY(2rem);
+      opacity: 0;
+
       a {
         color: inherit;
         text-decoration: underline;
+      }
+    }
+
+    &.ts-is-intersecting {
+      &:before {
+        background-color: #ffcb8f;
+      }
+
+      .v-time-line__item__date {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .v-time-line__item__title {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .v-time-line__item__desc {
+        opacity: 1;
+        transform: translateY(0);
       }
     }
   }
