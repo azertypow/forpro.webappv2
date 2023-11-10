@@ -27,6 +27,21 @@
                 class="fp-grid-coll-container fp-grid-coll-container--center fp-page__sections-box__section"
             >
                 <div
+                    class="fp-grid-coll-24-24 fp-grid-coll-reg-18-24 fp-grid-with-gutter"
+                >
+                    <h2 style="margin-top: 2rem; margin-bottom: 4rem;">Processus de recrutement</h2>
+                </div>
+                <div
+                    class="fp-grid-coll-24-24 fp-grid-coll-reg-18-24 fp-grid-with-gutter"
+                >
+                    <time-line/>
+                </div>
+            </div>
+
+            <div
+                class="fp-grid-coll-container fp-grid-coll-container--center fp-page__sections-box__section"
+            >
+                <div
                     class="fp-grid-coll-24-24 fp-grid-coll-reg-18-24 fp-grid-with-gutter fp-remove-margin-child"
                 >
                     <div
@@ -76,21 +91,6 @@
                             />
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <div
-                class="fp-grid-coll-container fp-grid-coll-container--center fp-page__sections-box__section"
-            >
-                <div
-                    class="fp-grid-coll-24-24 fp-grid-coll-reg-18-24 fp-grid-with-gutter"
-                >
-                    <h2 style="margin-top: 2rem; margin-bottom: 4rem;">Processus de recrutement</h2>
-                </div>
-                <div
-                    class="fp-grid-coll-24-24 fp-grid-coll-reg-18-24 fp-grid-with-gutter"
-                >
-                    <time-line/>
                 </div>
             </div>
 

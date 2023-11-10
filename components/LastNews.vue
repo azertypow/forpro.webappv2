@@ -4,9 +4,11 @@
             v-if="lastBlogArticles"
             class="v-last-news__container fp-grid-coll-container fp-grid-coll-container--center"
         >
-            <div class="v-last-news__container__item fp-grid-with-gutter fp-grid-coll-24-24 fp-grid-coll-reg-8-24">
+            <div
+                v-if="lastBlogArticles.lastArticle"
+                class="v-last-news__container__item fp-grid-with-gutter fp-grid-coll-24-24 fp-grid-coll-reg-8-24"
+            >
                 <article-item
-                        v-if="lastBlogArticles.lastArticle"
                         :imageInstance="lastBlogArticles.lastArticle.coverImage"
                         :slug="lastBlogArticles.lastArticle.slug"
                         :title="lastBlogArticles.lastArticle.title.value"
@@ -16,9 +18,11 @@
                         :is-negative-color="true"
                 />
             </div>
-            <div class="v-last-news__container__item fp-grid-with-gutter fp-grid-coll-24-24 fp-grid-coll-reg-8-24">
+            <div
+                v-if="lastBlogArticles.lastConstruction"
+                class="v-last-news__container__item fp-grid-with-gutter fp-grid-coll-24-24 fp-grid-coll-reg-8-24"
+            >
                 <article-item
-                    v-if="lastBlogArticles.lastConstruction"
                     :imageInstance="lastBlogArticles.lastConstruction.coverImage"
                     :slug="lastBlogArticles.lastConstruction.slug"
                     :title="lastBlogArticles.lastConstruction.title.value"
@@ -28,9 +32,11 @@
                     :is-negative-color="true"
                 />
             </div>
-            <div class="v-last-news__container__item fp-grid-with-gutter fp-grid-coll-24-24 fp-grid-coll-reg-8-24">
+            <div
+                v-if="lastBlogArticles.lastProject"
+                class="v-last-news__container__item fp-grid-with-gutter fp-grid-coll-24-24 fp-grid-coll-reg-8-24"
+            >
                 <article-item
-                    v-if="lastBlogArticles.lastProject"
                     :imageInstance="lastBlogArticles.lastProject.coverImage"
                     :slug="lastBlogArticles.lastProject.slug"
                     :title="lastBlogArticles.lastProject.title.value"
