@@ -15,7 +15,7 @@
                 class="v-time-line__item"
         >
             <h6 class="v-time-line__item__date"   >01.12.2023 au 10.1.2024</h6>
-            <h3 class="v-time-line__item__title"  >Délais de postulation pour déposer votre candidature</h3>
+            <h3 class="v-time-line__item__title"  >Délais de postulation</h3>
             <p  class="v-time-line__item__desc"   ><a target="_blank" href="#" >Comment déposer ma candidature</a></p>
         </div>
 
@@ -24,52 +24,53 @@
                 class="v-time-line__item"
         >
             <h6 class="v-time-line__item__date"   >19.1.2024</h6>
-            <h3 class="v-time-line__item__title"  >Sélection 1<sup>er</sup> tour sur dossier</h3>
+            <h3 class="v-time-line__item__title"  >Sélection 1<sup>er</sup> tour sur&nbsp;dossier</h3>
             <p  class="v-time-line__item__desc"   >Mail d’annonce aux candidat·es sélectionné·es au 1er tour</p>
         </div>
         <div
                 class="v-time-line__item"
         >
-            <h6 class="v-time-line__item__date"   >10.2.2024</h6>
+            <h6 class="v-time-line__item__date"   >Samedi 10.2.2024</h6>
             <h3 class="v-time-line__item__title"  >1<sup>er</sup> tour, Atelier collectif</h3>
             <p  class="v-time-line__item__desc"   ><a href="#">Atelier collectif de recrutement</a><br/>Horaires : 8h30 à 13h (obligatoire)</p>
+            <p  class="v-time-line__item__desc fp-text-small"   >Nous recrutons pour l’été 2024 des professionnel.es qui ont une forte appétence pour le public jeune, pour le travail collaboratif, qui apprécient un environnement toujours en mouvement et qui souhaitent faire partie de l’aventure des LABs ForPro !</p>
         </div>
         <div
-                class="v-time-line__item"
+                class="v-time-line__item v-time-line__item--gant"
         >
             <h6 class="v-time-line__item__date"   >13.2.2024 au 16.2.2024</h6>
             <h3 class="v-time-line__item__title"  >2<sup>ème</sup> tour FoodLab</h3>
             <p  class="v-time-line__item__desc"   >Entretiens individuels</p>
         </div>
         <div
-                class="v-time-line__item"
+                class="v-time-line__item v-time-line__item--gant"
         >
             <h6 class="v-time-line__item__date"   >26.2.2024</h6>
             <h3 class="v-time-line__item__title"  >Décisions FoodLab</h3>
             <p  class="v-time-line__item__desc"   >Appels téléphoniques pour informer les candidat·es</p>
         </div>
         <div
-                class="v-time-line__item"
+                class="v-time-line__item v-time-line__item--pen"
         >
             <h6 class="v-time-line__item__date"   >4.3.2024 au 8.3.2024</h6>
             <h3 class="v-time-line__item__title"  >2<sup>ème</sup> tour LearningLab</h3>
             <p  class="v-time-line__item__desc"   >Entretiens individuels</p>
         </div>
         <div
-                class="v-time-line__item"
+                class="v-time-line__item v-time-line__item--pen"
         >
             <h6 class="v-time-line__item__date"   >15.3.2024</h6>
             <h3 class="v-time-line__item__title"  >Décisions LearningLab</h3>
             <p  class="v-time-line__item__desc"   >Appels téléphoniques pour informer les candidat·es</p>
         </div>
         <div
-                class="v-time-line__item"
+                class="v-time-line__item v-time-line__item--gant"
         >
             <h6 class="v-time-line__item__date"   >1.6.2024 ou à convenir</h6>
             <h3 class="v-time-line__item__title"  >Entrée en fonction FoodLab</h3>
         </div>
         <div
-                class="v-time-line__item"
+                class="v-time-line__item v-time-line__item--pen"
         >
             <h6 class="v-time-line__item__date"   >1.7.2024 ou à convenir</h6>
             <h3 class="v-time-line__item__title"  >Entrée en fonction LearningLab</h3>
@@ -141,7 +142,8 @@ function interactionObserverCallback(timelineItem: IntersectionObserverEntry[]) 
     width: 50%;
     box-sizing: border-box;
     padding-right: 2rem;
-    margin-top: -1.4rem;
+    margin-top: 0;
+    padding-bottom: 2rem;
 
     &:before {
       content: "";
@@ -179,6 +181,7 @@ function interactionObserverCallback(timelineItem: IntersectionObserverEntry[]) 
     }
 
     .v-time-line__item__date {
+      font-size: .85rem;
       color: var(--fp-theme-color-secondary);
 
       //transition with InteractionObserver (see css below)
@@ -231,6 +234,29 @@ function interactionObserverCallback(timelineItem: IntersectionObserverEntry[]) 
       .v-time-line__item__desc {
         opacity: 1;
         transform: translateY(0);
+      }
+    }
+
+    &.v-time-line__item--gant.ts-is-intersecting {
+      &:before {
+        border-width: 4px;
+        width:  2.5rem;
+        height: 2.5rem;
+        background-image: url('../assets/icons/gant.svg');
+        background-size: 66% 66%;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+    &.v-time-line__item--pen.ts-is-intersecting {
+      &:before {
+        border-width: 4px;
+        width:  2.5rem;
+        height: 2.5rem;
+        background-image: url('../assets/icons/pen.svg');
+        background-size: 66% 66%;
+        background-repeat: no-repeat;
+        background-position: center;
       }
     }
   }

@@ -21,8 +21,202 @@
         </div>
 
         <div
+            class="fp-grid-coll-container fp-grid-coll-container--center fp-page__sections-box__section"
+        >
+            <div
+                class="fp-grid-coll-24-24 fp-grid-coll-reg-18-24 fp-grid-with-gutter fp-remove-margin-child"
+            >
+                <div
+                    class="v-recrutement__video-box"
+                >
+                    <div
+                        class="v-recrutement__video-box__item"
+                    >
+                        <iframe
+                            type="text/html"
+                            width="720"
+                            height="405"
+                            src="https://www.youtube.com/embed/K8hkcHexRh4?color=white&rel=0"
+                            frameborder="0" allowfullscreen
+                        />
+                    </div>
+                </div>
+
+                <div
+                    class="v-recrutement__video-box"
+                >
+                    <div
+                        class="v-recrutement__video-box__item is-learningLab"
+                    >
+                        <iframe
+                            type="text/html"
+                            width="720"
+                            height="405"
+                            src="https://www.youtube.com/embed/IbjWlD3urr4?color=white&rel=0"
+                            frameborder="0" allowfullscreen
+                        />
+                    </div>
+                </div>
+
+                <div
+                    class="v-recrutement__video-box"
+                >
+                    <div
+                        class="v-recrutement__video-box__item is-foodLab"
+                    >
+                        <iframe
+                            type="text/html"
+                            width="720"
+                            height="405"
+                            src="https://www.youtube.com/embed/6jGrEwKLNvI?color=white&rel=0"
+                            frameborder="0" allowfullscreen
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div
             class="fp-page__sections-box"
         >
+            <div
+                class="fp-grid-coll-container fp-grid-coll-container--center fp-page__sections-box__section"
+                style="margin-bottom: 5rem"
+            >
+                <div
+                    class="fp-grid-coll-24-24 fp-grid-coll-reg-18-24 fp-grid-with-gutter"
+                >
+                    <h2 style="margin-top: 2rem; margin-bottom: 4rem;">Profils</h2>
+                </div>
+                <div
+                    class="fp-grid-coll-24-24 fp-grid-coll-reg-18-24 fp-grid-with-gutter fp-remove-margin-child"
+                >
+
+                    <h3>LearningLab</h3>
+                    <a
+                        class="v-recrutement__pdf-item"
+                        href="#"
+                        target="_blank"
+                    >
+                        <span>Référent·e LearningLab</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M360-460h40v-80h40q17 0 28.5-11.5T480-580v-40q0-17-11.5-28.5T440-660h-80v200Zm40-120v-40h40v40h-40Zm120 120h80q17 0 28.5-11.5T640-500v-120q0-17-11.5-28.5T600-660h-80v200Zm40-40v-120h40v120h-40Zm120 40h40v-80h40v-40h-40v-40h40v-40h-80v200ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>
+                    </a>
+                    <a
+                        class="v-recrutement__pdf-item"
+                        href="#"
+                        target="_blank"
+                    >
+                        <span>Référent·e Accueil</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M360-460h40v-80h40q17 0 28.5-11.5T480-580v-40q0-17-11.5-28.5T440-660h-80v200Zm40-120v-40h40v40h-40Zm120 120h80q17 0 28.5-11.5T640-500v-120q0-17-11.5-28.5T600-660h-80v200Zm40-40v-120h40v120h-40Zm120 40h40v-80h40v-40h-40v-40h40v-40h-80v200ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>
+                    </a>
+                    <a
+                        class="v-recrutement__pdf-item"
+                        href="#"
+                        target="_blank"
+                    >
+                        <span>Référent·e Mentorat</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M360-460h40v-80h40q17 0 28.5-11.5T480-580v-40q0-17-11.5-28.5T440-660h-80v200Zm40-120v-40h40v40h-40Zm120 120h80q17 0 28.5-11.5T640-500v-120q0-17-11.5-28.5T600-660h-80v200Zm40-40v-120h40v120h-40Zm120 40h40v-80h40v-40h-40v-40h40v-40h-80v200ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>
+                    </a>
+                    <a
+                        class="v-recrutement__pdf-item"
+                        href="#"
+                        target="_blank"
+                    >
+                        <span>Assistant·e socio-éducatif</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M360-460h40v-80h40q17 0 28.5-11.5T480-580v-40q0-17-11.5-28.5T440-660h-80v200Zm40-120v-40h40v40h-40Zm120 120h80q17 0 28.5-11.5T640-500v-120q0-17-11.5-28.5T600-660h-80v200Zm40-40v-120h40v120h-40Zm120 40h40v-80h40v-40h-40v-40h40v-40h-80v200ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>
+                    </a>
+                    <a
+                        class="v-recrutement__pdf-item"
+                        href="#"
+                        target="_blank"
+                    >
+                        <span>Adjoint LearningLab</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M360-460h40v-80h40q17 0 28.5-11.5T480-580v-40q0-17-11.5-28.5T440-660h-80v200Zm40-120v-40h40v40h-40Zm120 120h80q17 0 28.5-11.5T640-500v-120q0-17-11.5-28.5T600-660h-80v200Zm40-40v-120h40v120h-40Zm120 40h40v-80h40v-40h-40v-40h40v-40h-80v200ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>
+                    </a>
+                    <a
+                        class="v-recrutement__pdf-item"
+                        href="#"
+                        target="_blank"
+                    >
+                        <span>Formateur·rice LearningLab</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M360-460h40v-80h40q17 0 28.5-11.5T480-580v-40q0-17-11.5-28.5T440-660h-80v200Zm40-120v-40h40v40h-40Zm120 120h80q17 0 28.5-11.5T640-500v-120q0-17-11.5-28.5T600-660h-80v200Zm40-40v-120h40v120h-40Zm120 40h40v-80h40v-40h-40v-40h40v-40h-80v200ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>
+                    </a>
+
+
+
+
+
+
+
+                    <h3>FoodLab</h3>
+                    <a
+                        class="v-recrutement__pdf-item"
+                        href="#"
+                        target="_blank"
+                    >
+                        <span>Responsable de cuisine</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M360-460h40v-80h40q17 0 28.5-11.5T480-580v-40q0-17-11.5-28.5T440-660h-80v200Zm40-120v-40h40v40h-40Zm120 120h80q17 0 28.5-11.5T640-500v-120q0-17-11.5-28.5T600-660h-80v200Zm40-40v-120h40v120h-40Zm120 40h40v-80h40v-40h-40v-40h40v-40h-80v200ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>
+                    </a>
+                    <a
+                        class="v-recrutement__pdf-item"
+                        href="#"
+                        target="_blank"
+                    >
+                        <span>Adjoint au responsable de cuisine</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M360-460h40v-80h40q17 0 28.5-11.5T480-580v-40q0-17-11.5-28.5T440-660h-80v200Zm40-120v-40h40v40h-40Zm120 120h80q17 0 28.5-11.5T640-500v-120q0-17-11.5-28.5T600-660h-80v200Zm40-40v-120h40v120h-40Zm120 40h40v-80h40v-40h-40v-40h40v-40h-80v200ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>
+                    </a>
+                    <a
+                        class="v-recrutement__pdf-item"
+                        href="#"
+                        target="_blank"
+                    >
+                        <span>Cuisinier</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M360-460h40v-80h40q17 0 28.5-11.5T480-580v-40q0-17-11.5-28.5T440-660h-80v200Zm40-120v-40h40v40h-40Zm120 120h80q17 0 28.5-11.5T640-500v-120q0-17-11.5-28.5T600-660h-80v200Zm40-40v-120h40v120h-40Zm120 40h40v-80h40v-40h-40v-40h40v-40h-80v200ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>
+                    </a>
+                    <a
+                        class="v-recrutement__pdf-item"
+                        href="#"
+                        target="_blank"
+                    >
+                        <span>Responsable de boulangerie-pâtisserie</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M360-460h40v-80h40q17 0 28.5-11.5T480-580v-40q0-17-11.5-28.5T440-660h-80v200Zm40-120v-40h40v40h-40Zm120 120h80q17 0 28.5-11.5T640-500v-120q0-17-11.5-28.5T600-660h-80v200Zm40-40v-120h40v120h-40Zm120 40h40v-80h40v-40h-40v-40h40v-40h-80v200ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>
+                    </a>
+                    <a
+                        class="v-recrutement__pdf-item"
+                        href="#"
+                        target="_blank"
+                    >
+                        <span>Responsable de service</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M360-460h40v-80h40q17 0 28.5-11.5T480-580v-40q0-17-11.5-28.5T440-660h-80v200Zm40-120v-40h40v40h-40Zm120 120h80q17 0 28.5-11.5T640-500v-120q0-17-11.5-28.5T600-660h-80v200Zm40-40v-120h40v120h-40Zm120 40h40v-80h40v-40h-40v-40h40v-40h-80v200ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>
+                    </a>
+                    <a
+                        class="v-recrutement__pdf-item"
+                        href="#"
+                        target="_blank"
+                    >
+                        <span>Spécialiste en restauration</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M360-460h40v-80h40q17 0 28.5-11.5T480-580v-40q0-17-11.5-28.5T440-660h-80v200Zm40-120v-40h40v40h-40Zm120 120h80q17 0 28.5-11.5T640-500v-120q0-17-11.5-28.5T600-660h-80v200Zm40-40v-120h40v120h-40Zm120 40h40v-80h40v-40h-40v-40h40v-40h-80v200ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>
+                    </a>
+                    <a
+                        class="v-recrutement__pdf-item"
+                        href="#"
+                        target="_blank"
+                    >
+                        <span>Responsable en intendance</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M360-460h40v-80h40q17 0 28.5-11.5T480-580v-40q0-17-11.5-28.5T440-660h-80v200Zm40-120v-40h40v40h-40Zm120 120h80q17 0 28.5-11.5T640-500v-120q0-17-11.5-28.5T600-660h-80v200Zm40-40v-120h40v120h-40Zm120 40h40v-80h40v-40h-40v-40h40v-40h-80v200ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>
+                    </a>
+                    <a
+                        class="v-recrutement__pdf-item"
+                        href="#"
+                        target="_blank"
+                    >
+                        <span>Agent de propreté</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M360-460h40v-80h40q17 0 28.5-11.5T480-580v-40q0-17-11.5-28.5T440-660h-80v200Zm40-120v-40h40v40h-40Zm120 120h80q17 0 28.5-11.5T640-500v-120q0-17-11.5-28.5T600-660h-80v200Zm40-40v-120h40v120h-40Zm120 40h40v-80h40v-40h-40v-40h40v-40h-80v200ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>
+                    </a>
+
+                </div>
+            </div>
+
             <div
                 class="fp-grid-coll-container fp-grid-coll-container--center fp-page__sections-box__section"
             >
@@ -35,101 +229,6 @@
                     class="fp-grid-coll-24-24 fp-grid-coll-reg-18-24 fp-grid-with-gutter"
                 >
                     <time-line/>
-                </div>
-            </div>
-
-            <div
-                class="fp-grid-coll-container fp-grid-coll-container--center fp-page__sections-box__section"
-            >
-                <div
-                    class="fp-grid-coll-24-24 fp-grid-coll-reg-18-24 fp-grid-with-gutter fp-remove-margin-child"
-                >
-                    <div
-                        class="v-recrutement__video-box"
-                    >
-                        <div
-                            class="v-recrutement__video-box__item"
-                        >
-                            <iframe
-                                type="text/html"
-                                width="720"
-                                height="405"
-                                src="https://www.youtube.com/embed/K8hkcHexRh4?controls=0&color=white&rel=0"
-                                frameborder="0" allowfullscreen
-                            />
-                        </div>
-                    </div>
-
-                    <div
-                        class="v-recrutement__video-box"
-                    >
-                        <div
-                            class="v-recrutement__video-box__item is-learningLab"
-                        >
-                            <iframe
-                                type="text/html"
-                                width="720"
-                                height="405"
-                                src="https://www.youtube.com/embed/IbjWlD3urr4?controls=0&color=white&rel=0"
-                                frameborder="0" allowfullscreen
-                            />
-                        </div>
-                    </div>
-
-                    <div
-                        class="v-recrutement__video-box"
-                    >
-                        <div
-                            class="v-recrutement__video-box__item is-foodLab"
-                        >
-                            <iframe
-                                type="text/html"
-                                width="720"
-                                height="405"
-                                src="https://www.youtube.com/embed/6jGrEwKLNvI?controls=0&color=white&rel=0"
-                                frameborder="0" allowfullscreen
-                            />
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div
-                class="fp-grid-coll-container fp-grid-coll-container--center fp-page__sections-box__section"
-                style="margin-bottom: 5rem"
-            >
-                <div
-                    class="fp-grid-coll-24-24 fp-grid-coll-reg-18-24 fp-grid-with-gutter"
-                >
-                    <h2 style="margin-top: 2rem; margin-bottom: 4rem;">Documents</h2>
-                </div>
-                <div
-                    class="fp-grid-coll-24-24 fp-grid-coll-reg-18-24 fp-grid-with-gutter"
-                >
-                    <a
-                        class="v-recrutement__pdf-item"
-                        href="#"
-                        target="_blank"
-                    >
-                        <span>Titre du document pour le recrutement exemple</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M360-460h40v-80h40q17 0 28.5-11.5T480-580v-40q0-17-11.5-28.5T440-660h-80v200Zm40-120v-40h40v40h-40Zm120 120h80q17 0 28.5-11.5T640-500v-120q0-17-11.5-28.5T600-660h-80v200Zm40-40v-120h40v120h-40Zm120 40h40v-80h40v-40h-40v-40h40v-40h-80v200ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>
-                    </a>
-                    <a
-                        class="v-recrutement__pdf-item"
-                        href="#"
-                        target="_blank"
-                    >
-                        <span>Titre du document pour le recrutement exemple</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M360-460h40v-80h40q17 0 28.5-11.5T480-580v-40q0-17-11.5-28.5T440-660h-80v200Zm40-120v-40h40v40h-40Zm120 120h80q17 0 28.5-11.5T640-500v-120q0-17-11.5-28.5T600-660h-80v200Zm40-40v-120h40v120h-40Zm120 40h40v-80h40v-40h-40v-40h40v-40h-80v200ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>
-                    </a>
-                    <a
-                        class="v-recrutement__pdf-item"
-                        href="#"
-                        target="_blank"
-                    >
-                        <span>Titre du document pour le recrutement exemple</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M360-460h40v-80h40q17 0 28.5-11.5T480-580v-40q0-17-11.5-28.5T440-660h-80v200Zm40-120v-40h40v40h-40Zm120 120h80q17 0 28.5-11.5T640-500v-120q0-17-11.5-28.5T600-660h-80v200Zm40-40v-120h40v120h-40Zm120 40h40v-80h40v-40h-40v-40h40v-40h-80v200ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>
-                    </a>
                 </div>
             </div>
 
@@ -157,8 +256,6 @@ import TimeLine from "~/components/TimeLine.vue";
 
 useAppStateStore().updateTheme('fp-var-theme-color-default')
 
-
-
 </script>
 
 
@@ -180,18 +277,34 @@ useAppStateStore().updateTheme('fp-var-theme-color-default')
     box-sizing: border-box;
     width: 100%;
     padding-top: 56.25%;
-    margin: 0 auto 4rem;
+    margin: 4rem auto 0;
     overflow: hidden;
     border-radius: 1rem;
-    border: solid 5px var(--fp-theme-color-default-ternary--light);
+    outline: solid 5px var(--fp-theme-color-secondary);
 
-    &.is-learningLab {
-        border-color: var(--fp-theme-color-learningLab-main);
-    }
-
-    &.is-foodLab {
-        border-color: var(--fp-theme-color-foodlab-main);
-    }
+    //&:before {
+    //    content: '';
+    //    display: block;
+    //    width: 4rem;
+    //    height: 4rem;
+    //    background-position: center center;
+    //    background-repeat: no-repeat;
+    //    background-size: 66% 66%;
+    //    background-image: url('../assets/icons/play_circle_FILL0_wght400_GRAD0_opsz24.svg');
+    //    position: absolute;
+    //    z-index: 1;
+    //    top: 50%;
+    //    left: 50%;
+    //    transform: translate(-50%, -50%);
+    //    background-color: white;
+    //    border-radius: 100%;
+    //    box-shadow: 0 0 0 0 black;
+    //    pointer-events: none;
+    //}
+    //
+    //&.clicked:before {
+    //    content: none;
+    //}
 
     iframe {
         display: block;
