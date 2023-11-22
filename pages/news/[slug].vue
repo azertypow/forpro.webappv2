@@ -228,8 +228,8 @@ const eventDate: ComputedRef<null | string> = computed(() => {
 }
 
 .v-article-name__title {
-    margin: auto;
-    margin-bottom: 2rem;
+    margin: auto !important;
+    margin-bottom: 2rem !important;
 }
 
 .v-article-name__date {
