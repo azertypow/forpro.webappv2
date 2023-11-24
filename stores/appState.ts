@@ -31,7 +31,8 @@ export const useAppStateStore = defineStore('appState', {
         siteData: null as IForProApi_site | null,
         hideBuildingNav: [] as string[],
         newsletterIsOpen: false,
-        currentOverSection: '' as TCurrentOverSection
+        currentOverSection: '' as TCurrentOverSection,
+        activeRecruitmentPage: true,
     }),
 
     actions: {

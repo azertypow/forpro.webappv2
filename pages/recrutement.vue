@@ -7,95 +7,68 @@
         <div
             class="fp-grid-coll-container fp-grid-coll-container--center"
         >
+
             <div
                 class="fp-grid-coll-24-24 fp-grid-coll-reg-18-24 fp-grid-with-gutter"
             >
                 <text-intro
                     content="
-                    <p>Nous recrutons pour l’été 2024 des professionnel.es qui ont une forte
-                    appétence pour le public jeune, pour le travail collaboratif, qui apprécient
-                    un environnement toujours en mouvement et qui souhaitent faire partie
-                    de&nbsp;l’aventure des LABs&nbsp;ForPro&nbsp;!</p>"
+                    <h2 style='text-align: center;' >Rejoins-nous!</h2>
+                    <p>
+                    Notre équipe s’agrandit! Nous recherchons pour une entrée en fonction début d’été 2024
+                    des professionnel·les qui ont une forte appétence pour le&nbsp;public jeune,
+                    pour le travail collaboratif, qui apprécient un environnement toujours en mouvement
+                    et qui souhaitent faire partie de l’aventure des LABs ForPro&nbsp;!</p>"
                 />
             </div>
         </div>
 
-        <div
-            class="fp-grid-coll-container fp-grid-coll-container--center fp-page__sections-box__section"
+
+
+        <div class="fp-page__sections-box"
         >
-            <div
-                class="fp-grid-coll-24-24 fp-grid-coll-reg-18-24 fp-grid-with-gutter fp-remove-margin-child"
+            <div class="fp-grid-coll-container fp-grid-coll-container--center fp-page__sections-box__section"
             >
-                <div
-                    class="v-recrutement__video-box"
-                >
+                <div class="fp-grid-coll-24-24 fp-grid-coll-reg-18-24 fp-grid-with-gutter">
+                    <h3 style="margin-top: 0; margin-bottom: 2rem" >ForPro c'est quoi?</h3>
+
+                    <!--            type vidéo -->
                     <div
-                        class="v-recrutement__video-box__item"
+                        class="v-recrutement__video-element__box"
                     >
-                        <iframe
-                            type="text/html"
-                            width="720"
-                            height="405"
-                            src="https://www.youtube.com/embed/K8hkcHexRh4?color=white&rel=0"
-                            frameborder="0" allowfullscreen
+                        <text-video
+                            youtube-id="K8hkcHexRh4"
                         />
                     </div>
+
+                    <!--            end type vidéo-->
                 </div>
 
-                <div
-                    class="v-recrutement__video-box"
-                >
+
+
+                <div class="fp-grid-coll-24-24 fp-grid-coll-reg-18-24 fp-grid-with-gutter">
+                    <h2 style="margin-top: 7rem; margin-bottom: 2rem" >Postes ouverts</h2>
+
+
+
+
+                    <h3 style="margin-top: 0; margin-bottom: 2rem" >LearningLab</h3>
+
+                    <!--            type vidéo -->
                     <div
-                        class="v-recrutement__video-box__item is-learningLab"
+                        class="v-recrutement__video-element__box"
                     >
-                        <iframe
-                            type="text/html"
-                            width="720"
-                            height="405"
-                            src="https://www.youtube.com/embed/IbjWlD3urr4?color=white&rel=0"
-                            frameborder="0" allowfullscreen
+                        <text-video
+                            youtube-id="IbjWlD3urr4"
                         />
                     </div>
-                </div>
+                    <!--            end type vidéo-->
 
-                <div
-                    class="v-recrutement__video-box"
-                >
-                    <div
-                        class="v-recrutement__video-box__item is-foodLab"
-                    >
-                        <iframe
-                            type="text/html"
-                            width="720"
-                            height="405"
-                            src="https://www.youtube.com/embed/6jGrEwKLNvI?color=white&rel=0"
-                            frameborder="0" allowfullscreen
-                        />
-                    </div>
-                </div>
-            </div>
-        </div>
+                    <h4 style="margin-top: 5rem; margin-bottom: 2rem" >Nous recherchons actuellement:</h4>
 
-        <div
-            class="fp-page__sections-box"
-        >
-            <div
-                class="fp-grid-coll-container fp-grid-coll-container--center fp-page__sections-box__section"
-                style="margin-bottom: 5rem"
-            >
-                <div
-                    class="fp-grid-coll-24-24 fp-grid-coll-reg-18-24 fp-grid-with-gutter"
-                >
-                    <h2 style="margin-top: 2rem; margin-bottom: 4rem;">Profils</h2>
-                </div>
-                <div
-                    class="fp-grid-coll-24-24 fp-grid-coll-reg-18-24 fp-grid-with-gutter fp-remove-margin-child"
-                >
-
-                    <h3>LearningLab</h3>
                     <a
                         class="v-recrutement__pdf-item"
-                        href="#"
+                        href="/documents/Forpro_Référent.e.pdf"
                         target="_blank"
                     >
                         <span>Référent·e LearningLab</span>
@@ -103,7 +76,7 @@
                     </a>
                     <a
                         class="v-recrutement__pdf-item"
-                        href="#"
+                        href="/documents/Forpro_Référent.e_Acceuil.pdf"
                         target="_blank"
                     >
                         <span>Référent·e Accueil</span>
@@ -111,7 +84,7 @@
                     </a>
                     <a
                         class="v-recrutement__pdf-item"
-                        href="#"
+                        href="/documents/Forpro_Référent.e_mentorat.pdf"
                         target="_blank"
                     >
                         <span>Référent·e Mentorat</span>
@@ -119,7 +92,7 @@
                     </a>
                     <a
                         class="v-recrutement__pdf-item"
-                        href="#"
+                        href="/documents/Forpro_ASE.pdf"
                         target="_blank"
                     >
                         <span>Assistant·e socio-éducatif</span>
@@ -127,31 +100,59 @@
                     </a>
                     <a
                         class="v-recrutement__pdf-item"
-                        href="#"
+                        href="/documents/Forpro_AdjointLLab.pdf"
                         target="_blank"
                     >
-                        <span>Adjoint LearningLab</span>
+                        <span>Adjoint·e LearningLab</span>
                         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M360-460h40v-80h40q17 0 28.5-11.5T480-580v-40q0-17-11.5-28.5T440-660h-80v200Zm40-120v-40h40v40h-40Zm120 120h80q17 0 28.5-11.5T640-500v-120q0-17-11.5-28.5T600-660h-80v200Zm40-40v-120h40v120h-40Zm120 40h40v-80h40v-40h-40v-40h40v-40h-80v200ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>
                     </a>
                     <a
                         class="v-recrutement__pdf-item"
-                        href="#"
+                        href="/documents/ForPro FuturPlus_formateur.rice.pdf"
                         target="_blank"
                     >
                         <span>Formateur·rice LearningLab</span>
                         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M360-460h40v-80h40q17 0 28.5-11.5T480-580v-40q0-17-11.5-28.5T440-660h-80v200Zm40-120v-40h40v40h-40Zm120 120h80q17 0 28.5-11.5T640-500v-120q0-17-11.5-28.5T600-660h-80v200Zm40-40v-120h40v120h-40Zm120 40h40v-80h40v-40h-40v-40h40v-40h-80v200ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>
                     </a>
-
-
-
-
-
-
-
-                    <h3>FoodLab</h3>
                     <a
                         class="v-recrutement__pdf-item"
-                        href="#"
+                        href="/documents/ForPro FuturPlus_formateur.trice_coordinateur.pdf"
+                        target="_blank"
+                    >
+                        <span>Formateur·rice Coordinateur·ice LearningLab</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M360-460h40v-80h40q17 0 28.5-11.5T480-580v-40q0-17-11.5-28.5T440-660h-80v200Zm40-120v-40h40v40h-40Zm120 120h80q17 0 28.5-11.5T640-500v-120q0-17-11.5-28.5T600-660h-80v200Zm40-40v-120h40v120h-40Zm120 40h40v-80h40v-40h-40v-40h40v-40h-80v200ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>
+                    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <h3 style="margin-top: 5rem; margin-bottom: 2rem" >FoodLab</h3>
+
+                    <!--            type vidéo -->
+                    <div
+                        class="v-recrutement__video-element__box"
+                    >
+                        <text-video
+                            youtube-id="6jGrEwKLNvI"
+                        />
+                    </div>
+                    <!--            end type vidéo-->
+
+                    <h4 style="margin-top: 5rem; margin-bottom: 2rem">Nous recherchons actuellement:</h4>
+
+
+                    <a
+                        class="v-recrutement__pdf-item"
+                        href="/documents/Forpro_Responsable de cuisine.pdf"
                         target="_blank"
                     >
                         <span>Responsable de cuisine</span>
@@ -159,31 +160,23 @@
                     </a>
                     <a
                         class="v-recrutement__pdf-item"
-                        href="#"
+                        href="/documents/Forpro_Adjoint·e au Responsable de cuisine FoodLab.pdf"
                         target="_blank"
                     >
-                        <span>Adjoint au responsable de cuisine</span>
+                        <span>Adjoint·e au Responsable de cuisine</span>
                         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M360-460h40v-80h40q17 0 28.5-11.5T480-580v-40q0-17-11.5-28.5T440-660h-80v200Zm40-120v-40h40v40h-40Zm120 120h80q17 0 28.5-11.5T640-500v-120q0-17-11.5-28.5T600-660h-80v200Zm40-40v-120h40v120h-40Zm120 40h40v-80h40v-40h-40v-40h40v-40h-80v200ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>
                     </a>
                     <a
                         class="v-recrutement__pdf-item"
-                        href="#"
+                        href="/documents/Forpro_Cuisinier.ère.pdf"
                         target="_blank"
                     >
-                        <span>Cuisinier</span>
+                        <span>Cuisinier·ère</span>
                         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M360-460h40v-80h40q17 0 28.5-11.5T480-580v-40q0-17-11.5-28.5T440-660h-80v200Zm40-120v-40h40v40h-40Zm120 120h80q17 0 28.5-11.5T640-500v-120q0-17-11.5-28.5T600-660h-80v200Zm40-40v-120h40v120h-40Zm120 40h40v-80h40v-40h-40v-40h40v-40h-80v200ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>
                     </a>
                     <a
                         class="v-recrutement__pdf-item"
-                        href="#"
-                        target="_blank"
-                    >
-                        <span>Responsable de boulangerie-pâtisserie</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M360-460h40v-80h40q17 0 28.5-11.5T480-580v-40q0-17-11.5-28.5T440-660h-80v200Zm40-120v-40h40v40h-40Zm120 120h80q17 0 28.5-11.5T640-500v-120q0-17-11.5-28.5T600-660h-80v200Zm40-40v-120h40v120h-40Zm120 40h40v-80h40v-40h-40v-40h40v-40h-80v200ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>
-                    </a>
-                    <a
-                        class="v-recrutement__pdf-item"
-                        href="#"
+                        href="/documents/Forpro_Responsable de service.pdf"
                         target="_blank"
                     >
                         <span>Responsable de service</span>
@@ -191,7 +184,7 @@
                     </a>
                     <a
                         class="v-recrutement__pdf-item"
-                        href="#"
+                        href="/documents/ForPro_Spécialiste en restauration.pdf"
                         target="_blank"
                     >
                         <span>Spécialiste en restauration</span>
@@ -199,7 +192,7 @@
                     </a>
                     <a
                         class="v-recrutement__pdf-item"
-                        href="#"
+                        href="/documents/Forpro_Responsable en intendance.pdf"
                         target="_blank"
                     >
                         <span>Responsable en intendance</span>
@@ -207,34 +200,35 @@
                     </a>
                     <a
                         class="v-recrutement__pdf-item"
-                        href="#"
+                        href="/documents/Forpro_Agent de propreté.pdf"
                         target="_blank"
                     >
-                        <span>Agent de propreté</span>
+                        <span>Agent·e de propreté</span>
                         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M360-460h40v-80h40q17 0 28.5-11.5T480-580v-40q0-17-11.5-28.5T440-660h-80v200Zm40-120v-40h40v40h-40Zm120 120h80q17 0 28.5-11.5T640-500v-120q0-17-11.5-28.5T600-660h-80v200Zm40-40v-120h40v120h-40Zm120 40h40v-80h40v-40h-40v-40h40v-40h-80v200ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg>
                     </a>
 
-                </div>
-            </div>
 
-            <div
-                class="fp-grid-coll-container fp-grid-coll-container--center fp-page__sections-box__section"
-            >
-                <div
-                    class="fp-grid-coll-24-24 fp-grid-coll-reg-18-24 fp-grid-with-gutter"
-                >
-                    <h2 style="margin-top: 2rem; margin-bottom: 4rem;">Processus de recrutement</h2>
-                </div>
-                <div
-                    class="fp-grid-coll-24-24 fp-grid-coll-reg-18-24 fp-grid-with-gutter"
-                >
+                    <h2 style="margin-top: 7rem; margin-bottom: 4rem;">Processus de recrutement</h2>
                     <time-line/>
                 </div>
             </div>
-
         </div>
 
-
+        <div class="fp-page__sections-box"
+             style="margin-bottom: 5rem;"
+        >
+            <div class="fp-grid-coll-container fp-grid-coll-container--center fp-page__sections-box__section">
+                <button
+                    style="
+                        background: var(--fp-theme-color-makerlab-secondary);
+                        color: white;
+                        padding-left: 1rem;
+                        padding-right: 1rem;
+                        font-weight: 500;
+                    "
+                >Tu souhaites partager ces infos autour de toi?</button>
+            </div>
+        </div>
     </main>
 
 </template>
@@ -246,6 +240,7 @@
 <script lang="ts" setup>
 import {useAppStateStore} from "~/stores/appState";
 import TimeLine from "~/components/TimeLine.vue";
+import {IForPro_blocksContent_isTextContent} from "~/global/forProApi";
 
 // todo: redirecction if page is not active
 // throw createError({
@@ -267,54 +262,14 @@ useAppStateStore().updateTheme('fp-var-theme-color-default')
 
 }
 
-.v-recrutement__video-box {
-    max-width: 720px;
-    margin: auto;
+.v-recrutement__video-element {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
-.v-recrutement__video-box__item {
-    position: relative;
-    box-sizing: border-box;
-    width: 100%;
-    padding-top: 56.25%;
-    margin: 4rem auto 0;
-    overflow: hidden;
-    border-radius: 1rem;
-    outline: solid 5px var(--fp-theme-color-secondary);
-
-    //&:before {
-    //    content: '';
-    //    display: block;
-    //    width: 4rem;
-    //    height: 4rem;
-    //    background-position: center center;
-    //    background-repeat: no-repeat;
-    //    background-size: 66% 66%;
-    //    background-image: url('../assets/icons/play_circle_FILL0_wght400_GRAD0_opsz24.svg');
-    //    position: absolute;
-    //    z-index: 1;
-    //    top: 50%;
-    //    left: 50%;
-    //    transform: translate(-50%, -50%);
-    //    background-color: white;
-    //    border-radius: 100%;
-    //    box-shadow: 0 0 0 0 black;
-    //    pointer-events: none;
-    //}
-    //
-    //&.clicked:before {
-    //    content: none;
-    //}
-
-    iframe {
-        display: block;
-        margin: 0;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
+.v-recrutement__video-element__box {
+    max-width: 720px;
+    margin: auto;
 }
 
 

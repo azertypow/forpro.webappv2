@@ -16,7 +16,7 @@
         >
             <h6 class="v-time-line__item__date"   >01.12.2023 au 10.1.2024</h6>
             <h3 class="v-time-line__item__title"  >Délais de postulation</h3>
-            <p  class="v-time-line__item__desc"   ><a target="_blank" href="#" >Comment déposer ma candidature</a></p>
+            <p  class="v-time-line__item__desc"   ><a target="_blank" href="documents/Comment_déposer_ma_candidature.pdf" >Comment déposer ma candidature</a></p>
         </div>
 
 
@@ -32,8 +32,9 @@
         >
             <h6 class="v-time-line__item__date"   >Samedi 10.2.2024</h6>
             <h3 class="v-time-line__item__title"  >1<sup>er</sup> tour, Atelier collectif</h3>
-            <p  class="v-time-line__item__desc"   ><a href="#">Atelier collectif de recrutement</a><br/>Horaires : 8h30 à 13h (obligatoire)</p>
-            <p  class="v-time-line__item__desc fp-text-small"   >Nous recrutons pour l’été 2024 des professionnel.es qui ont une forte appétence pour le public jeune, pour le travail collaboratif, qui apprécient un environnement toujours en mouvement et qui souhaitent faire partie de l’aventure des LABs ForPro !</p>
+            <p  class="v-time-line__item__desc"   >Atelier collectif de recrutement<br/>Horaires : 8h30 à 13h</p>
+            <p  class="v-time-line__item__desc fp-text-small"   >Afin de vous plonger dans la logique de fonctionnement ForPro et de mettre en avant vos compétences personnelles et sociales, nous mettons en place une demi-journée d'ateliers collaboratifs. Dans ces ateliers, vous serez associé avec notre public – des jeunes de 16 à 20 ans – pour réaliser une tâche demandant de se coordonner et de se mettre d'accord.
+            <br>Un temps de retour sur votre expérience de groupe est prévu en deuxième partie de matinée.</p>
         </div>
         <div
                 class="v-time-line__item v-time-line__item--gant"
@@ -164,7 +165,8 @@ function interactionObserverCallback(timelineItem: IntersectionObserverEntry[]) 
     }
 
     &:first-child {
-      margin-top: 0;
+        margin-top: 0;
+
     }
 
     &:nth-child(2n) {
@@ -216,7 +218,7 @@ function interactionObserverCallback(timelineItem: IntersectionObserverEntry[]) 
       }
     }
 
-    &.ts-is-intersecting {
+    //&.ts-is-intersecting {
       &:before {
         background-color: #ffcb8f;
       }
@@ -235,7 +237,7 @@ function interactionObserverCallback(timelineItem: IntersectionObserverEntry[]) 
         opacity: 1;
         transform: translateY(0);
       }
-    }
+    //}
 
     &.v-time-line__item--gant.ts-is-intersecting {
       &:before {

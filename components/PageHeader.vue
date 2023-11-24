@@ -51,6 +51,14 @@
 <!--          </svg>-->
 <!--          svg v2 longue tige-->
 
+          <a
+                  class="v-page-header__recruitment"
+                  href="/recrutement"
+                  v-if="useAppStateStore().activeRecruitmentPage"
+          >
+              <div class="v-page-header__recruitment__title" >ForPro recrute !</div>
+              <div class="v-page-header__recruitment__subtitle">Rejoins-nous !</div>
+          </a>
 
           <svg
                   id="Layer_2"
@@ -200,6 +208,53 @@ const map = (
   .v-app--is-dark & {
     background: var(--fp-color-black);
   }
+}
+
+.v-page-header__recruitment {
+  display: block;
+  user-select: none;
+  position: absolute;
+  z-index: 100;
+  left: auto;
+  right:  calc(100% / 12 * 1);
+  top:    calc(100% / 3 * 1);
+  color: var(--fp-theme-color-makerlab-main);
+  text-align: center;
+  transition: transform 1s cubic-bezier(.42, 0, 0, 1);
+  transform: rotate(0deg);
+
+  &:hover {
+    transform: rotate(-5deg);
+  }
+
+  &:before {
+    z-index: -1;
+    content: "";
+    display: block;
+    background: var(--fp-theme-color-makerlab-secondary);
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 5rem;
+    transition: transform 1s cubic-bezier(.42, 0, 0, 1);
+    transform: translate(-50%, -50%) rotate(-20deg);
+
+  }
+  &:hover:before {
+    transform: translate(-50%, -50%) rotate(-25deg);
+  }
+}
+
+.v-page-header__recruitment__title {
+  font-size: 2rem;
+  line-height: 2rem;
+  max-width: 5em;
+}
+
+.v-page-header__recruitment__subtitle {
+
 }
 
 .v-page-header__img {
