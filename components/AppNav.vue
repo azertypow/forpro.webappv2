@@ -93,6 +93,7 @@
                             class="fp-heading-h3"
                     >
                         <nuxt-link
+                                v-if="useAppStateStore().activeRecruitmentPage"
                                 class="v-app-nav__link fp-text-color-default"
                                 to="/Recrutement"
                                 :class="{
