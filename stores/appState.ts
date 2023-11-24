@@ -2,6 +2,7 @@ import { defineStore } from 'pinia'
 import type {IForProApi_site, forProThemeColor} from "~/global/forProApi";
 import {map} from "~/global/tools"
 import {parseToRgba, rgba} from "color2k";
+import {isAfterDate} from "~/global/isAfterDate";
 
 export type TCurrentOverSection = ''
     | 'creche'
@@ -32,7 +33,7 @@ export const useAppStateStore = defineStore('appState', {
         hideBuildingNav: [] as string[],
         newsletterIsOpen: false,
         currentOverSection: '' as TCurrentOverSection,
-        activeRecruitmentPage: false,
+        activeRecruitmentPage: isAfterDate( new Date(2023, 11, 1, 0, 0, 0) ),
     }),
 
     actions: {
