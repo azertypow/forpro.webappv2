@@ -32,7 +32,7 @@ export const useAppStateStore = defineStore('appState', {
         hideBuildingNav: [] as string[],
         newsletterIsOpen: false,
         currentOverSection: '' as TCurrentOverSection,
-        activeRecruitmentPage: true,
+        activeRecruitmentPage: false,
     }),
 
     actions: {

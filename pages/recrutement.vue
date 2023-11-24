@@ -42,17 +42,9 @@
                     </div>
 
                     <!--            end type vidéo-->
-                </div>
 
 
-
-                <div class="fp-grid-coll-24-24 fp-grid-coll-reg-18-24 fp-grid-with-gutter">
-                    <h2 style="margin-top: 7rem; margin-bottom: 2rem" >Postes ouverts</h2>
-
-
-
-
-                    <h3 style="margin-top: 0; margin-bottom: 2rem" >LearningLab</h3>
+                    <h3 style="margin-top: 5rem; margin-bottom: 2rem" >Bienvenue au LearningLab</h3>
 
                     <!--            type vidéo -->
                     <div
@@ -64,7 +56,22 @@
                     </div>
                     <!--            end type vidéo-->
 
-                    <h4 style="margin-top: 5rem; margin-bottom: 2rem" >Nous recherchons actuellement:</h4>
+
+                    <h3 style="margin-top: 5rem; margin-bottom: 2rem" >Bienvenue au FoodLab</h3>
+
+                    <!--            type vidéo -->
+                    <div
+                        class="v-recrutement__video-element__box"
+                    >
+                        <text-video
+                            youtube-id="6jGrEwKLNvI"
+                        />
+                    </div>
+                    <!--            end type vidéo-->
+
+                    <h3 style="margin: 5rem auto 2rem 0;color: black; text-align: left" >Nous recherchons actuellement</h3>
+
+                    <h4 style="margin: 2rem auto 1rem 0;color: black; text-align: left" >LearningLab</h4>
 
                     <a
                         class="v-recrutement__pdf-item"
@@ -124,30 +131,7 @@
                     </a>
 
 
-
-
-
-
-
-
-
-
-
-
-
-                    <h3 style="margin-top: 5rem; margin-bottom: 2rem" >FoodLab</h3>
-
-                    <!--            type vidéo -->
-                    <div
-                        class="v-recrutement__video-element__box"
-                    >
-                        <text-video
-                            youtube-id="6jGrEwKLNvI"
-                        />
-                    </div>
-                    <!--            end type vidéo-->
-
-                    <h4 style="margin-top: 5rem; margin-bottom: 2rem">Nous recherchons actuellement:</h4>
+                    <h4 style="margin: 4rem auto 1rem 0;color: black; text-align: left" >FoodLab</h4>
 
 
                     <a
@@ -217,7 +201,8 @@
         <div class="fp-page__sections-box"
              style="margin-bottom: 5rem;"
         >
-            <div class="fp-grid-coll-container fp-grid-coll-container--center fp-page__sections-box__section">
+            <div class="fp-grid-coll-container fp-grid-coll-container--center fp-page__sections-box__section"
+            >
                 <button
                     style="
                         background: var(--fp-theme-color-makerlab-secondary);
@@ -226,7 +211,8 @@
                         padding-right: 1rem;
                         font-weight: 500;
                     "
-                >Tu souhaites partager ces infos autour de toi?</button>
+                    @click="onClickCopyButton()"
+                >{{textButtonShareLink}}</button>
             </div>
         </div>
     </main>
@@ -241,6 +227,9 @@
 import {useAppStateStore} from "~/stores/appState";
 import TimeLine from "~/components/TimeLine.vue";
 import {IForPro_blocksContent_isTextContent} from "~/global/forProApi";
+import {copyTextToClipboard} from "~/global/copyTextToClipboard";
+
+
 
 // todo: redirecction if page is not active
 // throw createError({
@@ -249,7 +238,22 @@ import {IForPro_blocksContent_isTextContent} from "~/global/forProApi";
 //     fatal: true,
 // })
 
+const url           = "https://for-pro.ch/recrutement/"
+const extButton_1   = 'Tu souhaites partager ces infos autour de toi?'
+const extButton_2   = 'url copié dans le clipboard!'
+
+const textButtonShareLink = ref(extButton_1)
+
 useAppStateStore().updateTheme('fp-var-theme-color-default')
+
+function onClickCopyButton() {
+    if(textButtonShareLink.value !== extButton_2) {
+        console.info('text copy to clipboard')
+        copyTextToClipboard(url)
+        textButtonShareLink.value = extButton_2
+        window.setTimeout(() => { textButtonShareLink.value = extButton_1 }, 2_000)
+    }
+}
 
 </script>
 
