@@ -239,8 +239,8 @@ import {copyTextToClipboard} from "~/global/copyTextToClipboard";
 // })
 
 const url           = "https://for-pro.ch/recrutement/"
-const extButton_1   = 'Tu souhaites partager ces infos autour de toi?'
-const extButton_2   = 'url copié dans le clipboard!'
+const extButton_1   = 'Partagez cette page!'
+const extButton_2   = 'Lien copié avec succès. Collez où vous le souhaitez!'
 
 const textButtonShareLink = ref(extButton_1)
 
@@ -248,7 +248,6 @@ useAppStateStore().updateTheme('fp-var-theme-color-default')
 
 function onClickCopyButton() {
     if(textButtonShareLink.value !== extButton_2) {
-        console.info('text copy to clipboard')
         copyTextToClipboard(url)
         textButtonShareLink.value = extButton_2
         window.setTimeout(() => { textButtonShareLink.value = extButton_1 }, 2_000)
