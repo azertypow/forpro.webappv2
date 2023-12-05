@@ -51,6 +51,7 @@ button,
   padding: .5rem;
   line-height: .7rem;
   cursor: pointer;
+  text-decoration: none !important;
 
   > * {
     color: inherit;
@@ -59,6 +60,17 @@ button,
 
   &.fp-ui-button--variante {
     border-color: var(--fp-theme-color-main);
+  }
+
+  &.fp-ui-button--blue {
+    color: white !important;
+    border-color: var(--fp-theme-color-makerlab-secondary) !important;
+    background-color: var(--fp-theme-color-makerlab-secondary) !important;
+
+    &:hover {
+      background: white !important;
+      color: var(--fp-theme-color-makerlab-secondary) !important;
+    }
   }
 
   &.fp-ui-button--variante-with-background {

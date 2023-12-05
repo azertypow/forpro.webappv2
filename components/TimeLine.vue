@@ -16,7 +16,12 @@
         >
             <h6 class="v-time-line__item__date"   >01.12.2023 au 10.1.2024</h6>
             <h3 class="v-time-line__item__title"  >Délais de postulation</h3>
-            <p  class="v-time-line__item__desc"   ><a target="_blank" href="/documents/Comment_déposer_ma_candidature.pdf" >Comment déposer ma candidature</a></p>
+            <p  class="v-time-line__item__desc"   >
+                <a
+                    class="fp-ui-button fp-ui-button--blue"
+                    target="_blank" href="/documents/Comment_déposer_ma_candidature.pdf"
+                >Comment déposer ma&nbsp;candidature</a>
+            </p>
         </div>
 
 
@@ -123,6 +128,8 @@ function interactionObserverCallback(timelineItem: IntersectionObserverEntry[]) 
 
 
 <style lang="scss" scoped >
+@use "assets/_scss-params";
+
 .v-time-line {
   position: relative;
   display: block;
@@ -136,6 +143,10 @@ function interactionObserverCallback(timelineItem: IntersectionObserverEntry[]) 
     top: 0;
     left: 50%;
     transform: translate(-50%, 0);
+
+      @media (max-width: scss-params.$fp-breakpoint-sm) {
+          left: .25rem;
+      }
   }
 
   .v-time-line__item {
@@ -181,6 +192,21 @@ function interactionObserverCallback(timelineItem: IntersectionObserverEntry[]) 
         transform: translate(-50%, -25%);
       }
     }
+
+      @media (max-width: scss-params.$fp-breakpoint-sm) {
+          width: 100%;
+          margin-left: 0 !important;
+          padding-left: 1rem !important;
+          padding-right: 0 !important;
+
+          &:before {
+              left: .75rem !important;
+              width: 1rem !important;
+              height: 1rem !important;
+              transform: translate(-100%, 0) !important;
+              background-image: none !important;
+          }
+      }
 
     .v-time-line__item__date {
       font-size: .85rem;

@@ -267,6 +267,15 @@ const map = (
     transform: rotate(-5deg);
   }
 
+  @media (max-width: scss-params.$fp-breakpoint-xs) {
+    right:  calc(100% / 12 * 1);
+    top:    calc(100% / 3 * 2);
+
+    svg {
+      width: 5rem;
+    }
+  }
+
   .v-page-header__recruitment__background {
     z-index: -1;
     transition: transform 1s cubic-bezier(.42, 0, 0, 1);
