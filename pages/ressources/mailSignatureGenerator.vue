@@ -74,24 +74,6 @@
                        src="https://for-pro.ch/signature__logo.png" >
                 </td>
               </tr>
-
-              <tr>
-                  <td border="0"
-                      cellpadding="0"
-                      cellspacing="0"
-                      height="auto"
-                  >
-                      <img alt="image recrutement"
-                           width="150"
-                           style="width: 150px; margin-top: 15px"
-                           src="https://for-pro.ch/ForPro-recrute.png" >
-                      <a
-                              style="display: block;margin-top: 7px;width: 150px;text-align: center; color: #1754ff;"
-                              target="_blank"
-                              href="https://for-pro.ch/recrutement/"
-                      >for-pro.ch/recrutement</a>
-                  </td>
-              </tr>
               </tbody>
             </table>
           </div>
