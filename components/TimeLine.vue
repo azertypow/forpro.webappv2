@@ -17,10 +17,9 @@
             <h6 class="v-time-line__item__date"   >01.12.2023 au 10.1.2024</h6>
             <h3 class="v-time-line__item__title"  >Délais de postulation</h3>
             <p  class="v-time-line__item__desc"   >
-                <a
-                    class="fp-ui-button fp-ui-button--blue"
-                    target="_blank" href="/documents/Comment_déposer_ma_candidature.pdf"
-                >Comment déposer ma&nbsp;candidature</a>
+                Clôture des candidatures – 10 janvier
+                <br>Vous êtes intéressé·e pour nous rejoindre ?
+                <br>Rendez-vous sur notre compte LinkedIn pour de futures opportunités.
             </p>
         </div>
 
