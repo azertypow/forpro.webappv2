@@ -33,7 +33,7 @@ export const useAppStateStore = defineStore('appState', {
         hideBuildingNav: [] as string[],
         newsletterIsOpen: false,
         currentOverSection: '' as TCurrentOverSection,
-        activeRecruitmentPage: isAfterDate( new Date(2023, 11, 1, 0, 0, 0) ),
+        activeRecruitmentPage: false,
     }),
 
     actions: {
