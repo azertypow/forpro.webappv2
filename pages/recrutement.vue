@@ -258,6 +258,15 @@ import {copyTextToClipboard} from "~/global/copyTextToClipboard";
 //     fatal: true,
 // })
 
+onBeforeMount(() => {
+    if( !useAppStateStore().activeRecruitmentPage) {
+        throw createError({
+            statusCode: 404,
+            statusMessage: "La page Recrutement n'est pas active actuellement",
+        })
+    }
+})
+
 const url           = "https://for-pro.ch/recrutement/"
 const extButton_1   = 'Partagez cette page!'
 const extButton_2   = 'Lien copié avec succès. Collez où vous le souhaitez!'
